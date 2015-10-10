@@ -1,0 +1,15 @@
+-var collection = data;
+.container
+  section.repear
+    each item in collection
+      h3.pricelist__heading #{item.tableTitle}
+      div.pricelist__table
+        each row in item.rows
+          .row.pricelist__row.ng-scope(data-ng-repeat='row in table.rows')
+            .col-md-5
+              .pricelist__item__title #{row.title}
+              time.pricelist__item__time #{row.repear_time}
+            .col-md-3
+              .pricelist__item__cost #{row.cost}
+            .col-md-4
+              .pricelist__item__description #{row.description}

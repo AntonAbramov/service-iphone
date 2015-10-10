@@ -1,0 +1,50 @@
+.show-tablet {
+  display: block;
+}
+
+.hide-tablet {
+  display: none;
+}
+
+.device-title {
+  font-size: 36px;
+}
+
+.top-navigation {
+  display: block;
+  border-top: none;
+}
+
+.top-navigation__link {
+  display: inline-block;
+  margin-left: 35px;
+  border-radius: 100px;
+  border: 1px solid transparent;
+  &:hover, &:focus {
+    border: 1px solid #ddd;
+    .top-navigation--text {
+      border: none;
+    }
+  }
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+.header__container {
+  max-width: 1170px;
+  padding: 10px 15px;
+  margin: 0 auto;
+}
+
+.header-section__warranty {
+  position: static;
+}
+
+.top-navigation--text {
+  border-bottom: 1px solid #ddd;
+}
+
+.devices__link {
+  padding: 10px 30px;
+}

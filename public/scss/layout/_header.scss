@@ -1,0 +1,98 @@
+.site-logo {
+  white-space: nowrap;
+}
+
+.site-logo__link {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #0e749e;
+  text-decoration: none;
+  line-height: 1;
+  display: block;
+}
+.site-logo__img {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  top: -4px;
+}
+
+
+.director-button {
+  margin-top: 3px;
+  display: none;
+}
+
+.header-section {
+  padding: 15px 0;
+  background: #f2f2f2;
+}
+
+.header-section__schedule--description {
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 15px;
+  display: block;
+}
+
+.header-section__courier {
+  .btn-lg {
+    font-size: 16px;
+  }
+}
+
+.header-section__warranty {
+  top: 0;
+  position: absolute;
+}
+.header-section__warranty__link {
+  text-decoration: none;
+  position: relative;
+  padding-left: 52px;
+  display: block;
+  line-height: 16px;
+  padding-top: 7px;
+  &:hover, &:focus {
+    .icon-warranty {
+      transform: rotate(360deg);
+    }
+  }
+  .icon-warranty {
+    color: rgb(218, 43, 43);
+    font-size: 40px;
+    position: absolute;
+    left: 0;
+    top: 1px;
+    @include transition(all, .3s);
+
+  }
+}
+
+.header-section__warranty--period {
+  display: block;
+}
+
+.header-section__warranty--all {
+  color: #999;
+  display: block;
+}
+
+.sub-header {
+  margin: 30px 0;
+}
+
+.sub-header__img {
+  max-height: 100px;
+}
+
+.sub-header__description {
+  margin: 15px 0 0;
+}
+
+.header-section__contacts__tel,
+.header-section__contacts__title {
+  text-decoration: none;
+  &:hover, &:focus {
+    text-decoration: underline;
+  }
+}

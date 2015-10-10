@@ -1,0 +1,57 @@
+-var menuItems = [{'href': '/iphone', 'title': 'Ремонт iPhone', 'text': 'iPhone', selected: ''},{'href': '/ipad-remont', 'title': 'Ремонт iPad', 'text': 'iPad'},{'href': '/macbook-remont', 'title': 'Ремонт MacBook', 'text': 'MacBook'}];
+header.header
+  .header__container.cf
+    .site-logo.text-center.col-md-2.col-sm-4.show-tablet(itemscope, itemtype='http://schema.org/Organization')
+      a.site-logo__link(itemprop='url', href='/', title='Service-iPhone - ремонт техники Apple.')
+        img.site-logo__img(itemprop='logo', src='/img/logo.png', alt='Service-Iphone ремонт техники Apple iphone ipad macbook')
+        | Service-iPhone
+    .hide-tablet.cf
+      button#navbar-toggle.pull-right.navbar-toggle
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+    nav#top-nav.top-navigation.col-lg-4.col-md-5.col-sm-8
+      each item in menuItems
+        a.top-navigation__link(href='#{item.href}')
+          span.top-navigation--text(title='#{item.title}') #{item.text}
+    nav.subnav.cf.col-md-2.show-desktop
+      a.subnav__link.col-xs-4.col-sm-12(href='/feedback')
+        i.fa.fa-fw.fa-comments
+        span.subnav__link--text Отзывы
+      a.subnav__link.col-xs-4.col-sm-12(rel='nofollow', href='#contacts')
+        i.fa.fa-fw.fa-map-marker
+        span.subnav__link--text Контакты
+    .director-button.col-md-2.col-xs-12.hidden-xs.hidden-sm.hidden-md
+      a.btn.btn-primary(target='_blank', title='Оставь комментарий и получи 10% скидки на ремонт', href='https://plus.google.com/109962936005483548770/about') Получи 10% скидки за отзыв!
+  section.header-section
+    .container
+      .header-section__contacts.left.mr20
+        div
+          a.header-section__contacts__title(rel='nofollow', href='#contacts')
+            strong м. Золотые ворота
+        div
+          a.header-section__contacts__tel(href='tel:0961253246', itemprop='telephone')
+            b (096) 1253246
+      .header-section__contacts.left.mr30
+        div
+          a.header-section__contacts__tel(href='tel:0937229156', itemprop='telephone')
+            b (093) 7229156
+        div
+          a.header-section__contacts__tel(href='tel:0665669752', itemprop='telephone')
+            b (066) 5669752
+      .header-section__schedule.left.mr30
+        strong.header-section__schedule--description
+          | пн-пт с 10:00-19:00
+          br
+          | сб 11.00-17.00
+          br
+          | вс - выходной
+      .header-section__courier.left.mr30
+        a.btn.btn-default.btn-lg.show-desktop(rel='nofollow', href='mailto:agsremont@gmail.com')
+          i.icon-running.aa
+          |         Вызвать курьера
+      .header-section__warranty.left
+        a.header-section__warranty__link(href='/warranty')
+          i.icon-warranty.aa
+          span.header-section__warranty--period Гарантия 6 месяцев
+          span.header-section__warranty--all на все ремонты

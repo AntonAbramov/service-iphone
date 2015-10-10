@@ -1,0 +1,42 @@
+extends ../../layout
+
+block content
+  section.device-section
+    h1.device-title
+      | Ремонт MacBook
+    p.heading-title Выберите модель:
+    .devices
+      -var menuMacbook = [{'href': '/remont-macbook-pro','text': 'MacBook Pro','title': '','imgSrc': 'img/macbook/pro.jpg','imgAlt': 'Ремонт MacBook Pro'},{'href': '/remont-macbook-air','text': 'MacBook Air','title': '','imgSrc': 'img/macbook/air.jpg','imgAlt': 'Ремонт MacBook Air'},{'href': '/remont-imac','text': 'MacBook','title': '','imgSrc': 'img/macbook/mac.jpg','imgAlt': 'Ремонт iMac'}];
+      each item in menuMacbook
+        .devices__item
+          a.devices__link(href='#{item.href}', title='Ремонт #{item.text} в Киеве')
+            span.devices__img
+              img.devices__img--preview(src='#{item.imgSrc}', alt='#{item.imgAlt}')
+            span.devices__name #{item.text}
+  section.information-section
+    .container
+      p.text-center(style='font-size: 16px;')
+        | Наши мастера могут произвести ремонт 
+        strong MacBook
+        |  всех поколений, выпущенных за последние несколько лет. Помимо обычного 
+        strong MacBook
+        | , мы также ремонтируем 
+        strong MacBook Pro
+        |  и 
+        strong MacBook Air
+        | .
+      .row.content-row
+        .col-sm-12.text-center
+          img(src='img/macbook/laptops.jpg', alt='')
+        .col-sm-6
+          h3 Чистка MacBook от пыли
+          p
+            | Больше всего на состояние влияет пыль. Она попадает внутрь через систему охлаждения, забивает вентилятор, оседает на материнской плате. Наши мастера могут произвести чистку, как в профилактических целях, так и при острой необходимости. Сильные загрязнения пылью довольно сильно влияют на работу MacBook. Он из-за пыли начинает тормозить, греться или перезагружаться. Чистка MacBook от пыли очень рекомендуется и в профилактических целях, с целью увеличить срок службы ноутбука.
+        .col-sm-6
+          h3 Чистка MacBook от грязи
+          p
+            | Еще одна проблема, это попадание в ноутбук грязи, воды или пролитых напитков. Мы, конечно, будем говорить о небольших количествах воды, ведь если залить MacBook водой, то чисткой все не обойдется.
+          p
+            | Чаще всего от воды, грязи и жира повреждается клавиатура и Touchpad. В этом случае может помочь чистка, но при более-менее значительных загрязнениях может потребоваться и замена.
+
+
