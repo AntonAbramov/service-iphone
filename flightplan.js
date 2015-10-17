@@ -1,8 +1,8 @@
 var plan = require('flightplan');
 
 var appName = 'service-iphone';
-var username = 'deploy';
-var startFile = 'bin/server';
+var username = 'root';
+var startFile = 'bin/www';
 
 var tmpDir = appName+'-' + new Date().getTime();
 
