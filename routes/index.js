@@ -351,11 +351,6 @@ router.post('/contact', function (req, res) {
   res.send('responseTest');
 });
 
-router.get('/cat', function (req, res) {
-  res.render('cat', {title: 'Add New User' });
-});
-
-
 // NB! No need to recreate the transporter object. You can use
 // the same transporter object for all e-mails
 
