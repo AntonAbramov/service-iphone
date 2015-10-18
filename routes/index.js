@@ -11,31 +11,6 @@ router.get('/', function (req, res, next) {
   });
 });
 
-router.get('/iphone', function (req, res, next) {
-  res.render('pages/iphones/index', {
-    title: "Ремонт iPhone 3g/3gs/4/4s/5/5s/6 оригинальные запчасти",
-    description: "Делаем ремонт всех моделей iPhone, быстро и качественно, Киев ремонт iPhone 4",
-    keywords: "Ремонт iPhone 3g/3gs/4/4s/5/5s/6"
-  });
-});
-
-router.get('/ipad-remont', function (req, res, next) {
-  res.render('pages/ipads/index', {
-    title: "Ремонт iPad, iPad Mini, iPad Retina iPad Air оригинальные запчасти",
-    description: "Профессиональный ремонт iPad в Киеве! Качественный ремонт айпадов всех моделей, доступные цены, хорошее качество!",
-    keywords: "ремонт ipad (айпад), ремонт ipad mini, ipad retina Киев"
-  });
-});
-
-router.get('/macbook-remont', function (req, res, next) {
-  res.render('pages/mac/index', {
-    title: "Ремонт MacBook Pro, MacBook Air, iMac",
-    description: "Ремонт MacBook в Киеве! Быстрый и Качественный сервис макбуков всех моделей, низкие цены!",
-    keywords: "ремонт macbook (макбук) киев "
-  });
-});
-
-
 router.get('/warranty', function (req, res, next) {
   res.render('pages/warranty/warranty', {
     title: "Гарантия 6 месяцев от Service-Iphone.com.ua ",
@@ -44,13 +19,6 @@ router.get('/warranty', function (req, res, next) {
   });
 });
 
-router.get('/feedback', function (req, res, next) {
-  res.render('feedback', {
-    title: "Отзывы о работе сервиса Apple | Service-Iphone",
-    description: "Отзывы о работе сервисного центра 'Service-iPhone' Киева по ремонту техники Apple.",
-    keywords: "ремонт iPhone iPad iPod Macbook"
-  });
-});
 
 router.get('/remont-iphone3g', function (req, res, next) {
 
@@ -63,9 +31,6 @@ router.get('/remont-iphone3g', function (req, res, next) {
       data: docs
     });
   });
-//  console.log(collection)
-//  res.render('pages/iphones/iphone3', collection);
-
 });
 
 router.get('/remont-iphone4', function (req, res, next) {
@@ -350,6 +315,7 @@ router.post('/contact', function (req, res) {
 
   res.send('responseTest');
 });
+
 
 // NB! No need to recreate the transporter object. You can use
 // the same transporter object for all e-mails

@@ -58,11 +58,11 @@ gulp.task('sass-build', function () {
     .pipe(gulp.dest('./dist/css/'));
 });
 
-gulp.task('start', function () {
+/*gulp.task('start', function () {
   nodemon({
     script: './bin/server', ext: 'js html', env: { 'NODE_ENV': 'development' }
   })
-})
+})*/
 
 //watchers
 gulp.task('watch', function () {
@@ -104,7 +104,7 @@ gulp.task('move', function () {
   gulp.src('./public/img/**/*').pipe(gulp.dest('./dist/img/'));
 });
 
-gulp.task('serve', ['sprite', 'sass', 'jshint', 'watch', 'start']);
+gulp.task('serve', ['sprite', 'sass', 'jshint', 'watch']);
 
 gulp.task('default', ['sass'], function () {});
 

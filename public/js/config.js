@@ -1,12 +1,17 @@
-(function (requirejs) {
-  'use strict';
+// Place third party dependencies in the lib folder
+//
+// Configure loading modules from the lib directory,
+// except 'app' ones, 
+requirejs.config({
+    "baseUrl": "../js",
+    "paths": {
+      "echojs": "../bower_components/echojs/dist/echo.min"
+    }/*,
+    "shim": {
+        "jquery.alpha": ["jquery"],
+        "jquery.beta": ["jquery"]
+    }*/
+});
 
-  requirejs.config({
-    baseUrl: 'js'
-  });
-
-  requirejs.onError = function (err) {
-    console.log(err);
-  };
-
-})(requirejs);
+// Load the main app module to start the app
+requirejs(["main"]);

@@ -1,3 +1,63 @@
+[data-echo],
+[src=""]{
+  position: relative;
+}
+
+[data-echo]:before,
+[data-echo]:after,
+[src=""]:before,
+[src=""]:after {
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  content: '';
+  position: absolute;
+  top:50%;
+  margin-top: -10px;
+  left: 50%;
+}
+
+[data-echo]:before,
+[src=""]:before {
+  background: #428bca;
+  animation: preloader_3_before 1.5s infinite ease-in-out;
+  margin-left: -10px;
+}
+
+[data-echo]:after,
+[src=""]:after {
+  background: #428bca;
+  margin-left:2px;
+  animation: preloader_3_after 1.5s infinite ease-in-out;
+}
+
+@keyframes preloader_3_before {
+  0% {
+    transform: translateX(0px) rotate(0deg)
+  }
+  50% {
+    transform: translateX(50px) scale(1.2) rotate(260deg);
+    background: #428bca;
+    border-radius: 0px;
+  }
+  100% {
+    transform: translateX(0px) rotate(0deg)
+  }
+}
+
+@keyframes preloader_3_after {
+  0% {
+    transform: translateX(0px)
+  }
+  50% {
+    transform: translateX(-50px) scale(1.2) rotate(-260deg);
+    background: #428bca;
+    border-radius: 0px;
+  }
+  100% {
+    transform: translateX(0px)
+  }
+}
 
 textarea {
   resize: none;
@@ -65,6 +125,7 @@ hr {
   display: block;
   max-height: 100px;
   margin: 0 auto;
+  font-size: 7px;
 }
 
 .devices__name {
@@ -211,7 +272,6 @@ hr {
 }
 
 .warranty__agreement {
-  color: #999;
   margin: 0 0 40px 20px;
 }
 
@@ -269,7 +329,7 @@ hr {
 }
 
 .comments-tree {
-  list-style:none;
+  list-style: none;
 }
 
 .comment__field {
