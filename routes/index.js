@@ -28,7 +28,8 @@ router.get('/remont-iphone3g', function (req, res, next) {
       title: "Ремонт iPhone 3G",
       description: "Наш Сервис сделает качественный ремонт iPhone 3g в Киеве с гарантией. Так же делаем ремонт всех моделей iphone.",
       keywords: "ремонт iphone 3gs киев, айфон 3g ремонт, iphone 3g ремонт",
-      data: docs
+      data: docs,
+      menuActive: 'iphone'
     });
   });
 });
@@ -37,7 +38,8 @@ router.get('/remont-iphone4', function (req, res, next) {
   res.render('pages/iphones/iphone4', {
     title: "Ремонт iPhone 4",
     description: "Service-iphone сделает качественный ремонт iphone 4 в Киеве с гарантией до 2 лет. Замена стекла, дисплея, кнопки.",
-    keywords: "Ремонт iPhone 4"
+    keywords: "Ремонт iPhone 4",
+      menuActive: 'iphone'
   });
 });
 
@@ -45,7 +47,8 @@ router.get('/remont-iphone4s', function (req, res, next) {
   res.render('pages/iphones/iphone4s', {
     title: "Ремонт iPhone 4s",
     description: "Service-iphone сделает качественный ремонт iphone 4s в Киеве с гарантией не менее 2 лет. Замена батареи, аккумулятора, кнопки.",
-    keywords: "Ремонт iPhone 4s"
+    keywords: "Ремонт iPhone 4s",
+    menuActive: 'iphone'
   });
 });
 
@@ -53,7 +56,8 @@ router.get('/remont-iphone5', function (req, res, next) {
   res.render('pages/iphones/iphone5', {
     title: "Ремонт iPhone 5",
     description: "Быстрый ремонт iPhone5 в городе Киев. Диагностика iPhone 5/5s/6/6+ бессплатно!",
-    keywords: "Ремонт iPhone 5"
+    keywords: "Ремонт iPhone 5",
+    menuActive: 'iphone'
   });
 });
 
@@ -61,7 +65,8 @@ router.get('/remont-iphone-5c', function (req, res, next) {
   res.render('pages/iphones/iphone5c', {
     title: "Ремонт iPhone 5c",
     description: "Service-iphone сделает быстро и качественно ремонт вашего iphone 5c в Киеве в тот же день!.",
-    keywords: "Ремонт iPhone 5c"
+    keywords: "Ремонт iPhone 5c",
+    menuActive: 'iphone'
   });
 });
 
@@ -69,7 +74,8 @@ router.get('/remont-iphone-5s', function (req, res, next) {
   res.render('pages/iphones/iphone5s', {
     title: "Ремонт iPhone 5s ",
     description: "Киев ремонт и сервис iPhone 5s. Цены на iphone 5s указаны на странице. Цены на ремонт iphone 5s",
-    keywords: "Ремонт iPhone 5s"
+    keywords: "Ремонт iPhone 5s",
+    menuActive: 'iphone'
   });
 });
 
@@ -77,7 +83,8 @@ router.get('/remont-iphone-6', function (req, res, next) {
   res.render('pages/iphones/iphone6', {
     title: "Ремонт iPhone 6",
     description: "Требуется ремонт iphone 6? мы вам поможем, сделаем быстро и качественно ремонт iphone 4/4s/5/5s/6/6+",
-    keywords: "Ремонт iPhone 6"
+    keywords: "Ремонт iPhone 6",
+      menuActive: 'iphone'
   });
 });
 
@@ -85,7 +92,8 @@ router.get('/remont-iphone-6plus', function (req, res, next) {
   res.render('pages/iphones/iphone6plus', {
     title: "Ремонт iPhone 6+ ",
     description: "Iphone 6+ ремонт/замента стекла/дисплея/джойстика/аккумулятора. Замена стекла/батареи/дисплея.",
-    keywords: "Ремонт iPhone 6+"
+    keywords: "Ремонт iPhone 6+",
+    menuActive: 'iphone'
   });
 });
 
@@ -93,7 +101,8 @@ router.get('/remont-ipad2', function (req, res, next) {
   res.render('pages/ipads/ipad2', {
     title: "Ремонт iPad 2",
     description: "Срочный ремонт ipad 2 быстро и качественно, используем только оригинальные детали. Даем гарантию 2 года",
-    keywords: "Ремонт iPad 2"
+    keywords: "Ремонт iPad 2",
+    menuActive: 'ipad'
   });
 });
 
@@ -101,7 +110,8 @@ router.get('/remont-ipad3', function (req, res, next) {
   res.render('pages/ipads/ipad3', {
     title: "Ремонт iPad 3",
     description: "Service-iphone делает ремонт быстро и качественно с гарантией 2 года, мы починим ваш ipad 3!",
-    keywords: "Ремонт iPad 3"
+    keywords: "Ремонт iPad 3",
+    menuActive: 'ipad'
   });
 });
 
@@ -109,7 +119,8 @@ router.get('/remont-ipad4', function (req, res, next) {
   res.render('pages/ipads/ipad4', {
     title: "Ремонт iPad 4",
     description: "Цены на ремонт iPad 4 в городе Киеве, Service-iPhone заменит стекло/тачскрин/батарею/wifi и другие детали вашего дивайса!",
-    keywords: "Ремонт iPad 4"
+    keywords: "Ремонт iPad 4",
+    menuActive: 'ipad'
   });
 });
 
@@ -117,7 +128,8 @@ router.get('/remont-ipad-air', function (req, res, next) {
   res.render('pages/ipads/ipad-air', {
     title: "Ремонт iPad air",
     description: "Самый лучший сервис по ремонту iPad air в городе Киеве - Service-iPhone, цены на ремонт вашего ipad air.",
-    keywords: "Ремонт iPad air"
+    keywords: "Ремонт iPad air",
+    menuActive: 'ipad'
   });
 });
 
@@ -125,7 +137,8 @@ router.get('/remont-ipad-air2', function (req, res, next) {
   res.render('pages/ipads/ipad-air2', {
     title: "Ремонт iPad air 2",
     description: "Самый лучший сервис по ремонту iPad air 2 в городе Киеве - Service-iPhone, цены на ремонт вашего iPad Air 2.",
-    keywords: "Ремонт iPad Air 2"
+    keywords: "Ремонт iPad Air 2",
+    menuActive: 'ipad'
   });
 });
 
@@ -133,14 +146,16 @@ router.get('/remont-ipad-mini', function (req, res, next) {
   res.render('pages/ipads/ipad-mini', {
     title: "Ремонт iPad mini",
     description: "Ремонт iPad mini в Киеве. Профессиональный ремонт iPad mini с гарантией до 2х лет. Только original запчасти.",
-    keywords: "Ремонт iPad mini"
+    keywords: "Ремонт iPad mini",
+    menuActive: 'ipad'
   });
 });
 router.get('/remont-ipad-mini2', function (req, res, next) {
   res.render('pages/ipads/ipad-mini2', {
     title: "Ремонт iPad mini2",
     description: "Ремонт iPad mini 2 в Киеве. Профессиональный ремонт iPad mini с гарантией до 2х лет. Цены на ремонт ipad mini 2.",
-    keywords: "Ремонт iPad mini2"
+    keywords: "Ремонт iPad mini2",
+    menuActive: 'ipad'
   });
 });
 
@@ -148,7 +163,8 @@ router.get('/remont-ipad-mini3', function (req, res, next) {
   res.render('pages/ipads/ipad-mini3', {
     title: "Ремонт iPad mini3",
     description: "Ремонт iPad mini 3 в Киеве. Профессиональный ремонт iPad mini с гарантией до 2х лет. Цены на ремонт ipad mini 3.",
-    keywords: "Ремонт iPad mini3"
+    keywords: "Ремонт iPad mini3",
+    menuActive: 'ipad'
   });
 });
 
@@ -156,7 +172,8 @@ router.get('/remont-imac', function (req, res, next) {
   res.render('pages/mac/mac', {
     title: "Ремонт MacBook",
     description: "Ремонт MacBook в Киеве. Профессиональный ремонт MacBook с гарантией до 2х лет. Только original запчасти.",
-    keywords: "Ремонт MacBook"
+    keywords: "Ремонт MacBook",
+    menuActive: 'imac'
   });
 });
 
@@ -164,7 +181,8 @@ router.get('/remont-macbook-pro', function (req, res, next) {
   res.render('pages/mac/macbook-pro', {
     title: "Ремонт MacBook Pro",
     description: "Ремонт вашего macbook pro в городе киеве с гарантией до 2 лет, сделает наш Service-Iphone центр!",
-    keywords: "Ремонт MacBook Pro"
+    keywords: "Ремонт MacBook Pro",
+    menuActive: 'imac'
   });
 });
 
@@ -172,7 +190,8 @@ router.get('/remont-macbook-air', function (req, res, next) {
   res.render('pages/mac/macbook-air', {
     title: "Ремонт MacBook Air",
     description: "Качественный ремонт macbook air в городе киеве с гарантией до 2 лет, сделает наш Service-Iphone центр!",
-    keywords: "Ремонт MacBook Air"
+    keywords: "Ремонт MacBook Air",
+    menuActive: 'imac'
   });
 });
 

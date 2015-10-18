@@ -108,9 +108,12 @@ hr {
 .devices__link {
   display: block;
   padding: 10px 4px;
-  &:hover .devices__img,
-  &:focus .devices__img {
-    transform: scale(1.2);
+  &:hover,
+  &:focus  {
+    text-decoration: none;
+    .devices__img {
+      transform: scale(1.2);
+    }
   }
 }
 

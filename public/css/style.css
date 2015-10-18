@@ -2971,13 +2971,16 @@ hr {
 .devices__link {
   display: block;
   padding: 10px 4px; }
-  .devices__link:hover .devices__img,
-  .devices__link:focus .devices__img {
-    -webkit-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    -o-transform: scale(1.2);
-    transform: scale(1.2); }
+  .devices__link:hover,
+  .devices__link:focus {
+    text-decoration: none; }
+    .devices__link:hover .devices__img,
+    .devices__link:focus .devices__img {
+      -webkit-transform: scale(1.2);
+      -moz-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+      -o-transform: scale(1.2);
+      transform: scale(1.2); }
 
 .devices__img {
   display: block;
