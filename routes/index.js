@@ -1,6 +1,13 @@
 var express = require('express');
 var router = express.Router();
 var nodemailer = require('nodemailer');
+var transporter = nodemailer.createTransport({
+  service: 'gmail',
+  auth: {
+    user: 'scotishkitten@gmail.com',
+    pass: ''
+  }
+});
 
 /* GET home page. */
 router.get('/', function (req, res, next) {
@@ -303,37 +310,20 @@ router.get('/wifi-ne-rabotaet', function (req, res, next) {
 });
 
 
-router.post('/contact', function (req, res) {
-
-  var emailContent = req.body.name + '<br>' + req.body.message + '<br> telephone: ' + req.body.tel + '<br> email:' + req.body.email
-
-  var mailOptions = {
-    from: req.body.email, // sender address
-    to: 'abramovanton1990@yandex.ru', // list of receivers
-    subject: 'Katze.com', // Subject line
-    text: emailContent, // plaintext body
-    html: emailContent // html body
-  };
-
-  // send mail with defined transport object
-  transporter.sendMail(mailOptions, function (error, info) {
-    if (error) {
-      console.log(error);
-    } else {
-      console.log('Message sent: ' + info.response);
+router.post('/call-courier', function(req,res, next) {
+  transporter.sendMail({
+    from: 'scotishkitten@gmail.com',
+    to: 'antonabramov1990@gmail.com, garkavkaalexandr@gmail.com',
+    subject: 'Заказ Курьера!',
+    text: '\nName: ' + req.body.name + '\nEmail: ' + req.body.tel + '\nText: ' + req.body.msg
+  }, function(error, response){
+    if(error){
+      res.send('error');
+    }else{
+      res.send('success');
     }
   });
-
-
-  /* for (prop in req.body) {
-   console.log('body ' + prop);
-   }*/
-  /*for (prop in req) {
-   console.log('req_prop__ ' + prop.body);
-   }*/
-
-  res.send('responseTest');
-});
+})
 
 
 // NB! No need to recreate the transporter object. You can use
