@@ -5,7 +5,7 @@
 requirejs.config({
     "baseUrl": "../js",
     "paths": {
-      "echojs": "../bower_components/echojs/dist/echo.min"
+      "jquery": "//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min"
     }/*,
     "shim": {
         "jquery.alpha": ["jquery"],

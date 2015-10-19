@@ -25,7 +25,7 @@ header.header
         i.fa.fa-fw.fa-map-marker
         span.subnav__link--text Контакты
     .director-button.col-md-2.col-xs-12.hidden-xs.hidden-sm.hidden-md
-      a.btn.btn-primary(target='_blank', title='Оставь комментарий и получи 10% скидки на ремонт', href='https://plus.google.com/109962936005483548770/about') Получи 10% скидки за отзыв!
+      a.btn.btn-danger(target='_blank', title='Оставь комментарий и получи 10% скидки на ремонт', href='https://plus.google.com/109962936005483548770/about') Получи 10% скидки за отзыв!
   section.header-section
     .container
       .header-section__contacts.left.mr20
@@ -50,11 +50,26 @@ header.header
           br
           | вс - выходной
       .header-section__courier.left.mr30
-        a.btn.btn-default.btn-lg.show-desktop(rel='nofollow', href='mailto:agsremont@gmail.com')
-          i.icon-running.aa
-          |         Вызвать курьера
+        button#call-courier.btn.btn-primary.btn-lg.show-desktop(rel='nofollow', href='mailto:agsremont@gmail.com')
+          i.icon-running.aa.mr5
+          | Вызвать курьера
       .header-section__warranty.left
         a.header-section__warranty__link(href='/warranty')
           i.icon-warranty.aa
           span.header-section__warranty--period Гарантия 6 месяцев
           span.header-section__warranty--all на все ремонты
+
+#overlay-courier.overlay
+  #courier.modal--courier
+    button.btn-close &#10006
+    header.modal-heading Вызвать курьера
+    form#courier-form(action='contact-form', method='POST')
+      .field
+        input.field__controll(type='text', name='name', required, placeholder='Имя')
+      .field
+        input.field__controll(type='tel', name='tel', required, placeholder='Телефон')
+      .field
+        textarea(name='msg') Примечание
+      .field
+        .field__controll
+          input.sbm.btn-primary(type='submit', value='Вызвать')
