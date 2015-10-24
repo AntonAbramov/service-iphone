@@ -1,9 +1,9 @@
-header.header
+header.header(itemscope, itemtype="http://schema.org/LocalBusiness")
   .header__container.cf
-    .site-logo.text-center.col-md-2.col-sm-4.show-tablet(itemscope, itemtype='http://schema.org/Organization')
+    .site-logo.text-center.col-md-2.col-sm-4.show-tablet
       a.site-logo__link(itemprop='url', href='/', title='Service-iPhone - ремонт техники Apple.')
-        img.site-logo__img(itemprop='logo', src='/img/logo.png', alt='Service-Iphone ремонт техники Apple iphone ipad macbook')
-        | Service-iPhone
+        img.site-logo__img(itemprop="image", src='/img/logo.png', alt='Service-Iphone ремонт техники Apple iphone ipad macbook')
+        span(itemprop="name") Service-iPhone
     .hide-tablet.cf
       button#navbar-toggle.pull-right.navbar-toggle
         span.icon-bar
@@ -43,12 +43,24 @@ header.header
           a.header-section__contacts__tel(href='tel:0665669752', itemprop='telephone')
             b (066) 5669752
       .header-section__schedule.left.mr30
-        strong.header-section__schedule--description
-          | пн-пт с 10:00-19:00
+        strong.header-section__schedule--description(itemprop="openingHoursSpecification", itemscope, itemtype="http://schema.org/OpeningHoursSpecification")
+          span(itemprop="dayOfWeek", itemscope, itemtype="http://schema.org/DayOfWeek")
+            span(itemprop="name") пн-пт
+          |&nbsp;с&nbsp;
+          span(itemprop="opens") 10:00
+          | -
+          span(itemprop="closes") 19:00
           br
-          | сб 11.00-17.00
+          span(itemprop="dayOfWeek", itemscope, itemtype="http://schema.org/DayOfWeek")
+            span(itemprop="name") сб&nbsp;
+          span(itemprop="opens") 11:00
+          | &nbsp;-&nbsp;
+          span(itemprop="closes") 17:00
           br
-          | вс - выходной
+          span(itemprop="dayOfWeek", itemscope, itemtype="http://schema.org/DayOfWeek")
+            span(itemprop="name") вс
+          | &nbsp;-&nbsp;
+          | выходной
       .header-section__courier.left.mr30
         button#call-courier.btn.btn-primary.btn-lg.show-desktop(rel='nofollow', href='mailto:agsremont@gmail.com')
           i.icon-running.aa.mr5
