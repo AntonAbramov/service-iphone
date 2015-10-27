@@ -2,7 +2,6 @@
  *  Font Awesome 4.3.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
  */
-
 @import "fonts/variables";
 @import "fonts/mixins";
 @import "fonts/path";
@@ -21,43 +20,58 @@ body, h1, h2, h3, h4, h5, h6 {
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
 }
+
 body {
-	color:#333;
-  font:14px/20px Helvetica Neue, Arial;
-  font:14px/20px Helvetica Neue, Arial;
+  color: #333;
+  font: 14px/20px Helvetica Neue, Arial;
 }
+
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'Roboto', sans-serif;
-	font-weight: 300;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
 }
+
 h2 {
-	font-size: 20px;
-	line-height: 20px;
+  font-size: 20px;
+  line-height: 20px;
 }
+
 h3 {
-	font-size: 16px;
-	line-height: 16px;
+  font-size: 16px;
+  line-height: 16px;
 }
+
 :focus {
   outline: none;
 }
+
 a {
-  color:$link-color;
+  color: $link-color;
   &:hover, &:focus {
-    color:$link-hover-color;
+    color: $link-hover-color;
   }
 }
+
 ul {
-	padding:0;
-	margin:0;
+  padding: 0;
+  margin: 0;
 }
+
 p {
-	margin:0 0 15px;
+  margin: 0 0 15px;
 }
+
 .heading-title {
-	font-family: 'Roboto', sans-serif;
-	text-align: center;
-	font-size: 18px;
-	color:#333;
-	font-weight: 400;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  font-size: 18px;
+  color: #333;
+  font-weight: 400;
+}
+
+.title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 2em;
+  margin: .67em 0;
 }

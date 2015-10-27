@@ -29,10 +29,8 @@
 }
 
 .header-section__schedule--description {
-  font-size: 13px;
-  font-weight: bold;
-  line-height: 15px;
-  display: block;
+  font-size: 16px;
+  line-height: 1;
 }
 
 .header-section__courier {
@@ -73,7 +71,7 @@
 }
 
 .header-section__warranty--all {
-  color: #999;
+  color: green;
   display: block;
 }
 
@@ -89,10 +87,18 @@
   margin: 15px 0 0;
 }
 
+.header-section__contacts {
+  font-size: 16px;
+  line-height: 20px;
+}
+
 .header-section__contacts__tel,
-.header-section__contacts__title {
+.header-section__contacts__title,
+.header-section__schedule--description {
   text-decoration: none;
+  color: #222;
   &:hover, &:focus {
-    text-decoration: underline;
+    color: #222;
   }
 }
+

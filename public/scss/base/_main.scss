@@ -210,8 +210,6 @@ hr {
 }
 
 .repear {
-  background: #fafafa;
-  padding: 30px;
   margin: 30px auto;
 }
 
@@ -225,7 +223,7 @@ hr {
 
 .pricelist__heading {
   font-size: 20px;
-  color: #999;
+  color: #000;
   margin: 20px 0 10px;
 }
 
@@ -255,7 +253,7 @@ hr {
 
 .pricelist__item__time {
   font-size: 12px;
-  color: #999;
+  color: green;
   line-height: 14px;
 }
 
@@ -264,7 +262,6 @@ hr {
 }
 
 .pricelist__item__description {
-  color: #999;
   font-size: 13px;
   line-height: 14px;
 }

@@ -30,23 +30,20 @@ header.header(itemscope, itemtype="http://schema.org/LocalBusiness")
     .container
       .header-section__contacts.left.mr20
         div
-          a.header-section__contacts__title(rel='nofollow', href='#contacts')
-            strong м. Золотые ворота
+          a.header-section__contacts__title(rel="nofollow", href="#contacts")
+            i ул. Богдана Хмельницкого 32
         div
-          a.header-section__contacts__tel(href='tel:0961253246', itemprop='telephone')
-            b (096) 1253246
+          a.header-section__contacts__tel(href='tel:0961253246', itemprop='telephone') (096) 1253246
       .header-section__contacts.left.mr30
         div
-          a.header-section__contacts__tel(href='tel:0937229156', itemprop='telephone')
-            b (093) 7229156
+          a.header-section__contacts__tel(href='tel:0937229156', itemprop='telephone') (093) 7229156
         div
-          a.header-section__contacts__tel(href='tel:0665669752', itemprop='telephone')
-            b (066) 5669752
+          a.header-section__contacts__tel(href='tel:0665669752', itemprop='telephone') (066) 5669752
       .header-section__schedule.left.mr30
-        strong.header-section__schedule--description(itemprop="openingHoursSpecification", itemscope, itemtype="http://schema.org/OpeningHoursSpecification")
+        a.header-section__schedule--description(href="#contacts", rel="nofollow", itemprop="openingHoursSpecification", itemscope, itemtype="http://schema.org/OpeningHoursSpecification")
           span(itemprop="dayOfWeek", itemscope, itemtype="http://schema.org/DayOfWeek")
             span(itemprop="name") пн-пт
-          |&nbsp;с&nbsp;
+          | &nbsp;с&nbsp;
           span(itemprop="opens") 10:00
           | -
           span(itemprop="closes") 19:00
@@ -57,10 +54,10 @@ header.header(itemscope, itemtype="http://schema.org/LocalBusiness")
           | &nbsp;-&nbsp;
           span(itemprop="closes") 17:00
           br
-          span(itemprop="dayOfWeek", itemscope, itemtype="http://schema.org/DayOfWeek")
-            span(itemprop="name") вс
-          | &nbsp;-&nbsp;
-          | выходной
+          //span(itemprop="dayOfWeek", itemscope, itemtype="http://schema.org/DayOfWeek")
+          //  span(itemprop="name") вс
+          //| &nbsp;-&nbsp;
+          //| выходной
       .header-section__courier.left.mr30
         button#call-courier.btn.btn-primary.btn-lg.show-desktop(rel='nofollow', href='mailto:agsremont@gmail.com')
           i.icon-running.aa.mr5
