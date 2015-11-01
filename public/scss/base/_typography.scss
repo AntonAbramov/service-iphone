@@ -2,18 +2,18 @@
  *  Font Awesome 4.3.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
  */
-@import "fonts/variables";
-@import "fonts/mixins";
-@import "fonts/path";
-@import "fonts/core";
-@import "fonts/larger";
-@import "fonts/fixed-width";
-@import "fonts/list";
-@import "fonts/bordered-pulled";
-@import "fonts/animated";
-@import "fonts/rotated-flipped";
-@import "fonts/stacked";
-@import "fonts/icons";
+@import "../fonts/variables";
+@import "../fonts/mixins";
+@import "../fonts/path";
+@import "../fonts/core";
+@import "../fonts/larger";
+@import "../fonts/fixed-width";
+@import "../fonts/list";
+@import "../fonts/bordered-pulled";
+@import "../fonts/animated";
+@import "../fonts/rotated-flipped";
+@import "../fonts/stacked";
+@import "../fonts/icons";
 
 body, h1, h2, h3, h4, h5, h6 {
   -webkit-font-smoothing: antialiased;
@@ -27,7 +27,6 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Roboto', sans-serif;
   font-weight: 300;
 }
 
@@ -68,7 +67,6 @@ p {
 }
 
 .heading-title {
-  font-family: 'Roboto', sans-serif;
   text-align: center;
   font-size: 18px;
   color: #333;
@@ -82,7 +80,6 @@ p {
 
 .title,
 .title2 {
-  font-family: 'Roboto', sans-serif;
   font-weight: 300;
   margin: 20px 0;
   line-height: 1;

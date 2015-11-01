@@ -3,21 +3,21 @@ extends layout
 block content
   .container
     h1.text-center.index-title Сервисный центр по ремонту техники Apple.
-    nav.nav.row
-      h2.col-md-3.col-lg-offset-1
+    nav.nav.row.show-tablet
+      h2.col-sm-3.col-lg-offset-1
         a.nav__link(href="/iphone", title="Ремонт iPhone в Киеве")
           .nav__box
-            img(src='/img/remont-iphone.jpg', alt='Ремонт iPhone в Сервисном центре Apple - Service-iPhone')
+            img(src='', data-lazy='/img/remont-iphone.jpg', alt='Ремонт iPhone в Сервисном центре Apple - Service-iPhone')
           | Ремонт iPhone
-      h2.col-md-3
+      h2.col-sm-3
         a.nav__link(href="/ipad-remont", title="Ремонт iPad в Киеве")
           .nav__box
-            img(src='/img/remont-ipad.jpg', alt='Ремонт iPad в Сервисном центре Apple - Service-iPhone')
+            img(src='', data-lazy='/img/remont-ipad.jpg', alt='Ремонт iPad в Сервисном центре Apple - Service-iPhone')
           | Ремонт iPad
-      h2.col-md-4
+      h2.col-sm-6.col-md-4
         a.nav__link(href="/macbook-remont", title="Ремонт MacBook в Киеве")
           .nav__box
-            img(src='/img/remont-macbook.jpg', alt='Ремонт MacBook в Сервисном центре Apple - Service-iPhone')
+            img(src='', data-lazy='/img/remont-macbook.jpg', alt='Ремонт MacBook в Сервисном центре Apple - Service-iPhone')
           | Ремонт MacBook
 
   .container
@@ -25,9 +25,9 @@ block content
       .col-md-6.show-desktop
         .animation
           .animation__slide1.animation__item
-            img(src='img/iphone6s-remont.jpg', alt='Ремонт iPhone. #Ремонт Айфона в Киеве')
+            img(src='', data-lazy='img/iphone6s-remont.jpg', alt='Ремонт iPhone. #Ремонт Айфона в Киеве')
           .animation__slide2.animation__item
-            img(src='img/iphone6-remont.png', alt='Сервисный центр по ремонту Apple в Киеве')
+            img(src='', data-lazy='img/iphone6-remont.png', alt='Сервисный центр по ремонту Apple в Киеве')
       .col-md-6.col-xs-12
         p.benefits__heading 10 причин выбрать наш Сервис
         ol.benefits__list
@@ -121,7 +121,7 @@ block content
           .col-sm-4.col-xs-12.content-block
             .content-img-left
               a(href='/')
-                img(height='50', src='img/content/iphone_small.png', alt='Iphone картинка')
+                img(height='50', src='', data-lazy='img/content/iphone_small.jpg', alt='Iphone картинка')
             div
               p
                 a(href='/iphone') Ремонт iPhone
@@ -133,7 +133,7 @@ block content
           .col-sm-4.col-xs-12
             .content-img-left
               a(title='Ремонт iPad', href='/ipad-remont')
-                img(height='50', src='img/content/ipad_small.png', alt='Ipad mini image')
+                img(height='50', src='', data-lazy='img/content/ipad_small.jpg', alt='Ipad mini image')
             div
               p
                 a(title='Ремонт iPad', href='/ipad-remont') Ремонт iPad
@@ -145,7 +145,7 @@ block content
           .col-sm-4.col-xs-12
             .content-img-left
               a(href='/macbook-remont')
-                img(height='50', src='img/content/macbook_small.png', alt='MacBook pro ')
+                img(height='50', src='', data-lazy='img/content/macbook_small.jpg', alt='MacBook pro ')
             p
               a(title='Ремонт MacBook', href='/macbook-remont') Ремонт MacBook
               | :

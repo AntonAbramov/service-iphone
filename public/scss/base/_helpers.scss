@@ -182,3 +182,7 @@
 .relative {
   position: relative;
 }
+
+img[src=''] {
+  background: url(/img/preloader.gif) 50% 50% no-repeat;
+}
