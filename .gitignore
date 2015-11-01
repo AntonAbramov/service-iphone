@@ -1,6 +1,8 @@
 # Logs
 logs
 *.log
+&.DS_Store
+logo.psd
 
 # Runtime data
 pids
