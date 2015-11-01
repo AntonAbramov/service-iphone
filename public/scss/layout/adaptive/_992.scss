@@ -1,9 +1,11 @@
 .show-desktop {
   display: block;
 }
+
 .hide-desktop {
   display: none;
 }
+
 .director-button {
   display: block;
 }
@@ -16,11 +18,52 @@
   display: block;
 }
 
-h2 {
-	font-size: 30px;
-	line-height: 30px;
-}
 h3 {
-	font-size: 22px;
-	line-height: 22px;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.benefits {
+  border-bottom: 1px solid #ccc;
+}
+
+.animation {
+  height: 400px;
+  overflow: hidden;
+  opacity: 1;
+  width: 100%;
+  animation: showing 2s linear;
+}
+
+.animation__item {
+  position: absolute;
+}
+
+.animation__slide1 {
+  top: 10px;
+  left: 0;
+}
+.animation__slide2 {
+  top: 50px;
+  left: 200px;
+}
+
+
+@keyframes showing {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.nav__link {
+  border-left: 1px solid #ccc;
+  filter: grayscale(100%);
+  &:hover, &:focus {
+    filter: grayscale(0);
+  }
+  &:last-child {
+    padding-left: 40px;
+  }
+  img {
+    max-width: 9999px;
+  }
 }

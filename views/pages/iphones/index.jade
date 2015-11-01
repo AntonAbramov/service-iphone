@@ -16,143 +16,34 @@ block content
               i.aa(class='#{item.iconName}')
               span.problems__text.aus #{item.text}
             section.information-section
-  div.container
-    h2(title='Ремонт техники Apple в сервис-центре «Service iPhone»') Ремонт техники Apple в сервис-центре «Service iPhone»
-    p Мастера сервисов Service iPhone <strong>ремонтируют iPhone, iPad, iPod, MacBook и iMac</strong>. Ремонтируются все существующие модели
+  .container
+    h3.text-center
+      | Выполняемые услуги&nbsp;
+      i.icon-engineering.aa
+    p.text-center Инженеры сервисов Service Iphone выполняют следующие виды услуг:
     .row
-      div.col-sm-6
-        h3
-          i.aa.icon-department
-          | &nbsp;Офисы
-        p Под брендом <strong>Service iPhone</strong> работает офис в Киеве — на м.Золотых Воротах. До офиса идти не больше 2 минут от метро.
-        ul
-          li: p Офис рабртает с пн-пт с 10.00-19.00 сб 11.00-17.00 вс выходной.
-          li: p В отделении имеется необходимый запас запчастей. Возможную нехватку запчастей заранее восполняют штатные курьеры из запасов других отделений.
-          li: p В сервисе ежедневно работают по несколько мастеров, таким образом не бывает очередей.
-      div.col-sm-6
-        img(src="img/office.jpg", height="300px;", width="100%", alt="")
-    .row
-      .col-sm-4
-        h3 Приём аппарата&nbsp;
-          i.aa.icon-admistrator
-        p Клиенты обслуживаются без записи. Мастер принимает аппараты в ремонт как только клиент приходит в офис. Звонить заранее не обязательно.</p>
-      .col-sm-4
-        h3 Курьеры&nbsp;
-          i.icon-running.aa
-        p Есть возможность&nbsp;
-        a(rel="nofollow", title="Вызов курьера", href="mailto:agsremont@gmail.com") вызова курьера
-        | , который привезет устройство в офис. В большинстве случаев курьеры выезжают сразу после получения заказа.</p>
-        p: strpmg Вызов курьера — бесплатная услуга.
-      .col-sm-4
-        h3 Диагностика&nbsp;
-          i.aa.icon-stethoscope
-        p В сервисных центрах Service iPhone <strong>диагностика выполняется бесплатно</strong>. Исключения, только диагностика материнской платы устройства.
-          .row.content-row
-      .col-sm-7
-        div
-          h3
-            | Выполняемые услуги&nbsp;
-            i.icon-engineering.aa
-          | Инженеры сервисов Service Iphone выполняют следующие виды услуг:
+      .col-xs-12
         .row.content-row
-          .col-sm-6
+          .col-sm-3
             ul.content-list
               li
                 | Замена любых деталей в аппарате:
                 br
                 span.content-list--gray дисплеев, корпусов, кнопок, динамиков, микрофонов.
-          .col-sm-6
+          .col-sm-3
             ul.content-list
               li
                 | Пайка и другие работы по плате:
                 br
                 span.content-list--gray замена микросхем, реболлинг BGA-чипов, замена и восстановление разъемов.
-        .row.content-row
-          .col-sm-6
+          .col-sm-3
             ul.content-list
               li Комплексный ремонт после попадания воды.
-          .col-sm-6
+          .col-sm-3
             ul.content-list
               li
                 | Работа с ПО:
                 br
                 span.content-list--gray прошивка, восстановление системы, сброс пароля.
-      .col-sm-5
-        img(style='max-width: 100%;', src='img/content/repear_iphone.jpg?v=1423413609176', alt='Ремонт iphone')
-    .row.content-row
-      .col-sm-4.content-block
-        div
-          h3
-            | Условия для ожидания &nbsp;
-            i.icon-sofa.aa
-          p
-            | Во время &nbsp;
-            strong ремонта айфона
-            | , айпада, аймака или любого другого гаджета, клиенты отдыхают в зоне ожидания или уходят по своим делам.
-            | 
-            | 
-      .col-sm-8.col-xs-12.content-block
-        div
-          h3
-            | Длительность ремонта &nbsp;
-            i.icon-clock.aa
-          p
-            | После получения аппарата, свободный мастер сразу же приступает к ремонту или, если проблема не ясна, к
-            | диагностике. Свободные мастера есть практически всегда.
-        .row.content-row
-          .col-sm-4.col-xs-12.content-block
-            .content-img-left
-              a(href='/')
-                img(height='50', src='img/content/iphone_small.png?v=1423413609176', alt='Iphone картинка')
-            div
-              p
-                a(href='/iphone') Ремонт iPhone
-                | :
-                br
-                span.fa--gray
-                  i.fa.fa-clock-o
-                  |  30–40 минут
-          .col-sm-4.col-xs-12
-            .content-img-left
-              a(title='Ремонт iPad', href='/ipad-remont')
-                img(height='50', src='img/content/ipad_small.png?v=1423413609176', alt='Ipad mini image')
-            div
-              p
-                a(title='Ремонт iPad', href='/ipad-remont') Ремонт iPad
-                | &nbsp;и&nbsp;
-                span(rel='nofollow', href='#remont-ipod/', title='Ремонт iPod') iPod
-                span.fa--gray
-                  i.fa.fa-clock-o
-                  |  1–2 часа
-          .col-sm-4.col-xs-12
-            .content-img-left
-              a(href='/macbook-remont')
-                img(height='50', src='img/content/macbook_small.png?v=1423413609176', alt='MacBook pro ')
-            p
-              a(title='Ремонт MacBook', href='/macbook-remont') Ремонт MacBook
-              | :
-              br
-              span.fa--gray
-                i.fa.fa-clock-o
-                |  1-6 часов
-      .col-xs-12.row
-        .col-sm-4.col-xs-12
-          h3 Запчасти &nbsp;
-            i.icon-memory-module.aa
-          p
-            | Инженеры используют в ремонте оригинальные запчасти. Те запчасти, что отсутствуют у поставщиков, работники сервиса получают из купленных для разбора новых устройств. Стоимость запчастей включена в стоимость ремонта.
-        .col-sm-4.col-xs-12
-          h3 Гарантия &nbsp;
-            i.icon-security-checked.aa
-          p
-            | На все аппараты&nbsp;
-            a(title='Гарантия', href='/about/warranty') действует гарантия на 6 месяцев.
-            | &nbsp;Она распространяется на запчасти и на работу мастера. Чтобы сдать телефон или ноутбук по гарантии достаточно иметь акт выполненных работ.
-        .col-sm-4.col-xs-12
-          h3
-            | Отзывы &nbsp;
-            i.icon-voice-presentation.aa
-          p
-            | За время работы компании, клиенты оставили&nbsp;
-            a(title='Отзывы', href='/feedback') более 100 отзывов.
-            | &nbsp;Все отзывы настоящие, с каждым из авторов можно связаться через ВКонтакте.
+    br
+    br

@@ -32,15 +32,13 @@
     display: block;
   }
 
-
 }
 
 .top-navigation__link {
   color: $black;
   display: block;
-  padding: 9px 14px;
+  padding: 7px 14px;
   font-size: 16px;
-  margin: 0 -15px;
   border-bottom: 1px solid #f2f2f2;
   text-decoration: none;
 
@@ -67,12 +65,6 @@
   }
 }
 
-
-
-.subnav {
-
-}
-
 .subnav__link {
   position: relative;
   font-size: 14px;
@@ -89,4 +81,31 @@
 .subnav__link--text {
   padding-left: 10px;
   text-shadow: 0 1px 0 #fff;
+}
+
+.nav {
+  margin: 20px 0;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+    &:first-child {
+      .nav__link {
+        border-left: none;
+      }
+    }
+  }
+}
+
+.nav__link {
+  padding: 20px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  img {
+    display: block;
+    margin: 0 auto 20px;
+    max-width: 100%;
+  }
 }

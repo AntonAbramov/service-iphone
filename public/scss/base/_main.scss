@@ -1,5 +1,5 @@
 [data-echo],
-[src=""]{
+[src=""] {
   position: relative;
 }
 
@@ -12,7 +12,7 @@
   border-radius: 20px;
   content: '';
   position: absolute;
-  top:50%;
+  top: 50%;
   margin-top: -10px;
   left: 50%;
 }
@@ -27,7 +27,7 @@
 [data-echo]:after,
 [src=""]:after {
   background: #428bca;
-  margin-left:2px;
+  margin-left: 2px;
   animation: preloader_3_after 1.5s infinite ease-in-out;
 }
 
@@ -109,7 +109,7 @@ hr {
   display: block;
   padding: 10px 4px;
   &:hover,
-  &:focus  {
+  &:focus {
     text-decoration: none;
     .devices__img {
       transform: scale(1.2);
@@ -359,3 +359,75 @@ hr {
   margin: 0 0 20px;
 }
 
+.benefits {
+  position: relative;
+}
+
+.animation {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.benefits__heading {
+  font-size: 30px;
+  line-height: 1;
+  margin: 30px 0;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.benefits__list {
+  font-size: 16px;
+
+  margin: 0;
+  padding: 0;
+  li {
+    margin: 0 0 10px;
+    line-height: 20px;
+    padding-left: 30px;
+    display: block;
+    &:before {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      margin-top: -10px;
+      width: 20px;
+      height: 20px;
+      color: #fff;
+      background: rgb(0, 183, 0);
+      border-radius: 30px;
+      text-align: center;
+    }
+  }
+}
+
+.trbl-list {
+  padding: 0 0 0 20px;
+  li {
+    margin: 0 0 5px;
+  }
+}
+
+.step-heading {
+  position: relative;
+  padding: 0 0 0 30px;
+  color: #0088cc;
+  line-height: 20px;
+  white-space: nowrap;
+}
+
+.blue-number {
+  width: 24px;
+  height: 24px;
+  background: #0088cc;
+  color: #fff;
+  text-align: center;
+  border-radius: 30px;
+  position: absolute;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  left: 0;
+  top: 0;
+}

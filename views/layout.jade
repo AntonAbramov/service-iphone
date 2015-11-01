@@ -1,5 +1,5 @@
 doctype html
-html
+html(dir="ltr", lang="ru")
   head
     meta(charset='UTF-8')
     title= title
@@ -7,6 +7,9 @@ html
     meta(name='description', content='#{description}')
     meta(name='robots', content='index, follow')
     meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='icon', type='image/png', sizes='32x32', href='/favicon-32x32.png')
+    link(rel='icon', type='image/png', sizes='96x96', href='/favicon-96x96.png')
+    link(rel='icon', type='image/png', sizes='16x16', href='/favicon-16x16.png')
 
 
   body
@@ -36,8 +39,8 @@ html
       include footer
 
     link(rel='stylesheet', href='/css/style.css')
-    //script(data-main='/js/config', src='/bower_components/requirejs/require.js')
-    script(data-main='/js/prodaction', src='/js/libs/require.js')
+    script(data-main='/js/config', src='/js/libs/require.js')
+    //script(data-main='/js/prodaction', src='/js/libs/require.js')
     script.
       function initialize() {
       var e = new google.maps.LatLng(50.446805, 30.510911), o = {center: e, scrollwheel: false, zoom: 17, mapTypeId: google.maps.MapTypeId.ROADMAP}, a = new google.maps.Map(document.getElementById("googleMap"), o), n = new google.maps.Marker({position: e});

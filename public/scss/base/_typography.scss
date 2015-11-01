@@ -31,14 +31,20 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 300;
 }
 
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+  line-height: 1;
+}
+
 h2 {
-  font-size: 20px;
-  line-height: 20px;
+  font-size: 24px;
+  line-height: 24px;
 }
 
 h3 {
-  font-size: 16px;
-  line-height: 16px;
+  font-size: 20px;
+  line-height: 20px;
 }
 
 :focus {
@@ -69,9 +75,27 @@ p {
   font-weight: 400;
 }
 
-.title {
+.index-title {
+  font-weight: bold;
+  color: green;
+}
+
+.title,
+.title2 {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
+  margin: 20px 0;
+  line-height: 1;
+}
+
+.title {
   font-size: 2em;
-  margin: .67em 0;
+}
+
+.title2 {
+  font-size: 24px;
+}
+
+.b {
+  font-weight: bold;
 }

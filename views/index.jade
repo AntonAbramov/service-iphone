@@ -1,82 +1,102 @@
 extends layout
 
 block content
-  section.device-section
-    h1.device-title(title="Ремонт Apple iPhone/Ipad в Киеве | Iphone 3/4/5/6") Ремонт iPhone
-    p.heading-title Выберите модель:
-    include modules/navigation.jade
-  - var problemCases = [{'href': 'razbilos-steklo-iphone','text': 'Разбилось стекло','title': '','iconName': 'icon-hammer'},{'href': 'iphone-ne-vklyuchaetsya','text': 'Не включается','title': '','iconName': 'icon-no-mobile'},{'href': 'wifi-ne-rabotaet','text': 'Не работает Wi-Fi','title': '','iconName': 'icon-wifi'},{'href': 'ne-rabotaet-zvuk-na-iphone','text': 'Не работает звук','title': '','iconName': 'icon-mute'},{'href': 'ne-rabotaet-displey-iphone','text': 'Не работает дисплей','title': '','iconName': 'icon-tv'},{'href': 'iphone-ne-zaryazhaetsya','text': 'Не заряжается','title': '','iconName': 'icon-charge'},{'href': 'voda-iphone','text': 'Попала вода','title': '','iconName': 'icon-water'},{'href': 'ne-rabotaet-vibrozvonok','text': 'Не работает вибрация','title': '','iconName': 'icon-bell'},{'href': 'ne-rabotaet-displey-iphone','text': 'Не работает тачскрин','title': '','iconName': 'icon-finger'},{'href': 'iphone-byistro-razryazhaetsya','text': 'Быстро разряжается','title': '','iconName': 'icon-low-battery'},{'href': 'iphone-ne-nazhimayutsya-knopki','text': 'Не работают кнопки','title': '','iconName': 'icon-circle'},{'href': 'iphone-ne-rabotaet-mikrofon','text': 'Не работает микрофон','title': '','iconName': 'icon-microphone'}];
-  section.problems-section.bg-lightgray
-    div.container
-      div.heading-title.mt20 Выберите проблему
-      ul.row.problems
-        each item in problemCases
-          li.col-md-4.col-lg-3.col-sm-6.problems__item
-            a.problems__link(title='#{item.text}', href='#{item.href}')
-              i.aa(class='#{item.iconName}')
-              span.problems__text.aus #{item.text}
-            section.information-section
-  div.container
-    h2(title='Ремонт техники Apple в сервис-центре «Service iPhone»') Ремонт техники Apple в сервис-центре «Service iPhone»
-    p Мастера сервисов Service iPhone <strong>ремонтируют iPhone, iPad, iPod, MacBook и iMac</strong>. Ремонтируются все существующие модели
+  .container
+    h1.text-center.index-title Сервисный центр по ремонту техники Apple.
+    nav.nav.row
+      h2.col-md-3.col-lg-offset-1
+        a.nav__link(href="/iphone", title="Ремонт iPhone в Киеве")
+          .nav__box
+            img(src='/img/remont-iphone.jpg', alt='Ремонт iPhone в Сервисном центре Apple - Service-iPhone')
+          | Ремонт iPhone
+      h2.col-md-3
+        a.nav__link(href="/ipad-remont", title="Ремонт iPad в Киеве")
+          .nav__box
+            img(src='/img/remont-ipad.jpg', alt='Ремонт iPad в Сервисном центре Apple - Service-iPhone')
+          | Ремонт iPad
+      h2.col-md-4
+        a.nav__link(href="/macbook-remont", title="Ремонт MacBook в Киеве")
+          .nav__box
+            img(src='/img/remont-macbook.jpg', alt='Ремонт MacBook в Сервисном центре Apple - Service-iPhone')
+          | Ремонт MacBook
+
+  .container
+    .cf.benefits
+      .col-md-6.show-desktop
+        .animation
+          .animation__slide1.animation__item
+            img(src='img/iphone6s-remont.jpg', alt='Ремонт iPhone. #Ремонт Айфона в Киеве')
+          .animation__slide2.animation__item
+            img(src='img/iphone6-remont.png', alt='Сервисный центр по ремонту Apple в Киеве')
+      .col-md-6.col-xs-12
+        p.benefits__heading 10 причин выбрать наш Сервис
+        ol.benefits__list
+          li.fa.fa-check
+            span.b Service-iPhone &nbsp;
+            |- официальный сервисный центр
+          li.fa.fa-check Более <span class="b">3 лет</span> на рынке
+          li.fa.fa-check <span class="b">Скорость</span>: Мы ценим время наших клиентов и выполняем большинство ремонтов в первый же час!
+          li.fa.fa-check <span class="b">Качество</span>: Для ремонта используем высококачественные и оригинальные запчасти.
+          li.fa.fa-check <span class="b">Стоимость</span>: Цены в Service-iPhone ниже, чем у конкурентов!
+          li.fa.fa-check <span class="b">Гарантия</span>: На все виды ремонтных работ мы даем гарантию от 6 месяцев.
+          li.fa.fa-check <span class="b">Собственный склад</span> оригинальных запчастей.
+          li.fa.fa-check <span class="b">Конфиденциальность</span> ваших личных данных, ремонт производим в присудствии клиента.
+          li.fa.fa-check <span class="b">Удобное расположение офиса</span>, а также возможность воспользоваться услугами курьера, который самостоятельно доставит устройство в сервисный центр
+          li.fa.fa-check <span class="b">Диагностика</span> - проводится бессплатно!
+
+
+    p.title(title='Ремонт техники Apple в сервис-центре «Service iPhone»') Ремонт техники Apple в сервис-центре «Service iPhone»
+    p Мастера сервисов Service iPhone производят <strong>ремонт всех моделей iPhone, iPad, iPod, MacBook и iMac</strong>. <br/>Часто наши клиенты интересуются следующими проблемами:
     .row
-      div.col-sm-6
-        h3
-          i.aa.icon-department
-          | &nbsp;Офисы
-        p Под брендом <strong>Service iPhone</strong> работает офис в Киеве — на м.Золотых Воротах. До офиса идти не больше 2 минут от метро. Офис рабртает с пн-пт с 10.00-19.00 сб 11.00-17.00 вс выходной.
-          p В отделении имеется необходимый запас запчастей. Возможную нехватку запчастей заранее восполняют штатные курьеры из запасов других отделений.</p>
-          p В сервисе ежедневно работают по несколько мастеров, таким образом не бывает очередей.
-      div.col-sm-6
-        img(src="img/office.jpg", height="300px;", width="100%", alt="")
-    .row
-      .col-sm-4
-        h3 Приём аппарата&nbsp;
-          i.aa.icon-admistrator
-        p Клиенты обслуживаются без записи. Секретари принимают аппараты в ремонт как только клиент приходит в офис. Звонить заранее не обязательно.</p>
-      .col-sm-4
-        h3 Курьеры&nbsp;
-          i.icon-running.aa
-        p Есть возможность&nbsp;
-        a(rel="nofollow", title="Вызов курьера", href="mailto:agsremont@gmail.com") вызова курьера
-        | , который привезет устройство в офис. В большинстве случаев курьеры выезжают сразу после получения заказа.</p>
-        p: strpmg Вызов курьера — бесплатная услуга.
-      .col-sm-4
-        h3 Диагностика&nbsp;
-          i.aa.icon-stethoscope
-        p В сервисных центрах Service iPhone <strong>диагностика выполняется бесплатно</strong>. Даже если клиент отказывается от ремонта, диагностика не оплачивается
-          .row.content-row
-      .col-sm-7
-        div
-          h3
-            | Выполняемые услуги&nbsp;
-            i.icon-engineering.aa
-          | Инженеры сервисов Service Iphone выполняют следующие виды услуг:
-        .row.content-row
-          .col-sm-6
-            ul.content-list
-              li
-                | Замена любых деталей в аппарате:
-                br
-                span.content-list--gray дисплеев, корпусов, кнопок, динамиков, микрофонов.
-          .col-sm-6
-            ul.content-list
-              li
-                | Пайка и другие работы по плате:
-                br
-                span.content-list--gray замена микросхем, реболлинг BGA-чипов, замена и восстановление разъемов.
-        .row.content-row
-          .col-sm-6
-            ul.content-list
-              li Комплексный ремонт после попадания воды.
-          .col-sm-6
-            ul.content-list
-              li
-                | Работа с ПО:
-                br
-                span.content-list--gray прошивка, восстановление системы, сброс пароля.
-      .col-sm-5
+      .col-xs-12.col-md-4.col-md-offset-1
+        ul.trbl-list
+          li: a(href='/ne-rabotaet-displey-iphone', title='Не работает дисплей iPhone') разбит экран/дисплей;
+          li: a(href='/razbilos-steklo-iphone', title='Замена стекла iPhone') треснуло стекло на iPhone;
+          li: a(href='/iphone-ne-vklyuchaetsya', title='не включается айфон') не включается айфон
+          li разбита задняя крышка;
+          li: a(href='/iphone-byistro-razryazhaetsya', title='быстро разряжается айфон') аккумулятор плохо держит заряд;
+          li не работает модуль wi-fi;
+          li ремонт аудиокодека;
+          li сгорел контроллер питания;
+          li не работает динамик;
+          li тихий звук полифонического динамика;
+          li: a(href='/voda-iphone', title='iPhone попала вода') в iPhone попала вода;
+          li не работает кнопка iHome;
+          li запала кнопка Power/включения;
+      .col-xs-12.col-md-6
         img(style='max-width: 100%;', src='img/content/repear_iphone.jpg', alt='Ремонт iphone')
+
+    hr.mt20
+    .row
+      .col-xs-12
+        p.title.text-center: b Как происходит ремонт
+    .row
+      .col-xs-12.col-sm-3
+        h3.step-heading
+          span.blue-number 1
+          | Приём аппарата&nbsp;
+          i.fa.fa-user-md
+        p Клиенты обслуживаются без записи. Секретари принимают аппараты в ремонт как только клиент приходит в офис. Звонить заранее не обязательно.</p>
+      .col-xs-12.col-sm-3
+        h3.step-heading
+          span.blue-number 2
+          |Диагностика&nbsp;
+          i.fa.fa-stethoscope
+        p В сервисных центрах Service iPhone <strong>диагностика выполняется бесплатно</strong>. Даже если клиент отказывается от ремонта, диагностика не оплачивается.
+      .col-xs-12.col-sm-3
+        h3.step-heading
+          span.blue-number 3
+          |Согласовываем цену &nbsp;
+          i.fa-usd.fa
+        p После диагностики мы связываемся с клиентом для согласования цены.
+      .col-xs-12.col-sm-3
+        h3.step-heading
+          span.blue-number 4
+          |Ремонтируем устройство &nbsp;
+          i.fa-wrench.fa
+        p Выполняем <strong>качественный ремонт</strong>, тщательно тестируем и отдаем владельцу исправный продукт фирмы Apple.
+
+    hr
     .row.content-row
       .col-sm-4.content-block
         div

@@ -9,21 +9,17 @@ header.header(itemscope, itemtype="http://schema.org/LocalBusiness")
         span.icon-bar
         span.icon-bar
         span.icon-bar
-    nav#top-nav.top-navigation.col-lg-4.col-md-5.col-sm-8
+    nav#top-nav.top-navigation.col-lg-6.col-md-8.col-sm-8
       a.top-navigation__link(href='/iphone', class=(menuActive === 'iphone' ? 'is-active' : '' ))
         span.top-navigation--text(title='Ремонт iPhone') iPhone
       a.top-navigation__link(href='/ipad-remont', class=(menuActive === 'ipad' ? 'is-active' : '' ))
         span.top-navigation--text(title='Ремонт iPad') iPad
       a.top-navigation__link(href='/macbook-remont', class=(menuActive === 'imac' ? 'is-active' : '' ))
         span.top-navigation--text(title='Ремонт MacBook') MacBook
-
-    nav.subnav.cf.col-md-2.show-desktop
-      a.subnav__link.col-xs-4.col-sm-12(href='/feedback')
-        i.fa.fa-fw.fa-comments
-        span.subnav__link--text Отзывы
-      a.subnav__link.col-xs-4.col-sm-12(rel='nofollow', href='#contacts')
-        i.fa.fa-fw.fa-map-marker
-        span.subnav__link--text Контакты
+      a.top-navigation__link(href='/feedback', class=(menuActive === 'feedback' ? 'is-active' : '' ))
+        span.top-navigation--text(title='Отзывы') Отзывы
+      a.top-navigation__link(href='/#contacts', rel='nofollow')
+        span.top-navigation--text(title='Контакты') Контакты
     .director-button.col-md-2.col-xs-12.hidden-xs.hidden-sm.hidden-md
       a.btn.btn-danger(target='_blank', title='Оставь комментарий и получи 10% скидки на ремонт', href='https://plus.google.com/109962936005483548770/about') Получи 10% скидки за отзыв!
   section.header-section
