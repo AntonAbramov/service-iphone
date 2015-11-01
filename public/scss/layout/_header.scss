@@ -50,13 +50,8 @@
   display: block;
   line-height: 16px;
   padding-top: 7px;
-  &:hover, &:focus {
-    .icon-warranty {
-      transform: rotate(360deg);
-    }
-  }
+
   .icon-warranty {
-    color: rgb(218, 43, 43);
     font-size: 40px;
     position: absolute;
     left: 0;
@@ -71,7 +66,6 @@
 }
 
 .header-section__warranty--all {
-  color: green;
   display: block;
 }
 
@@ -93,7 +87,6 @@
 }
 
 .header-section__contacts__tel,
-.header-section__contacts__title,
 .header-section__schedule--description {
   text-decoration: none;
   color: #222;

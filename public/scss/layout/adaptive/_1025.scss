@@ -27,33 +27,6 @@ h3 {
   border-bottom: 1px solid #ccc;
 }
 
-.animation {
-  height: 400px;
-  overflow: hidden;
-  opacity: 1;
-  width: 100%;
-  animation: showing 2s linear;
-}
-
-.animation__item {
-  position: absolute;
-}
-
-.animation__slide1 {
-  top: 10px;
-  left: 0;
-}
-.animation__slide2 {
-  top: 50px;
-  left: 200px;
-}
-
-
-@keyframes showing {
-  0%   { opacity: 0; }
-  100% { opacity: 1; }
-}
-
 .nav__link {
   border-left: 1px solid #ccc;
   filter: grayscale(100%);
@@ -62,8 +35,5 @@ h3 {
   }
   &:last-child {
     padding-left: 40px;
-  }
-  img {
-    max-width: 9999px;
   }
 }
