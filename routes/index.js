@@ -21,7 +21,7 @@ router.get('/', function (req, res, next) {
 router.get('/warranty', function (req, res, next) {
   res.render('pages/warranty/warranty', {
     title: "Гарантия 6 месяцев от Service-Iphone.com.ua ",
-    description: "Наш сервисный центр предоставляет гарантию до 2 лет, на все виды ремонтов техники Apple | ремонт iphone ipad macbook ipod",
+    description: "Наш сервисный центр предоставляет гарантию до 6 месяцев, на все виды ремонтов техники Apple | ремонт iphone ipad macbook ipod",
     keywords: "ремонт iPhone iPad iPod Macbook"
   });
 });
@@ -34,7 +34,7 @@ router.get('/remont-iphone3g', function (req, res, next) {
     res.render('pages/iphones/iphone3', {
       title: "Ремонт iPhone 3G",
       description: "Наш Сервис сделает качественный ремонт iPhone 3g в Киеве с гарантией. Так же делаем ремонт всех моделей iphone.",
-      keywords: "ремонт iphone 3gs киев, айфон 3g ремонт, iphone 3g ремонт",
+      keywords: "ремонт iphone 3gs киев, ремонт айфон 3gs, замена стекла iphone 3gs ",
       data: docs,
       menuActive: 'iphone'
     });
@@ -44,8 +44,8 @@ router.get('/remont-iphone3g', function (req, res, next) {
 router.get('/remont-iphone4', function (req, res, next) {
   res.render('pages/iphones/iphone4', {
     title: "Ремонт iPhone 4",
-    description: "Service-iphone сделает качественный ремонт iphone 4 в Киеве с гарантией до 2 лет. Замена стекла, дисплея, кнопки.",
-    keywords: "Ремонт iPhone 4",
+    description: "Service-iphone сделает качественный ремонт iphone 4 в Киеве с гарантией до 6 месяцев. Замена стекла, дисплея, кнопки.",
+    keywords: "Замена стекла iphone 4, замена экрана iphone 4, Ремонт iPhone 4",
       menuActive: 'iphone'
   });
 });
@@ -53,8 +53,8 @@ router.get('/remont-iphone4', function (req, res, next) {
 router.get('/remont-iphone4s', function (req, res, next) {
   res.render('pages/iphones/iphone4s', {
     title: "Ремонт iPhone 4s",
-    description: "Service-iphone сделает качественный ремонт iphone 4s в Киеве с гарантией не менее 2 лет. Замена батареи, аккумулятора, кнопки.",
-    keywords: "Ремонт iPhone 4s",
+    description: "Service-iphone сделает качественный ремонт iphone 4s в Киеве с гарантией не менее 6 месяцев. Замена батареи, аккумулятора, кнопки.",
+    keywords: "ремонт iphone 4s, замена стекла iphone 4s, замена экрана iphone 4s",
     menuActive: 'iphone'
   });
 });
@@ -63,7 +63,7 @@ router.get('/remont-iphone5', function (req, res, next) {
   res.render('pages/iphones/iphone5', {
     title: "Ремонт iPhone 5",
     description: "Быстрый ремонт iPhone5 в городе Киев. Диагностика iPhone 5/5s/6/6+ бессплатно!",
-    keywords: "Ремонт iPhone 5",
+    keywords: "Ремонт iPhone 5, замена стекла iphone 5, замена экрана iphone 5, замена батареи iphone 5",
     menuActive: 'iphone'
   });
 });
@@ -72,7 +72,7 @@ router.get('/remont-iphone-5c', function (req, res, next) {
   res.render('pages/iphones/iphone5c', {
     title: "Ремонт iPhone 5c",
     description: "Service-iphone сделает быстро и качественно ремонт вашего iphone 5c в Киеве в тот же день!.",
-    keywords: "Ремонт iPhone 5c",
+    keywords: "Ремонт iPhone 5c, замена стекла iphone 5c, замена экрана iphone 5c",
     menuActive: 'iphone'
   });
 });
@@ -81,7 +81,7 @@ router.get('/remont-iphone-5s', function (req, res, next) {
   res.render('pages/iphones/iphone5s', {
     title: "Ремонт iPhone 5s ",
     description: "Киев ремонт и сервис iPhone 5s. Цены на iphone 5s указаны на странице. Цены на ремонт iphone 5s",
-    keywords: "Ремонт iPhone 5s",
+    keywords: "Ремонт iPhone 5s, замена стекла iphone 5s, замена экрана iphone 5s",
     menuActive: 'iphone'
   });
 });
@@ -90,7 +90,7 @@ router.get('/remont-iphone-6', function (req, res, next) {
   res.render('pages/iphones/iphone6', {
     title: "Ремонт iPhone 6",
     description: "Требуется ремонт iphone 6? мы вам поможем, сделаем быстро и качественно ремонт iphone 4/4s/5/5s/6/6+",
-    keywords: "Ремонт iPhone 6",
+    keywords: "Ремонт iPhone 6, замена стекла iphone 6, замена экрана iphone 6",
       menuActive: 'iphone'
   });
 });
@@ -99,7 +99,7 @@ router.get('/remont-iphone-6plus', function (req, res, next) {
   res.render('pages/iphones/iphone6plus', {
     title: "Ремонт iPhone 6+ ",
     description: "Iphone 6+ ремонт/замента стекла/дисплея/джойстика/аккумулятора. Замена стекла/батареи/дисплея.",
-    keywords: "Ремонт iPhone 6+",
+    keywords: "Ремонт iPhone 6+, замена экрана iphone 6+, замена экрана iphone 6+",
     menuActive: 'iphone'
   });
 });
@@ -187,7 +187,7 @@ router.get('/remont-imac', function (req, res, next) {
 router.get('/remont-macbook-pro', function (req, res, next) {
   res.render('pages/mac/macbook-pro', {
     title: "Ремонт MacBook Pro",
-    description: "Ремонт вашего macbook pro в городе киеве с гарантией до 2 лет, сделает наш Service-Iphone центр!",
+    description: "Ремонт вашего macbook pro в городе киеве с гарантией до 6 месяцев, сделает наш Service-Iphone центр!",
     keywords: "Ремонт MacBook Pro",
     menuActive: 'imac'
   });
@@ -196,7 +196,7 @@ router.get('/remont-macbook-pro', function (req, res, next) {
 router.get('/remont-macbook-air', function (req, res, next) {
   res.render('pages/mac/macbook-air', {
     title: "Ремонт MacBook Air",
-    description: "Качественный ремонт macbook air в городе киеве с гарантией до 2 лет, сделает наш Service-Iphone центр!",
+    description: "Качественный ремонт macbook air в городе киеве с гарантией до 6 месяцев, сделает наш Service-Iphone центр!",
     keywords: "Ремонт MacBook Air",
     menuActive: 'imac'
   });
@@ -230,7 +230,7 @@ router.get('/iphone-ne-rabotaet-mikrofon', function (req, res, next) {
 router.get('/iphone-ne-vklyuchaetsya', function (req, res, next) {
   res.render('pages/problems/iphone-ne-vklyuchaetsya', {
     title: "Не включается iPhone",
-    description: "Service-iPhone в городе Киеве, сделает ремонт вашего телефона быстро, с гарантией до 2 лет, оригинальные детали.",
+    description: "Service-iPhone в городе Киеве, сделает ремонт вашего телефона быстро, с гарантией до 6 месяцев, оригинальные детали.",
 
     keywords: "не ключается iPhone"
   });
@@ -323,7 +323,7 @@ router.post('/call-courier', function(req,res, next) {
       res.send('success');
     }
   });
-})
+});
 
 
 // NB! No need to recreate the transporter object. You can use
