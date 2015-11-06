@@ -37,7 +37,6 @@ gulp.task('jshint', function () {
 //generate styles from scss files and minify it
 gulp.task('sass', function () {
   return gulp.src('public/scss/**/*.scss')
-    .pipe(plumber())
     .pipe(sass({ style: 'expanded' }).on('error', sass.logError))
     .pipe(autoprefixer({
       browsers: ['last 30 versions'],
@@ -49,7 +48,7 @@ gulp.task('sass', function () {
 //generate styles from scss files and minify it
 gulp.task('sass-build', function () {
   return gulp.src('./public/scss/**/*.scss')
-    .pipe(sass())
+    .pipe(sass()).on('error', sass.logError)
     .pipe(autoprefixer({
       browsers: ['last 10 versions'],
       cascade: false

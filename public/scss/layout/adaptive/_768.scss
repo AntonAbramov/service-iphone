@@ -20,14 +20,9 @@
   margin-left: 35px;
   border-radius: 100px;
   border: 1px solid transparent;
+  margin: 0 0 0 10px;
   &:hover, &:focus {
     border: 1px solid #ddd;
-    .top-navigation--text {
-      border: none;
-    }
-  }
-  &:first-child {
-    margin-left: 0;
   }
 }
 
@@ -39,10 +34,6 @@
 
 .header-section__warranty {
   position: static;
-}
-
-.top-navigation--text {
-  border-bottom: 1px solid #ddd;
 }
 
 .devices__link {

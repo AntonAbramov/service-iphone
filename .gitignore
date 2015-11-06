@@ -1,6 +1,8 @@
 # Logs
 logs
 *.log
+&.DS_Store
+logo.psd
 
 # Runtime data
 pids
@@ -29,3 +31,4 @@ node_modules
 .idea
  bower_components
 node_modules
+compressed
