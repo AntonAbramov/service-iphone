@@ -149,7 +149,7 @@ hr {
 }
 
 .repear {
-  margin: 30px auto;
+  margin: 30px auto 0;
 }
 
 .repear-heading {
@@ -314,7 +314,7 @@ hr {
   margin: 0;
   padding: 0;
   li {
-    margin: 0 0 15px;
+    margin: 0 0 20px;
     line-height: 24px;
     display: block;
     padding-left: 40px;
@@ -345,6 +345,9 @@ hr {
   padding: 0 0 0 30px;
   color: #0088cc;
   line-height: 20px;
+  .fa {
+    font-size: 26px;
+  }
 }
 
 .blue-number {
