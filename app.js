@@ -6,9 +6,9 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
 //Database
-var mongo = require('mongodb');
-var monk = require('monk');
-var db = monk('localhost:27017/nodetest2');
+//var mongoose = require('mongoose');
+//mongoose.connect('mongodb://localhost:27017/exampleDb');
+//var db = mongoose.connect('mongodb://localhost:27017/exampleDb');
 
 var routes = require('./routes/index');
 var iphone = require('./routes/iphone/index');
@@ -31,10 +31,10 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Make our db accessible to our router
-app.use(function(req,res,next){
+/*app.use(function(req,res,next){
     req.db = db;
     next();
-});
+});*/
 
 app.use('/', routes);
 app.use('/iphone', iphone);

@@ -3,289 +3,305 @@ extends ../../layout
 block content
   .container
     h1 Отзывы
+    form#comments-form(action='/feedback', method='POST', style="max-width: 600px;")
+      p
+        input(type='text', name='name', placeholder='Имя*', required)
+      p
+        input(type='text', name='url', placeholder='Ссылка на ваш профиль (необязательно)', required)
+      p
+        textarea#comments-textarea(name='msg', style='min-height: 100px;', required) Ваш комментарий...
+      p
+        input#sbm-comment.btn-primary(type='submit', value='Написать', title='Написать')
     ul.comments-tree
-      li.comment__field.ng-scope(data-ng-repeat='comment in comments')
+      each item in comments
+        li.comment__field
+          header.comment__head.cf
+            strong.comment__author
+              a(rel="nofollow", target="_blank", href='http://#{item.url}') #{item.name}
+            date.comment__date #{item.date}
+          section.comment__content #{item.comment}
+      li.comment__field
         header.comment__head.cf
-          strong(data-ng-switch='!!comment.url')
-            a.comment__author.ng-binding.ng-scope(rel='nofollow', data-ng-switch-when='true', href='http://vk.com/id17291806') Антон
-          date.comment__date.ng-binding 24.05.2015
-        section.comment__content.ng-binding
+          strong
+            a.comment__author(rel='nofollow', data-ng-switch-when='true', href='http://vk.com/id17291806') Антон
+          date.comment__date 8 ноября 2015 г.
+        section.comment__content
           | спасибо за ремонт Service iPhone! Все сделали качественно, пленочку на экран наклеили бессплатно!
-      li.comment__field.ng-scope(data-ng-repeat='comment in comments')
+      li.comment__field
         header.comment__head.cf
-          strong(data-ng-switch='!!comment.url')
-            a.comment__author.ng-binding.ng-scope(rel='nofollow', data-ng-switch-when='true', href='https://vk.com/id85003074') Виталий Белов
-          date.comment__date.ng-binding 25.05.2015
-        section.comment__content.ng-binding Была замена модуля wi-fi на 4s. Спасибо работает.
-      li.comment__field.ng-scope(data-ng-repeat='comment in comments')
+          strong
+            a.comment__author(rel='nofollow', data-ng-switch-when='true', href='https://vk.com/id85003074') Виталий Белов
+          date.comment__date 5 ноября 2015 г.
+        section.comment__content Была замена модуля wi-fi на 4s. Спасибо работает.
+      li.comment__field
         header.comment__head.cf
-          strong(data-ng-switch='!!comment.url')
-            span.comment__author.ng-binding.ng-scope(data-ng-switch-default='') Сергей Никитюк
-          date.comment__date.ng-binding 29.05.2015
-        section.comment__content.ng-binding
+          strong
+            span.comment__author(data-ng-switch-default='') Сергей Никитюк
+          date.comment__date 4 ноября 2015 г.
+        section.comment__content
           | Отдал вчера ребятам свой iphone 5s, на замену батареи! Очень доволен, ребята заменили батарею в тот же день, сейчас батарея держит очень долго. Советую этот сервисный центр!
-      li.comment__field.ng-scope(data-ng-repeat='comment in comments')
+      li.comment__field
         header.comment__head.cf
-          strong(data-ng-switch='!!comment.url')
-            a.comment__author.ng-binding.ng-scope(rel='nofollow', data-ng-switch-when='true', href='http://vk.com/anastasia.kyiv') Анастасия
-          date.comment__date.ng-binding 30.05.2015
-        section.comment__content.ng-binding
+          strong
+            a.comment__author(rel='nofollow', data-ng-switch-when='true', href='http://vk.com/anastasia.kyiv') Анастасия
+          date.comment__date 3 ноября 2015 г.
+        section.comment__content
           | Я разбила свой любимый iphone 6, ребята сделали замену экрана очень быстро, спасибо!
-      li.comment__field.ng-scope(data-ng-repeat='comment in comments')
+      li.comment__field
         header.comment__head.cf
-          strong(data-ng-switch='!!comment.url')
-            a.comment__author.ng-binding.ng-scope(rel='nofollow', data-ng-switch-when='true', href='http://vk.com/id108440837') Костя Трипайло
-          date.comment__date.ng-binding 03.06.2015
-        section.comment__content.ng-binding
+          strong
+            a.comment__author(rel='nofollow', data-ng-switch-when='true', href='http://vk.com/id108440837') Костя Трипайло
+          date.comment__date 1 ноября 2015 г.
+        section.comment__content
           | Не работал звук на моем ipad mini. Позвонил, отвез, на след день забрал. Сейчас звук работает, ребята - профессионалы.
-      li.comment__field.ng-scope(data-ng-repeat='comment in comments')
+      li.comment__field
         header.comment__head.cf
-          strong(data-ng-switch='!!comment.url')
-            a.comment__author.ng-binding.ng-scope(rel='nofollow', data-ng-switch-when='true', href='http://vk.com/original_va') Алексей Левский
-          date.comment__date.ng-binding 05.06.2015
-        section.comment__content.ng-binding Спасибо за замену тачпада на минике.
+          strong
+            a.comment__author(rel='nofollow', data-ng-switch-when='true', href='http://vk.com/original_va') Алексей Левский
+          date.comment__date 29 октября 2015 г.
+        section.comment__content Спасибо за замену тачпада на минике.
 
-      li.comment__field.ng-scope(data-ng-repeat='comment in comments')
+      li.comment__field
         header.comment__head.cf
-          strong(data-ng-switch='!!comment.url')
-            a.comment__author.ng-binding.ng-scope(rel='nofollow', data-ng-switch-when='true', href='http://vk.com/madstill') Юрий Стилл
-          date.comment__date.ng-binding 07.06.2015
-        section.comment__content.ng-binding Ребята быстро сменили батарею за что им спасибо.
+          strong
+            a.comment__author(rel='nofollow', data-ng-switch-when='true', href='http://vk.com/madstill') Юрий Стилл
+          date.comment__date 27 октября 2015 г.
+        section.comment__content Ребята быстро сменили батарею за что им спасибо.
 
-      li.comment__field.ng-scope(data-ng-repeat='comment in comments')
+      li.comment__field
         header.comment__head.cf
-          strong(data-ng-switch='!!comment.url')
-            a.comment__author.ng-binding.ng-scope(rel='nofollow', data-ng-switch-when='true', href='https://vk.com/id220739673') Евгения Демчук
-          date.comment__date.ng-binding 08.06.2015
-        section.comment__content.ng-binding
+          strong
+            a.comment__author(rel='nofollow', data-ng-switch-when='true', href='https://vk.com/id220739673') Евгения Демчук
+          date.comment__date 26 октября 2015 г.
+        section.comment__content
           | Меняла стекло на айфон 4s,очень довольна работой и отношением к клиентам!Все сделано качественно,быстро.Огромная благодарность,Александру!Рекомендую этот сервисный центр!!)
 
-      li.comment__field.ng-scope(data-ng-repeat='comment in comments')
+      li.comment__field
         header.comment__head.cf
-          strong(data-ng-switch='!!comment.url')
-            a.comment__author.ng-binding.ng-scope(rel='nofollow', data-ng-switch-when='true', href='http://vk.com/id131650648') Михаил Ривоненко
-          date.comment__date.ng-binding 10.06.2015
-        section.comment__content.ng-binding Треснуло стекло на 5 за 3 часа забрал свой огризок.
+          strong
+            a.comment__author(rel='nofollow', data-ng-switch-when='true', href='http://vk.com/id131650648') Михаил Ривоненко
+          date.comment__date 23 октября 2015 г.
+        section.comment__content Треснуло стекло на 5 за 3 часа забрал свой огризок.
 
-      li.comment__field.ng-scope(data-ng-repeat='comment in comments')
+      li.comment__field
         header.comment__head.cf
-          strong(data-ng-switch='!!comment.url')
-            a.comment__author.ng-binding.ng-scope(rel='nofollow', data-ng-switch-when='true', href='http://vk.com/id128004706') Антон Ерко
-          date.comment__date.ng-binding 11.06.2015
-        section.comment__content.ng-binding Благодарочка за замену кнопки блокировки на iPhone 5.
+          strong
+            a.comment__author(rel='nofollow', data-ng-switch-when='true', href='http://vk.com/id128004706') Антон Ерко
+          date.comment__date 21 октября 2015 г.
+        section.comment__content Благодарочка за замену кнопки блокировки на iPhone 5.
 
-      li.comment__field.ng-scope(data-ng-repeat='comment in comments')
+      li.comment__field
         header.comment__head.cf
-          strong(data-ng-switch='!!comment.url')
-            a.comment__author.ng-binding.ng-scope(rel='nofollow', data-ng-switch-when='true', href='http://vk.com/kontrast_music') Богдан Кожуховский
-          date.comment__date.ng-binding 14.06.2015
-        section.comment__content.ng-binding Сгорел порт зарядки ребята починили можно сказать что мгновено....
+          strong
+            a.comment__author(rel='nofollow', data-ng-switch-when='true', href='http://vk.com/kontrast_music') Богдан Кожуховский
+          date.comment__date 19 октября 2015 г.
+        section.comment__content Сгорел порт зарядки ребята починили можно сказать что мгновено....
 
-      li.comment__field.ng-scope(data-ng-repeat='comment in comments')
+      li.comment__field
         header.comment__head.cf
-          strong(data-ng-switch='!!comment.url')
-            a.comment__author.ng-binding.ng-scope(rel='nofollow', data-ng-switch-when='true', href='http://vk.com/deemsofficial') Дмитрий Белоус
-          date.comment__date.ng-binding 14.06.2015
-        section.comment__content.ng-binding Перестал срабатывать датчик приближения, проблему решили все работает, Спасибо.
+          strong
+            a.comment__author(rel='nofollow', data-ng-switch-when='true', href='http://vk.com/deemsofficial') Дмитрий Белоус
+          date.comment__date 14 октября 2015 г.
+        section.comment__content Перестал срабатывать датчик приближения, проблему решили все работает, Спасибо.
 
-      li.comment__field.ng-scope(data-ng-repeat='comment in comments')
+      li.comment__field
         header.comment__head.cf
-          strong(data-ng-switch='!!comment.url')
-            a.comment__author.ng-binding.ng-scope(rel='nofollow', data-ng-switch-when='true', href='http://vk.com/vyles') Виктор Лещук
-          date.comment__date.ng-binding 15.06.2015
-        section.comment__content.ng-binding Банальная проблема не работает кнопка home, 15 мин и мой iPhone 5 cнова радует
+          strong
+            a.comment__author(rel='nofollow', data-ng-switch-when='true', href='http://vk.com/vyles') Виктор Лещук
+          date.comment__date 12 октября 2015 г.
+        section.comment__content Банальная проблема не работает кнопка home, 15 мин и мой iPhone 5 cнова радует
 
-      li.comment__field.ng-scope(data-ng-repeat='comment in comments')
+      li.comment__field
         header.comment__head.cf
-          strong(data-ng-switch='!!comment.url')
-            a.comment__author.ng-binding.ng-scope(rel='nofollow', data-ng-switch-when='true', href='http://vk.com/id55679520') Виктория Ким
-          date.comment__date.ng-binding 18.06.2015
-        section.comment__content.ng-binding Огромное спасибо за замену стекла на iPhone 6 GOLD)))
+          strong
+            a.comment__author(rel='nofollow', data-ng-switch-when='true', href='http://vk.com/id55679520') Виктория Ким
+          date.comment__date 7 октября 2015 г.
+        section.comment__content Огромное спасибо за замену стекла на iPhone 6 GOLD)))
 
-      li.comment__field.ng-scope(data-ng-repeat='comment in comments')
+      li.comment__field
         header.comment__head.cf
-          strong(data-ng-switch='!!comment.url')
-            a.comment__author.ng-binding.ng-scope(rel='nofollow', data-ng-switch-when='true', href='http://vk.com/viktoriatemnova') Виктория Темнова
-          date.comment__date.ng-binding 19.06.2015
-        section.comment__content.ng-binding
+          strong
+            a.comment__author(rel='nofollow', data-ng-switch-when='true', href='http://vk.com/viktoriatemnova') Виктория Темнова
+          date.comment__date 1 октября 2015 г.
+        section.comment__content
           | Упал и камера перестала работать а как я могу без камеры...камера моя жизнь. Теперь я довольная.
 
-      li.comment__field.ng-scope(data-ng-repeat='comment in comments')
+      li.comment__field
         header.comment__head.cf
-          strong(data-ng-switch='!!comment.url')
-            span.comment__author.ng-binding.ng-scope(data-ng-switch-default='') Денис Соколов
-          date.comment__date.ng-binding 19.06.2015
-        section.comment__content.ng-binding Спасибо подняли мой 5С и теперь он работает а не висит на шнурке
+          strong
+            span.comment__author(data-ng-switch-default='') Денис Соколов
+          date.comment__date 28 сентября 2015 г.
+        section.comment__content Спасибо подняли мой 5С и теперь он работает а не висит на шнурке
 
-      li.comment__field.ng-scope(data-ng-repeat='comment in comments')
+      li.comment__field
         header.comment__head.cf
-          strong(data-ng-switch='!!comment.url')
-            a.comment__author.ng-binding.ng-scope(rel='nofollow', data-ng-switch-when='true', href='http://vk.com/natalia_rai') Наталия Раилян
-          date.comment__date.ng-binding 21.06.2015
-        section.comment__content.ng-binding
+          strong
+            a.comment__author(rel='nofollow', data-ng-switch-when='true', href='http://vk.com/natalia_rai') Наталия Раилян
+          date.comment__date 17 сентября 2015 г.
+        section.comment__content
           | Была у ребят сказать нечего огорчили после чего сделали и сказали что даже после воды есть второй шанс.
 
-      li.comment__field.ng-scope(data-ng-repeat='comment in comments')
+      li.comment__field
         header.comment__head.cf
-          strong(data-ng-switch='!!comment.url')
-            a.comment__author.ng-binding.ng-scope(rel='nofollow', data-ng-switch-when='true', href='http://vk.com/id168734117') Денис Тускиев
-          date.comment__date.ng-binding 22.06.2015
-        section.comment__content.ng-binding Заменили корпус на 3GS и он снова как новый.
+          strong
+            a.comment__author(rel='nofollow', data-ng-switch-when='true', href='http://vk.com/id168734117') Денис Тускиев
+          date.comment__date 11 сентября 2015 г.
+        section.comment__content Заменили корпус на 3GS и он снова как новый.
 
-      li.comment__field.ng-scope(data-ng-repeat='comment in comments')
+      li.comment__field
         header.comment__head.cf
-          strong(data-ng-switch='!!comment.url')
-            span.comment__author.ng-binding.ng-scope(data-ng-switch-default='') Максим Михайлович
-          date.comment__date.ng-binding 23.06.2015
-        section.comment__content.ng-binding Спасибо за замену корпуса на 5S.
+          strong
+            span.comment__author(data-ng-switch-default='') Максим Михайлович
+          date.comment__date 8 сентября 2015 г.
+        section.comment__content Спасибо за замену корпуса на 5S.
 
-      li.comment__field.ng-scope(data-ng-repeat='comment in comments')
+      li.comment__field
         header.comment__head.cf
-          strong(data-ng-switch='!!comment.url')
-            a.comment__author.ng-binding.ng-scope(rel='nofollow', data-ng-switch-when='true', href='http://vk.com/a_sychova') Аня Сычёва
-          date.comment__date.ng-binding 25.06.2015
-        section.comment__content.ng-binding Через раз срабатывала кнопка блокировки а сейчас она послушная.
+          strong
+            a.comment__author(rel='nofollow', data-ng-switch-when='true', href='http://vk.com/a_sychova') Аня Сычёва
+          date.comment__date 5 сентября 2015 г.
+        section.comment__content Через раз срабатывала кнопка блокировки а сейчас она послушная.
 
-      li.comment__field.ng-scope(data-ng-repeat='comment in comments')
+      li.comment__field
         header.comment__head.cf
-          strong(data-ng-switch='!!comment.url')
-            span.comment__author.ng-binding.ng-scope(data-ng-switch-default='') Константин Белый
+          strong
+            span.comment__author(data-ng-switch-default='') Константин Белый
 
-          date.comment__date.ng-binding 27.06.2015
-        section.comment__content.ng-binding Вода творит чудеса а мастера могут творить с водой.Спасибо телефон работает.
+          date.comment__date 3 сентября 2015 г.
+        section.comment__content Вода творит чудеса а мастера могут творить с водой.Спасибо телефон работает.
 
-      li.comment__field.ng-scope(data-ng-repeat='comment in comments')
+      li.comment__field
         header.comment__head.cf
-          strong(data-ng-switch='!!comment.url')
-            a.comment__author.ng-binding.ng-scope(rel='nofollow', data-ng-switch-when='true', href='http://vk.com/id_katy93') Катя Мороз
-          date.comment__date.ng-binding 30.06.2015
-        section.comment__content.ng-binding
+          strong
+            a.comment__author(rel='nofollow', data-ng-switch-when='true', href='http://vk.com/id_katy93') Катя Мороз
+          date.comment__date 28 августа 2015 г.
+        section.comment__content
           | После падения у меня случилась паутинка,сменили стекло и теперь он снова со мной, мой 5S.
 
-      li.comment__field.ng-scope(data-ng-repeat='comment in comments')
+      li.comment__field
         header.comment__head.cf
-          strong(data-ng-switch='!!comment.url')
-            a.comment__author.ng-binding.ng-scope(rel='nofollow', data-ng-switch-when='true', href='http://vk.com/alexander_primak') Александр Примак
-          date.comment__date.ng-binding 05.07.2015
-        section.comment__content.ng-binding Спасибо за замену батареи.
+          strong
+            a.comment__author(rel='nofollow', data-ng-switch-when='true', href='http://vk.com/alexander_primak') Александр Примак
+          date.comment__date 26 августа 2015 г.
+        section.comment__content Спасибо за замену батареи.
 
-      li.comment__field.ng-scope(data-ng-repeat='comment in comments')
+      li.comment__field
         header.comment__head.cf
-          strong(data-ng-switch='!!comment.url')
-            a.comment__author.ng-binding.ng-scope(rel='nofollow', data-ng-switch-when='true', href='http://vk.com/id8440874') Андрей
-          date.comment__date.ng-binding 06.07.2015
-        section.comment__content.ng-binding Заменили сенсор на 3GS.
+          strong
+            a.comment__author(rel='nofollow', data-ng-switch-when='true', href='http://vk.com/id8440874') Андрей
+          date.comment__date 24 августа 2015 г.
+        section.comment__content Заменили сенсор на 3GS.
 
-      li.comment__field.ng-scope(data-ng-repeat='comment in comments')
+      li.comment__field
         header.comment__head.cf
-          strong(data-ng-switch='!!comment.url')
-            a.comment__author.ng-binding.ng-scope(rel='nofollow', data-ng-switch-when='true', href='http://vk.com/id215866661') Вика Краснова
-          date.comment__date.ng-binding 07.07.2015
-        section.comment__content.ng-binding Была у ребят меняла стекло на iPad Air.
+          strong
+            a.comment__author(rel='nofollow', data-ng-switch-when='true', href='http://vk.com/id215866661') Вика Краснова
+          date.comment__date 22 августа 2015 г.
+        section.comment__content Была у ребят меняла стекло на iPad Air.
 
-      li.comment__field.ng-scope(data-ng-repeat='comment in comments')
+      li.comment__field
         header.comment__head.cf
-          strong(data-ng-switch='!!comment.url')
-            a.comment__author.ng-binding.ng-scope(rel='nofollow', data-ng-switch-when='true', href='https://vk.com/id124076431') Ira Klimenko
-          date.comment__date.ng-binding 08.07.2015
-        section.comment__content.ng-binding
+          strong
+            a.comment__author(rel='nofollow', data-ng-switch-when='true', href='https://vk.com/id124076431') Ira Klimenko
+          date.comment__date 19 августа 2015 г.
+        section.comment__content
           | Міняла скло на п'ятому айфоні, дуже задоволена роботою, швидко, якісно та за приємну ціну, а головне - хочу відмітити чудове ставлення до клієнтів, раджу всім користвуватись послугами!
 
-      li.comment__field.ng-scope(data-ng-repeat='comment in comments')
+      li.comment__field
         header.comment__head.cf
-          strong(data-ng-switch='!!comment.url')
-            a.comment__author.ng-binding.ng-scope(rel='nofollow', data-ng-switch-when='true', href='http://vk.com/id67759538') Віталій Чайковський
-          date.comment__date.ng-binding 08.07.2015
-        section.comment__content.ng-binding Спасибо за чистку и замену термопасты на MacBook Pro.
+          strong
+            a.comment__author(rel='nofollow', data-ng-switch-when='true', href='http://vk.com/id67759538') Віталій Чайковський
+          date.comment__date 16 августа 2015 г.
+        section.comment__content Спасибо за чистку и замену термопасты на MacBook Pro.
 
-      li.comment__field.ng-scope(data-ng-repeat='comment in comments')
+      li.comment__field
         header.comment__head.cf
-          strong(data-ng-switch='!!comment.url')
-            span.comment__author.ng-binding.ng-scope(data-ng-switch-default='') Сергій Кащен
-          date.comment__date.ng-binding 10.07.2015
-        section.comment__content.ng-binding Была замена АКБ, быстро.
+          strong
+            span.comment__author(data-ng-switch-default='') Сергій Кащен
+          date.comment__date 11 августа 2015 г.
+        section.comment__content Была замена АКБ, быстро.
 
-      li.comment__field.ng-scope(data-ng-repeat='comment in comments')
+      li.comment__field
         header.comment__head.cf
-          strong(data-ng-switch='!!comment.url')
-            a.comment__author.ng-binding.ng-scope(rel='nofollow', data-ng-switch-when='true', href='http://vk.com/id278751056') Рита
-          date.comment__date.ng-binding 11.07.2015
-        section.comment__content.ng-binding
+          strong
+            a.comment__author(rel='nofollow', data-ng-switch-when='true', href='http://vk.com/id278751056') Рита
+          date.comment__date 5 августа 2015 г.
+        section.comment__content
           | Розбыла свой новый iPhone 6+, просто полоса препятствий но ребята сменили мне все бутербродом, как сказал мастер так как у меня был розбыт и дисплей.
 
-      li.comment__field.ng-scope(data-ng-repeat='comment in comments')
+      li.comment__field
         header.comment__head.cf
-          strong(data-ng-switch='!!comment.url')
-            a.comment__author.ng-binding.ng-scope(rel='nofollow', data-ng-switch-when='true', href='http://vk.com/id180148753') Лёня Журин
-          date.comment__date.ng-binding 12.07.2015
-        section.comment__content.ng-binding Замена порт зарядки. Спасибо.
+          strong
+            a.comment__author(rel='nofollow', data-ng-switch-when='true', href='http://vk.com/id180148753') Лёня Журин
+          date.comment__date 3 августа 2015 г.
+        section.comment__content Замена порт зарядки. Спасибо.
 
-      li.comment__field.ng-scope(data-ng-repeat='comment in comments')
+      li.comment__field
         header.comment__head.cf
-          strong(data-ng-switch='!!comment.url')
-            a.comment__author.ng-binding.ng-scope(rel='nofollow', data-ng-switch-when='true', href='http://vk.com/vox_alisa') Alisa
-          date.comment__date.ng-binding 13.07.2015
-        section.comment__content.ng-binding
+          strong
+            a.comment__author(rel='nofollow', data-ng-switch-when='true', href='http://vk.com/vox_alisa') Alisa
+          date.comment__date 27 июля 2015 г.
+        section.comment__content
           | После падения перестал работать екран, ребята меня виручили и я снова со своим любимым 5С
 
-      li.comment__field.ng-scope(data-ng-repeat='comment in comments')
+      li.comment__field
         header.comment__head.cf
-          strong(data-ng-switch='!!comment.url')
-            a.comment__author.ng-binding.ng-scope(rel='nofollow', data-ng-switch-when='true', href='http://vk.com/id28697379') Оношко
-          date.comment__date.ng-binding 14.07.2015
-        section.comment__content.ng-binding Сменили заднюю крышку на iPhone 4S/
+          strong
+            a.comment__author(rel='nofollow', data-ng-switch-when='true', href='http://vk.com/id28697379') Оношко
+          date.comment__date 24 июля 2015 г.
+        section.comment__content Сменили заднюю крышку на iPhone 4S/
 
-      li.comment__field.ng-scope(data-ng-repeat='comment in comments')
+      li.comment__field
         header.comment__head.cf
-          strong(data-ng-switch='!!comment.url')
-            span.comment__author.ng-binding.ng-scope(data-ng-switch-default='') Сергей
-          date.comment__date.ng-binding 17.07.2015
-        section.comment__content.ng-binding Делали ребята замену платы , долго но все работает . Спасибо.
+          strong
+            span.comment__author(data-ng-switch-default='') Сергей
+          date.comment__date 22 июля 2015 г.
+        section.comment__content Делали ребята замену платы , долго но все работает . Спасибо.
 
-      li.comment__field.ng-scope(data-ng-repeat='comment in comments')
+      li.comment__field
         header.comment__head.cf
-          strong(data-ng-switch='!!comment.url')
-            a.comment__author.ng-binding.ng-scope(rel='nofollow', data-ng-switch-when='true', href='http://vk.com/id49332360') Мария Сергеевна
-          date.comment__date.ng-binding 20.07.2015
-        section.comment__content.ng-binding Заменили мне стекло после неудачного падения
+          strong
+            a.comment__author(rel='nofollow', data-ng-switch-when='true', href='http://vk.com/id49332360') Мария Сергеевна
+          date.comment__date 20 июля 2015 г.
+        section.comment__content Заменили мне стекло после неудачного падения
 
-      li.comment__field.ng-scope(data-ng-repeat='comment in comments')
+      li.comment__field
         header.comment__head.cf
-          strong(data-ng-switch='!!comment.url')
-            span.comment__author.ng-binding.ng-scope(data-ng-switch-default='') Синтар Аркан
-          date.comment__date.ng-binding 21.07.2015
-        section.comment__content.ng-binding Была чистка после влаги, Спасибо работает.
+          strong
+            span.comment__author(data-ng-switch-default='') Синтар Аркан
+          date.comment__date 16 июля 2015 г.
+        section.comment__content Была чистка после влаги, Спасибо работает.
 
-      li.comment__field.ng-scope(data-ng-repeat='comment in comments')
+      li.comment__field
         header.comment__head.cf
-          strong(data-ng-switch='!!comment.url')
-            a.comment__author.ng-binding.ng-scope(rel='nofollow', data-ng-switch-when='true', href='http://vk.com/menderenok') Анастасия Мендерова
-          date.comment__date.ng-binding 21.07.2015
-        section.comment__content.ng-binding У меня снова рабочий дисплей на моем iPhone 6.
+          strong
+            a.comment__author(rel='nofollow', data-ng-switch-when='true', href='http://vk.com/menderenok') Анастасия Мендерова
+          date.comment__date 5 июля 2015 г.
+        section.comment__content У меня снова рабочий дисплей на моем iPhone 6.
 
-      li.comment__field.ng-scope(data-ng-repeat='comment in comments')
+      li.comment__field
         header.comment__head.cf
-          strong(data-ng-switch='!!comment.url')
-            a.comment__author.ng-binding.ng-scope(rel='nofollow', data-ng-switch-when='true', href='http://vk.com/rostislav_kiev') Ростислав Муляр
-          date.comment__date.ng-binding 22.07.2015
-        section.comment__content.ng-binding Обращался к ребятам по замене Wi-Fi модема.
-      li.comment__field.ng-scope(data-ng-repeat='comment in comments')
+          strong
+            a.comment__author(rel='nofollow', data-ng-switch-when='true', href='http://vk.com/rostislav_kiev') Ростислав Муляр
+          date.comment__date 2 июля 2015 г.
+        section.comment__content Обращался к ребятам по замене Wi-Fi модема.
+      li.comment__field
         header.comment__head.cf
-          strong(data-ng-switch='!!comment.url')
-            a.comment__author.ng-binding.ng-scope(rel='nofollow', data-ng-switch-when='true', href='https://vk.com/bog35') Олександр Бабич
-          date.comment__date.ng-binding 04.08.2015
-        section.comment__content.ng-binding
+          strong
+            a.comment__author(rel='nofollow', data-ng-switch-when='true', href='https://vk.com/bog35') Олександр Бабич
+          date.comment__date 20 июня 2015 г.
+        section.comment__content
           | Отремонтировали мой apple 5s настолько дешево что я усомнился в качестве. Но работает без проблем. Рекомендую, парень чоткий.
-      li.comment__field.ng-scope(data-ng-repeat='comment in comments')
+      li.comment__field
         header.comment__head.cf
-          strong(data-ng-switch='!!comment.url')
-            a.comment__author.ng-binding.ng-scope(rel='nofollow', data-ng-switch-when='true', href='https://vk.com/vbrizhak') Виктория Брижак
-          date.comment__date.ng-binding 05.08.2015
-        section.comment__content.ng-binding
+          strong
+            a.comment__author(rel='nofollow', data-ng-switch-when='true', href='https://vk.com/vbrizhak') Виктория Брижак
+          date.comment__date 14 июня 2015 г.
+        section.comment__content
           | Здравствуйте! Меняла стекло на айфон 5, все было сделано быстро и качественно, и главное цена нормальная. Очень хорошое отношение к клиентам, всё расскажут и объяснить. отдельное спасибо Александру. Рекомендую всем этот сервис!
-      li.comment__field.ng-scope(data-ng-repeat='comment in comments')
+      li.comment__field
         header.comment__head.cf
-          strong(data-ng-switch='!!comment.url')
-            a.comment__author.ng-binding.ng-scope(rel='nofollow', data-ng-switch-when='true', href='https://vk.com/your_dream_is_andrey') And Rey
-          date.comment__date.ng-binding 08.08.2015
-        section.comment__content.ng-binding  Спасибо за помощь
+          strong
+            a.comment__author(rel='nofollow', data-ng-switch-when='true', href='https://vk.com/your_dream_is_andrey') And Rey
+          date.comment__date 5 июня 2015 г.
+        section.comment__content  Спасибо за помощь
