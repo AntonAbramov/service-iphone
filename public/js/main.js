@@ -4,8 +4,9 @@ requirejs([
   './helpers/domHelper',
   './modules/navigation',
   './modules/courier',
-  './modules/lazy'
-], function (config, domHelper, Nav, Courier, Lazy) {
+  './modules/lazy',
+  './pages/feedback'
+], function (config, domHelper, Nav, Courier, Lazy, Feedback) {
   'use strict';
 
 
@@ -21,6 +22,7 @@ requirejs([
   Nav.init();
   Lazy.init();
   Courier.init();
+  Feedback.init();
 
 
 });
