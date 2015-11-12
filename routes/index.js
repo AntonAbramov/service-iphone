@@ -29,15 +29,11 @@ router.get('/warranty', function (req, res, next) {
 
 router.get('/remont-iphone3g', function (req, res, next) {
 
-  var db = req.db;
-  var collection = db.get('iphone3').find({}, {}, function(e, docs) {
-    res.render('pages/iphones/iphone3', {
-      title: "Ремонт iPhone 3G в Киеве | Сервисный центр Apple - Service-iPhone",
-      description: "Наш Сервис сделает качественный ремонт iPhone 3gs в Киеве с гарантией. Все виды работ включая замену стекла/экрана, реанимируем вашу батарею, почистим после воды",
-      keywords: "ремонт iphone 3gs, киев, ремонт айфона 3gs, замена стекла iphone 3gs",
-      data: docs,
-      menuActive: 'iphone'
-    });
+  res.render('pages/iphones/iphone3', {
+    title: "Ремонт iPhone 3G в Киеве | Сервисный центр Apple - Service-iPhone",
+    description: "Наш Сервис сделает качественный ремонт iPhone 3gs в Киеве с гарантией. Все виды работ включая замену стекла/экрана, реанимируем вашу батарею, почистим после воды",
+    keywords: "ремонт iphone 3gs, киев, ремонт айфона 3gs, замена стекла iphone 3gs",
+    menuActive: 'iphone'
   });
 });
 
