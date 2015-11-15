@@ -15,7 +15,7 @@ plan.target('staging', [
   }
 ]);
 
-plan.target('production', [
+plan.target('prodaction', [
   {
     host: '46.101.129.8',
     username: username,

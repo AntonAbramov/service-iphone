@@ -37,7 +37,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 });*/
 
 app.use('/', routes);
-app.use('/iphone', iphone);
+app.use('/', iphone);
 app.use('/ipad-remont', ipad);
 app.use('/macbook-remont', imac);
 app.use('/feedback', feedback);
