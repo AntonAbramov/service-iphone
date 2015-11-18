@@ -6,6 +6,28 @@ block content
       .row
         .col-sm-2.text-center
           img.sub-header__img(src='../img/iphone/iphone6plus.jpg', alt='Ремонт iPhone 6 Plus')
+          div.raiting(itemscope, itemtype='http://schema.org/Product')
+          meta(itemprop='name', content='iPhone 6 plus')
+          meta(itemprop='description', content=description)
+          meta(itemprop='url', content='http://service-iphone/remont-iphone-6plus')
+          div(itemprop='aggregateRating', itemscope='', itemtype='http://schema.org/AggregateRating')
+            meta(itemprop='worstRating', content='1')
+            meta(itemprop='bestRating', content='5')
+            meta(itemprop='ratingValue', content='5')
+            meta(itemprop='ratingCount', content='9')
+          .raiting__value
+            span.raiting__stars
+              i.fa.fa-star
+              i.fa.fa-star
+              i.fa.fa-star
+              i.fa.fa-star
+              i.fa.fa-star-half-o
+              //i.fa.fa-star-o
+            span.raiting-text
+              span.raiting__score 5
+              | &nbsp;(голосов&nbsp;
+              span.raiting__count 9
+              | )
         .col-sm-4
           h1(title='Ремонт iPhone 6 Plus') Ремонт iPhone 6 Plus.
           p Услуги и цены

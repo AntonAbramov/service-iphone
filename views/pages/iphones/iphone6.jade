@@ -6,6 +6,28 @@ block content
       .row
         .col-sm-2.text-center
           img.sub-header__img(src='../img/iphone/iphone6.jpg', alt='Ремонт iPhone 6')
+          div.raiting(itemscope, itemtype='http://schema.org/Product')
+          meta(itemprop='name', content='iPhone 6')
+          meta(itemprop='description', content=description)
+          meta(itemprop='url', content='http://service-iphone/remont-iphone-6')
+          div(itemprop='aggregateRating', itemscope='', itemtype='http://schema.org/AggregateRating')
+            meta(itemprop='worstRating', content='1')
+            meta(itemprop='bestRating', content='5')
+            meta(itemprop='ratingValue', content='5')
+            meta(itemprop='ratingCount', content='15')
+          .raiting__value
+            span.raiting__stars
+              i.fa.fa-star
+              i.fa.fa-star
+              i.fa.fa-star
+              i.fa.fa-star
+              i.fa.fa-star
+              //i.fa.fa-star-o
+            span.raiting-text
+              span.raiting__score 5
+              | &nbsp;(голосов&nbsp;
+              span.raiting__count 15
+              | )
         .col-sm-4
           h1(title='Ремонт iPhone 6') Ремонт iPhone 6
           p Услуги и цены
@@ -64,7 +86,7 @@ block content
              a(href='/remont-iphone-6/zamena-stekla', title='Замена стекла в iPhone 6') Замена стекла
             time.pricelist__item__time
           .col-md-2
-            .pricelist__item__cost 1800 грн.
+            .pricelist__item__cost 2000 грн.
           .col-md-7
             .pricelist__item__description Дисплейный модуль меняется, если не работает дисплей или разбито стекло.
 
@@ -73,7 +95,7 @@ block content
             .pricelist__item__title Замена экрана и дисплея(модуль)
             time.pricelist__item__time 
           .col-md-2
-            .pricelist__item__cost 2599 грн.
+            .pricelist__item__cost 2799 грн.
           .col-md-7
             .pricelist__item__description Дисплейный модуль меняется, если не работает дисплей или разбито стекло.
 

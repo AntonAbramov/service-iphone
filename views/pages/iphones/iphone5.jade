@@ -6,6 +6,28 @@ block content
       .row
         .col-sm-2.text-center
           img.sub-header__img(src='../img/iphone/iphone5.jpg', alt='Ремонт iPhone 5 в Киеве')
+          div.raiting(itemscope, itemtype='http://schema.org/Product')
+          meta(itemprop='name', content='iPhone 5')
+          meta(itemprop='description', content=description)
+          meta(itemprop='url', content='http://service-iphone/remont-iphone5')
+          div(itemprop='aggregateRating', itemscope='', itemtype='http://schema.org/AggregateRating')
+            meta(itemprop='worstRating', content='1')
+            meta(itemprop='bestRating', content='5')
+            meta(itemprop='ratingValue', content='5')
+            meta(itemprop='ratingCount', content='21')
+          .raiting__value
+            span.raiting__stars
+              i.fa.fa-star
+              i.fa.fa-star
+              i.fa.fa-star
+              i.fa.fa-star
+              i.fa.fa-star
+              //i.fa.fa-star-o
+            span.raiting-text
+              span.raiting__score 5
+              | &nbsp;(голосов&nbsp;
+              span.raiting__count 21
+              | )
         .col-sm-4
           h1(title='Ремонт iPhone 5') Ремонт iPhone 5
           p Услуги и цены
@@ -59,7 +81,7 @@ block content
             .pricelist__item__title Замена экрана
             time.pricelist__item__time
           .col-md-2
-            .pricelist__item__cost 1599 грн.
+            .pricelist__item__cost 1999 грн.
           .col-md-7
             .pricelist__item__description
               | Установка оригинального дисплейного модуля (замена дисплея iphone 5) с олеофобным покрытием.

@@ -6,6 +6,28 @@ block content
       .row
         .col-sm-2.text-center
           img.sub-header__img(src='../img/iphone/iphone4s.jpg', alt='Ремонт iPhone 4s')
+          div.raiting(itemscope, itemtype='http://schema.org/Product')
+          meta(itemprop='name', content='iPhone 4S')
+          meta(itemprop='description', content=description)
+          meta(itemprop='url', content='http://service-iphone/remont-iphone4s')
+          div(itemprop='aggregateRating', itemscope='', itemtype='http://schema.org/AggregateRating')
+            meta(itemprop='worstRating', content='1')
+            meta(itemprop='bestRating', content='5')
+            meta(itemprop='ratingValue', content='5')
+            meta(itemprop='ratingCount', content='18')
+          .raiting__value
+            span.raiting__stars
+              i.fa.fa-star
+              i.fa.fa-star
+              i.fa.fa-star
+              i.fa.fa-star
+              i.fa.fa-star
+              //i.fa.fa-star-o
+            span.raiting-text
+              span.raiting__score 5
+              | &nbsp;(голосов&nbsp;
+              span.raiting__count 18
+              | )
         .col-sm-4
           h1(title='Быстрый Ремонт iPhone 4s в Киеве') Ремонт iPhone 4s
           p Услуги и цены
