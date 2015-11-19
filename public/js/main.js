@@ -22,7 +22,9 @@ requirejs([
   Nav.init();
   Lazy.init();
   Courier.init();
-  Feedback.init();
+  if (document.getElementById('comments-form')) {
+    Feedback.init();
+  }
 
 
 });

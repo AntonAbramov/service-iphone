@@ -3,7 +3,6 @@ define([
 ], function (domHelper) {
   'use strict';
   function _init() {
-    console.log('start navigation');
     _bindEvents();
   }
 
