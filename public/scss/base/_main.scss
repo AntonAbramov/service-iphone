@@ -303,7 +303,7 @@ hr {
 .benefits__heading {
   font-size: 30px;
   line-height: 1;
-  margin: 30px 0;
+  margin: 0 0 20px;
   font-weight: 700;
 }
 
@@ -313,10 +313,10 @@ hr {
   padding: 0;
   li {
     margin: 0 0 20px;
-    line-height: 24px;
+    line-height: 18px;
     display: block;
     padding-left: 40px;
-    font-size: 18px;
+    font-size: 14px;
     position: relative;
     &:before, .aa {
       position: absolute;
@@ -325,7 +325,7 @@ hr {
       left: 0;
       top: 0;
       text-align: center;
-      font-size: 30px;
+      font-size: 24px;
       color: #08c;
     }
   }
