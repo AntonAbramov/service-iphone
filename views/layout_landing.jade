@@ -21,40 +21,25 @@ html(dir="ltr", lang="ru")
       ga('send', 'pageview');
 
     // Google Tag Manager
-    noscript
-      iframe(src='//www.googletagmanager.com/ns.html?id=GTM-K7F3VT', height='0', width='0', style='display:none;visibility:hidden')
-    script.
-      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-      '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-      })(window,document,'script','dataLayer','GTM-K7F3VT');
+    //noscript
+    //  iframe(src='//www.googletagmanager.com/ns.html?id=GTM-K7F3VT', height='0', width='0', style='display:none;visibility:hidden')
+    //script.
+    //  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    //  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    //  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    //  '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    //  })(window,document,'script','dataLayer','GTM-K7F3VT');
     // End Google Tag Manager
 
     block header
-      include header
     block content
     block footer
-      include footer
+
 
     link(rel='stylesheet', href='/css/style.css')
 
     script(data-main='/js/config', src='/js/libs/require.js')
     //script(data-main='/js/prodaction', src='/js/libs/require.js')
-    script.
-      function initialize() {
-      var e = new google.maps.LatLng(50.446805, 30.510911), o = {center: e, scrollwheel: false, zoom: 17, mapTypeId: google.maps.MapTypeId.ROADMAP}, a = new google.maps.Map(document.getElementById("googleMap"), o), n = new google.maps.Marker({position: e});
-      n.setMap(a);
-      var p = new google.maps.InfoWindow({content: "Service Apple <br> Ремонт любой сложности техники Apple <br>(096) 1253246<br>(093) 7229156<br>(066) 5669752"});
-      google.maps.event.addListener(n, "click", function () {
-      p.open(a, n)
-      })
-      }
-      function loadScript() {
-      var e = document.createElement("script");
-      e.type = "text/javascript", e.src = "https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true&callback=initialize", document.body.appendChild(e)
-      }
-      window.onload = loadScript;
 
     // Yandex.Metrika counter
     script(type='text/javascript').

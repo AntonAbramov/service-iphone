@@ -1,6 +1,14 @@
 var express = require('express');
 var router = express.Router();
 
+router.get('/remont-iphone', function (req, res, next) {
+  res.render('pages/landing', {
+    title: "Ремонт iPhone & iPad в Киеве | Service-Iphone",
+    description: "Делаем ремонт всех моделей iPhone, быстро и качественно, с гарантией 6 месяцев",
+    keywords: "Ремонт iPhone, iPad Киев, ремонт айфон, цена, замена стекла iPhone"
+  });
+});
+
 router.get('/iphone', function (req, res, next) {
   res.render('pages/iphones/index', {
     title: "Ремонт iPhone 3g/3gs/4/4s/5/5s/6 оригинальные запчасти",

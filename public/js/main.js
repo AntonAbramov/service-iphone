@@ -5,7 +5,8 @@ requirejs([
   './modules/navigation',
   './modules/courier',
   './modules/lazy',
-  './pages/feedback'
+  './pages/feedback',
+  './pages/landing'
 ], function (config, domHelper, Nav, Courier, Lazy, Feedback) {
   'use strict';
 
