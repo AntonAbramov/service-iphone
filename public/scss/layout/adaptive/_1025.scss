@@ -2,6 +2,10 @@
   display: block;
 }
 
+.show-inline-desktop {
+  display: inline;
+}
+
 .hide-desktop {
   display: none;
 }
@@ -30,6 +34,8 @@ h3 {
 .nav__link {
   border-left: 1px solid #ccc;
   filter: grayscale(100%);
+  font-size: 20px;
+  margin: 0 -10px;
   &:hover, &:focus {
     filter: grayscale(0);
   }
