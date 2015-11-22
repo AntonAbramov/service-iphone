@@ -14,7 +14,8 @@ router.get('/', function (req, res, next) {
   res.render('index', {
     title: "Сервисный центр в Киеве - Ремонт техники Apple | Service-iPhone",
     description: "Срочный ремонт техники Apple в Киеве. Все виды работ включая замену стекла/экрана, реанимируем вашу батарею, почистим после воды",
-    keywords: "сервисный центр apple, Киев, ремонт iphone, сервис apple, ремонт Apple, ремонт apple киев, apple ремонт"
+    keywords: "сервисный центр apple, Киев, ремонт iphone, сервис apple, ремонт Apple, ремонт apple киев, apple ремонт",
+    vkontakte: true
   });
 });
 
@@ -239,8 +240,8 @@ router.post('/call-courier', function(req,res, next) {
 
   transporter.sendMail({
     from: 'scotishkitten@gmail.com',
-    //to: 'antonabramov1990@gmail.com, garkavkaalexandr@gmail.com',
-    to: 'antonabramov1990@gmail.com',
+    to: 'antonabramov1990@gmail.com, garkavkaalexandr@gmail.com',
+    //to: 'antonabramov1990@gmail.com',
     subject: (req.body.info) ? 'Перезвонить срочно!' : 'Заказ Курьера!',
     text: '\nName: ' + req.body.name + '\nКонтакт: ' + req.body.tel + '\nText: ' + req.body.msg + '\nИнфо: ' + req.body.info
   }, function(error, response){

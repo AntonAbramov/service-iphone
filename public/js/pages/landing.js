@@ -4,13 +4,12 @@ define([
 ], function (domHelper, $) {
 
   function init() {
-    _cacheDom();
-    _bindEvents();
-  }
+    //_cacheDom();
+    //_bindEvents();
+
 
   // ===========================================================
 
-  $(document).ready(function(){
     var devise = 0;
     var backCall, order;
     var id_device;
@@ -687,8 +686,7 @@ define([
 
     form.addEventListener('submit', sbmForm);
 
-  });
-
+  }
 
 
 

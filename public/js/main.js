@@ -7,7 +7,7 @@ requirejs([
   './modules/lazy',
   './pages/feedback',
   './pages/landing'
-], function (config, domHelper, Nav, Courier, Lazy, Feedback) {
+], function (config, domHelper, Nav, Courier, Lazy, Feedback, Landing) {
   'use strict';
 
 
@@ -25,6 +25,10 @@ requirejs([
   Courier.init();
   if (document.getElementById('comments-form')) {
     Feedback.init();
+  }
+
+  if (document.getElementById('stepsforform')) {
+    Landing.init();
   }
 
 
