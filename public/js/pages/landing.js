@@ -20,91 +20,46 @@ define([
 
     function setTextPrise(index) {
       $('.fault_pin_tooltip').fadeOut('slow', function() {
-        if(isPragu) {
-          switch (index){
-            case 1: {
-              $('.fault_pin_tooltip .title').html('замена кнопки power или замена аккумулятора');
-              $('.fault_pin_tooltip .price').html('Цена: от 600 Kč');
-              break;
-            }
-            case 2: {
-              $('.fault_pin_tooltip .title').html('если у вас нет изображения , не работает тачскрин или если вы разбили экран то это замена видеомодуля');
-              $('.fault_pin_tooltip .price').html('Цена: от 1700 Kč');
-              break;
-            }
-            case 3: {
-              $('.fault_pin_tooltip .title').html('замена системного разъема или замена аккумулятора');
-              $('.fault_pin_tooltip .price').html('Цена: от 900 Kč');
-              break;
-            }
-            case 4: {
-              $('.fault_pin_tooltip .title').html('замена слухового динамика ');
-              $('.fault_pin_tooltip .price').html('Цена: от 900 Kč');
-              break;
-            }
-            case 5: {
-              $('.fault_pin_tooltip .title').html('замена микрофона');
-              $('.fault_pin_tooltip .price').html('Цена: от 900 Kč');
-              break;
-            }
-            case 6: {
-              $('.fault_pin_tooltip .title').html('замена кнопки home');
-              $('.fault_pin_tooltip .price').html('Цена: от 800 Kč');
-              break;
-            }
-            case 7: {
-              $('.fault_pin_tooltip .title').html('замена фронтальной камеры или замена основной камеры');
-              $('.fault_pin_tooltip .price').html('Цена: от 900 Kč');
-              break;
-            }
-            case 8: {
-              $('.fault_pin_tooltip .title').html('ремонт програмного обеспечения');
-              $('.fault_pin_tooltip .price').html('Цена: 600 Kč');
-              break;
-            }
+        switch (index){
+          case 1: {
+            $('.fault_pin_tooltip .title').html('замена кнопки power или замена аккумулятора');
+            $('.fault_pin_tooltip .price').html('Цена: от 1500 руб.');
+            break;
           }
-        } else {
-          switch (index){
-            case 1: {
-              $('.fault_pin_tooltip .title').html('замена кнопки power или замена аккумулятора');
-              $('.fault_pin_tooltip .price').html('Цена: от 1500 руб.');
-              break;
-            }
-            case 2: {
-              $('.fault_pin_tooltip .title').html('если у вас нет изображения , не работает тачскрин или если вы разбили экран то это замена видеомодуля');
-              $('.fault_pin_tooltip .price').html('Цена: от 2500 руб.');
-              break;
-            }
-            case 3: {
-              $('.fault_pin_tooltip .title').html('замена системного разьема или замена аккумулятора');
-              $('.fault_pin_tooltip .price').html('Цена: от 1500 руб.');
-              break;
-            }
-            case 4: {
-              $('.fault_pin_tooltip .title').html('замена слухового динамика ');
-              $('.fault_pin_tooltip .price').html('Цена: от 1500 руб.');
-              break;
-            }
-            case 5: {
-              $('.fault_pin_tooltip .title').html('замена микрофона');
-              $('.fault_pin_tooltip .price').html('Цена: от 1500 руб.');
-              break;
-            }
-            case 6: {
-              $('.fault_pin_tooltip .title').html('замена кнопки home');
-              $('.fault_pin_tooltip .price').html('Цена: от 1500 руб.');
-              break;
-            }
-            case 7: {
-              $('.fault_pin_tooltip .title').html('замена фронтальной камеры или замена основной камеры');
-              $('.fault_pin_tooltip .price').html('Цена: от 1500 руб.');
-              break;
-            }
-            case 8: {
-              $('.fault_pin_tooltip .title').html('ремонт програмного обеспечения');
-              $('.fault_pin_tooltip .price').html('Цена: 1000 руб.');
-              break;
-            }
+          case 2: {
+            $('.fault_pin_tooltip .title').html('если у вас нет изображения , не работает тачскрин или если вы разбили экран то это замена видеомодуля');
+            $('.fault_pin_tooltip .price').html('Цена: от 2500 руб.');
+            break;
+          }
+          case 3: {
+            $('.fault_pin_tooltip .title').html('замена системного разьема или замена аккумулятора');
+            $('.fault_pin_tooltip .price').html('Цена: от 1500 руб.');
+            break;
+          }
+          case 4: {
+            $('.fault_pin_tooltip .title').html('замена слухового динамика ');
+            $('.fault_pin_tooltip .price').html('Цена: от 1500 руб.');
+            break;
+          }
+          case 5: {
+            $('.fault_pin_tooltip .title').html('замена микрофона');
+            $('.fault_pin_tooltip .price').html('Цена: от 1500 руб.');
+            break;
+          }
+          case 6: {
+            $('.fault_pin_tooltip .title').html('замена кнопки home');
+            $('.fault_pin_tooltip .price').html('Цена: от 1500 руб.');
+            break;
+          }
+          case 7: {
+            $('.fault_pin_tooltip .title').html('замена фронтальной камеры или замена основной камеры');
+            $('.fault_pin_tooltip .price').html('Цена: от 1500 руб.');
+            break;
+          }
+          case 8: {
+            $('.fault_pin_tooltip .title').html('ремонт програмного обеспечения');
+            $('.fault_pin_tooltip .price').html('Цена: 1000 руб.');
+            break;
           }
         }
       });
@@ -466,7 +421,7 @@ define([
           }
         }
 
-      $('.textrepair').html(textEndForm);
+      $('.repair-msg').html(textEndForm);
 
 
       $('#formstep3').fadeOut('slow',function() {
@@ -475,7 +430,7 @@ define([
 
     });
 
-    $('.selectdevise').click(function(){
+    $('.choose-device').click(function(){
       var index = parseInt($(this).data('index'));
       id_device = parseInt($(this).data('index'));
 
@@ -503,6 +458,34 @@ define([
       order = $('#popup2').bPopup();
     });
 
+
+    var formParent = document.getElementById('formstep4'),
+        form = formParent.childNodes[0];
+
+    function sbmForm(e) {
+      e.preventDefault();
+      $('#rapair-info').val($('.repair-msg').text());
+
+      var formLength = form.length - 1,
+          data = '';
+      for (var i = 0; i < formLength; i++) {
+        data += form[i].getAttribute('name') + '=' + form[i].value + '&';
+      }
+
+      $.ajax({
+        type: 'POST',
+        url: '/call-courier',
+        data: data
+      }).done(function (res) {
+        if (res === 'success') {
+          formParent.innerHTML = '<h1 style="color: green; text-align:center;">Мы вам перезвоним в течении 3 мин! </h1>';
+        } else {
+          $(formParent).prepend('Opps something wend wrong');
+        }
+      });
+    }
+
+    form.addEventListener('submit', sbmForm);
 
   });
 

@@ -34,7 +34,7 @@ define([
 
   function bindEvents() {
 
-    callCourierBtn.addEventListener('click', openCourierModal)
+    callCourierBtn.addEventListener('click', openCourierModal);
 
     overlay.addEventListener('click', closeCourierModal);
     closeBtn.addEventListener('click', closeModal);
@@ -102,7 +102,7 @@ define([
     }).done(function (res) {
       if (res === 'success') {
 
-          form.innerHTML = '<div style="color: green; text-align:center;">Спасибо за Ваш запрос. \n Мы вам перезвоним в течении 10мин! </div>';
+          form.innerHTML = '<div style="color: green; text-align:center;">Мы вам перезвоним в течении 5 мин! </div>';
           setTimeout(function(){
             closeModal(e);
           }, 4000);

@@ -236,11 +236,13 @@ router.get('/wifi-ne-rabotaet', function (req, res, next) {
 
 
 router.post('/call-courier', function(req,res, next) {
+
   transporter.sendMail({
     from: 'scotishkitten@gmail.com',
-    to: 'antonabramov1990@gmail.com, garkavkaalexandr@gmail.com',
-    subject: 'Заказ Курьера!',
-    text: '\nName: ' + req.body.name + '\nEmail: ' + req.body.tel + '\nText: ' + req.body.msg
+    //to: 'antonabramov1990@gmail.com, garkavkaalexandr@gmail.com',
+    to: 'antonabramov1990@gmail.com',
+    subject: (req.body.info) ? 'Перезвонить срочно!' : 'Заказ Курьера!',
+    text: '\nName: ' + req.body.name + '\nКонтакт: ' + req.body.tel + '\nText: ' + req.body.msg + '\nИнфо: ' + req.body.info
   }, function(error, response){
     if(error){
       res.send('error');
