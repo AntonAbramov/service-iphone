@@ -3,7 +3,7 @@ extends ../layout_landing
 block header
   header.lp-header
     .lp-header__container.cf
-      .site-logo.text-center.col-md-2.col-sm-4.show-tablet
+      .site-logo.text-center.col-md-3.col-xs-4
         a.site-logo__link(itemprop='url', href='/', title='Service-iPhone - ремонт техники Apple.')
           img.site-logo__img(itemprop="image", src='/img/logo.png', alt='Service-Iphone ремонт техники Apple iphone ipad macbook')
           span(itemprop="name") Service-iPhone
@@ -12,7 +12,7 @@ block header
           span.icon-bar
           span.icon-bar
           span.icon-bar
-      nav#top-nav.top-navigation.col-lg-6.col-md-7.col-sm-8
+      nav#top-nav.top-navigation.col-md-7
         a.top-navigation__link(href='/iphone', class=(menuActive === 'iphone' ? 'is-active' : '' ))
           span.top-navigation--text(title='Ремонт iPhone') iPhone
         a.top-navigation__link(href='/ipad-remont', class=(menuActive === 'ipad' ? 'is-active' : '' ))
@@ -23,145 +23,163 @@ block header
           span.top-navigation--text(title='Отзывы') Отзывы
         a.top-navigation__link(href='/#contacts', rel='nofollow')
           span.top-navigation--text(title='Контакты') Контакты
+      ul.lp-header__telephone
+        li.lp__phone: a(href="tel:0961253246" class="adress-section__number") (096) 125-32-46
+        li.lp__phone: a(href="tel:0937229156" class="adress-section__number") (093) 722-91-56
+        li.lp__phone.hide-desktop: a(href="tel:0665669752" class="adress-section__number") (066) 566-97-52
+
 
 block content
   div(style="max-width: 970px; margin: 0 auto;")
-    #stepsforform.col-md-12.col-xs-12.text-center
-      .row
-        .rowwidth
-          .col-md-3.col-xs-6
-            a.selectstep(href='javascript:void(0);', data-step='1')
-              span Устройство
-              span.text
-          .col-md-3.col-xs-6
-            a.selectstep(href='javascript:void(0);', data-step='2')
-              span Модель
-              span.text
-          .col-md-3.col-xs-12
-            a.selectstep(href='javascript:void(0);', data-step='3')
-              span Неисправность
-              span.text
+    #stepsforform.col-xs-12.text-center
+      .row(style=" margin: 20px 0 0;")
+        .col-md-3.col-xs-6
+          a.selectstep(href='javascript:void(0);', data-step='1')
+            span Устройство
+            span.text
+        .col-md-3.col-xs-6
+          a.selectstep(href='javascript:void(0);', data-step='2')
+            span Модель
+            span.text
+        .col-md-3.col-xs-12
+          a.selectstep(href='javascript:void(0);', data-step='3')
+            span Неисправность
+            span.text
     #stepsendform.col-md-12.col-xs-12.text-center
       p.title Превосходно!
-      p.textrepair
-        | замена замена замена замена:
-        span.price 2000 руб.
-      p#repair8 Цена указана с учетом стоимости запчасти и выезда мастера лично к вам
+      p.repair-msg
+        | замена:
+        span.price 500 грн.
+      p#repair8 Цена указана с учетом стоимости запчасти
     .row
       #formstep1.col-xs-12.text-center.formstep
-        p Выберите что у вас сломалось
-        .col-md-6.col-xs-6
-          a.selectdevise(href='javascript:void(0);', data-index='1')
-            img(src='/img/devices/remont-ipad.png', alt='Ремонт iPad Киев', title="Ремонт iPad в Киеве")
-            span iPad
-        .col-md-6.col-xs-6
-          a.selectdevise(href='javascript:void(0);', data-index='2')
-            img.small(src='/img/devices/remont-iphone.png', alt='Ремонт iPhone Киев', title="Ремонт iPhone в Киеве")
-            span iPhone
+        h2.text-center.mt0 Выберите что у вас сломалось
+        table.lp-choose-device
+          tr
+            td
+              a.choose-device(href='javascript:void(0);', data-index='1')
+                img(src='/img/devices/remont-ipad.jpg', alt='Ремонт iPad Киев', title="Ремонт iPad в Киеве")
+            td
+              a.choose-device(href='javascript:void(0);', data-index='2')
+                img(src='/img/devices/remont-iphone.jpg', alt='Ремонт iPhone Киев', title="Ремонт iPhone в Киеве")
+          tr
+            td
+              a.choose-device(href='javascript:void(0);', data-index='1')
+                span iPad
+            td
+              a.choose-device(href='javascript:void(0);', data-index='2')
+                span iPhone
       #formstep2.col-md-12.col-xs-12.formstep
-        p Выберите модель
+        h2.text-center.mt0 Выберите модель
         .row.modelipad
-          .rowwidth
-            .col-md-3.col-xs-6
-              a.selectmodel(href='javascript:void(0);', data-id='1', data-model='iPad Mini Retina')
-                | iPad Mini Retina
-            .col-md-3.col-xs-6
-              a.selectmodel(href='javascript:void(0);', data-id='2', data-model='iPad Mini')
-                | iPad Mini
-            .col-md-3.col-xs-6
-              a.selectmodel(href='javascript:void(0);', data-id='3', data-model='iPad Air')
-                | iPad Air
-            .col-md-3.col-xs-6
-              a.selectmodel(href='javascript:void(0);', data-id='4', data-model='iPad 4')
-                | iPad 4
-            .col-md-3.col-xs-6
-              a.selectmodel(href='javascript:void(0);', data-id='5', data-model='iPad 3')
-                | iPad 3
-            .col-md-3.col-xs-6
-              a.selectmodel(href='javascript:void(0);', data-id='6', data-model='iPad 2')
-                | iPad 2
-            .col-md-3.col-xs-6
-              a.selectmodel(href='javascript:void(0);', data-id='7', data-model='iPad 1')
-                | iPad 1
+          .col-md-3.col-xs-6
+            a.selectmodel(href='javascript:void(0);', data-id='1', data-model='iPad Mini Retina')
+              | iPad Mini Retina
+          .col-md-3.col-xs-6
+            a.selectmodel(href='javascript:void(0);', data-id='2', data-model='iPad Mini')
+              | iPad Mini
+          .col-md-3.col-xs-6
+            a.selectmodel(href='javascript:void(0);', data-id='3', data-model='iPad Air')
+              | iPad Air
+          .col-md-3.col-xs-6
+            a.selectmodel(href='javascript:void(0);', data-id='4', data-model='iPad 4')
+              | iPad 4
+          .col-md-3.col-xs-6
+            a.selectmodel(href='javascript:void(0);', data-id='5', data-model='iPad 3')
+              | iPad 3
+          .col-md-3.col-xs-6
+            a.selectmodel(href='javascript:void(0);', data-id='6', data-model='iPad 2')
+              | iPad 2
+          .col-md-3.col-xs-6
+            a.selectmodel(href='javascript:void(0);', data-id='7', data-model='iPad 1')
+              | iPad 1
         .row.modeliphone
-          .rowwidth
-            .col-md-3.col-xs-6
-              a.selectmodel(href='javascript:void(0);', data-id='1', data-model='iPhone 6 plus')
-                | iPhone 6 plus
-            .col-md-3.col-xs-6
-              a.selectmodel(href='javascript:void(0);', data-id='2', data-model='iPhone 6')
-                | iPhone 6
-            .col-md-3.col-xs-6
-              a.selectmodel(href='javascript:void(0);', data-id='3', data-model='iPhone 5s')
-                | iPhone 5s
-            .col-md-3.col-xs-6
-              a.selectmodel(href='javascript:void(0);', data-id='4', data-model='iPhone 5c')
-                | iPhone 5c
-            .col-md-3.col-xs-6
-              a.selectmodel(href='javascript:void(0);', data-id='5', data-model='iPhone 5')
-                | iPhone 5
-            .col-md-3.col-xs-6
-              a.selectmodel(href='javascript:void(0);', data-id='6', data-model='iPhone 4s')
-                | iPhone 4s
-            .col-md-3.col-xs-6
-              a.selectmodel(href='javascript:void(0);', data-id='7', data-model='iPhone 4')
-                | iPhone 4
-            .col-md-3.col-xs-6
-              a.selectmodel(href='javascript:void(0);', data-id='8', data-model='iPhone 3GS')
-                | iPhone 3GS
+          .col-md-3.col-xs-6
+            a.selectmodel(href='javascript:void(0);', data-id='1', data-model='iPhone 6 plus')
+              | iPhone 6 plus
+          .col-md-3.col-xs-6
+            a.selectmodel(href='javascript:void(0);', data-id='2', data-model='iPhone 6')
+              | iPhone 6
+          .col-md-3.col-xs-6
+            a.selectmodel(href='javascript:void(0);', data-id='3', data-model='iPhone 5s')
+              | iPhone 5s
+          .col-md-3.col-xs-6
+            a.selectmodel(href='javascript:void(0);', data-id='4', data-model='iPhone 5c')
+              | iPhone 5c
+          .col-md-3.col-xs-6
+            a.selectmodel(href='javascript:void(0);', data-id='5', data-model='iPhone 5')
+              | iPhone 5
+          .col-md-3.col-xs-6
+            a.selectmodel(href='javascript:void(0);', data-id='6', data-model='iPhone 4s')
+              | iPhone 4s
+          .col-md-3.col-xs-6
+            a.selectmodel(href='javascript:void(0);', data-id='7', data-model='iPhone 4')
+              | iPhone 4
+          .col-md-3.col-xs-6
+            a.selectmodel(href='javascript:void(0);', data-id='8', data-model='iPhone 3GS')
+              | iPhone 3GS
       #formstep3.col-md-12.col-xs-12.text-center.formstep
-        p Выберите неисправность
+        h2.text-center.mt0 Выберите неисправность
         .modelrepair.row
-          .rowwidth
-            .col-md-3.col-xs-6
-              a.selectrepair(href='javascript:void(0);', data-id='1', data-repair='Разбито стекло')
-                | Разбито стекло
-            .col-md-3.col-xs-6
-              a.selectrepair(href='javascript:void(0);', data-id='2', data-repair='Микрофон')
-                | Микрофон
-            .col-md-3.col-xs-6
-              a.selectrepair(href='javascript:void(0);', data-id='3', data-repair='Батарея')
-                | Батарея
-            .col-md-3.col-xs-6
-              a.selectrepair(href='javascript:void(0);', data-id='4', data-repair='Батарея')
-                | Кнопка вкл/выкл
-            .col-md-3.col-xs-6
-              a.selectrepair(href='javascript:void(0);', data-id='5', data-repair='Батарея')
-                | Кнопка меню
-            .col-md-3.col-xs-6
-              a.selectrepair(href='javascript:void(0);', data-id='6', data-repair='Батарея')
-                | Камера
-            .col-md-3.col-xs-6
-              a.selectrepair(href='javascript:void(0);', data-id='7', data-repair='Батарея')
-                | Динамик
-            .col-md-3.col-xs-6
-              a.selectrepair(href='javascript:void(0);', data-id='8', data-repair='Другое')
-                | Другое
+          .col-md-3.col-xs-6
+            a.selectrepair(href='javascript:void(0);', data-id='1', data-repair='Разбито стекло')
+              | Разбито стекло
+          .col-md-3.col-xs-6
+            a.selectrepair(href='javascript:void(0);', data-id='2', data-repair='Микрофон')
+              | Микрофон
+          .col-md-3.col-xs-6
+            a.selectrepair(href='javascript:void(0);', data-id='3', data-repair='Батарея')
+              | Батарея
+          .col-md-3.col-xs-6
+            a.selectrepair(href='javascript:void(0);', data-id='4', data-repair='Батарея')
+              | Кнопка вкл/выкл
+          .col-md-3.col-xs-6
+            a.selectrepair(href='javascript:void(0);', data-id='5', data-repair='Батарея')
+              | Кнопка меню
+          .col-md-3.col-xs-6
+            a.selectrepair(href='javascript:void(0);', data-id='6', data-repair='Батарея')
+              | Камера
+          .col-md-3.col-xs-6
+            a.selectrepair(href='javascript:void(0);', data-id='7', data-repair='Батарея')
+              | Динамик
+          .col-md-3.col-xs-6
+            a.selectrepair(href='javascript:void(0);', data-id='8', data-repair='Другое')
+              | Другое
       #formstep4.col-md-12.col-xs-12.text-center.formstep
-        .rowwidth
-          form#orderform.col-md-6.col-md-offset-3.col-xs-12.-visor-no-click(novalidate='novalidate')
-            input#inputmodel(type='hidden', value='', name='model', readonly='')
-            input#inputrepair(type='hidden', value='', name='repair', readonly='')
-            input(type='hidden', value='3', name='type')
-            input(type='text', value='', name='name', placeholder='Как к вам обращаться?')
-            input.phone(type='text', value='', name='phone', placeholder='Ваш номер телефона')
-            input#textmsg(type='text', value='', name='msg', placeholder='Текстовое сообщение')
-            p * данные нигде не публикуются
-            input.btn(type='submit', value='Вызвать мастера')
-          .col-md-6.col-md-offset-3.col-xs-12.text-left
-            ol(style='font-size: 20px;')
-              li
-                p Сейчас вам перезвонит ваш мастер
-              li
-                p Назначьте мастеру время и место встречи
-              li
-                p По окончанию ремонта получите гарантию
+        form.col-md-6.col-md-offset-3.col-xs-12
+          input#inputmodel(type='hidden', value='', name='model', readonly='')
+          input#inputrepair(type='hidden', value='', name='repair', readonly='')
+          input#rapair-info(type='hidden', value='', name='info', readonly='')
+          input(type='hidden', value='3', name='type')
+          input(type='text', value='', name='name', placeholder='Как к вам обращаться?', required)
+          input.phone(type='text', value='', name='tel', placeholder='Ваш номер телефона', required)
+          input#textmsg(type='text', value='', name='msg', placeholder='Текстовое сообщение')
+          p(style="margin-top:-10px; text-align:left; font-size: 14px;") * данные нигде не публикуются
+          input.btn.btn-primary(type='submit', value='Заказать обратный звонок')
+        .col-md-6.col-md-offset-3.col-xs-12.text-left
+          p И вам перезвонит мастер в течении 3 минут.
       #formstep5.col-md-12.col-xs-12.text-center.formstep
         p.title Благодарим за ваш выбор!
         p(style='font-size: 19px;margin-top: -20px;') Вы не только отдали свое устройство в надежные руки но и сэкономили свое время.
         p(style='margin-top: 60px;') Через несколько минут Вам позвонит наш менеджер.
 
-    #lptr_phone_div.lptrack-phone.lptrack-green.static.lptrack_show.lptrack_static(style='top: 208px; left: 1110.5px;')
-      .lptrack-ph-circle
-      .lptrack-ph-circle-fill
-      .lptrack-ph-img-circle
+    #call-courier
+      #lptr_phone_div.lptrack-phone.lptrack-green.static.lptrack_show.lptrack_static
+        .lptrack-ph-circle
+        .lptrack-ph-circle-fill
+        .lptrack-ph-img-circle
+
+  #overlay-courier.overlay
+    #courier.modal--courier
+      button.btn-close &#10006
+      header.modal-heading Вызвать курьера
+      form#courier-form(action='contact-form', method='POST')
+        .field
+          input.field__controll(type='text', name='name', required, placeholder='Имя')
+        .field
+          input.field__controll(type='tel', name='tel', required, placeholder='Телефон')
+        .field
+          textarea(name='msg') Примечание
+        .field
+          .field__controll
+            input.sbm.btn-primary(type='submit', value='Вызвать')
