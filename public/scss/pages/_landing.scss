@@ -1,3 +1,8 @@
+.lp-wrapper {
+  min-height: 100%;
+  padding: 0 0 200px;
+}
+
 .selectstep {
   border: 2px solid #2dcda1;
   border-radius: 10px;
@@ -133,7 +138,7 @@
   transform-origin: 50% 50%;
   transition: visibility .5s;
   right: 100px;
-  top: 50%;
+  top: 20%;
 }
 
 .lptrack-phone.lptrack_show {
@@ -630,7 +635,23 @@
 .choose-device {
   display: block;
   text-decoration: none;
+  img {
+    @include transition(all, .3s)
+  }
   &:hover {
     color: $brand-primary;
+    img {
+      transform: scale(1.05);
+    }
+    span {
+      text-decoration: underline;
+    }
+  }
+}
+
+
+.lp-footer {
+  .adress-section {
+    padding: 10px 0 30px;
   }
 }
