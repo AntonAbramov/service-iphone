@@ -137,7 +137,7 @@
   z-index: 4;
   transform-origin: 50% 50%;
   transition: visibility .5s;
-  right: 100px;
+  right: 20px;
   top: 20%;
   display: none;
 }
@@ -632,6 +632,8 @@
 
 .lp-choose-device {
   width: 100%;
+  max-width: 780px;
+  margin: 0 auto;
 }
 .choose-device {
   display: block;
