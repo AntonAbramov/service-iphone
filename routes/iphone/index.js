@@ -28,16 +28,6 @@ router.get('/remont-iphone3g', function (req, res, next) {
   });
 });
 
-router.get('/remont-iphone5', function (req, res, next) {
-  res.render('pages/iphones/iphone5', {
-    title: "Ремонт iPhone 5 в Киеве | Сервисный центр Apple - Service-iPhone",
-    description: "В нашем СЦ сделают быстрый ремонт iPhone 5. Замена стекла, экрана, аккумулятора в течении суток!",
-    keywords: "Ремонт iPhone 5, ремонт айфона 5, Киев, замена стекла, дисплея, экрана, ремонт аккумулятора, батареи",
-    menuActive: 'iphone'
-  });
-});
-
-
 router.get('/remont-iphone4', function (req, res, next) {
   res.render('pages/iphones/iphone4', {
     title: "Ремонт iPhone 4 в Киеве | Сервисный центр Apple - Service-iPhone",
@@ -52,6 +42,24 @@ router.get('/remont-iphone4s', function (req, res, next) {
     title: "Ремонт iPhone 4s",
     description: "Service-iphone сделает качественный ремонт iphone 4s в Киеве с гарантией не менее 6 месяцев. Замена батареи, аккумулятора, стекла/экрана.",
     keywords: "Ремонт iPhone 4s, ремонт айфона 4s, Киев, замена стекла iPhone 4s",
+    menuActive: 'iphone'
+  });
+});
+
+router.get('/remont-iphone5', function (req, res, next) {
+  res.render('pages/iphones/iphone5', {
+    title: "Ремонт iPhone 5 в Киеве | Сервисный центр Apple - Service-iPhone",
+    description: "В нашем СЦ сделают быстрый ремонт iPhone 5. Замена стекла, экрана, аккумулятора в течении суток!",
+    keywords: "Ремонт iPhone 5, ремонт айфона 5, Киев, замена стекла, дисплея, экрана, ремонт аккумулятора, батареи",
+    menuActive: 'iphone'
+  });
+});
+
+router.get('/remont-iphone-5/zamena-stekla', function (req, res, next) {
+  res.render('pages/iphones/iphone5/zamena-stekla', {
+    title: "Замена стекла iPhone 5 в Киеве | Service-iPhone",
+    description: "Качественная замена стекла (дисплея) на iPhone 5 в Киеве. Бесплатная диагностика. Дешевые цены.",
+    keywords: "Замена стекла iphone 5, замена экрана iphone 5, Киев, замена дисплея iPhone 5, экрана",
     menuActive: 'iphone'
   });
 });
@@ -87,9 +95,9 @@ router.get('/remont-iphone-6', function (req, res, next) {
 
 router.get('/remont-iphone-6/zamena-stekla', function (req, res, next) {
   res.render('pages/iphones/iphone6/zamena-stekla', {
-    title: "Ремонт iPhone 3g/3gs/4/4s/5/5s/6 оригинальные запчасти",
+    title: "Замена стекла iPhone 6 в Киеве | Service-iPhone",
     description: "Качественная замена стекла (дисплея) на iPhone 5 в Киеве. Бесплатная диагностика. Дешевые цены.",
-    keywords: "Замена стекла iphone 6, Киев, замена дисплея iPhone 6, экрана",
+    keywords: "Замена стекла iphone 6, Киев, замена экрана iphone 6, экрана, замена стекла iphone 6 Киев",
     menuActive: 'iphone'
   });
 });
