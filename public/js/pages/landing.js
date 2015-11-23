@@ -15,12 +15,14 @@ define([
     var id_device;
     var id_model;
     var id_repair;
+    var modelUrl;
 
     $('.selectmodel').click(function() {
       $('.selectmodel').removeClass('active');
       $(this).addClass('active');
 
       var model = $(this).data('model');
+      modelUrl = $(this).data('url');
       id_model = parseInt($(this).data('id'));
 
       $('#inputmodel').val(model);
@@ -37,6 +39,8 @@ define([
       $('#formstep2').fadeOut('slow',function() {
         $('#formstep3').fadeIn('slow');
       });
+
+
 
     });
 
@@ -96,7 +100,7 @@ define([
       if(id_device == 1) {
         switch(id_repair){
           case 1: {
-            textEndForm = "замена экрана вашего iPad ";
+            textEndForm = "Замена экрана вашего iPad ";
             switch(id_model){
               case 1: {
                 textEndForm += "Mini Retina: <span class='price'>2100 грн.</span>";
@@ -130,7 +134,7 @@ define([
             break;
           }
           case 2: {
-            textEndForm = "замена микрофона на вашем iPad ";
+            textEndForm = "Замена микрофона на вашем iPad ";
             switch(id_model){
               case 1: {
                 textEndForm += "Mini Retina: <span class='price'>600 грн.</span>";
@@ -164,7 +168,7 @@ define([
             break;
           }
           case 3: {
-            textEndForm = "замена аккумуляторной батареи на вашем iPad ";
+            textEndForm = "Замена аккумуляторной батареи на вашем iPad ";
             switch(id_model){
               case 1: {
                 textEndForm += "Mini Retina: <span class='price'>1500 грн.</span>";
@@ -198,7 +202,7 @@ define([
             break;
           }
           case 4: {
-            textEndForm = "замена кнопки вкл/выкл на вашем iPad ";
+            textEndForm = "Замена кнопки вкл/выкл на вашем iPad ";
             switch(id_model){
               case 1: {
                 textEndForm += "Mini Retina: <span class='price'>650 грн.</span>";
@@ -232,7 +236,7 @@ define([
             break;
           }
           case 5: {
-            textEndForm = "замена кнопки меню на вашем iPad ";
+            textEndForm = "Замена кнопки меню на вашем iPad ";
             switch(id_model){
               case 1: {
                 textEndForm += "Mini Retina: <span class='price'>600 грн.</span>";
@@ -266,7 +270,7 @@ define([
             break;
           }
           case 6: {
-            textEndForm = "замена передней камеры на вашем iPad ";
+            textEndForm = "Замена передней камеры на вашем iPad ";
             switch(id_model){
               case 1: {
                 textEndForm += "Mini Retina: <span class='price'>650 грн.</span>";
@@ -300,7 +304,7 @@ define([
             break;
           }
           case 7: {
-            textEndForm = "замена динамика на вашем iPad ";
+            textEndForm = "Замена динамика на вашем iPad ";
             switch(id_model){
               case 1: {
                 textEndForm += "Mini Retina: <span class='price'>600 грн.</span>";
@@ -334,8 +338,8 @@ define([
             break;
           }
           case 8: {
-            textEndForm = "опишите проблему в текстовом сообщение или можете сделать это по телефону чтобы узнать цену ремонта";
-            $('#repair8').html('если вы не знаете причину поломки мастер произведет бесплатную диагностику');
+            textEndForm = "Опишите проблему в текстовом сообщение или можете перейти на " + "<a href="+ modelUrl +">каталог наших цен.</a>";
+            $('#repair8').html('Если вы не знаете причину поломки мастер произведет бесплатную диагностику');
             $('#textmsg').show();
             break;
           }
@@ -346,7 +350,7 @@ define([
       } else {
         switch(id_repair){
           case 1: {
-            textEndForm = "замена экрана вашего iPhone";
+            textEndForm = "Замена экрана вашего iPhone";
             switch(id_model){
               case 1: {
                 textEndForm += " 6plus: <span class='price'>3600 грн.</span>";
@@ -384,7 +388,7 @@ define([
             break;
           }
           case 2: {
-            textEndForm = "замена микрофона на вашем iPhone";
+            textEndForm = "Замена микрофона на вашем iPhone";
             switch(id_model){
               case 1: {
                 textEndForm += " 6plus: <span class='price'>600 грн.</span>";
@@ -422,7 +426,7 @@ define([
             break;
           }
           case 3: {
-            textEndForm = "замена аккумуляторной батареи на вашем iPhone";
+            textEndForm = "Замена аккумуляторной батареи на вашем iPhone";
             switch(id_model){
               case 1: {
                 textEndForm += " 6plus: <span class='price'>900 грн.</span>";
@@ -460,7 +464,7 @@ define([
             break;
           }
           case 4: {
-            textEndForm = "замена кнопки вкл/выкл на вашем iPhone";
+            textEndForm = "Замена кнопки вкл/выкл на вашем iPhone";
             switch(id_model){
               case 1: {
                 textEndForm += " 6plus: <span class='price'>600 грн.</span>";
@@ -498,7 +502,7 @@ define([
             break;
           }
           case 5: {
-            textEndForm = "замена кнопки меню на вашем iPhone";
+            textEndForm = "Замена кнопки меню на вашем iPhone";
             switch(id_model){
               case 1: {
                 textEndForm += " 6plus: <span class='price'>500 грн.</span>";
@@ -536,7 +540,7 @@ define([
             break;
           }
           case 6: {
-            textEndForm = "замена передней камеры на вашем iPhone";
+            textEndForm = "Замена передней камеры на вашем iPhone";
             switch(id_model){
               case 1: {
                 textEndForm += " 6plus: <span class='price'>750 грн.</span>";
@@ -574,7 +578,7 @@ define([
             break;
           }
           case 7: {
-            textEndForm = "замена динамика на вашем iPhone";
+            textEndForm = "Замена динамика на вашем iPhone";
             switch(id_model){
               case 1: {
                 textEndForm += " 6plus: <span class='price'>550 грн.</span>";
@@ -612,8 +616,8 @@ define([
             break;
           }
           case 8: {
-            textEndForm = "опишите проблему в текстовом сообщение или можете сделать это по телефону чтобы узнать цену ремонта";
-            $('#repair8').html('если вы не знаете причину поломки мастер произведет бесплатную диагностику');
+            textEndForm = "Опишите проблему в текстовом сообщение или можете перейти на " + "<a href="+ modelUrl +">каталог наших цен.</a>";
+            $('#repair8').html('Если вы не знаете причину поломки мастер произведет бесплатную диагностику');
             $('#textmsg').show();
             break;
           }
