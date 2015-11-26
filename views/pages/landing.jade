@@ -73,50 +73,50 @@ block content
         h2.text-center.mt0 Выберите модель
         .row.modelipad
           .col-md-3.col-xs-6
-            a.selectmodel(href='javascript:void(0);', data-id='1', data-model='iPad Mini Retina')
+            a.selectmodel(href='javascript:void(0);', data-id='1', data-url='/remont-ipad-mini2', data-model='iPad Mini Retina')
               | iPad Mini Retina
           .col-md-3.col-xs-6
-            a.selectmodel(href='javascript:void(0);', data-id='2', data-model='iPad Mini')
+            a.selectmodel(href='javascript:void(0);', data-id='2', data-url='/remont-ipad-mini', data-model='iPad Mini')
               | iPad Mini
           .col-md-3.col-xs-6
-            a.selectmodel(href='javascript:void(0);', data-id='3', data-model='iPad Air')
+            a.selectmodel(href='javascript:void(0);', data-id='3', data-url='/remont-ipad-air', data-model='iPad Air')
               | iPad Air
           .col-md-3.col-xs-6
-            a.selectmodel(href='javascript:void(0);', data-id='4', data-model='iPad 4')
+            a.selectmodel(href='javascript:void(0);', data-id='4', data-url='/remont-ipad4', data-model='iPad 4')
               | iPad 4
           .col-md-3.col-xs-6
-            a.selectmodel(href='javascript:void(0);', data-id='5', data-model='iPad 3')
+            a.selectmodel(href='javascript:void(0);', data-id='5', data-url='/remont-ipad3', data-model='iPad 3')
               | iPad 3
           .col-md-3.col-xs-6
-            a.selectmodel(href='javascript:void(0);', data-id='6', data-model='iPad 2')
+            a.selectmodel(href='javascript:void(0);', data-id='6', data-url='/remont-ipad2', data-model='iPad 2')
               | iPad 2
           .col-md-3.col-xs-6
-            a.selectmodel(href='javascript:void(0);', data-id='7', data-model='iPad 1')
+            a.selectmodel(href='javascript:void(0);', data-id='7', data-url='/remont-ipad2', data-model='iPad 1')
               | iPad 1
         .row.modeliphone
           .col-md-3.col-xs-6
-            a.selectmodel(href='javascript:void(0);', data-id='1', data-model='iPhone 6 plus')
+            a.selectmodel(href='javascript:void(0);', data-id='1', data-url='/remont-iphone-6plus', data-model='iPhone 6 plus')
               | iPhone 6 plus
           .col-md-3.col-xs-6
-            a.selectmodel(href='javascript:void(0);', data-id='2', data-model='iPhone 6')
+            a.selectmodel(href='javascript:void(0);', data-id='2', data-url='/remont-iphone-6', data-model='iPhone 6')
               | iPhone 6
           .col-md-3.col-xs-6
-            a.selectmodel(href='javascript:void(0);', data-id='3', data-model='iPhone 5s')
+            a.selectmodel(href='javascript:void(0);', data-id='3', data-url='/remont-iphone-5s', data-model='iPhone 5s')
               | iPhone 5s
           .col-md-3.col-xs-6
-            a.selectmodel(href='javascript:void(0);', data-id='4', data-model='iPhone 5c')
+            a.selectmodel(href='javascript:void(0);', data-id='4', data-url='/remont-iphone-5c', data-model='iPhone 5c')
               | iPhone 5c
           .col-md-3.col-xs-6
-            a.selectmodel(href='javascript:void(0);', data-id='5', data-model='iPhone 5')
+            a.selectmodel(href='javascript:void(0);', data-id='5', data-url='/remont-iphone5', data-model='iPhone 5')
               | iPhone 5
           .col-md-3.col-xs-6
-            a.selectmodel(href='javascript:void(0);', data-id='6', data-model='iPhone 4s')
+            a.selectmodel(href='javascript:void(0);', data-id='6', data-url='/remont-iphone4s', data-model='iPhone 4s')
               | iPhone 4s
           .col-md-3.col-xs-6
-            a.selectmodel(href='javascript:void(0);', data-id='7', data-model='iPhone 4')
+            a.selectmodel(href='javascript:void(0);', data-id='7', data-url='/remont-iphone4', data-model='iPhone 4')
               | iPhone 4
           .col-md-3.col-xs-6
-            a.selectmodel(href='javascript:void(0);', data-id='8', data-model='iPhone 3GS')
+            a.selectmodel(href='javascript:void(0);', data-id='8', data-url='/remont-iphone3g', data-model='iPhone 3GS')
               | iPhone 3GS
       #formstep3.col-md-12.col-xs-12.text-center.formstep
         h2.text-center.mt0 Выберите неисправность
@@ -172,7 +172,7 @@ block content
   #overlay-courier.overlay
     #courier.modal--courier
       button.btn-close &#10006
-      header.modal-heading Вызвать курьера
+      header.modal-heading Заказать обратный звонок
       form#courier-form(action='contact-form', method='POST')
         .field
           input.field__controll(type='text', name='name', required, placeholder='Имя')
