@@ -16,7 +16,7 @@ hr {
 }
 
 .container {
-  max-width: 1170px;
+  max-width: 1025px;
   margin: 0 auto;
 }
 
@@ -374,5 +374,6 @@ hr {
   }
 }
 
-
-
+.price-calc {
+  display: none;
+}

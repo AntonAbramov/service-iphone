@@ -36,6 +36,10 @@ html(dir="ltr", lang="ru")
     block content
     block footer
       include footer
+    .price-calc
+      a(href='/remont-iphone', target='_blank').price-calc__link
+        img.price-calc__img(src='/img/calc.png', alt="Калькулятор Цен на Ремонт", title='Рассчитать цену ремонта')
+        span.price-calc__tooltip Рассчитать цену ремонта
 
     link(rel='stylesheet', href='/css/style.css')
 
