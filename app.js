@@ -4,11 +4,30 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var mongojs = require('mongojs');
+var db = mongojs('serviceiphone', [
+  'iphone3',
+  'iphone4',
+  'iphone4s',
+  'iphone5',
+  'iphone5s',
+  'iphone5c',
+  'iphone6',
+  'iphone6plus',
+  'iphone6s',
+  'iphone6splus',
+  'feedback'
+]);
 
 //Database
 //var mongoose = require('mongoose');
 //mongoose.connect('mongodb://localhost:27017/exampleDb');
 //var db = mongoose.connect('mongodb://localhost:27017/exampleDb');
+
+
+
+//var mongoose = require('mongoose');
+//var db = mongoose.connect('mongodb://localhost:27017/serviceiphone');
 
 var routes = require('./routes/index');
 var iphone = require('./routes/iphone/index');
@@ -31,10 +50,10 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Make our db accessible to our router
-/*app.use(function(req,res,next){
+app.use(function(req,res,next){
     req.db = db;
     next();
-});*/
+});
 
 app.use('/', routes);
 app.use('/', iphone);

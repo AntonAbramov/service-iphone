@@ -2,10 +2,12 @@ var express = require('express');
 var router = express.Router();
 
 //Database
+/*
 var mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost:27017/feedbackDb');
+*/
 
-var Feedback = require('../../models/feedback');
+//var Feedback = require('../../models/feedback');
 
 
 router.get('/', function (req, res, next) {
@@ -14,7 +16,7 @@ router.get('/', function (req, res, next) {
 
  // var db = req.db;
  // var collection = db.get('feedbacks');
-  Feedback.find({}).sort({'created': -1}).exec(function (err, doc) {
+  req.db['feedback'].find({}).sort({'created': -1}, function (err, doc) {
     if (err) throw err;
 
     res.render('pages/feedback/feedback', {
@@ -29,17 +31,9 @@ router.get('/', function (req, res, next) {
 });
 
 router.post('/', function (req, res, next) {
-  var comment = new Feedback({
-    name: req.body.name,
-    comment: req.body.msg,
-    url: req.body.url,
-    date: req.body.date
-  });
-
   // call the built-in save method to save to the database
-  comment.save(function (err) {
+  req.db['feedback'].insert(req.body, function (err, doc) {
     if (err) throw err;
-
     res.send('success');
   });
 });
