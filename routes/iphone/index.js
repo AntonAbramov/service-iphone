@@ -38,7 +38,7 @@ router.get('/remont-iphone4', function (req, res, next) {
     console.log(docs);
     res.render('pages/iphones/iphone4', {
       title: "Ремонт iPhone 4 в Киеве | Сервисный центр Apple - Service-iPhone",
-      description: "На СЦ делает замену стекла, дисплея, кнопок, аккумулятора с гарантией. Не работает iPhone 4? - мы вам поможем .",
+      description: "Замена стекла от 200 грн. Ремонт батареи от 150грн. Бесплатная диагностика, Оригинальные детали на ремонт iPhone 4.",
       keywords: "Ремонт iPhone 4, ремонт айфона 4, Киев, замена стекла iPhone 4",
       menuActive: 'iphone',
       pricesTable: docs
