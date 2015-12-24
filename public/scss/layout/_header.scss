@@ -1,5 +1,7 @@
 .site-logo {
   white-space: nowrap;
+  width: 200px;
+  margin: 5px auto 5px;
 }
 
 .site-logo__link {
@@ -84,6 +86,14 @@
 .header-section__contacts {
   font-size: 16px;
   line-height: 20px;
+}
+
+.header-section__contacts__tel {
+  margin: 0 5px;
+}
+
+.header-section__schedule {
+  text-align: center;
 }
 
 .header-section__contacts__tel,

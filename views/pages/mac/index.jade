@@ -6,13 +6,14 @@ block content
       | Ремонт MacBook
     p.heading-title Выберите модель:
     .devices
-      -var menuMacbook = [{'href': '/remont-macbook-pro','text': 'MacBook Pro','title': '','imgSrc': 'img/macbook/pro.jpg','imgAlt': 'Ремонт MacBook Pro'},{'href': '/remont-macbook-air','text': 'MacBook Air','title': '','imgSrc': 'img/macbook/air.jpg','imgAlt': 'Ремонт MacBook Air'},{'href': '/remont-imac','text': 'MacBook','title': '','imgSrc': 'img/macbook/mac.jpg','imgAlt': 'Ремонт iMac'}];
-      each item in menuMacbook
-        .devices__item
-          a.devices__link(href='#{item.href}', title='Ремонт #{item.text} в Киеве')
-            span.devices__img
-              img.devices__img--preview(src='#{item.imgSrc}', alt='#{item.imgAlt}')
-            span.devices__name #{item.text}
+      .devices__wrp
+        -var menuMacbook = [{'href': '/remont-macbook-pro','text': 'MacBook Pro','title': '','imgSrc': 'img/macbook/pro.jpg','imgAlt': 'Ремонт MacBook Pro'},{'href': '/remont-macbook-air','text': 'MacBook Air','title': '','imgSrc': 'img/macbook/air.jpg','imgAlt': 'Ремонт MacBook Air'},{'href': '/remont-imac','text': 'MacBook','title': '','imgSrc': 'img/macbook/mac.jpg','imgAlt': 'Ремонт iMac'}];
+        each item in menuMacbook
+          .devices__item
+            a.devices__link(href='#{item.href}', title='Ремонт #{item.text} в Киеве')
+              span.devices__img
+                img.devices__img--preview(src='#{item.imgSrc}', alt='#{item.imgAlt}')
+              span.devices__name #{item.text}
   section.information-section
     .container
       p.text-center(style='font-size: 16px;')

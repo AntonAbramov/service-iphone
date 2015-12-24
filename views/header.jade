@@ -1,15 +1,15 @@
 header.header(itemscope, itemtype="http://schema.org/LocalBusiness")
   .header__container.cf
-    .site-logo.text-center.col-md-2.col-sm-4.show-tablet
+    button#navbar-toggle.pull-right.navbar-toggle.hide-tablet
+      span.icon-bar
+      span.icon-bar
+      span.icon-bar
+    .site-logo.text-center.col-md-3.col-sm-3
       a.site-logo__link(itemprop='url', href='/', title='Service-iPhone - ремонт техники Apple.')
         img.site-logo__img(itemprop="image", src='/img/logo.png', alt='Service-Iphone ремонт техники Apple iphone ipad macbook')
-        span(itemprop="name") Service-iPhone
-    .hide-tablet.cf
-      button#navbar-toggle.pull-right.navbar-toggle
-        span.icon-bar
-        span.icon-bar
-        span.icon-bar
-    nav#top-nav.top-navigation.col-lg-6.col-md-7.col-sm-8
+        span.show-tablet-inline(itemprop="name") Service-iPhone
+
+    nav#top-nav.top-navigation.col-md-9.col-sm-9
       a.top-navigation__link(href='/iphone', class=(menuActive === 'iphone' ? 'is-active' : '' ))
         span.top-navigation--text(title='Ремонт iPhone') iPhone
       a.top-navigation__link(href='/ipad-remont', class=(menuActive === 'ipad' ? 'is-active' : '' ))
@@ -18,25 +18,23 @@ header.header(itemscope, itemtype="http://schema.org/LocalBusiness")
         span.top-navigation--text(title='Ремонт MacBook') MacBook
       a.top-navigation__link(href='/feedback', class=(menuActive === 'feedback' ? 'is-active' : '' ))
         span.top-navigation--text(title='Отзывы') Отзывы
+      a.top-navigation__link(href='/warranty', class=(menuActive === 'warranty' ? 'is-active' : '' ))
+        span.top-navigation--text(title='Гарантия') Гарантия
       a.top-navigation__link(href='/#contacts', rel='nofollow')
         span.top-navigation--text(title='Контакты') Контакты
-    .col-md-2.col-xs-12.show-desktop
-      a.btn.btn-link(target='_blank', title='Оставь комментарий в Google+ и получи 5% скидки на ремонт', href='https://plus.google.com/109962936005483548770/about') Получи 5% скидки за отзыв в Google+!
   section.header-section
     .container
-      .header-section__contacts.left.mr20
+      .header-section__contacts.show-tablet
         div
           a.header-section__contacts__title(rel="nofollow", href="#contacts")
             i.fa.fa-map-marker.mr5
             |ул. Богдана Хмельницкого, 32
         div
           a.header-section__contacts__tel(href='tel:0961253246', itemprop='telephone') (096) 125-32-46
-      .header-section__contacts.left.mr20
-        div
-          a.header-section__contacts__tel(href='tel:0937229156', itemprop='telephone') (093) 722-91-56
-        div
-          a.header-section__contacts__tel(href='tel:0665669752', itemprop='telephone') (066) 566-97-52
-      .header-section__schedule.left.mr20
+      .header-section__contacts.text-center
+          a.mr5.header-section__contacts__tel(href='tel:0937229156', itemprop='telephone') (093) 722-91-56
+          a.ml5.header-section__contacts__tel(href='tel:0665669752', itemprop='telephone') (066) 566-97-52
+      .header-section__schedule
         a.header-section__schedule--description(href="#contacts", rel="nofollow", itemprop="openingHoursSpecification", itemscope, itemtype="http://schema.org/OpeningHoursSpecification")
           span(itemprop="dayOfWeek", itemscope, itemtype="http://schema.org/DayOfWeek")
             span(itemprop="name") пн-пт&nbsp;
@@ -53,15 +51,17 @@ header.header(itemscope, itemtype="http://schema.org/LocalBusiness")
           //  span(itemprop="name") вс
           //| &nbsp;-&nbsp;
           //| выходной
+      .header-section__courier.left.ml20.show-desktop
+        a.show-tablet(target="_blank", title="Оставь комментарий в Google+ и получи 5% скидки на ремонт", href="https://plus.google.com/109962936005483548770/about") Получи 5% скидки за отзыв в Google+!
       //.header-section__courier.left.mr30.show-desktop
       //  button#call-courier.btn.btn-primary.btn-lg.show-desktop(rel='nofollow', href='mailto:agsremont@gmail.com')
       //    i.icon-running.aa.mr5
       //    | Вызвать курьера
-      .header-section__warranty.left
-        a.header-section__warranty__link(href='/warranty')
-          i.icon-warranty.aa
-          span.header-section__warranty--period Гарантия 6 месяцев
-          span.header-section__warranty--all на все ремонты
+      //.header-section__warranty.left
+      //  a.header-section__warranty__link(href='/warranty')
+      //    i.icon-warranty.aa
+      //    span.header-section__warranty--period Гарантия 6 месяцев
+      //    span.header-section__warranty--all на все ремонты
 
 #overlay-courier.overlay
   #courier.modal--courier

@@ -23,7 +23,8 @@ router.get('/warranty', function (req, res, next) {
   res.render('pages/warranty/warranty', {
     title: "Гарантия 6 месяцев от Service-iPhone.com.ua ",
     description: "Наш сервисный центр предоставляет гарантию до 6 месяцев, на все виды ремонтов техники Apple | ремонт iphone ipad macbook ipod",
-    keywords: "ремонт iPhone, iPad, iPod, Macbook, Киев, Сервисный центр Apple "
+    keywords: "ремонт iPhone, iPad, iPod, Macbook, Киев, Сервисный центр Apple ",
+    menuActive: 'warranty'
   });
 });
 
