@@ -29,8 +29,6 @@ router.get('/warranty', function (req, res, next) {
 });
 
 
-
-
 router.get('/remont-ipad2', function (req, res, next) {
   res.render('pages/ipads/ipad2', {
     title: "Ремонт iPad 2 в Киеве | Сервисный центр Apple - Service-iPhone",
@@ -237,7 +235,7 @@ router.get('/wifi-ne-rabotaet', function (req, res, next) {
 });
 
 
-router.post('/call-courier', function(req,res, next) {
+router.post('/call-courier', function (req, res, next) {
 
   transporter.sendMail({
     from: 'scotishkitten@gmail.com',
@@ -245,10 +243,10 @@ router.post('/call-courier', function(req,res, next) {
     //to: 'antonabramov1990@gmail.com',
     subject: (req.body.info) ? 'Перезвонить срочно!' : 'Заказ Курьера!',
     text: '\nName: ' + req.body.name + '\nКонтакт: ' + req.body.tel + '\nText: ' + req.body.msg + '\nИнфо: ' + req.body.info
-  }, function(error, response){
-    if(error){
+  }, function (error, response) {
+    if (error) {
       res.send('error');
-    }else{
+    } else {
       res.send('success');
     }
   });
