@@ -16,7 +16,18 @@ var db = mongojs('serviceiphone', [
   'iphone6plus',
   'iphone6s',
   'iphone6splus',
-  'feedback'
+  'ipad2',
+  'ipad3',
+  'ipad4',
+  'ipadmini',
+  'ipadmini2',
+  'ipadmini3',
+  'ipadair',
+  'ipadair2',
+  'macbookmacbook',
+  'macbookpro',
+  'macbookproretina',
+  'macbookair'
 ]);
 
 //Database
@@ -57,7 +68,7 @@ app.use(function(req,res,next){
 
 app.use('/', routes);
 app.use('/', iphone);
-app.use('/ipad-remont', ipad);
+app.use('/', ipad);
 app.use('/macbook-remont', imac);
 app.use('/feedback', feedback);
 
