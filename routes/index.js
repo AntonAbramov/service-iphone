@@ -28,6 +28,15 @@ router.get('/warranty', function (req, res, next) {
   });
 });
 
+router.get('/contacts', function (req, res, next) {
+  res.render('pages/contacts/contacts', {
+    title: "Контакты Сервисного центра Service-iPhone по ремонту iPhone, iPad, MacBook",
+    description: "На этой странице вы найдете телефоны и адресса наших сервисных центров в городе Киеве.",
+    keywords: "Киев Сервисный центр Apple, Контакты service-iPhone, ремонт iPhone, Киев, Сервисный центр Apple",
+    menuActive: 'contacts'
+  });
+});
+
 
 router.get('/remont-ipad2', function (req, res, next) {
   res.render('pages/ipads/ipad2', {

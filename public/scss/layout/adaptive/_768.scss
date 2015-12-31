@@ -40,8 +40,13 @@
   position: static;
 }
 
+.devices__item {
+  padding: 0 40px;
+  width: 18%;
+}
+
 .devices__link {
-  padding: 10px 25px;
+  padding: 10px 0px;
 }
 
 .lp-header__telephone {
@@ -51,6 +56,7 @@
 .site-logo {
   width: 25%;
   margin: 0;
+  padding:0;
 }
 
 .site-logo__link {
@@ -72,3 +78,14 @@
   text-align: left;
 }
 
+#googleMap {
+  height: 350px;
+}
+
+h1, .benefits__heading {
+  font-size: 2em;
+}
+
+.benefits__heading {
+  text-align: left;
+}

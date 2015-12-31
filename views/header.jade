@@ -7,7 +7,7 @@ header.header(itemscope, itemtype="http://schema.org/LocalBusiness")
     .site-logo.text-center.col-md-3.col-sm-3
       a.site-logo__link(itemprop='url', href='/', title='Service-iPhone - ремонт техники Apple.')
         img.site-logo__img(itemprop="image", src='/img/logo.png', alt='Service-Iphone ремонт техники Apple iphone ipad macbook')
-        span.show-tablet-inline(itemprop="name") Service-iPhone
+        span(itemprop="name") Service-iPhone
 
     nav#top-nav.top-navigation.col-md-9.col-sm-9
       a.top-navigation__link(href='/iphone', class=(menuActive === 'iphone' ? 'is-active' : '' ))
@@ -20,13 +20,13 @@ header.header(itemscope, itemtype="http://schema.org/LocalBusiness")
         span.top-navigation--text(title='Отзывы') Отзывы
       a.top-navigation__link(href='/warranty', class=(menuActive === 'warranty' ? 'is-active' : '' ))
         span.top-navigation--text(title='Гарантия') Гарантия
-      a.top-navigation__link(href='/#contacts', rel='nofollow')
+      a.top-navigation__link(href='/contacts', rel='nofollow')
         span.top-navigation--text(title='Контакты') Контакты
   section.header-section
     .container
       .header-section__contacts.show-tablet
         div
-          a.header-section__contacts__title(rel="nofollow", href="#contacts")
+          span.header-section__contacts__title
             i.fa.fa-map-marker.mr5
             |ул. Богдана Хмельницкого, 32
         div
