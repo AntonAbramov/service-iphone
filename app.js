@@ -27,7 +27,8 @@ var db = mongojs('serviceiphone', [
   'macbookmacbook',
   'macbookpro',
   'macbookproretina',
-  'macbookair'
+  'macbookair',
+  'feedback'
 ]);
 
 //Database
