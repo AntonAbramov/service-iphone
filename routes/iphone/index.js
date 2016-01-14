@@ -368,7 +368,9 @@ router.get('/remont-iphone-5s', function (req, res, next) {
   });
 });
 
-//iphone 6
+//======================
+//    iPhone 6
+//======================
 
 router.get('/remont-iphone-6', function (req, res, next) {
   req.db['iphone6'].find().sort({'idx': 1}, function (err, docs) {
@@ -392,6 +394,128 @@ router.get('/remont-iphone-6/zamena-stekla', function (req, res, next) {
   });
 });
 
+router.get('/remont-iphone6/diagnostika', function (req, res, next) {
+  res.render('pages/iphones/iphone6/diagnostika', {
+    title: "Диагностика iphone 6 в Киеве | Service-iPhone ремонт айфон 6",
+    description: "Бесплатная диагностика iphone 6 в Киеве. В Service-iPhone профессионалы разберутся что случилось с Вашим Айфоном 6.",
+    keywords: "Диагностика iphone 6, Киев, Даигностика айфон 6, Киев Диагностика iphone 6",
+    menuActive: 'iphone'
+  });
+});
+
+router.get('/remont-iphone6/remnont-knopki-home', function (req, res, next) {
+  res.render('pages/iphones/iphone6/remnont-knopki-home', {
+    title: "Ремонт кнопки Home в iphone 6 | Service-iPhone ремонт айфон 6",
+    description: "Не работает кнопка Home на iphone 6, мы проведем беслпатную диагностику в Киеве, и сделаем ремонт iphone 6 за 20 минут.",
+    keywords: "Ремонт кнопки Home iphone 6, замена кнопки home iphone 6, Киев, ремонт iHome iphone 6",
+    menuActive: 'iphone'
+  });
+});
+
+router.get('/remont-iphone6/remont-knopki-vkluchenia', function (req, res, next) {
+  res.render('pages/iphones/iphone6/remont-knopki-vkluchenia', {
+    title: "Ремонт кнопки включения (блокировки) iphone 6",
+    description: "Когда перестала работать кнопка включения или блокирования в iphone 6, обращайтесь за бесплатной диагностикой в Service-iPhone в Киеве",
+    keywords: "Ремонт кнопки включения iphone 6, Киев, айфон 6, ремонт кнопки блокировки iphone 6 ",
+    menuActive: 'iphone'
+  });
+});
+
+router.get('/remont-iphone6/remont-knopok-gromkosti', function (req, res, next) {
+  res.render('pages/iphones/iphone6/remont-knopok-gromkosti', {
+    title: "Ремонт кнопок громкости iphone 6 | Service-iPhone в Киеве",
+    description: "не работают кнопки громкости в iphone 6? В Service-iPhone проведут бесплатную диагностику и скажут причину поломки за 20 минут.",
+    keywords: "Ремонт кнопки громкостки iphone 6, не работает кнопка звука айфон 6",
+    menuActive: 'iphone'
+  });
+});
+
+router.get('/remont-iphone6/zamena-batarei', function (req, res, next) {
+  res.render('pages/iphones/iphone6/zamena-batarei', {
+    title: "Замена батареи (аккумулятора) iphone 6 в Киеве | Service-iPhone",
+    description: "iPhone быстро разряжается? Или не работает батарея? В Service-iPhone быстро найдут причину неполадки и сделают качественный ремонт",
+    keywords: "Замена батареи iphone 6, Киев, ремонт аккумулятора iphone 6, замена батареи айфон 6",
+    menuActive: 'iphone'
+  });
+});
+
+router.get('/remont-iphone6/zamena-dinamika', function (req, res, next) {
+  res.render('pages/iphones/iphone6/zamena-dinamika', {
+    title: "Замена полифонического динамика (buzzer) iphone 6 | Service-iPhone",
+    description: "Если перестал работать звук на iphone 6, лучше обратиться за консультацией к специалистам. В нашем сервисном центре сделают бесплатную диагностику.",
+    keywords: "Замена динамика iphone 6 в Киеве, ремонт динамика iphone 6, замена динамика айфон 6",
+    menuActive: 'iphone'
+  });
+});
+
+router.get('/remont-iphone6/zamena-ekrana', function (req, res, next) {
+  res.render('pages/iphones/iphone6/zamena-ekrana', {
+    title: "Замена экрана (дисплея) iphone 6 в Киеве | Service-iPhone",
+    description: "Качественная замена экрана (дисплея) на iphone 6 в Киеве. Цены от 200 грн. Время на ремонт 30 минут.",
+    keywords: "Замена дисплея iphone 6, замена экрана iphone 6, Киев, замена дисплея айфон 6, экрана",
+    menuActive: 'iphone'
+  });
+});
+
+router.get('/remont-iphone6/zamena-front-camera', function (req, res, next) {
+  res.render('pages/iphones/iphone6/zamena-front-camera', {
+    title: "Замена фронтальной (передней) камеры iphone 6 | Service-iPhone",
+    description: "Ремонт фронтальной камеры в iphone 6 занимает от 30 минут. В Service-iPhone делает качественный ремонт в городе Киеве",
+    keywords: "Замена фронтальной камены iphone 6, ремонт передней камеры iphone 6, ремонт фронтальной камеры айфон 6, Киев",
+    menuActive: 'iphone'
+  });
+});
+
+router.get('/remont-iphone6/zamena-kameru', function (req, res, next) {
+  res.render('pages/iphones/iphone6/zamena-kameru', {
+    title: "Замена основной (задней) камеры iphone 6 | Service-iPhone",
+    description: "Не работает камера? Необходимо произвести диагностику дивайся, и заменить камеру. В Service-iPhone Работаю професионалы которые могут заменить камеру за считаные минуты.",
+    keywords: "Замена основной камеры iphone 6, ремонт камеры iphone 6, замена камеры айфон 6, Киев",
+    menuActive: 'iphone'
+  });
+});
+
+router.get('/remont-iphone6/zamena-korpysa', function (req, res, next) {
+  res.render('pages/iphones/iphone6/zamena-korpysa', {
+    title: "Замена корпуса iphone 6 в Киеве | Service-iPhone",
+    description: "Разбили или полнули корпус iphone 6? Не беда, наши специлисты быстро вылечат ваш айфон за 30 минут",
+    keywords: "Замена корпуса iphone 6, Замена корпуса айфон 6, Киев",
+    menuActive: 'iphone'
+  });
+});
+
+router.get('/remont-iphone6/zamena-microfona', function (req, res, next) {
+  res.render('pages/iphones/iphone6/zamena-microfona', {
+    title: "Замена микрофона iphone 6 | Service-iPhone",
+    description: "Не слышит собеседник? Что делать если вас не слышно? В Service-Iphone знают как решить эту проблему.",
+    keywords: "Замена микрофона iphone 6 в Киеве, Замена микрофона айфон 6, ремонт микрофона iphone 6",
+    menuActive: 'iphone'
+  });
+});
+
+router.get('/remont-iphone6/zamena-razgavornogo-dinamika', function (req, res, next) {
+  res.render('pages/iphones/iphone6/zamena-razgavornogo-dinamika', {
+    title: "Замена разговорного динамика iphone 6 | Service-iPhone",
+    description: "Пропал звук? Попробуйте перезагрузить телефон, если проблема не решиться необходимо делать диагностику устройства",
+    keywords: "Замена разговорного динамика iphone 6, Замена динамика айфон 6 в Киеве, Ремонт динамика iphone 6",
+    menuActive: 'iphone'
+  });
+});
+
+router.get('/remont-iphone6/zamena-razjoma-dlja-naushnikov', function (req, res, next) {
+  res.render('pages/iphones/iphone6/zamena-razjoma-dlja-naushnikov', {
+    title: "Замена разъёма для наушников (аудиоджека) iphone 6 | Service-iPhone",
+    description: "Сломался разьем для наушников? В Service-iPhone устрнят даную неприятность за считаные минуты.",
+    keywords: "Замена разъёма для наушников iphone 6, Киев, ремонт айфон 6 разьем для наушников",
+    menuActive: 'iphone'
+  });
+});
+
+
+//======================
+//    iPhone 6 plus
+//======================
+
 router.get('/remont-iphone-6plus', function (req, res, next) {
   req.db['iphone6plus'].find().sort({'idx': 1}, function (err, docs) {
     if (err) throw err;
@@ -405,7 +529,9 @@ router.get('/remont-iphone-6plus', function (req, res, next) {
   });
 });
 
-//iphone 6s
+//======================
+//    iPhone 6s
+//======================
 
 router.get('/remont-iphone-6s', function (req, res, next) {
   req.db['iphone6s'].find().sort({'idx': 1}, function (err, docs) {
@@ -419,6 +545,11 @@ router.get('/remont-iphone-6s', function (req, res, next) {
     });
   });
 });
+
+
+//======================
+//    iPhone 6s Plus
+//======================
 
 router.get('/remont-iphone-6splus', function (req, res, next) {
   req.db['iphone6splus'].find().sort({'idx': 1}, function (err, docs) {
