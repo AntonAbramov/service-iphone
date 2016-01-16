@@ -32,3 +32,4 @@ node_modules
  bower_components
 node_modules
 compressed
+flightplan.js
