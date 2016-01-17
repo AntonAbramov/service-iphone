@@ -6,7 +6,7 @@
   "apps": [
     // First application
     {
-      "name": "admin",
+      "name": "service-iphone",
       "script": "bin/www.js",
       "env": {
         "COMMON_VARIABLE": "true"
