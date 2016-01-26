@@ -546,6 +546,131 @@ router.get('/remont-iphone-6s', function (req, res, next) {
   });
 });
 
+router.get('/remont-iphone-6s/zamena-stekla', function (req, res, next) {
+  res.render('pages/iphones/iphone6s/zamena-stekla', {
+    title: "Замена стекла iPhone 6s в Киеве | Service-iPhone",
+    description: "Качественная замена стекла (дисплея) на iPhone 6s в Киеве. Цена от 600 грн, ремонт занимает 20 минут.",
+    keywords: "Замена стекла iphone 6s, замена экрана iphone 6s, Киев, замена дисплея iPhone 6s, экрана",
+    menuActive: 'iphone'
+  });
+});
+
+router.get('/remont-iphone-6s/diagnostika', function (req, res, next) {
+  res.render('pages/iphones/iphone6s/diagnostika', {
+    title: "Диагностика iphone 6s в Киеве | Service-iPhone ремонт айфон 6s",
+    description: "Бесплатная диагностика iphone 6s в Киеве. В Service-iPhone профессионалы разберутся что случилось с Вашим Айфоном 6s.",
+    keywords: "Диагностика iphone 6s, Киев, Даигностика айфон 6s, Киев Диагностика iphone 6s",
+    menuActive: 'iphone'
+  });
+});
+
+router.get('/remont-iphone-6s/remnont-knopki-home', function (req, res, next) {
+  res.render('pages/iphones/iphone6s/remnont-knopki-home', {
+    title: "Ремонт кнопки Home в iphone 6s | Service-iPhone ремонт айфон 6s",
+    description: "Не работает кнопка Home на iphone 6s, мы проведем беслпатную диагностику в Киеве, и сделаем ремонт iphone 6s за 20 минут.",
+    keywords: "Ремонт кнопки Home iphone 6s, замена кнопки home iphone 6s, Киев, ремонт iHome iphone 6s",
+    menuActive: 'iphone'
+  });
+});
+
+router.get('/remont-iphone-6s/remont-knopki-vkluchenia', function (req, res, next) {
+  res.render('pages/iphones/iphone6s/remont-knopki-vkluchenia', {
+    title: "Ремонт кнопки включения (блокировки) iphone 6s",
+    description: "Когда перестала работать кнопка включения или блокирования в iphone 6s, обращайтесь за бесплатной диагностикой в Service-iPhone в Киеве",
+    keywords: "Ремонт кнопки включения iphone 6s, Киев, айфон 6s, ремонт кнопки блокировки iphone 6s ",
+    menuActive: 'iphone'
+  });
+});
+
+router.get('/remont-iphone-6s/remont-knopok-gromkosti', function (req, res, next) {
+  res.render('pages/iphones/iphone6s/remont-knopok-gromkosti', {
+    title: "Ремонт кнопок громкости iphone 6s | Service-iPhone в Киеве",
+    description: "не работают кнопки громкости в iphone 6s? В Service-iPhone проведут бесплатную диагностику и скажут причину поломки за 20 минут.",
+    keywords: "Ремонт кнопки громкостки iphone 6s, не работает кнопка звука айфон 6s",
+    menuActive: 'iphone'
+  });
+});
+
+router.get('/remont-iphone-6s/zamena-batarei', function (req, res, next) {
+  res.render('pages/iphones/iphone6s/zamena-batarei', {
+    title: "Замена батареи (аккумулятора) iphone 6s в Киеве | Service-iPhone",
+    description: "iPhone быстро разряжается? Или не работает батарея? В Service-iPhone быстро найдут причину неполадки и сделают качественный ремонт",
+    keywords: "Замена батареи iphone 6s, Киев, ремонт аккумулятора iphone 6s, замена батареи айфон 6s",
+    menuActive: 'iphone'
+  });
+});
+
+router.get('/remont-iphone-6s/zamena-dinamika', function (req, res, next) {
+  res.render('pages/iphones/iphone6s/zamena-dinamika', {
+    title: "Замена полифонического динамика (buzzer) iphone 6s | Service-iPhone",
+    description: "Если перестал работать звук на iphone 6s, лучше обратиться за консультацией к специалистам. В нашем сервисном центре сделают бесплатную диагностику.",
+    keywords: "Замена динамика iphone 6s в Киеве, ремонт динамика iphone 6s, замена динамика айфон 6s",
+    menuActive: 'iphone'
+  });
+});
+
+router.get('/remont-iphone-6s/zamena-ekrana', function (req, res, next) {
+  res.render('pages/iphones/iphone6s/zamena-ekrana', {
+    title: "Замена экрана (дисплея) iphone 6s в Киеве | Service-iPhone",
+    description: "Качественная замена экрана (дисплея) на iphone 6s в Киеве. Цены от 200 грн. Время на ремонт 30 минут.",
+    keywords: "Замена дисплея iphone 6s, замена экрана iphone 6s, Киев, замена дисплея айфон 6s, экрана",
+    menuActive: 'iphone'
+  });
+});
+
+router.get('/remont-iphone-6s/zamena-front-camera', function (req, res, next) {
+  res.render('pages/iphones/iphone6s/zamena-front-camera', {
+    title: "Замена фронтальной (передней) камеры iphone 6s | Service-iPhone",
+    description: "Ремонт фронтальной камеры в iphone 6s занимает от 30 минут. В Service-iPhone делает качественный ремонт в городе Киеве",
+    keywords: "Замена фронтальной камены iphone 6s, ремонт передней камеры iphone 6s, ремонт фронтальной камеры айфон 6s, Киев",
+    menuActive: 'iphone'
+  });
+});
+
+router.get('/remont-iphone-6s/zamena-kameru', function (req, res, next) {
+  res.render('pages/iphones/iphone6s/zamena-kameru', {
+    title: "Замена основной (задней) камеры iphone 6s | Service-iPhone",
+    description: "Не работает камера? Необходимо произвести диагностику дивайся, и заменить камеру. В Service-iPhone Работаю професионалы которые могут заменить камеру за считаные минуты.",
+    keywords: "Замена основной камеры iphone 6s, ремонт камеры iphone 6s, замена камеры айфон 6s, Киев",
+    menuActive: 'iphone'
+  });
+});
+
+router.get('/remont-iphone-6s/zamena-korpysa', function (req, res, next) {
+  res.render('pages/iphones/iphone6s/zamena-korpysa', {
+    title: "Замена корпуса iphone 6s в Киеве | Service-iPhone",
+    description: "Разбили или полнули корпус iphone 6s? Не беда, наши специлисты быстро вылечат ваш айфон за 30 минут",
+    keywords: "Замена корпуса iphone 6s, Замена корпуса айфон 6s, Киев",
+    menuActive: 'iphone'
+  });
+});
+
+router.get('/remont-iphone-6s/zamena-microfona', function (req, res, next) {
+  res.render('pages/iphones/iphone6s/zamena-microfona', {
+    title: "Замена микрофона iphone 6s | Service-iPhone",
+    description: "Не слышит собеседник? Что делать если вас не слышно? В Service-Iphone знают как решить эту проблему.",
+    keywords: "Замена микрофона iphone 6s в Киеве, Замена микрофона айфон 6s, ремонт микрофона iphone 6s",
+    menuActive: 'iphone'
+  });
+});
+
+router.get('/remont-iphone-6s/zamena-razgavornogo-dinamika', function (req, res, next) {
+  res.render('pages/iphones/iphone6s/zamena-razgavornogo-dinamika', {
+    title: "Замена разговорного динамика iphone 6s | Service-iPhone",
+    description: "Пропал звук? Попробуйте перезагрузить телефон, если проблема не решиться необходимо делать диагностику устройства",
+    keywords: "Замена разговорного динамика iphone 6s, Замена динамика айфон 6s в Киеве, Ремонт динамика iphone 6s",
+    menuActive: 'iphone'
+  });
+});
+
+router.get('/remont-iphone-6s/zamena-razjoma-dlja-naushnikov', function (req, res, next) {
+  res.render('pages/iphones/iphone6s/zamena-razjoma-dlja-naushnikov', {
+    title: "Замена разъёма для наушников (аудиоджека) iphone 6s | Service-iPhone",
+    description: "Сломался разьем для наушников? В Service-iPhone устрнят даную неприятность за считаные минуты.",
+    keywords: "Замена разъёма для наушников iphone 6s, Киев, ремонт айфон 6s разьем для наушников",
+    menuActive: 'iphone'
+  });
+});
 
 //======================
 //    iPhone 6s Plus
