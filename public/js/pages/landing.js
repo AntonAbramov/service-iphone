@@ -100,34 +100,34 @@ define([
       if(id_device == 1) {
         switch(id_repair){
           case 1: {
-            textEndForm = "Замена экрана вашего iPad ";
+            textEndForm = "Замена сенсорного стекла вашего iPad ";
             switch(id_model){
               case 1: {
-                textEndForm += "Mini Retina: <span class='price'>2100 грн.</span>";
+                textEndForm += "Mini Retina: <span class='price'>1199 грн.</span>";
                 break;
               }
               case 2: {
-                textEndForm += "Mini: <span class='price'>2000 грн.</span>";
+                textEndForm += "Mini: <span class='price'>1199 грн.</span>";
                 break;
               }
               case 3: {
-                textEndForm += "Air: <span class='price'>2200 грн.</span>";
+                textEndForm += "Air: <span class='price'>1999 грн.</span>";
                 break;
               }
               case 4: {
-                textEndForm += "mini 3: <span class='price'>3800 грн.</span>";
+                textEndForm += "mini 3: <span class='price'>1999 грн.</span>";
                 break;
               }
               case 5: {
-                textEndForm += "4: <span class='price'>2100 грн.</span>";
+                textEndForm += "4: <span class='price'>1149 грн.</span>";
                 break;
               }
               case 6: {
-                textEndForm += "3: <span class='price'>2000 грн.</span>";
+                textEndForm += "3: <span class='price'>1149 грн.</span>";
                 break;
               }
               case 7: {
-                textEndForm += "2: <span class='price'>2000 грн.</span>";
+                textEndForm += "2: <span class='price'>1049 грн.</span>";
                 break;
               }
             }
@@ -137,31 +137,31 @@ define([
             textEndForm = "Замена микрофона на вашем iPad ";
             switch(id_model){
               case 1: {
-                textEndForm += "Mini Retina: <span class='price'>600 грн.</span>";
+                textEndForm += "Mini Retina: <span class='price'>799 грн.</span>";
                 break;
               }
               case 2: {
-                textEndForm += "Mini: <span class='price'>550 грн.</span>";
+                textEndForm += "Mini: <span class='price'>699 грн.</span>";
                 break;
               }
               case 3: {
-                textEndForm += "Air: <span class='price'>650 грн.</span>";
+                textEndForm += "Air: <span class='price'>699 грн.</span>";
                 break;
               }
               case 4: {
-                textEndForm += "mini 3: <span class='price'>800 грн.</span>";
+                textEndForm += "mini 3: <span class='price'>799 грн.</span>";
                 break;
               }
               case 5: {
-                textEndForm += "4: <span class='price'>550 грн.</span>";
+                textEndForm += "4: <span class='price'>599 грн.</span>";
                 break;
               }
               case 6: {
-                textEndForm += "3: <span class='price'>500 грн.</span>";
+                textEndForm += "3: <span class='price'>599 грн.</span>";
                 break;
               }
               case 7: {
-                textEndForm += "2: <span class='price'>500 грн.</span>";
+                textEndForm += "2: <span class='price'>499 грн.</span>";
                 break;
               }
             }
@@ -171,31 +171,31 @@ define([
             textEndForm = "Замена аккумуляторной батареи на вашем iPad ";
             switch(id_model){
               case 1: {
-                textEndForm += "Mini Retina: <span class='price'>1500 грн.</span>";
+                textEndForm += "Mini Retina: <span class='price'>1499 грн.</span>";
                 break;
               }
               case 2: {
-                textEndForm += "Mini: <span class='price'>1300 грн.</span>";
+                textEndForm += "Mini: <span class='price'>1399 грн.</span>";
                 break;
               }
               case 3: {
-                textEndForm += "Air: <span class='price'>1600 грн.</span>";
+                textEndForm += "Air: <span class='price'>1999 грн.</span>";
                 break;
               }
               case 4: {
-                textEndForm += "mini 3: <span class='price'>1900 грн.</span>";
+                textEndForm += "mini 3: <span class='price'>1899 грн.</span>";
                 break;
               }
               case 5: {
-                textEndForm += "4: <span class='price'>1300 грн.</span>";
+                textEndForm += "4: <span class='price'>1399 грн.</span>";
                 break;
               }
               case 6: {
-                textEndForm += "3: <span class='price'>120 грн.</span>";
+                textEndForm += "3: <span class='price'>1399 грн.</span>";
                 break;
               }
               case 7: {
-                textEndForm += "2: <span class='price'>1200 грн.</span>";
+                textEndForm += "2: <span class='price'>1199 грн.</span>";
                 break;
               }
             }
@@ -205,31 +205,31 @@ define([
             textEndForm = "Замена кнопки вкл/выкл на вашем iPad ";
             switch(id_model){
               case 1: {
-                textEndForm += "Mini Retina: <span class='price'>650 грн.</span>";
+                textEndForm += "Mini Retina: <span class='price'>649 грн.</span>";
                 break;
               }
               case 2: {
-                textEndForm += "Mini: <span class='price'>650 грн.</span>";
+                textEndForm += "Mini: <span class='price'>649 грн.</span>";
                 break;
               }
               case 3: {
-                textEndForm += "Air: <span class='price'>650 грн.</span>";
+                textEndForm += "Air: <span class='price'>799 грн.</span>";
                 break;
               }
               case 4: {
-                textEndForm += "mini 3: <span class='price'>800 грн.</span>";
+                textEndForm += "mini 3: <span class='price'>899 грн.</span>";
                 break;
               }
               case 5: {
-                textEndForm += "4: <span class='price'>550 грн.</span>";
+                textEndForm += "4: <span class='price'>599 грн.</span>";
                 break;
               }
               case 6: {
-                textEndForm += "3: <span class='price'>550 грн.</span>";
+                textEndForm += "3: <span class='price'>599 грн.</span>";
                 break;
               }
               case 7: {
-                textEndForm += "2: <span class='price'>550 грн.</span>";
+                textEndForm += "2: <span class='price'>549 грн.</span>";
                 break;
               }
             }
@@ -239,31 +239,31 @@ define([
             textEndForm = "Замена кнопки меню на вашем iPad ";
             switch(id_model){
               case 1: {
-                textEndForm += "Mini Retina: <span class='price'>600 грн.</span>";
+                textEndForm += "Mini Retina: <span class='price'>599 грн.</span>";
                 break;
               }
               case 2: {
-                textEndForm += "Mini: <span class='price'>550 грн.</span>";
+                textEndForm += "Mini: <span class='price'>549 грн.</span>";
                 break;
               }
               case 3: {
-                textEndForm += "Air: <span class='price'>650 грн.</span>";
+                textEndForm += "Air: <span class='price'>699 грн.</span>";
                 break;
               }
               case 4: {
-                textEndForm += "mini 3: <span class='price'>800 грн.</span>";
+                textEndForm += "mini 3: <span class='price'>799 грн.</span>";
                 break;
               }
               case 5: {
-                textEndForm += "4: <span class='price'>550 грн.</span>";
+                textEndForm += "4: <span class='price'>549 грн.</span>";
                 break;
               }
               case 6: {
-                textEndForm += "3: <span class='price'>500 грн.</span>";
+                textEndForm += "3: <span class='price'>549 грн.</span>";
                 break;
               }
               case 7: {
-                textEndForm += "2: <span class='price'>500 грн.</span>";
+                textEndForm += "2: <span class='price'>549 грн.</span>";
                 break;
               }
             }
@@ -273,31 +273,31 @@ define([
             textEndForm = "Замена передней камеры на вашем iPad ";
             switch(id_model){
               case 1: {
-                textEndForm += "Mini Retina: <span class='price'>650 грн.</span>";
+                textEndForm += "Mini Retina: <span class='price'>799 грн.</span>";
                 break;
               }
               case 2: {
-                textEndForm += "Mini: <span class='price'>650 грн.</span>";
+                textEndForm += "Mini: <span class='price'>699 грн.</span>";
                 break;
               }
               case 3: {
-                textEndForm += "Air: <span class='price'>750 грн.</span>";
+                textEndForm += "Air: <span class='price'>849 грн.</span>";
                 break;
               }
               case 4: {
-                textEndForm += "mini 3: <span class='price'>800 грн.</span>";
+                textEndForm += "mini 3: <span class='price'>899 грн.</span>";
                 break;
               }
               case 5: {
-                textEndForm += "4: <span class='price'>600 грн.</span>";
+                textEndForm += "4: <span class='price'>699 грн.</span>";
                 break;
               }
               case 6: {
-                textEndForm += "3: <span class='price'>550 грн.</span>";
+                textEndForm += "3: <span class='price'>649 грн.</span>";
                 break;
               }
               case 7: {
-                textEndForm += "2: <span class='price'>550 грн.</span>";
+                textEndForm += "2: <span class='price'>599 грн.</span>";
                 break;
               }
             }
@@ -307,31 +307,31 @@ define([
             textEndForm = "Замена динамика на вашем iPad ";
             switch(id_model){
               case 1: {
-                textEndForm += "Mini Retina: <span class='price'>600 грн.</span>";
+                textEndForm += "Mini Retina: <span class='price'>599 грн.</span>";
                 break;
               }
               case 2: {
-                textEndForm += "Mini: <span class='price'>550 грн.</span>";
+                textEndForm += "Mini: <span class='price'>599 грн.</span>";
                 break;
               }
               case 3: {
-                textEndForm += "Air: <span class='price'>650 грн.</span>";
+                textEndForm += "Air: <span class='price'>699 грн.</span>";
                 break;
               }
               case 4: {
-                textEndForm += "mini 3: <span class='price'>700 грн.</span>";
+                textEndForm += "mini 3: <span class='price'>699 грн.</span>";
                 break;
               }
               case 5: {
-                textEndForm += "4: <span class='price'>550 грн.</span>";
+                textEndForm += "4: <span class='price'>599 грн.</span>";
                 break;
               }
               case 6: {
-                textEndForm += "3: <span class='price'>500 грн.</span>";
+                textEndForm += "3: <span class='price'>599 грн.</span>";
                 break;
               }
               case 7: {
-                textEndForm += "2: <span class='price'>550 грн.</span>";
+                textEndForm += "2: <span class='price'>549 грн.</span>";
                 break;
               }
             }
@@ -350,38 +350,38 @@ define([
       } else {
         switch(id_repair){
           case 1: {
-            textEndForm = "Замена экрана вашего iPhone";
+            textEndForm = "Замена стекла вашего iPhone";
             switch(id_model){
               case 1: {
-                textEndForm += " 6plus: <span class='price'>3600 грн.</span>";
+                textEndForm += " 6plus: <span class='price'>2999 грн.</span>";
                 break;
               }
               case 2: {
-                textEndForm += " 6: <span class='price'>2800 грн.</span>";
+                textEndForm += " 6: <span class='price'>1999 грн.</span>";
                 break;
               }
               case 3: {
-                textEndForm += " 5s: <span class='price'>2000 грн.</span>";
+                textEndForm += " 5s: <span class='price'>999 грн.</span>";
                 break;
               }
               case 4: {
-                textEndForm += " 5c: <span class='price'>2000 грн.</span>";
+                textEndForm += " 5c: <span class='price'>999 грн.</span>";
                 break;
               }
               case 5: {
-                textEndForm += " 5: <span class='price'>2000 грн.</span>";
+                textEndForm += " 5: <span class='price'>999 грн.</span>";
                 break;
               }
               case 6: {
-                textEndForm += " 4s: <span class='price'>750 грн.</span>";
+                textEndForm += " 4s: <span class='price'>649 грн.</span>";
                 break;
               }
               case 7: {
-                textEndForm += " 4: <span class='price'>750 грн.</span>";
+                textEndForm += " 4: <span class='price'>649 грн.</span>";
                 break;
               }
               case 8: {
-                textEndForm += " 3gs: <span class='price'>450 грн.</span>";
+                textEndForm += " 3gs: <span class='price'>299 грн.</span>";
                 break;
               }
             }
@@ -391,35 +391,35 @@ define([
             textEndForm = "Замена микрофона на вашем iPhone";
             switch(id_model){
               case 1: {
-                textEndForm += " 6plus: <span class='price'>600 грн.</span>";
+                textEndForm += " 6plus: <span class='price'>599 грн.</span>";
                 break;
               }
               case 2: {
-                textEndForm += " 6: <span class='price'>650 грн.</span>";
+                textEndForm += " 6: <span class='price'>599 грн.</span>";
                 break;
               }
               case 3: {
-                textEndForm += " 5s: <span class='price'>400 грн.</span>";
+                textEndForm += " 5s: <span class='price'>399 грн.</span>";
                 break;
               }
               case 4: {
-                textEndForm += " 5c: <span class='price'>400 грн.</span>";
+                textEndForm += " 5c: <span class='price'>399 грн.</span>";
                 break;
               }
               case 5: {
-                textEndForm += " 5: <span class='price'>400 грн.</span>";
+                textEndForm += " 5: <span class='price'>349 грн.</span>";
                 break;
               }
               case 6: {
-                textEndForm += " 4s: <span class='price'>350 грн.</span>";
+                textEndForm += " 4s: <span class='price'>299 грн.</span>";
                 break;
               }
               case 7: {
-                textEndForm += " 4: <span class='price'>300 грн.</span>";
+                textEndForm += " 4: <span class='price'>299 грн.</span>";
                 break;
               }
               case 8: {
-                textEndForm += " 3gs: <span class='price'>250 грн.</span>";
+                textEndForm += " 3gs: <span class='price'>199 грн.</span>";
                 break;
               }
             }
@@ -429,35 +429,35 @@ define([
             textEndForm = "Замена аккумуляторной батареи на вашем iPhone";
             switch(id_model){
               case 1: {
-                textEndForm += " 6plus: <span class='price'>900 грн.</span>";
+                textEndForm += " 6plus: <span class='price'>849 грн.</span>";
                 break;
               }
               case 2: {
-                textEndForm += " 6: <span class='price'>600 грн.</span>";
+                textEndForm += " 6: <span class='price'>549 грн.</span>";
                 break;
               }
               case 3: {
-                textEndForm += " 5s: <span class='price'>450 грн.</span>";
+                textEndForm += " 5s: <span class='price'>449 грн.</span>";
                 break;
               }
               case 4: {
-                textEndForm += " 5c: <span class='price'>400 грн.</span>";
+                textEndForm += " 5c: <span class='price'>399 грн.</span>";
                 break;
               }
               case 5: {
-                textEndForm += " 5: <span class='price'>400 грн.</span>";
+                textEndForm += " 5: <span class='price'>399 грн.</span>";
                 break;
               }
               case 6: {
-                textEndForm += " 4s: <span class='price'>350 грн.</span>";
+                textEndForm += " 4s: <span class='price'>349 грн.</span>";
                 break;
               }
               case 7: {
-                textEndForm += " 4: <span class='price'>350 грн.</span>";
+                textEndForm += " 4: <span class='price'>349 грн.</span>";
                 break;
               }
               case 8: {
-                textEndForm += " 3gs: <span class='price'>250 грн.</span>";
+                textEndForm += " 3gs: <span class='price'>249 грн.</span>";
                 break;
               }
             }
@@ -467,35 +467,35 @@ define([
             textEndForm = "Замена кнопки вкл/выкл на вашем iPhone";
             switch(id_model){
               case 1: {
-                textEndForm += " 6plus: <span class='price'>600 грн.</span>";
+                textEndForm += " 6plus: <span class='price'>599 грн.</span>";
                 break;
               }
               case 2: {
-                textEndForm += " 6: <span class='price'>600 грн.</span>";
+                textEndForm += " 6: <span class='price'>599 грн.</span>";
                 break;
               }
               case 3: {
-                textEndForm += " 5s: <span class='price'>400 грн.</span>";
+                textEndForm += " 5s: <span class='price'>399 грн.</span>";
                 break;
               }
               case 4: {
-                textEndForm += " 5c: <span class='price'>350 грн.</span>";
+                textEndForm += " 5c: <span class='price'>349 грн.</span>";
                 break;
               }
               case 5: {
-                textEndForm += " 5: <span class='price'>350 грн.</span>";
+                textEndForm += " 5: <span class='price'>349 грн.</span>";
                 break;
               }
               case 6: {
-                textEndForm += " 4s: <span class='price'>350 грн.</span>";
+                textEndForm += " 4s: <span class='price'>349 грн.</span>";
                 break;
               }
               case 7: {
-                textEndForm += " 4: <span class='price'>350 грн.</span>";
+                textEndForm += " 4: <span class='price'>349 грн.</span>";
                 break;
               }
               case 8: {
-                textEndForm += " 3gs: <span class='price'>250 грн.</span>";
+                textEndForm += " 3gs: <span class='price'>249 грн.</span>";
                 break;
               }
             }
@@ -505,35 +505,35 @@ define([
             textEndForm = "Замена кнопки меню на вашем iPhone";
             switch(id_model){
               case 1: {
-                textEndForm += " 6plus: <span class='price'>500 грн.</span>";
+                textEndForm += " 6plus: <span class='price'>799 грн.</span>";
                 break;
               }
               case 2: {
-                textEndForm += " 6: <span class='price'>500 грн.</span>";
+                textEndForm += " 6: <span class='price'>799 грн.</span>";
                 break;
               }
               case 3: {
-                textEndForm += " 5s: <span class='price'>500 грн.</span>";
+                textEndForm += " 5s: <span class='price'>399 грн.</span>";
                 break;
               }
               case 4: {
-                textEndForm += " 5c: <span class='price'>250 грн.</span>";
+                textEndForm += " 5c: <span class='price'>249 грн.</span>";
                 break;
               }
               case 5: {
-                textEndForm += " 5: <span class='price'>300 грн.</span>";
+                textEndForm += " 5: <span class='price'>199 грн.</span>";
                 break;
               }
               case 6: {
-                textEndForm += " 4s: <span class='price'>250 грн.</span>";
+                textEndForm += " 4s: <span class='price'>249 грн.</span>";
                 break;
               }
               case 7: {
-                textEndForm += " 4: <span class='price'>250 грн.</span>";
+                textEndForm += " 4: <span class='price'>249 грн.</span>";
                 break;
               }
               case 8: {
-                textEndForm += " 3gs: <span class='price'>150 грн.</span>";
+                textEndForm += " 3gs: <span class='price'>149 грн.</span>";
                 break;
               }
             }
@@ -543,35 +543,35 @@ define([
             textEndForm = "Замена передней камеры на вашем iPhone";
             switch(id_model){
               case 1: {
-                textEndForm += " 6plus: <span class='price'>750 грн.</span>";
+                textEndForm += " 6plus: <span class='price'>699 грн.</span>";
                 break;
               }
               case 2: {
-                textEndForm += " 6: <span class='price'>750 грн.</span>";
+                textEndForm += " 6: <span class='price'>699 грн.</span>";
                 break;
               }
               case 3: {
-                textEndForm += " 5s: <span class='price'>450 грн.</span>";
+                textEndForm += " 5s: <span class='price'>449 грн.</span>";
                 break;
               }
               case 4: {
-                textEndForm += " 5c: <span class='price'>400 грн.</span>";
+                textEndForm += " 5c: <span class='price'>449 грн.</span>";
                 break;
               }
               case 5: {
-                textEndForm += " 5: <span class='price'>450 грн.</span>";
+                textEndForm += " 5: <span class='price'>449 грн.</span>";
                 break;
               }
               case 6: {
-                textEndForm += " 4s: <span class='price'>350 грн.</span>";
+                textEndForm += " 4s: <span class='price'>349 грн.</span>";
                 break;
               }
               case 7: {
-                textEndForm += " 4: <span class='price'>350 грн.</span>";
+                textEndForm += " 4: <span class='price'>349 грн.</span>";
                 break;
               }
               case 8: {
-                textEndForm += " 3gs: <span class='price'>200 грн.</span>";
+                textEndForm += " 3gs: <span class='price'>199 грн.</span>";
                 break;
               }
             }
@@ -581,35 +581,35 @@ define([
             textEndForm = "Замена динамика на вашем iPhone";
             switch(id_model){
               case 1: {
-                textEndForm += " 6plus: <span class='price'>550 грн.</span>";
+                textEndForm += " 6plus: <span class='price'>799 грн.</span>";
                 break;
               }
               case 2: {
-                textEndForm += " 6: <span class='price'>500 грн.</span>";
+                textEndForm += " 6: <span class='price'>549 грн.</span>";
                 break;
               }
               case 3: {
-                textEndForm += " 5s: <span class='price'>350 грн.</span>";
+                textEndForm += " 5s: <span class='price'>299 грн.</span>";
                 break;
               }
               case 4: {
-                textEndForm += " 5c: <span class='price'>300 грн.</span>";
+                textEndForm += " 5c: <span class='price'>299 грн.</span>";
                 break;
               }
               case 5: {
-                textEndForm += " 5: <span class='price'>300 грн.</span>";
+                textEndForm += " 5: <span class='price'>299 грн.</span>";
                 break;
               }
               case 6: {
-                textEndForm += " 4s: <span class='price'>250 грн.</span>";
+                textEndForm += " 4s: <span class='price'>249 грн.</span>";
                 break;
               }
               case 7: {
-                textEndForm += " 4: <span class='price'>250 грн.</span>";
+                textEndForm += " 4: <span class='price'>249 грн.</span>";
                 break;
               }
               case 8: {
-                textEndForm += " 3gs: <span class='price'>200 грн.</span>";
+                textEndForm += " 3gs: <span class='price'>199 грн.</span>";
                 break;
               }
             }
