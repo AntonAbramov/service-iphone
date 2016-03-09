@@ -1,229 +1,548 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-    <url>
-        <loc>http://service-iphone.com.ua/</loc>
-        <lastmod>2015-10-24</lastmod>
-        <changefreq>hourly</changefreq>
-        <priority>1</priority>
-    </url>
-    <url>
-        <loc>http://service-iphone.com.ua/ipad-remont</loc>
-        <lastmod>2015-10-24</lastmod>
-        <changefreq>hourly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>http://service-iphone.com.ua/macbook-remont</loc>
-        <lastmod>2015-10-24</lastmod>
-        <changefreq>hourly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>http://service-iphone.com.ua/iphone</loc>
-        <lastmod>2015-10-24</lastmod>
-        <changefreq>hourly</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
-        <loc>http://service-iphone.com.ua/remont-iphone5</loc>
-        <lastmod>2015-10-24</lastmod>
-        <changefreq>hourly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>http://service-iphone.com.ua/feedback</loc>
-        <lastmod>2015-10-24</lastmod>
-        <changefreq>hourly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>http://service-iphone.com.ua/warranty</loc>
-        <lastmod>2015-10-24</lastmod>
-        <changefreq>hourly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>http://service-iphone.com.ua/remont-ipad3</loc>
-        <lastmod>2015-10-24</lastmod>
-        <changefreq>hourly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>http://service-iphone.com.ua/remont-iphone4</loc>
-        <lastmod>2015-10-24</lastmod>
-        <changefreq>hourly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>http://service-iphone.com.ua/remont-ipad-mini</loc>
-        <lastmod>2015-10-24</lastmod>
-        <changefreq>hourly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>http://service-iphone.com.ua/ne-rabotaet-zvuk-na-iphone</loc>
-        <lastmod>2015-10-24</lastmod>
-        <changefreq>hourly</changefreq>
-        <priority>0.8</priority>
-    </url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
-    <url>
-        <loc>http://service-iphone.com.ua/iphone-ne-vklyuchaetsya</loc>
-        <lastmod>2015-10-24</lastmod>
-        <changefreq>hourly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>http://service-iphone.com.ua/razbilos-steklo-iphone</loc>
-        <lastmod>2015-10-24</lastmod>
-        <changefreq>hourly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>http://service-iphone.com.ua/iphone-byistro-razryazhaetsya</loc>
-        <lastmod>2015-10-24</lastmod>
-        <changefreq>hourly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>http://service-iphone.com.ua/iphone-ne-nazhimayutsya-knopki</loc>
-        <lastmod>2015-10-24</lastmod>
-        <changefreq>hourly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>http://service-iphone.com.ua/ne-rabotaet-displey-iphone</loc>
-        <lastmod>2015-10-24</lastmod>
-        <changefreq>hourly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>http://service-iphone.com.ua/iphone-ne-rabotaet-mikrofon</loc>
-        <lastmod>2015-10-24</lastmod>
-        <changefreq>hourly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>http://service-iphone.com.ua/iphone-ne-zaryazhaetsya</loc>
-        <lastmod>2015-10-24</lastmod>
-        <changefreq>hourly</changefreq>
-        <priority>0.8</priority>
-    </url>
 
-    <url>
-        <loc>http://service-iphone.com.ua/remont-ipad1</loc>
-        <lastmod>2015-10-24</lastmod>
-        <changefreq>hourly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>http://service-iphone.com.ua/remont-ipad2</loc>
-        <lastmod>2015-10-24</lastmod>
-        <changefreq>hourly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>http://service-iphone.com.ua/remont-ipad-mini2</loc>
-        <lastmod>2015-10-24</lastmod>
-        <changefreq>hourly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>http://service-iphone.com.ua/remont-ipad-mini3</loc>
-        <lastmod>2015-10-24</lastmod>
-        <changefreq>hourly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>http://service-iphone.com.ua/remont-imac</loc>
-        <lastmod>2015-10-24</lastmod>
-        <changefreq>hourly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>http://service-iphone.com.ua/remont-ipad4</loc>
-        <lastmod>2015-10-24</lastmod>
-        <changefreq>hourly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>http://service-iphone.com.ua/remont-iphone-5s</loc>
-        <lastmod>2015-10-24</lastmod>
-        <changefreq>hourly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>http://service-iphone.com.ua/remont-iphone4s</loc>
-        <lastmod>2015-10-24</lastmod>
-        <changefreq>hourly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>http://service-iphone.com.ua/remont-macbook-pro</loc>
-        <lastmod>2015-10-24</lastmod>
-        <changefreq>hourly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>http://service-iphone.com.ua/remont-macbook-air</loc>
-        <lastmod>2015-10-24</lastmod>
-        <changefreq>hourly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>http://service-iphone.com.ua/remont-iphone-6plus</loc>
-        <lastmod>2015-10-24</lastmod>
-        <changefreq>hourly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>http://service-iphone.com.ua/remont-iphone3g</loc>
-        <lastmod>2015-10-24</lastmod>
-        <changefreq>hourly</changefreq>
-        <priority>0.8</priority>
-    </url>
-
-    <url>
-        <loc>http://service-iphone.com.ua/remont-iphone-6</loc>
-        <lastmod>2015-10-24</lastmod>
-        <changefreq>hourly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>http://service-iphone.com.ua/ne-rabotaet-vibrozvonok</loc>
-        <lastmod>2015-10-24</lastmod>
-        <changefreq>hourly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>http://service-iphone.com.ua/wifi-ne-rabotaet</loc>
-        <lastmod>2015-10-24</lastmod>
-        <changefreq>hourly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>http://service-iphone.com.ua/voda-iphone</loc>
-        <lastmod>2015-10-24</lastmod>
-        <changefreq>hourly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>http://service-iphone.com.ua/remont-ipad-air</loc>
-        <lastmod>2015-10-24</lastmod>
-        <changefreq>hourly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>http://service-iphone.com.ua/remont-ipad-air2</loc>
-        <lastmod>2015-10-24</lastmod>
-        <changefreq>hourly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>http://service-iphone.com.ua/remont-iphone-5c</loc>
-        <lastmod>2015-10-24</lastmod>
-        <changefreq>hourly</changefreq>
-        <priority>0.8</priority>
-    </url>
+<url>
+  <loc>http://service-iphone.com.ua/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>http://service-iphone.com.ua/iphone</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://service-iphone.com.ua/ipad-remont</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://service-iphone.com.ua/macbook-remont</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://service-iphone.com.ua/feedback</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://service-iphone.com.ua/warranty</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://service-iphone.com.ua/contacts</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://service-iphone.com.ua/ne-rabotaet-displey-iphone</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://service-iphone.com.ua/razbilos-steklo-iphone</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://service-iphone.com.ua/iphone-ne-vklyuchaetsya</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://service-iphone.com.ua/iphone-byistro-razryazhaetsya</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://service-iphone.com.ua/voda-iphone</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://service-iphone.com.ua/remont-iphone</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://service-iphone.com.ua/remont-iphone3g</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://service-iphone.com.ua/remont-iphone4</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://service-iphone.com.ua/remont-iphone4s</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://service-iphone.com.ua/remont-iphone5</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://service-iphone.com.ua/remont-iphone-5c</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://service-iphone.com.ua/remont-iphone-5s</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://service-iphone.com.ua/remont-iphone-6</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://service-iphone.com.ua/remont-iphone-6plus</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://service-iphone.com.ua/remont-iphone-6s</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://service-iphone.com.ua/remont-iphone-6splus</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://service-iphone.com.ua/wifi-ne-rabotaet</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://service-iphone.com.ua/ne-rabotaet-zvuk-na-iphone</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://service-iphone.com.ua/iphone-ne-zaryazhaetsya</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://service-iphone.com.ua/ne-rabotaet-vibrozvonok</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://service-iphone.com.ua/iphone-ne-nazhimayutsya-knopki</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://service-iphone.com.ua/iphone-ne-rabotaet-mikrofon</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://service-iphone.com.ua/remont-ipad2</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://service-iphone.com.ua/remont-ipad3</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://service-iphone.com.ua/remont-ipad4</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://service-iphone.com.ua/remont-ipad-mini</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://service-iphone.com.ua/remont-ipad-mini2</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://service-iphone.com.ua/remont-ipad-mini3</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://service-iphone.com.ua/remont-ipad-air</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://service-iphone.com.ua/remont-ipad-air2</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://service-iphone.com.ua/remont-macbook-pro</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://service-iphone.com.ua/remont-macbook-air</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://service-iphone.com.ua/remont-imac</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://service-iphone.com.ua/remont-iphone4/diagnostika</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://service-iphone.com.ua/remont-iphone4/zamena-stekla</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://service-iphone.com.ua/remont-iphone4/zamena-ekrana</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://service-iphone.com.ua/remont-iphone4/zamena-korpysa</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://service-iphone.com.ua/remont-iphone4/zamena-batarei</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://service-iphone.com.ua/remont-iphone4/remnont-knopki-home</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://service-iphone.com.ua/remont-iphone4/remont-knopok-gromkosti</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://service-iphone.com.ua/remont-iphone4/remont-knopki-vkluchenia</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://service-iphone.com.ua/remont-iphone4/zamena-kameru</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://service-iphone.com.ua/remont-iphone4/zamena-front-camera</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://service-iphone.com.ua/remont-iphone4/zamena-razgavornogo-dinamika</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://service-iphone.com.ua/remont-iphone4/zamena-dinamika</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://service-iphone.com.ua/remont-iphone4/zamena-microfona</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://service-iphone.com.ua/remont-iphone4/zamena-razjoma-dlja-naushnikov</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://service-iphone.com.ua/remont-iphone5/diagnostika</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://service-iphone.com.ua/remont-iphone-5/zamena-stekla</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://service-iphone.com.ua/remont-iphone5/zamena-ekrana</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://service-iphone.com.ua/remont-iphone5/zamena-korpysa</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://service-iphone.com.ua/remont-iphone5/zamena-batarei</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://service-iphone.com.ua/remont-iphone5/remnont-knopki-home</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://service-iphone.com.ua/remont-iphone5/remont-knopok-gromkosti</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://service-iphone.com.ua/remont-iphone5/remont-knopki-vkluchenia</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://service-iphone.com.ua/remont-iphone5/zamena-kameru</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://service-iphone.com.ua/remont-iphone5/zamena-front-camera</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://service-iphone.com.ua/remont-iphone5/zamena-razgavornogo-dinamika</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://service-iphone.com.ua/remont-iphone5/zamena-dinamika</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://service-iphone.com.ua/remont-iphone5/zamena-microfona</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://service-iphone.com.ua/remont-iphone5/zamena-razjoma-dlja-naushnikov</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://service-iphone.com.ua/remont-iphone6/diagnostika</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://service-iphone.com.ua/remont-iphone-6/zamena-stekla</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://service-iphone.com.ua/remont-iphone6/zamena-ekrana</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://service-iphone.com.ua/remont-iphone6/zamena-korpysa</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://service-iphone.com.ua/remont-iphone6/zamena-batarei</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://service-iphone.com.ua/remont-iphone6/remnont-knopki-home</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://service-iphone.com.ua/remont-iphone6/remont-knopok-gromkosti</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://service-iphone.com.ua/remont-iphone6/remont-knopki-vkluchenia</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://service-iphone.com.ua/remont-iphone6/zamena-kameru</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://service-iphone.com.ua/remont-iphone6/zamena-front-camera</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://service-iphone.com.ua/remont-iphone6/zamena-razgavornogo-dinamika</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://service-iphone.com.ua/remont-iphone6/zamena-dinamika</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://service-iphone.com.ua/remont-iphone6/zamena-microfona</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://service-iphone.com.ua/remont-iphone6/zamena-razjoma-dlja-naushnikov</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://service-iphone.com.ua/remont-iphone-6plus/zamena-ekrana</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://service-iphone.com.ua/remont-iphone-6plus/zamena-korpysa</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://service-iphone.com.ua/remont-iphone-6plus/zamena-batarei</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://service-iphone.com.ua/remont-iphone-6plus/remnont-knopki-home</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://service-iphone.com.ua/remont-iphone-6plus/remont-knopok-gromkosti</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://service-iphone.com.ua/remont-iphone-6plus/remont-knopki-vkluchenia</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://service-iphone.com.ua/remont-iphone-6plus/zamena-kameru</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://service-iphone.com.ua/remont-iphone-6plus/zamena-front-camera</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://service-iphone.com.ua/remont-iphone-6plus/zamena-razgavornogo-dinamika</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://service-iphone.com.ua/remont-iphone-6plus/zamena-dinamika</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://service-iphone.com.ua/remont-iphone-6plus/zamena-microfona</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://service-iphone.com.ua/remont-iphone-6plus/zamena-razjoma-dlja-naushnikov</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://service-iphone.com.ua/remont-iphone-6s/diagnostika</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://service-iphone.com.ua/remont-iphone-6s/zamena-stekla</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://service-iphone.com.ua/remont-iphone-6s/zamena-ekrana</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://service-iphone.com.ua/remont-iphone-6s/zamena-korpysa</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://service-iphone.com.ua/remont-iphone-6s/zamena-batarei</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://service-iphone.com.ua/remont-iphone-6s/remnont-knopki-home</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://service-iphone.com.ua/remont-iphone-6s/remont-knopok-gromkosti</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://service-iphone.com.ua/remont-iphone-6s/remont-knopki-vkluchenia</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://service-iphone.com.ua/remont-iphone-6s/zamena-kameru</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://service-iphone.com.ua/remont-iphone-6s/zamena-front-camera</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://service-iphone.com.ua/remont-iphone-6s/zamena-razgavornogo-dinamika</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://service-iphone.com.ua/remont-iphone-6s/zamena-dinamika</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://service-iphone.com.ua/remont-iphone-6s/zamena-microfona</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://service-iphone.com.ua/remont-iphone-6s/zamena-razjoma-dlja-naushnikov</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
 </urlset>
