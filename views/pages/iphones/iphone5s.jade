@@ -7,15 +7,10 @@ block content
         .col-sm-2.text-center
           img.sub-header__img(src='../img/iphone/iphone5s.jpg', alt='Недорогой ремонт iPhone 5S')
           div.raiting(itemscope, itemtype='http://schema.org/Product')
-          meta(itemprop='name', content='iPhone 5S')
-          meta(itemprop='description', content=description)
-          meta(itemprop='url', content='http://service-iphone/remont-iphone-5s')
-          div(itemprop='aggregateRating', itemscope='', itemtype='http://schema.org/AggregateRating')
-            meta(itemprop='worstRating', content='1')
-            meta(itemprop='bestRating', content='5')
-            meta(itemprop='ratingValue', content='5')
-            meta(itemprop='ratingCount', content='14')
-          .raiting__value
+            meta(itemprop='name', content='iPhone 5S')
+            meta(itemprop='description', content=description)
+            meta(itemprop='url', content='http://service-iphone/remont-iphone-5s')
+          .raiting__value(itemprop='aggregateRating', itemscope='', itemtype='http://schema.org/AggregateRating')
             span.raiting__stars
               i.fa.fa-star
               i.fa.fa-star
@@ -24,9 +19,9 @@ block content
               i.fa.fa-star
               //i.fa.fa-star-o
             span.raiting-text
-              span.raiting__score 5
+              span.raiting__score(itemprop="ratingValue") 5
               | &nbsp;(голосов&nbsp;
-              span.raiting__count 14
+              span.raiting__count(itemprop="reviewCount") 14
               | )
         .col-sm-4
           h1(title='Ремонт iPhone 5s в Киеве недорого!') Ремонт iPhone 5s
