@@ -5,12 +5,12 @@ block content
   .sub-header
     .container
       .row
-        .col-sm-2.text-center
+        .col-sm-2.text-center(itemscope, itemtype='http://schema.org/Product')
           img.sub-header__img(src='../img/iphone/iphone3s.jpg', alt='Ремонт iPhone 3GS в Киеве.')
-          .raiting(itemscope, itemtype='http://schema.org/Product')
+          .raiting
             meta(itemprop='name', content='iPhone 3')
             meta(itemprop='description', content=description)
-          .raiting__value(itemprop='aggregateRating', itemscope='', itemtype='http://schema.org/AggregateRating')
+          .raiting__value(itemprop='aggregateRating', itemtype='http://schema.org/AggregateRating')
             span.raiting__stars
               i.fa.fa-star
               i.fa.fa-star

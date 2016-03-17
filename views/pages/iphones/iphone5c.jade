@@ -4,13 +4,13 @@ block content
   .sub-header
     .container
       .row
-        .col-sm-2.text-center
+        .col-sm-2.text-center(itemscope, itemtype='http://schema.org/Product')
           img.sub-header__img(src='../img/iphone/iphone5c.jpg', alt='Киев ремонт iPhone 5C')
-          div.raiting(itemscope, itemtype='http://schema.org/Product')
+          div.raiting
             meta(itemprop='name', content='iPhone 5c')
             meta(itemprop='description', content=description)
             meta(itemprop='url', content='http://service-iphone/remont-iphone-5c')
-          .raiting__value(itemprop='aggregateRating', itemscope='', itemtype='http://schema.org/AggregateRating')
+          .raiting__value(itemprop='aggregateRating', itemtype='http://schema.org/AggregateRating')
             span.raiting__stars
               i.fa.fa-star
               i.fa.fa-star
