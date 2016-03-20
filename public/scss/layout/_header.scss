@@ -36,32 +36,9 @@
   line-height: 1;
 }
 
-.header-section__courier {
-  .btn-lg {
-    font-size: 16px;
-  }
-}
-
 .header-section__warranty {
   top: 0;
   position: absolute;
-}
-.header-section__warranty__link {
-  text-decoration: none;
-  position: relative;
-  padding-left: 52px;
-  display: block;
-  line-height: 16px;
-  padding-top: 7px;
-
-  .icon-warranty {
-    font-size: 40px;
-    position: absolute;
-    left: 0;
-    top: 1px;
-    @include transition(all, .3s);
-
-  }
 }
 
 .header-section__warranty--period {
@@ -100,9 +77,11 @@
 .header-section__contacts__tel,
 .header-section__schedule--description {
   text-decoration: none;
-  color: #222;
   &:hover, &:focus {
     color: #222;
   }
 }
 
+.header-section__schedule--description {
+  color: #222;
+}

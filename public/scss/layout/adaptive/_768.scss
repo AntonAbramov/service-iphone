@@ -69,17 +69,15 @@
 }
 
 .header-section__contacts__tel {
-  display: block;
-  margin: 0;
+  margin: 0 5px 0 0;
+  font-weight: bold;
 }
 
-.header-section__schedule {
-  float: left;
-  text-align: left;
-}
-
-#googleMap {
+.google-maps {
   height: 350px;
+  width: 50%;
+  float: left;
+  border: 2px solid #fff;
 }
 
 h1, .benefits__heading {

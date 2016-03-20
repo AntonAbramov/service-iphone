@@ -24,44 +24,49 @@ header.header(itemscope, itemtype="http://schema.org/LocalBusiness")
         span.top-navigation--text(title='Контакты') Контакты
   section.header-section
     .container
-      .header-section__contacts.show-tablet
-        div
-          span.header-section__contacts__title
-            i.fa.fa-map-marker.mr5
-            |ул. Богдана Хмельницкого, 32
-        div
-          a.header-section__contacts__tel(href='tel:0961253246', itemprop='telephone') (096) 125-32-46
-      .header-section__contacts.text-center
-          a.mr5.header-section__contacts__tel(href='tel:0937229156', itemprop='telephone') (093) 722-91-56
-          a.ml5.header-section__contacts__tel(href='tel:0665669752', itemprop='telephone') (066) 566-97-52
-      .header-section__schedule
+      .col-xs-12.col-sm-6.text-center
+        .header-section__contacts__title
+          i.fa.fa-map-marker.mr5
+          | ул. Богдана Хмельницкого, 32
+        a.header-section__contacts__tel(href='tel:0961253246', itemprop='telephone') (096) 125-32-46
+        a.header-section__contacts__tel(href='tel:0937229156', itemprop='telephone') (093) 722-91-56
+        a.header-section__contacts__tel(href='tel:0665669752', itemprop='telephone') (066) 566-97-52
+        br
         a.header-section__schedule--description(href="#contacts", rel="nofollow", itemprop="openingHoursSpecification", itemscope, itemtype="http://schema.org/OpeningHoursSpecification")
-          span(itemprop="dayOfWeek", itemscope, itemtype="http://schema.org/DayOfWeek")
+          span(itemprop="dayOfWeek", itemtype="http://schema.org/DayOfWeek")
             span(itemprop="name") пн-пт&nbsp;
           span(itemprop="opens") 10:00-
           span(itemprop="closes") 19:00
           br
-          span(itemprop="dayOfWeek", itemscope, itemtype="http://schema.org/DayOfWeek")
+          span(itemprop="dayOfWeek", itemtype="http://schema.org/DayOfWeek")
             span(itemprop="name") сб&nbsp;
           span(itemprop="opens") 11:00
           | -
           span(itemprop="closes") 17:00
           br
-          //span(itemprop="dayOfWeek", itemscope, itemtype="http://schema.org/DayOfWeek")
-          //  span(itemprop="name") вс
-          //| &nbsp;-&nbsp;
-          //| выходной
-      .header-section__courier.left.ml20.show-desktop
-        a.show-tablet(target="_blank", title="Оставь комментарий в Google+ и получи 5% скидки на ремонт", href="https://plus.google.com/109962936005483548770/about") Получи 5% скидки за отзыв в Google+!
-      .header-section__courier.left.mr30.show-desktop(style='display: none')
-        button#call-courier.btn.btn-primary.btn-lg.show-desktop(rel='nofollow', href='mailto:agsremont@gmail.com')
-          i.icon-running.aa.mr5
-          | Вызвать курьера
-      //.header-section__warranty.left
-      //  a.header-section__warranty__link(href='/warranty')
-      //    i.icon-warranty.aa
-      //    span.header-section__warranty--period Гарантия 6 месяцев
-      //    span.header-section__warranty--all на все ремонты
+
+      //.header-section__courier.left.ml20.show-desktop
+      //  a.show-tablet(target="_blank", title="Оставь комментарий в Google+ и получи 5% скидки на ремонт", href="https://plus.google.com/109962936005483548770/about") Получи 5% скидки за отзыв в Google+!
+      .col-xs-12.col-sm-6.text-center
+        .header-section__contacts__title
+          i.fa.fa-map-marker.mr5
+          | Оболонский Проспект 16Е
+        a.header-section__contacts__tel(href='tel:0631104224', itemprop='telephone') (063) 110-42-24
+        a.header-section__contacts__tel(href='tel:0992504224', itemprop='telephone') (099) 250-42-24
+        a.header-section__contacts__tel(href='tel:0981024224', itemprop='telephone') (098) 102-42-24
+        br
+        a.header-section__schedule--description(href="#contacts", rel="nofollow", itemprop="openingHoursSpecification", itemscope, itemtype="http://schema.org/OpeningHoursSpecification")
+          span(itemprop="dayOfWeek", itemtype="http://schema.org/DayOfWeek")
+            span(itemprop="name") пн-пт&nbsp;
+          span(itemprop="opens") 10:00-
+          span(itemprop="closes") 19:00
+          br
+          span(itemprop="dayOfWeek", itemtype="http://schema.org/DayOfWeek")
+            span(itemprop="name") сб&nbsp;
+          span(itemprop="opens") 11:00
+          | -
+          span(itemprop="closes") 17:00
+          br
 
 #overlay-courier.overlay
   #courier.modal--courier

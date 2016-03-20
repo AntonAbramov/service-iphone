@@ -34,7 +34,10 @@ define([
 
   function bindEvents() {
 
-    callCourierBtn.addEventListener('click', openCourierModal);
+    if (callCourierBtn) {
+      callCourierBtn.addEventListener('click', openCourierModal);
+    }
+
 
     overlay.addEventListener('click', closeCourierModal);
     closeBtn.addEventListener('click', closeModal);
