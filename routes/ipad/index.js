@@ -213,7 +213,7 @@ router.get('/remont-ipad-air2/zamena-batarei', function (req, res, next) {
 });
 
 router.get('/remont-ipad-air2/zamena-ekrana', function (req, res, next) {
-  res.render('pages/ipads/ipadair 2/zamena-ekrana', {
+  res.render('pages/ipads/ipadair2/zamena-ekrana', {
     title: "Замена экрана (дисплея) ipad air 2 в Киеве | Service-iPhone",
     description: "Качественная замена экрана (дисплея) на ipad air 2 в Киеве. Цены от 200 грн. Время на ремонт от 20 минут.",
     keywords: "Замена дисплея ipad air 2, замена экрана ipad air 2, Киев, замена дисплея айпад air 2, экрана",
@@ -222,7 +222,7 @@ router.get('/remont-ipad-air2/zamena-ekrana', function (req, res, next) {
 });
 
 router.get('/remont-ipad-air2/zamena-stekla', function (req, res, next) {
-  res.render('pages/ipads/ipadair 2/zamena-stekla', {
+  res.render('pages/ipads/ipadair2/zamena-stekla', {
     title: "Замена стекла (тачскрина) ipad air 2 в Киеве | Service-ipad",
     description: "Качественная замена стекла (дисплея) на ipad air 2 в Киеве. от 200 грн. Ремонт от 20 минут.",
     keywords: "Замена стекла ipad air 2, замена экрана ipad air 2, Киев, замена дисплея ipad air 2, экрана",
