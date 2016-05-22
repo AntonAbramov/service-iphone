@@ -1,0 +1,98 @@
+/*!
+ *  Font Awesome 4.3.0 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ */
+
+@import "../fonts/variables";
+@import "../fonts/mixins";
+@import "../fonts/path";
+@import "../fonts/core";
+@import "../fonts/larger";
+@import "../fonts/fixed-width";
+@import "../fonts/list";
+@import "../fonts/bordered-pulled";
+@import "../fonts/animated";
+@import "../fonts/rotated-flipped";
+@import "../fonts/stacked";
+@import "../fonts/icons";
+
+body, h1, h2, h3, h4, h5, h6 {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  color: #333;
+  font: 14px/20px Helvetica Neue, Arial;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 1.5em;
+  margin: 0.67em 0;
+  line-height: 1;
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 24px;
+}
+
+h3 {
+  font-size: 20px;
+  line-height: 20px;
+}
+
+:focus {
+  outline: none;
+}
+
+a {
+  color: $link-color;
+  &:hover, &:focus {
+    color: $link-hover-color;
+  }
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  margin: 0 0 15px;
+}
+
+.heading-title {
+  text-align: center;
+  font-size: 18px;
+  color: #333;
+  font-weight: 400;
+}
+
+.title,
+.title2 {
+  font-weight: 300;
+  margin: 20px 0;
+  line-height: 1;
+}
+
+.title {
+  font-size: 1.4em;
+}
+
+.title2 {
+  font-size: 24px;
+}
+
+.b {
+  font-weight: bold;
+}
+
+.color-success {
+  color: $brand-success;
+}

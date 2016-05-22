@@ -1,0 +1,25 @@
+/* FONT PATH
+ * -------------------------- */
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url(if($fa-sass-asset-helper, fa-font-path('#{$fa-font-path}#{$fa-font-name}.eot'), '#{$fa-font-path}#{$fa-font-name}.eot'));
+  src: url(if($fa-sass-asset-helper, fa-font-path('#{$fa-font-path}#{$fa-font-name}.eot?#iefix'), '#{$fa-font-path}#{$fa-font-name}.eot?#iefix')) format('embedded-opentype'),
+    url(if($fa-sass-asset-helper, fa-font-path('#{$fa-font-path}#{$fa-font-name}.woff2'), '#{$fa-font-path}#{$fa-font-name}.woff2')) format('woff2'),
+    url(if($fa-sass-asset-helper, fa-font-path('#{$fa-font-path}#{$fa-font-name}.woff'), '#{$fa-font-path}#{$fa-font-name}.woff')) format('woff'),
+    url(if($fa-sass-asset-helper, fa-font-path('#{$fa-font-path}#{$fa-font-name}.ttf'), '#{$fa-font-path}#{$fa-font-name}.ttf')) format('truetype'),
+    url(if($fa-sass-asset-helper, fa-font-path('#{$fa-font-path}#{$fa-font-name}.svg#fontawesomeregular'), '#{$fa-font-path}#{$fa-font-name}.svg#fontawesomeregular')) format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "appleIcons";
+  src:url("#{$fa-font-path}/apple-icons.eot");
+  src:url("#{$fa-font-path}/apple-icons.eot?#iefix") format("embedded-opentype"),
+    url("#{$fa-font-path}/apple-icons.woff") format("woff"),
+    url("#{$fa-font-path}/apple-icons.ttf") format("truetype"),
+    url("#{$fa-font-path}/apple-icons.svg#apple-icons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
