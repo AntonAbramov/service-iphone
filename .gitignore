@@ -3,6 +3,7 @@ logs
 *.log
 &.DS_Store
 logo.psd
+.idea
 
 # Runtime data
 pids
