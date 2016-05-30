@@ -54,6 +54,7 @@ gulp.task('sass', function () {
     }))
     .pipe(remember('sass'))
     .pipe(gulpIf(isDevelopment, sourcemaps.write()))
+    .pipe(minifycss())
     .pipe(gulp.dest('public/css'));
 });
 
