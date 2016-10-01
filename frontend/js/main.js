@@ -1,12 +1,12 @@
 import domHelper from './helpers/domHelper';
 import Nav from './modules/navigation';
 import Courier from './modules/courier';
-import Feedback from './pages/feedback';
+//import Feedback from './pages/feedback';
 import Landing from './pages/landing';
 Nav.init();
 Courier.init();
 if (document.getElementById('comments-form')) {
-  Feedback.init();
+  //Feedback.init();
 }
 
 if (document.getElementById('stepsforform')) {
@@ -14,3 +14,4 @@ if (document.getElementById('stepsforform')) {
 }
 
 
+import Comments from './modules/comments/index';

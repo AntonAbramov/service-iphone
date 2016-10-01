@@ -11,12 +11,12 @@ mongoose.connect('mongodb://localhost:27017/feedbackDb');
 
 
 router.get('/', function (req, res, next) {
-  var collection = [];
+  //var collection = [];
   console.log('just get on feedback');
 
  // var db = req.db;
  // var collection = db.get('feedbacks');
-  req.db['feedback'].find({}).sort({'created': -1}, function (err, doc) {
+  req.db['feedback'].find({}).sort({'date': -1}, function (err, doc) {
     if (err) throw err;
 
     res.render('pages/feedback/feedback', {
@@ -27,17 +27,23 @@ router.get('/', function (req, res, next) {
       comments: doc
     });
   });
-
-
 });
 
 router.post('/', function (req, res, next) {
   // call the built-in save method to save to the database
+  req.body.date = new Date().toLocaleDateString();
   req.db['feedback'].insert(req.body, function (err, doc) {
     if (err) throw err;
-    res.send('success');
+    res.send(doc);
   });
 });
 
+router.get('/get', function (req, res, next) {
+  req.db['feedback'].find({}).sort({'date': -1}, function (err, doc) {
+    if (err) throw err;
+
+    res.send(doc);
+  })
+})
 
 module.exports = router;

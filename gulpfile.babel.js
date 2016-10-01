@@ -24,7 +24,7 @@
   const isDevelopment = !process.env.NODE_ENV || process.evn.NODE_ENV == 'development';
 
 gulp.task('js', function() {
-  return gulp.src('public/js/main.js')
+  return gulp.src('frontend/js/main.js')
       .pipe(webpackStream(require('./webpack.config.js')));
 });
 
