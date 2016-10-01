@@ -172,7 +172,6 @@ const Comments = React.createClass({
     return (
         <ul className="comments-tree">
           {templates}
-          <strong>комментариев {this.state.data.length}</strong>
         </ul>
 
     );

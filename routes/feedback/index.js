@@ -16,7 +16,7 @@ router.get('/', function (req, res, next) {
 
  // var db = req.db;
  // var collection = db.get('feedbacks');
-  req.db['feedback'].find({}).sort({'_id':-1}), function (err, doc) {
+  req.db['feedback'].find({}).sort({'_id':-1}, function (err, doc) {
     if (err) throw err;
 
     res.render('pages/feedback/feedback', {
