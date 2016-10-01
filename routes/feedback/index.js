@@ -39,7 +39,7 @@ router.post('/', function (req, res, next) {
 });
 
 router.get('/get', function (req, res, next) {
-  req.db['feedback'].find({}).sort({'date': -1}, function (err, doc) {
+  req.db['feedback'].find({}).sort({'_id': -1}, function (err, doc) {
     if (err) throw err;
 
     res.send(doc);
