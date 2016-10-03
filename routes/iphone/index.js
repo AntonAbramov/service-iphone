@@ -838,7 +838,7 @@ router.get('/remont-iphone-7', function (req, res, next) {
 //======================
 
 router.get('/remont-iphone-7plus', function (req, res, next) {
-  req.db['iphone6splus'].find().sort({'idx': 1}, function (err, docs) {
+  req.db['iphone7plus'].find().sort({'idx': 1}, function (err, docs) {
     if (err) throw err;
     res.render('pages/iphones/iphone7plus', {
       title: "Ремонт iPhone 7+ в Киеве | Service-iPhone",
