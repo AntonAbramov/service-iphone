@@ -798,4 +798,56 @@ router.get('/remont-iphone-6splus', function (req, res, next) {
 });
 
 
+//======================
+//    iPhone SE
+//======================
+
+router.get('/remont-iphone-se', function (req, res, next) {
+  req.db['iphonese'].find().sort({'idx': 1}, function (err, docs) {
+    if (err) throw err;
+    res.render('pages/iphones/iphonese', {
+      title: "Ремонт iPhone SE в Киеве | Service-iPhone",
+      description: "Ремонт аккумулятора 300 грн на iPhone SE. Замена стекла/батареи/дисплея айфон СЕ от 350грн.",
+      keywords: "Ремонт iPhone SE, Киев, замена экрана, дисплея, стекла, ремонт аккумулятора",
+      menuActive: 'iphone',
+      pricesTable: docs
+    });
+  });
+});
+
+
+//======================
+//    iPhone 7
+//======================
+
+router.get('/remont-iphone-7', function (req, res, next) {
+  req.db['iphone7'].find().sort({'idx': 1}, function (err, docs) {
+    if (err) throw err;
+    res.render('pages/iphones/iphone7', {
+      title: "Ремонт iPhone 7 в Киеве | Service-iPhone",
+      description: "Ремонт аккумулятора 390 грн на iPhone 7. Замена стекла/батареи/дисплея айфон 7 от 330грн.",
+      keywords: "Ремонт iPhone 7, Киев, замена экрана, дисплея, стекла, ремонт аккумулятора",
+      menuActive: 'iphone',
+      pricesTable: docs
+    });
+  });
+});
+
+//======================
+//    iPhone 7 Plus
+//======================
+
+router.get('/remont-iphone-7plus', function (req, res, next) {
+  req.db['iphone6splus'].find().sort({'idx': 1}, function (err, docs) {
+    if (err) throw err;
+    res.render('pages/iphones/iphone7plus', {
+      title: "Ремонт iPhone 7+ в Киеве | Service-iPhone",
+      description: "Ремонт аккумулятора 500 грн на iPhone 7+. Замена стекла/батареи/дисплея от 350грн.",
+      keywords: "Ремонт iPhone 7+, Киев, замена экрана, дисплея, стекла, ремонт аккумулятора айфон 7+",
+      menuActive: 'iphone',
+      pricesTable: docs
+    });
+  });
+});
+
 module.exports = router;
