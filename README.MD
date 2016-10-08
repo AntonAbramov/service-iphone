@@ -1,5 +1,5 @@
 // to Minify Javascript run:
-NODE_ENV=product webpack
+NODE_ENV=production webpack
 
 //on server if mongo thow error run this command
 export LC_ALL=C
