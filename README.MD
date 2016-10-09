@@ -13,3 +13,7 @@ pm2 deploy production
 // start
 1. run mongod instance
 2. nodemon bin/www
+
+on server:
+sudo service nginx restart
+pm2 restart 0[number-id]
