@@ -1,0 +1,25 @@
+extends ../../layout
+
+block content
+  section.device-section
+    h1.device-title
+      | Ремонт MacBook
+    p.heading-title Выберите модель:
+    .devices
+      .devices__wrp
+        .devices__item
+          a.devices__link(href='/remont-macbook/pro', title='Ремонт MacBook Pro в Киеве')
+            figure.devices__img.devices__img--svg.devices__img--macbook-pro
+            span.devices__name MacBook Pro
+        .devices__item
+          a.devices__link(href='/remont-macbook/proretina', title='Ремонт MacBook Pro Retina в Киеве')
+            figure.devices__img.devices__img--svg.devices__img--macbook-pro
+            span.devices__name MacBook Pro Retina
+        .devices__item
+          a.devices__link(href='/remont-macbook/air', title='Ремонт MacBook Air в Киеве')
+            figure.devices__img.devices__img--svg.devices__img--macbook-air
+            span.devices__name MacBook Air
+        .devices__item
+          a.devices__link(href='/remont-imac', title='Ремонт iMac в Киеве')
+            figure.devices__img.devices__img--svg.devices__img--imac
+            span.devices__name iMac

@@ -78,9 +78,28 @@ hr {
 
 .devices__img {
   display: block;
-  //padding: 0 10px;
   margin: 0 0 15px;
   @include transition(all, .3s);
+}
+
+.devices__img--svg {
+  min-height: 50px;
+  min-width: 50px;
+  margin: 0 0 5px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.devices__img--macbook-pro {
+  background-image: url('/img/remont/remont-macbook-pro.svg');
+}
+
+.devices__img--macbook-air {
+  background-image: url('/img/remont/remont-macbook-air.svg');
+}
+
+.devices__img--imac {
+  background-image: url('/img/remont/remont-imac.svg');
 }
 
 .devices__img--preview {

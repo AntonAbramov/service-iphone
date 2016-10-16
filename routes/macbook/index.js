@@ -1,0 +1,202 @@
+var express = require('express');
+var router = express.Router();
+
+router.get('/', function (req, res, next) {
+  res.render('pages/macbook/index', {
+    title: "Ремонт MacBook Pro, MacBook Air, iMac",
+    description: "Ремонт MacBook в Киеве! Быстрый и Качественный СЦ в столице, низкие цены!",
+    keywords: "ремонт macbook, imac, macbook pro, ремонт макбука, киев ",
+    menuActive: 'imac'
+  });
+});
+
+
+//======================
+//    MacBook Air
+//======================
+
+router.get('/air', function (req, res, next) {
+  res.render('pages/macbook/air/index', {
+    title: "Ремонт MacBook Air в Service-iPhone",
+    description: "Ремонт MacBook в Киеве!",
+    keywords: "ремонт macbook",
+    menuActive: 'imac'
+  });
+});
+
+router.get('/air/a1237', function (req, res, next) {
+  req.db['macbookaira1237'].find().sort({'idx': 1}, function (err, docs) {
+    if (err) throw err;
+    res.render('pages/macbook/air/1237', {
+      title: "Ремонт MacBook Air в Service-iPhone",
+      description: "Ремонт MacBook в Киеве!",
+      keywords: "ремонт macbook",
+      menuActive: 'imac',
+      pricesTable: docs
+    });
+  });
+});
+
+router.get('/air/a1304', function (req, res, next) {
+  req.db['macbookaira1304'].find().sort({'idx': 1}, function (err, docs) {
+    if (err) throw err;
+    res.render('pages/macbook/air/1304', {
+      title: "Ремонт MacBook Air в Service-iPhone",
+      description: "Ремонт MacBook в Киеве!",
+      keywords: "ремонт macbook",
+      menuActive: 'imac',
+      pricesTable: docs
+    });
+  });
+});
+
+router.get('/air/a1369', function (req, res, next) {
+  req.db['macbookaira1369'].find().sort({'idx': 1}, function (err, docs) {
+    if (err) throw err;
+    res.render('pages/macbook/air/1369', {
+      title: "Ремонт MacBook Air в Service-iPhone",
+      description: "Ремонт MacBook в Киеве!",
+      keywords: "ремонт macbook",
+      menuActive: 'imac',
+      pricesTable: docs
+    });
+  });
+});
+
+router.get('/air/a1370', function (req, res, next) {
+  req.db['macbookaira1370'].find().sort({'idx': 1}, function (err, docs) {
+    if (err) throw err;
+    res.render('pages/macbook/air/1370', {
+      title: "Ремонт MacBook Air в Service-iPhone",
+      description: "Ремонт MacBook в Киеве!",
+      keywords: "ремонт macbook",
+      menuActive: 'imac',
+      pricesTable: docs
+    });
+  });
+});
+
+router.get('/air/a1465', function (req, res, next) {
+  req.db['macbookaira1465'].find().sort({'idx': 1}, function (err, docs) {
+    if (err) throw err;
+    res.render('pages/macbook/air/1465', {
+      title: "Ремонт MacBook Air в Service-iPhone",
+      description: "Ремонт MacBook в Киеве!",
+      keywords: "ремонт macbook",
+      menuActive: 'imac',
+      pricesTable: docs
+    });
+  });
+});
+
+router.get('/air/a1466', function (req, res, next) {
+  req.db['macbookaira1466'].find().sort({'idx': 1}, function (err, docs) {
+    if (err) throw err;
+    res.render('pages/macbook/air/1466', {
+      title: "Ремонт MacBook Air в Service-iPhone",
+      description: "Ремонт MacBook в Киеве!",
+      keywords: "ремонт macbook",
+      menuActive: 'imac',
+      pricesTable: docs
+    });
+  });
+});
+
+//======================
+//    MacBook Pro
+//======================
+
+router.get('/pro', function (req, res, next) {
+  res.render('pages/macbook/pro/index', {
+    title: "Ремонт MacBook Pro в Service-iPhone",
+    description: "Ремонт MacBook в Киеве!",
+    keywords: "ремонт macbook",
+    menuActive: 'imac'
+  });
+});
+
+router.get('/pro/a1278', function (req, res, next) {
+  req.db['macbookproa1278'].find().sort({'idx': 1}, function (err, docs) {
+    if (err) throw err;
+    res.render('pages/macbook/pro/1278', {
+      title: "Ремонт MacBook Pro A1278 в Service-iPhone",
+      description: "Ремонт MacBook в Киеве!",
+      keywords: "ремонт macbook",
+      menuActive: 'imac',
+      pricesTable: docs
+    });
+  });
+});
+
+router.get('/pro/a1286', function (req, res, next) {
+  req.db['macbookproa1286'].find().sort({'idx': 1}, function (err, docs) {
+    if (err) throw err;
+    res.render('pages/macbook/pro/1286', {
+      title: "Ремонт MacBook Pro A1286 в Service-iPhone",
+      description: "Ремонт MacBook в Киеве!",
+      keywords: "ремонт macbook",
+      menuActive: 'imac',
+      pricesTable: docs
+    });
+  });
+});
+
+//======================
+//    MacBook Pro Retina
+//======================
+
+router.get('/proretina', function (req, res, next) {
+  res.render('pages/macbook/proretina/index', {
+    title: "Ремонт MacBook Pro retina в Service-iPhone",
+    description: "Ремонт MacBook в Киеве!",
+    keywords: "ремонт macbook",
+    menuActive: 'imac'
+  });
+});
+
+router.get('/proretina/a1398', function (req, res, next) {
+  req.db['macbookproretinaa1398'].find().sort({'idx': 1}, function (err, docs) {
+    if (err) throw err;
+    res.render('pages/macbook/proretina/1398', {
+      title: "Ремонт MacBook Pro Retina A1398 в Service-iPhone",
+      description: "Ремонт MacBook в Киеве!",
+      keywords: "ремонт macbook",
+      menuActive: 'imac',
+      pricesTable: docs
+    });
+  });
+});
+
+router.get('/proretina/a1425', function (req, res, next) {
+  req.db['macbookproretinaa1425'].find().sort({'idx': 1}, function (err, docs) {
+    if (err) throw err;
+    res.render('pages/macbook/proretina/1425', {
+      title: "Ремонт MacBook Pro Retina A1425 в Service-iPhone",
+      description: "Ремонт MacBook в Киеве!",
+      keywords: "ремонт macbook",
+      menuActive: 'imac',
+      pricesTable: docs
+    });
+  });
+});
+
+router.get('/proretina/a1502', function (req, res, next) {
+  req.db['macbookproretinaa1502'].find().sort({'idx': 1}, function (err, docs) {
+    if (err) throw err;
+    res.render('pages/macbook/proretina/1502', {
+      title: "Ремонт MacBook Pro Retina A1502 в Service-iPhone",
+      description: "Ремонт MacBook в Киеве!",
+      keywords: "ремонт macbook",
+      menuActive: 'imac',
+      pricesTable: docs
+    });
+  });
+});
+
+//======================
+//    MacBook
+//======================
+
+
+
+module.exports = router;

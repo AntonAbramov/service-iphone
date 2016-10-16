@@ -1,0 +1,15 @@
+extends ../../../layout
+
+block content
+  section.device-section
+    h1.device-title
+      | Ремонт MacBook Pro Retina
+    p.heading-title Выберите модель:
+    .devices
+      .devices__wrp
+        -var menuMacbook = [{'href': '/remont-macbook/proretina/a1398','text': 'MacBook Pro A1398'},{'href': '/remont-macbook/proretina/a1425','text': 'MacBook Pro A1425'},{'href': '/remont-macbook/proretina/a1502','text': 'MacBook Pro A1502'}];
+        each item in menuMacbook
+          .devices__item
+            a.devices__link(href='#{item.href}', title='Ремонт #{item.text} в Киеве')
+              figure.devices__img.devices__img--svg.devices__img--macbook-pro
+              span.devices__name #{item.text}

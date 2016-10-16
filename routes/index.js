@@ -38,8 +38,8 @@ router.get('/contacts', function (req, res, next) {
 });
 
 router.get('/remont-imac', function (req, res, next) {
-  res.render('pages/mac/mac', {
-    title: "Ремонт MacBook в Киеве | Сервисный центр Apple - Service-iPhone",
+  res.render('pages/imac/index', {
+    title: "Ремонт iMac в Киеве | Сервисный центр Apple - Service-iPhone",
     description: "Ремонт MacBook в Киеве. Профессиональный ремонт MacBook с гарантией до 2х лет. Только original запчасти.",
     keywords: "Ремонт MacBook",
     menuActive: 'imac'

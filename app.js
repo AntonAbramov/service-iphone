@@ -44,7 +44,7 @@ var db = mongojs('serviceiphone', [
 var routes = require('./routes/index');
 var iphone = require('./routes/iphone/index');
 var ipad = require('./routes/ipad/index');
-var imac = require('./routes/imac/index');
+var macbook = require('./routes/macbook/index');
 var feedback = require('./routes/feedback/index');
 
 var app = express();
@@ -70,7 +70,7 @@ app.use(function(req,res,next){
 app.use('/', routes);
 app.use('/', iphone);
 app.use('/', ipad);
-app.use('/macbook-remont', imac);
+app.use('/remont-macbook', macbook);
 app.use('/feedback', feedback);
 
 // catch 404 and forward to error handler
