@@ -1,4 +1,4 @@
-$footer-height: 76px;
+$footer-height: 136px;
 
 .wrapper {
   min-height: 100%;
@@ -77,7 +77,7 @@ h3 {
 .price-calc {
   display: block;
   position: fixed;
-  top: 40%;
+  top: 80%;
   right: 50px;
   z-index: 2;
   &:hover {
