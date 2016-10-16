@@ -3,9 +3,9 @@ var router = express.Router();
 
 router.get('/', function (req, res, next) {
   res.render('pages/macbook/index', {
-    title: "Ремонт MacBook Pro, MacBook Air, iMac",
-    description: "Ремонт MacBook в Киеве! Быстрый и Качественный СЦ в столице, низкие цены!",
-    keywords: "ремонт macbook, imac, macbook pro, ремонт макбука, киев ",
+    title: "Ремонт MacBook Pro, MacBook Air и iMac в Киеве | Service iPhone",
+    description: "Профессиональный ремонт MacBook Apple в Киеве. Качественный сервис макбуков. Звоните (066) 566-97-52",
+    keywords: "ремонт macbook (макбук), MacBook Pro, Сервис Apple в Киеве",
     menuActive: 'imac'
   });
 });
@@ -17,8 +17,8 @@ router.get('/', function (req, res, next) {
 
 router.get('/air', function (req, res, next) {
   res.render('pages/macbook/air/index', {
-    title: "Ремонт MacBook Air в Service-iPhone",
-    description: "Ремонт MacBook в Киеве!",
+    title: "Ремонт MacBook Air в Киеве | Service iPhone",
+    description: "Ремонт MacBook в Киеве. Профессиональное обслуживание по ремонту техники Apple | Service-iPhone (066) 566-97-52",
     keywords: "ремонт macbook",
     menuActive: 'imac'
   });
@@ -28,7 +28,7 @@ router.get('/air/a1237', function (req, res, next) {
   req.db['macbookaira1237'].find().sort({'idx': 1}, function (err, docs) {
     if (err) throw err;
     res.render('pages/macbook/air/1237', {
-      title: "Ремонт MacBook Air в Service-iPhone",
+      title: "Ремонт MacBook Air A1237 в Service-iPhone",
       description: "Ремонт MacBook в Киеве!",
       keywords: "ремонт macbook",
       menuActive: 'imac',
@@ -41,7 +41,7 @@ router.get('/air/a1304', function (req, res, next) {
   req.db['macbookaira1304'].find().sort({'idx': 1}, function (err, docs) {
     if (err) throw err;
     res.render('pages/macbook/air/1304', {
-      title: "Ремонт MacBook Air в Service-iPhone",
+      title: "Ремонт MacBook Air A1304 в Service-iPhone",
       description: "Ремонт MacBook в Киеве!",
       keywords: "ремонт macbook",
       menuActive: 'imac',
@@ -54,7 +54,7 @@ router.get('/air/a1369', function (req, res, next) {
   req.db['macbookaira1369'].find().sort({'idx': 1}, function (err, docs) {
     if (err) throw err;
     res.render('pages/macbook/air/1369', {
-      title: "Ремонт MacBook Air в Service-iPhone",
+      title: "Ремонт MacBook Air A1369 в Service-iPhone",
       description: "Ремонт MacBook в Киеве!",
       keywords: "ремонт macbook",
       menuActive: 'imac',
@@ -67,7 +67,7 @@ router.get('/air/a1370', function (req, res, next) {
   req.db['macbookaira1370'].find().sort({'idx': 1}, function (err, docs) {
     if (err) throw err;
     res.render('pages/macbook/air/1370', {
-      title: "Ремонт MacBook Air в Service-iPhone",
+      title: "Ремонт MacBook Air A1370 в Service-iPhone",
       description: "Ремонт MacBook в Киеве!",
       keywords: "ремонт macbook",
       menuActive: 'imac',
@@ -80,7 +80,7 @@ router.get('/air/a1465', function (req, res, next) {
   req.db['macbookaira1465'].find().sort({'idx': 1}, function (err, docs) {
     if (err) throw err;
     res.render('pages/macbook/air/1465', {
-      title: "Ремонт MacBook Air в Service-iPhone",
+      title: "Ремонт MacBook Air A1465 в Service-iPhone",
       description: "Ремонт MacBook в Киеве!",
       keywords: "ремонт macbook",
       menuActive: 'imac',
@@ -93,7 +93,7 @@ router.get('/air/a1466', function (req, res, next) {
   req.db['macbookaira1466'].find().sort({'idx': 1}, function (err, docs) {
     if (err) throw err;
     res.render('pages/macbook/air/1466', {
-      title: "Ремонт MacBook Air в Service-iPhone",
+      title: "Ремонт MacBook Air A1466 в Service-iPhone",
       description: "Ремонт MacBook в Киеве!",
       keywords: "ремонт macbook",
       menuActive: 'imac',
