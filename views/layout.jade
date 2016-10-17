@@ -10,8 +10,14 @@ html(dir="ltr", lang="ru")
     link(rel='icon', type='image/png', sizes='32x32', href='/favicon-32x32.png')
     link(rel='icon', type='image/png', sizes='96x96', href='/favicon-96x96.png')
     link(rel='icon', type='image/png', sizes='16x16', href='/favicon-16x16.png')
-    link(rel='stylesheet', href='/css/style.css')
-
+    //link(rel='stylesheet', href='/css/style.css')
+    script.
+      var link = document.createElement('link');
+      link.setAttribute('rel', 'stylesheet');
+      link.setAttribute('href', '/css/style.css');
+      setTimeout(function(){
+        document.body.appendChild(link)
+      },10)
   body
     script(src="/sources/googleanalytics.js", async).
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
