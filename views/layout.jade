@@ -14,7 +14,7 @@ html(dir="ltr", lang="ru")
   body
     noscript#deferred-styles
       link(rel='stylesheet', href='/css/style.css')
-    script.
+    script(async).
       var loadDeferredStyles = function () {
         var addStylesNode = document.getElementById("deferred-styles");
         var replacement = document.createElement("div");
