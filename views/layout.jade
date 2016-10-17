@@ -12,22 +12,6 @@ html(dir="ltr", lang="ru")
     link(rel='icon', type='image/png', sizes='16x16', href='/favicon-16x16.png')
 
   body
-    noscript#deferred-styles
-      link(rel='stylesheet', href='/css/style.css')
-    script(async).
-      var loadDeferredStyles = function () {
-        var addStylesNode = document.getElementById("deferred-styles");
-        var replacement = document.createElement("div");
-        replacement.innerHTML = addStylesNode.textContent;
-        document.body.appendChild(replacement)
-        addStylesNode.parentElement.removeChild(addStylesNode);
-      };
-      var raf = requestAnimationFrame || mozRequestAnimationFrame ||
-              webkitRequestAnimationFrame || msRequestAnimationFrame;
-      if (raf) raf(function () {
-        window.setTimeout(loadDeferredStyles, 0);
-      });
-      else window.addEventListener('load', loadDeferredStyles);
     script(src="/sources/googleanalytics.js", async).
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -87,7 +71,22 @@ html(dir="ltr", lang="ru")
             }
           }, 100);
         }
-
+    noscript#deferred-styles
+      link(rel='stylesheet', href='/css/style.css')
+    script(async).
+      var loadDeferredStyles = function () {
+        var addStylesNode = document.getElementById("deferred-styles");
+        var replacement = document.createElement("div");
+        replacement.innerHTML = addStylesNode.textContent;
+        document.body.appendChild(replacement)
+        addStylesNode.parentElement.removeChild(addStylesNode);
+      };
+      var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+              webkitRequestAnimationFrame || msRequestAnimationFrame;
+      if (raf) raf(function () {
+        window.setTimeout(loadDeferredStyles, 0);
+      });
+      else window.addEventListener('load', loadDeferredStyles);
     // BEGIN JIVOSITE CODE {literal}
     script(type='text/javascript', src="/sources/jivo.js", async).
       (function(){ var widget_id = 'L7V0Pvk7ry';
