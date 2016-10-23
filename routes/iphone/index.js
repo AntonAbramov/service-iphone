@@ -11,9 +11,9 @@ router.get('/remont-iphone', function (req, res, next) {
 
 router.get('/iphone', function (req, res, next) {
   res.render('pages/iphones/index', {
-    title: "Ремонт iPhone 4/4s/5/5s/6/6s/ оригинальные запчасти",
-    description: "Делаем ремонт всех моделей iPhone, быстро и качественно, с гарантией 6 месяцев",
-    keywords: "Замена стекла, дисплея, экрана, ремонт аккумулятора, батареи iphone, киев",
+    title: "Ремонт iPhone в Киеве | Service-iPhone",
+    description: "Замена стекла на iPhone от 299 грн. Service-iPhone предоставляет услуги ремонта iPhone. АКЦИИ & СКИДКИ. Комплексный ремонт - дешево.",
+    keywords: "ремонт iphone, замена стекла на iPhone, ремонт айфона в Киеве",
     menuActive: 'iphone'
   });
 });
@@ -23,8 +23,8 @@ router.get('/remont-iphone3g', function (req, res, next) {
     if (err) throw err;
     res.render('pages/iphones/iphone3', {
       title: "Ремонт iPhone 3G в Киеве | Сервисный центр Apple - Service-iPhone",
-      description: "Наш Сервис сделает качественный ремонт iPhone 3gs в Киеве с гарантией. Все виды работ включая замену стекла/экрана, реанимируем вашу батарею, почистим после воды",
-      keywords: "ремонт iphone 3gs, киев, ремонт айфона 3gs, замена стекла iphone 3gs",
+      description: "Ремонт iPhone 3G в сервисном центре Service-iPhone в Киеве. Замена стекла на айфон, экрана, дисплея. Умеренные цены на ремонт.",
+      keywords: "ремонт iphone 3G, Киев, замена стекла на айфон 3g",
       menuActive: 'iphone',
       pricesTable: docs
     });
@@ -39,9 +39,9 @@ router.get('/remont-iphone4', function (req, res, next) {
   req.db['iphone4'].find().sort({'idx': 1}, function (err, docs) {
     if (err) throw err;
     res.render('pages/iphones/iphone4', {
-      title: "Ремонт iPhone 4 в Киеве | Сервисный центр Apple - Service-iPhone",
-      description: "Замена стекла от 200 грн. Ремонт батареи от 150грн. Бесплатная диагностика, Оригинальные детали на ремонт iPhone 4.",
-      keywords: "Ремонт iPhone 4, ремонт айфона 4, Киев, замена стекла iPhone 4",
+      title: "Ремонт iPhone 4 | Service-iPhone",
+      description: "Заказать недорогой и качественный ремонт iPhone 4 с гарантией от профессионалов. Бесплатная диагностика, Оригинальные детали на ремонт iPhone 4.",
+      keywords: "Ремонт iPhone 4, ремонт айфона 4, Киев, замена стекла iPhone 4, кнопок",
       menuActive: 'iphone',
       pricesTable: docs
     });
@@ -181,8 +181,8 @@ router.get('/remont-iphone4s', function (req, res, next) {
   req.db['iphone4s'].find().sort({'idx': 1}, function (err, docs) {
     if (err) throw err;
     res.render('pages/iphones/iphone4s', {
-      title: "Ремонт iPhone 4s",
-      description: "Service-iphone сделает качественный ремонт iphone 4s в Киеве с гарантией не менее 6 месяцев. Замена батареи, аккумулятора, стекла/экрана.",
+      title: "Ремонт iPhone 4s | Service-iPhone",
+      description: "Замена стекла/экрана, кнопки, батареи в серисном центре Service-iPhone пройдет быстро и недорого. Гаратия, АКЦИИ & СКИДКИ.",
       keywords: "Ремонт iPhone 4s, ремонт айфона 4s, Киев, замена стекла iPhone 4s",
       menuActive: 'iphone',
       pricesTable: docs
@@ -199,9 +199,9 @@ router.get('/remont-iphone5', function (req, res, next) {
   req.db['iphone5'].find().sort({'idx': 1}, function (err, docs) {
     if (err) throw err;
     res.render('pages/iphones/iphone5', {
-      title: "Ремонт iPhone 5 в Киеве | Сервисный центр Apple - Service-iPhone",
-      description: "В нашем СЦ сделают быстрый ремонт iPhone 5. Замена стекла, экрана, аккумулятора в течении суток!",
-      keywords: "Ремонт iPhone 5, ремонт айфона 5, Киев, замена стекла, дисплея, экрана, ремонт аккумулятора, батареи",
+      title: "Ремонт iPhone 5 | Замена стекла - 799 грн | Service-iPhone",
+      description: "В нашем СЦ сделают быстрый ремонт iPhone 5. Замена стекла, экрана, батареи с гарантией! АКЦИИ & СКИДКИ - (096) 125-32-46",
+      keywords: "Ремонт iPhone 5, ремонт айфона 5, Киев, замена стекла на айфон 5, дисплея, батареи",
       menuActive: 'iphone',
       pricesTable: docs
     });
@@ -342,9 +342,9 @@ router.get('/remont-iphone-5c', function (req, res, next) {
   req.db['iphone5c'].find().sort({'idx': 1}, function (err, docs) {
     if (err) throw err;
     res.render('pages/iphones/iphone5c', {
-      title: "Ремонт iPhone 5c в Киеве | Сервисный центр Apple - Service-iPhone",
-      description: "В СЦ Service-iphone сделают быстро и качественно ремонт вашего iphone 5c в Киеве! Замена экрана, дисплея за 30 минут.",
-      keywords: "Ремонт iPhone 5c, замена батареи, аккумулятора, дисплея",
+      title: "Ремонт iPhone 5c в Киеве | Замена стекла айфон 5с - 799грн",
+      description: "Service-iPhone делаем качественный ремонт iPhone 5c с Гарантией. Замена стекна на айфон 5с от 30 мин. (093) 722-91-56",
+      keywords: "Ремонт iPhone 5c, Замена стекла айфон 5с, батери, дисплея, Киев",
       menuActive: 'iphone',
       pricesTable: docs
     });
@@ -359,9 +359,9 @@ router.get('/remont-iphone-5s', function (req, res, next) {
   req.db['iphone5s'].find().sort({'idx': 1}, function (err, docs) {
     if (err) throw err;
     res.render('pages/iphones/iphone5s', {
-      title: "Ремонт iPhone 5s в Киеве | Сервисный центр Apple - Service-iPhone",
-      description: "Срочный ремонт iPhone 5s в Service-iPhone. Постоянное наличие оригинальных запчастей для замены стекла и экрана iPhone 5s.",
-      keywords: "Ремонт iPhone 5s, Киев, замена дисплея, экрана, стекла, ремонт после воды",
+      title: "Ремонт iPhone 5s | Замена стекла айфон 5s | Киев",
+      description: "Срочный ремонт iPhone 5s. Замена стекла на айфон 5s в Киеве - 799грн. АКЦИИ & СКИДКИ - (066) 566-97-52",
+      keywords: "Ремонт iPhone 5s, замена стекла iphone 5s, ремонт айфон, Киев",
       menuActive: 'iphone',
       pricesTable: docs
     });
@@ -376,9 +376,9 @@ router.get('/remont-iphone-6', function (req, res, next) {
   req.db['iphone6'].find().sort({'idx': 1}, function (err, docs) {
     if (err) throw err;
     res.render('pages/iphones/iphone6', {
-      title: "Ремонт iPhone 6 в Киеве | Сервисный центр Apple - Service-iPhone",
-      description: "Требуется ремонт iphone 6? Мы вам поможем, проведем бесплатную диагностику и качественно сделаем ремонт iphone 6 в Киеве",
-      keywords: "Ремонт iPhone 6, Киев, замена стекла, экрана, дисплея",
+      title: "Ремонт iPhone 6 | Замена стекла iPhone 6 | Service-iPhone",
+      description: "Замена стекла на iPhone 6 - 1199 грн. Наш сервисный центр производит ремонт iphone 6 по низким ценам с гарантией.",
+      keywords: "Ремонт iPhone 6, Киев, iphone 6 замена стекла",
       menuActive: 'iphone',
       pricesTable: docs
     });
@@ -520,9 +520,9 @@ router.get('/remont-iphone-6plus', function (req, res, next) {
   req.db['iphone6plus'].find().sort({'idx': 1}, function (err, docs) {
     if (err) throw err;
     res.render('pages/iphones/iphone6plus', {
-      title: "Ремонт iPhone 6+ в Киеве | Сервисный центр Apple - Service-iPhone",
-      description: "Iphone 6+ ремонт/замента стекла/дисплея/джойстика/аккумулятора. Замена стекла/батареи/дисплея.",
-      keywords: "Ремонт iPhone 6+, Киев, замена экрана, дисплея, стекла, ремонт аккумулятора",
+      title: "Ремонт iPhone 6 Plus | Замена стекла Айфон 6 | Service-iPhone",
+      description: "Замена стекла iPhone 6 Plus - 1499грн. Ремонт iPhone 6 Plus, гарантия на все виды работ. СКИДКИ & АКЦИИ - (093) 722-91-56",
+      keywords: "Замента стекла iPhone 6 Plus, Ремонт iPhone 6 Plus, ремонт айфона 6+",
       menuActive: 'iphone',
       pricesTable: docs
     });
@@ -645,9 +645,9 @@ router.get('/remont-iphone-6s', function (req, res, next) {
   req.db['iphone6s'].find().sort({'idx': 1}, function (err, docs) {
     if (err) throw err;
     res.render('pages/iphones/iphone6s', {
-      title: "Ремонт iPhone 6s | Сервисный центр Apple - Service-iPhone",
-      description: "Дешевый ремонт iPhone 6s в Киеве занимает от 20 минут вашего времени. Замена стекла от 400 грн.",
-      keywords: "Ремонт iPhone 6s, Киев, замена стекла, дисплея Айфон 6s",
+      title: "Ремонт iPhone 6s | Замена стекла iPhone 6s | Service-iPhone",
+      description: "Замена стекла на iPhone 6s от 1999грн. Наш СЦ выполняет любой ремонт iPhone 6s в Киеве. Проводим Акции и скилки.",
+      keywords: "Ремонт iPhone 6s, замена стекла iphone 6s, Ремонт айфона 6с",
       menuActive: 'iphone',
       pricesTable: docs
     });
@@ -788,9 +788,9 @@ router.get('/remont-iphone-6splus', function (req, res, next) {
   req.db['iphone6splus'].find().sort({'idx': 1}, function (err, docs) {
     if (err) throw err;
     res.render('pages/iphones/iphone6splus', {
-      title: "Ремонт iPhone 6s+ в Киеве | Service-iPhone",
-      description: "Ремонт аккумулятора 400 грн на iPhone 6s+. Замена стекла/батареи/дисплея от 300грн.",
-      keywords: "Ремонт iPhone 6s+, Киев, замена экрана, дисплея, стекла, ремонт аккумулятора",
+      title: "Ремонт iPhone 6s Plus | Замена Стекла iPhone Plus | Service-iPhone",
+      description: "Все виды ремонта iPhone 6s Plus от Service-iPhone. Ремонт айфона 6s Plus, замена стекла, батери, корпуса. ",
+      keywords: "Ремонт iPhone 6s Plus, замена стекла iPhone 6s Plus, ремонт айфона 6с плюс",
       menuActive: 'iphone',
       pricesTable: docs
     });
@@ -806,9 +806,9 @@ router.get('/remont-iphone-se', function (req, res, next) {
   req.db['iphonese'].find().sort({'idx': 1}, function (err, docs) {
     if (err) throw err;
     res.render('pages/iphones/iphonese', {
-      title: "Ремонт iPhone SE в Киеве | Service-iPhone",
-      description: "Ремонт аккумулятора 300 грн на iPhone SE. Замена стекла/батареи/дисплея айфон СЕ от 350грн.",
-      keywords: "Ремонт iPhone SE, Киев, замена экрана, дисплея, стекла, ремонт аккумулятора",
+      title: "Замена стекла iPhone SE | Ремонт iPhone SE | Service-iPhone",
+      description: "Замена стекла на iPhone SE от 999грн. Все виды ремонта iphone se. Service-iPhone - недорогой ремонт, скидки, акции.",
+      keywords: "Ремонт iPhone SE, замена стекла iphone se",
       menuActive: 'iphone',
       pricesTable: docs
     });
@@ -824,9 +824,9 @@ router.get('/remont-iphone-7', function (req, res, next) {
   req.db['iphone7'].find().sort({'idx': 1}, function (err, docs) {
     if (err) throw err;
     res.render('pages/iphones/iphone7', {
-      title: "Ремонт iPhone 7 в Киеве | Service-iPhone",
-      description: "Ремонт аккумулятора 390 грн на iPhone 7. Замена стекла/батареи/дисплея айфон 7 от 330грн.",
-      keywords: "Ремонт iPhone 7, Киев, замена экрана, дисплея, стекла, ремонт аккумулятора",
+      title: "Ремонт iPhone 7 | Замена стекла iPhone 7 | Service-iPhone",
+      description: "Цена на ремонт iphone 7. Замена стекла iPhone 7 в Киеве. Service-iPhone производит все виды ремонта iphone 7",
+      keywords: "Ремонт iPhone 7, замена стекла iPhone 7, ремонт айфон 7",
       menuActive: 'iphone',
       pricesTable: docs
     });
@@ -841,9 +841,9 @@ router.get('/remont-iphone-7plus', function (req, res, next) {
   req.db['iphone7plus'].find().sort({'idx': 1}, function (err, docs) {
     if (err) throw err;
     res.render('pages/iphones/iphone7plus', {
-      title: "Ремонт iPhone 7+ в Киеве | Service-iPhone",
-      description: "Ремонт аккумулятора 500 грн на iPhone 7+. Замена стекла/батареи/дисплея от 350грн.",
-      keywords: "Ремонт iPhone 7+, Киев, замена экрана, дисплея, стекла, ремонт аккумулятора айфон 7+",
+      title: "Ремонт iPhone 7 Plus | Замена стекла iPhone 7 Plus | Service-iPhone",
+      description: "Ремонт iPhone 7 Plus в городе киеве можно произвести в Service-iPhone. Замену стекла/дисплея/батерии сделаем за 60 мин.",
+      keywords: "Ремонт iPhone 7 Plus, замена стекла iPhone 7 Plus, ремонт айфон 7",
       menuActive: 'iphone',
       pricesTable: docs
     });
