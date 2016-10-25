@@ -362,4 +362,59 @@ router.get('/remont-ipad-mini3/zamena-stekla', function (req, res, next) {
   });
 });
 
+
+//======================
+//    iPad mini 4
+//======================
+
+router.get('/remont-ipad-mini4', function (req, res, next) {
+  req.db['ipadmini4'].find().sort({'idx': 1}, function (err, docs) {
+    if (err) throw err;
+    res.render('pages/ipads/ipad-mini4', {
+      title: "Ремонт iPad mini 4 | Замена стекла iPad mini 4 | Service-iPhone",
+      description: "Service-iPhone делает Ремонт iPad mini 4: Замену стекла на айпад мини 4, дисплея, батерии. ",
+      keywords: "Ремонт iPad mini 4, замена стекла iPad mini 4",
+      menuActive: 'ipad',
+      pricesTable: docs
+    });
+  });
+});
+
+
+//======================
+//    iPad Pro 9.7
+//======================
+
+router.get('/remont-ipad-pro-9', function (req, res, next) {
+  req.db['ipadipadpro97'].find().sort({'idx': 1}, function (err, docs) {
+    if (err) throw err;
+    res.render('pages/ipads/ipad-pro97', {
+      title: "Ремонт iPad Pro 9.7 | Замена стекла iPad Pro 9.7 | Service-iPhone",
+      description: "Service-iPhone делает Ремонт iPad Pro 9.7 : Замену стекла на айпад про 9.7 от 9999грн ",
+      keywords: "Ремонт iPad Pro 9.7 , замена стекла iPad Pro 9.7 ",
+      menuActive: 'ipad',
+      pricesTable: docs
+    });
+  });
+});
+
+//======================
+//    iPad Pro 12.9
+//======================
+
+router.get('/remont-ipad-pro-12', function (req, res, next) {
+  req.db['ipadipadpro129'].find().sort({'idx': 1}, function (err, docs) {
+    if (err) throw err;
+    res.render('pages/ipads/ipad-pro129', {
+      title: "Ремонт iPad Pro 12.9 | Замена стекла iPad Pro 12.9 | Service-iPhone",
+      description: "Service-iPhone делает Ремонт iPad Pro 12.9: Замену стекла на айпад про 12.9. Замена дисплея от 10999грн ",
+      keywords: "Ремонт iPad Pro 12.9, замена стекла iPad Pro 12.9",
+      menuActive: 'ipad',
+      pricesTable: docs
+    });
+  });
+});
+
+
+
 module.exports = router;
