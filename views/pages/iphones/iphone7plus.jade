@@ -1,35 +1,17 @@
 extends ../../layout
 
 block content
-  .sub-header
-    .container
-      .row
-        .col-sm-2.text-center(itemscope, itemtype='http://schema.org/Product')
-          img.sub-header__img(src='../img/iphone/iphone7plus.jpg', alt='Ремонт iPhone 7 Plus')
-          div.raiting
-            meta(itemprop='name', content='iPhone 7 plus')
-            meta(itemprop='description', content=description)
-            meta(itemprop='url', content='http://service-iphone/remont-iphone-7plus')
-          .raiting__value(itemprop='aggregateRating', itemtype='http://schema.org/AggregateRating')
-            span.raiting__stars
-              i.fa.fa-star
-              i.fa.fa-star
-              i.fa.fa-star
-              i.fa.fa-star
-              i.fa.fa-star-half-o
-              //i.fa.fa-star-o
-            span.raiting-text
-              span.raiting__score(itemprop="ratingValue") 5
-              | &nbsp;(голосов&nbsp;
-              span.raiting__count(itemprop="reviewCount") 7
-              | )
-        .col-sm-10
-          h1(title='Ремонт iPhone 7 Plus') Цены на Ремонт iPhone 7+
   .container
     section.repear
-      h2.pricelist__heading Основное
-      include ../../templates/price-table
-    h1(title='Ремонт iPhone 7 Plus: насколько это дорогое удовольствие?') Ремонт iPhone 7 Plus: насколько это дорогое удовольствие?
+      h1.text-center(title='Ремонт iPhone 7 Plus') Ремонт iPhone 7 Plus
+      h2(title="Цены на Ремонт айфона 7 Plus в Киеве") Цены на Ремонт iPhone 7 Plus
+      .row
+        .col-xs-12.col-sm-10
+          include ../../templates/price-table
+        .col-xs-12.col-sm-2
+          img.sub-header__img(src='../img/iphone/iphone7plus.jpg', alt='Ремонт iPhone 7 Plus')
+
+    h2(title='Ремонт iPhone 7 Plus: насколько это дорогое удовольствие?') Ремонт iPhone 7 Plus: насколько это дорогое удовольствие?
     p
       | Стильный iPhone 7 Plus — новинка на рынке «яблочной» продукции. Этот смартфон оснащен дополнительной защитой от воды, ярким Retina-дисплеем  и двумя камерами. Модель потребляет на 30 % меньше энергии, чем айфон шестого поколения. Модные девушки и парни оценят функциональность этого гаджета, как только возьмут его в руки.
     p

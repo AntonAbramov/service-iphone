@@ -1,34 +1,15 @@
 extends ../../layout
 
 block content
-  .sub-header
-    .container
-      .row
-        .col-sm-2.text-center(itemscope, itemtype='http://schema.org/Product')
-          img.sub-header__img(src='../img/iphone/iphone6plus.jpg', alt='Ремонт iPhone 6S')
-          div.raiting
-            meta(itemprop='name', content='iPhone 6S')
-            meta(itemprop='description', content=description)
-            meta(itemprop='url', content='http://service-iphone/remont-iphone-6s')
-          .raiting__value(itemprop='aggregateRating', itemtype='http://schema.org/AggregateRating')
-            span.raiting__stars
-              i.fa.fa-star
-              i.fa.fa-star
-              i.fa.fa-star
-              i.fa.fa-star
-              i.fa.fa-star-half-o
-              //i.fa.fa-star-o
-            span.raiting-text
-              span.raiting__score(itemprop="ratingValue") 5
-              | &nbsp;(голосов&nbsp;
-              span.raiting__count(itemprop="reviewCount") 7
-              | )
-        .col-xs-12.col-sm-10
-          h1(title='Ремонт iPhone 6S') Цены на Ремонт iPhone 6S
   .container
     section.repear
-      h2.pricelist__heading Основное
-      include ../../templates/price-table
+      h1.text-center(title='Ремонт iPhone 6s') Ремонт iPhone 6s
+      h2(title="Цены на Ремонт айфона 6s в Киеве") Цены на Ремонт iPhone 6s
+      .row
+        .col-xs-12.col-sm-10
+          include ../../templates/price-table
+        .col-xs-12.col-sm-2
+          img.sub-header__img(src='../img/iphone/iphone6plus.jpg', alt='Ремонт iPhone 6S')
 
     h2(title='Ремонт 6s+ c гарантией: где заказать') Ремонт 6s+ c гарантией
     p  Бывают ситуации, когда телефон случайно падает со стола или выскальзывает из рук. В этом случае дисплей и корпус получают не только косметические дефекты в виде царапин или сколов, но и серьезные внутренние повреждения, которые не видны визуально. Например, из строя может выйти камера, звуковая или системная плата, а также динамик.

@@ -1,36 +1,17 @@
 extends ../../layout
 
 block content
-  .sub-header
-    .container
-      .row
-        .col-sm-2.text-center(itemscope, itemtype='http://schema.org/Product')
-          img.sub-header__img(src='../img/iphone/iphone7nav.jpg', alt='Ремонт iPhone 7')
-          div.raiting
-            meta(itemprop='name', content='iPhone 7')
-            meta(itemprop='description', content=description)
-            meta(itemprop='url', content='http://service-iphone/remont-iphone-7')
-          .raiting__value(itemprop='aggregateRating', itemtype='http://schema.org/AggregateRating')
-            span.raiting__stars
-              i.fa.fa-star
-              i.fa.fa-star
-              i.fa.fa-star
-              i.fa.fa-star
-              i.fa.fa-star-half-o
-              //i.fa.fa-star-o
-            span.raiting-text
-              span.raiting__score(itemprop="ratingValue") 4.9
-              | &nbsp;(голосов&nbsp;
-              span.raiting__count(itemprop="reviewCount") 6
-              | )
-        .col-sm-10
-          h1(title='Ремонт iPhone 7') Цены на Ремонт iPhone 7
   .container
     section.repear
-      p.pricelist__heading Основное
-      include ../../templates/price-table
+      h1.text-center(title='Ремонт iPhone 7') Ремонт iPhone 7
+      h2(title="Цены на Ремонт айфона 7 в Киеве") Цены на Ремонт iPhone 7
+      .row
+        .col-xs-12.col-sm-10
+          include ../../templates/price-table
+        .col-xs-12.col-sm-2
+          img.sub-header__img(src='../img/iphone/iphone7nav.jpg', alt='Ремонт iPhone 7')
 
-    h1(title='Ремонтируем iPhone 7: шоп-лист поломок') Ремонтируем iPhone 7: шоп-лист поломок
+    h2(title='Ремонтируем iPhone 7: шоп-лист поломок') Ремонтируем iPhone 7: шоп-лист поломок
     p
       | Фанаты продукции Apple с нетерпением ожидали выхода нового iPhone седьмого поколения. Ожидания оправдались — 7 сентября 2016 года айфон 7 впервые представлен публике и на данный момент занимает лидирующие позиции на рынке мобильных телефонов.
     h2(title='Чем покоряет iPhone 7?') Чем покоряет iPhone 7?

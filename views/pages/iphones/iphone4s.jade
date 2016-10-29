@@ -1,42 +1,15 @@
 extends ../../layout
 
 block content
-  .sub-header
-    .container
-      .row
-        .col-sm-2.text-center(itemscope, itemtype='http://schema.org/Product')
-          img.sub-header__img(src='../img/iphone/iphone4s.jpg', alt='Ремонт iPhone 4s')
-          div.raiting
-            meta(itemprop='name', content='iPhone 4S')
-            meta(itemprop='description', content=description)
-            meta(itemprop='url', content='http://service-iphone/remont-iphone4s')
-          .raiting__value(itemprop='aggregateRating', itemtype='http://schema.org/AggregateRating')
-            span.raiting__stars
-              i.fa.fa-star
-              i.fa.fa-star
-              i.fa.fa-star
-              i.fa.fa-star
-              i.fa.fa-star
-              //i.fa.fa-star-o
-            span.raiting-text
-              span.raiting__score(itemprop="ratingValue") 5
-              | &nbsp;(голосов&nbsp;
-              span.raiting__count(itemprop="reviewCount") 18
-              | )
-        .col-sm-4
-          h1(title='Быстрый Ремонт iPhone 4s в Киеве') Ремонт iPhone 4s
-          p Услуги и цены
-        .col-sm-6
-          p
-            strong Повредить смартфон
-            | &nbsp; можно случайным образом, находясь дома, на работе и даже на отдыхе.
-            | Падение телефона на твердую поверхность может вызвать проблемы с микрофоном, динамиком и
-            | программным обеспечением. Как найти недорогой и качественный ремонтный сервис?
   .container
     section.repear
-      h2.repear__title Цены на Ремонт iPhone 4s
-      h3.pricelist__heading Основное
-      include ../../templates/price-table
+      h1.text-center(title='Быстрый Ремонт iPhone 4s в Киеве') Ремонт iPhone 4s
+      h2(title="Цены на Ремонт айфона 4s в Киеве") Цены на Ремонт iPhone 4s
+      .row
+        .col-xs-12.col-sm-10
+          include ../../templates/price-table
+        .col-xs-12.col-sm-2
+          img.sub-header__img(src='../img/iphone/iphone4s.jpg', alt='Ремонт iPhone 4s')
 
   .container
     .row

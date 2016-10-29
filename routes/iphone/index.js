@@ -200,8 +200,8 @@ router.get('/remont-iphone5', function (req, res, next) {
     if (err) throw err;
     res.render('pages/iphones/iphone5', {
       title: "Ремонт iPhone 5 | Замена стекла - 799 грн | Service-iPhone",
-      description: "В нашем СЦ сделают быстрый ремонт iPhone 5. Замена стекла, экрана, батареи с гарантией! АКЦИИ & СКИДКИ - (096) 125-32-46",
-      keywords: "Ремонт iPhone 5, ремонт айфона 5, Киев, замена стекла на айфон 5, дисплея, батареи",
+      description: "В нашем СЦ сделают быстрый ремонт iPhone 5. Замену стекла, экрана, батареи с гарантией! АКЦИИ & СКИДКИ - (096) 125-32-46",
+      keywords: "Ремонт iPhone 5, ремонт айфон 5, Киев, замена стекла iphone 5, дисплея, батареи",
       menuActive: 'iphone',
       pricesTable: docs
     });

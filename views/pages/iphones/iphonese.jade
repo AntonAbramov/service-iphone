@@ -1,34 +1,15 @@
 extends ../../layout
 
 block content
-  .sub-header
-    .container
-      .row
-        .col-sm-2.text-center(itemscope, itemtype='http://schema.org/Product')
-          img.sub-header__img(src='../img/iphone/iphonese.jpg', alt='Ремонт iPhone SE')
-          div.raiting
-            meta(itemprop='name', content='iPhone SE')
-            meta(itemprop='description', content=description)
-            meta(itemprop='url', content='http://service-iphone/remont-iphone-SE')
-          .raiting__value(itemprop='aggregateRating', itemtype='http://schema.org/AggregateRating')
-            span.raiting__stars
-              i.fa.fa-star
-              i.fa.fa-star
-              i.fa.fa-star
-              i.fa.fa-star
-              i.fa.fa-star-half-o
-              //i.fa.fa-star-o
-            span.raiting-text
-              span.raiting__score(itemprop="ratingValue") 4.9
-              | &nbsp;(голосов&nbsp;
-              span.raiting__count(itemprop="reviewCount") 6
-              | )
-        .col-sm-10
-          h1(title='Ремонт iPhone SE') Цены на Ремонт iPhone SE
   .container
     section.repear
-      p.pricelist__heading Основное
-      include ../../templates/price-table
+      h1.text-center(title='Ремонт iPhone SE') Ремонт iPhone SE
+      h2(title="Цены на Ремонт айфона SE в Киеве") Цены на Ремонт iPhone SE
+      .row
+        .col-xs-12.col-sm-10
+          include ../../templates/price-table
+        .col-xs-12.col-sm-2
+          img.sub-header__img(src='../img/iphone/iphonese.jpg', alt='Ремонт iPhone SE')
 
     h1(title='Сломался крутой iPhone SE? Заказываем недорогой ремонт в Киеве') Сломался крутой iPhone SE? Заказываем недорогой ремонт в Киеве
     p

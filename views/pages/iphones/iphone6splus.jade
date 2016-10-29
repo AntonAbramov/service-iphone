@@ -1,34 +1,15 @@
 extends ../../layout
 
 block content
-  .sub-header
-    .container
-      .row
-        .col-sm-2.text-center(itemscope, itemtype='http://schema.org/Product')
-          img.sub-header__img(src='../img/iphone/iphone6plus.jpg', alt='Ремонт iPhone 6S Plus')
-          div.raiting
-            meta(itemprop='name', content='iPhone 6S plus')
-            meta(itemprop='description', content=description)
-            meta(itemprop='url', content='http://service-iphone/remont-iphone-6splus')
-          .raiting__value(itemprop='aggregateRating', itemtype='http://schema.org/AggregateRating')
-            span.raiting__stars
-              i.fa.fa-star
-              i.fa.fa-star
-              i.fa.fa-star
-              i.fa.fa-star
-              i.fa.fa-star-half-o
-              //i.fa.fa-star-o
-            span.raiting-text
-              span.raiting__score(itemprop="ratingValue") 5
-              | &nbsp;(голосов&nbsp;
-              span.raiting__count(itemprop="reviewCount") 15
-              | )
-        .col-sm-10
-          h1(title='Ремонт iPhone 6S Plus') Цены на Ремонт iPhone 6S+
   .container
     section.repear
-      h2.pricelist__heading Основное
-      include ../../templates/price-table
+      h1.text-center(title='Ремонт iPhone 6s Plus') Ремонт iPhone 6s Plus
+      h2(title="Цены на Ремонт айфона 6s Plus в Киеве") Цены на Ремонт iPhone 6s Plus
+      .row
+        .col-xs-12.col-sm-10
+          include ../../templates/price-table
+        .col-xs-12.col-sm-2
+          img.sub-header__img(src='../img/iphone/iphone6plus.jpg', alt='Ремонт iPhone 6S Plus')
 
     h2(title='Ремонт 6s+ в «Service iPhone»') Ремонт 6s+ в «Service iPhone»
     p Красивый айфон 6s+ — лучший смартфон среди яблочной линейки, который оснащен функциональной камерой, беспроводной сетью и большой диагональю экрана. Этот девайс радует прочным корпусом и стильным дизайном. Однако вследствие удара по задней крышке или экрану, из-за падения телефона с высоты или в результате неосторожного обращения с устройством отдельные составляющие конструкции могут некорректно работать, получить серьезные повреждения.

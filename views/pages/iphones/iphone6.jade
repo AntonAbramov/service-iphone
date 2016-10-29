@@ -1,32 +1,15 @@
 extends ../../layout
 
 block content
-  .sub-header
-    .container
+  .container
+    section.repear
+      h1.text-center(title='Ремонт iPhone 6') Ремонт iPhone 6
+      h2(title="Цены на Ремонт айфона 6 в Киеве") Цены на Ремонт iPhone 6
       .row
-        .col-sm-2.text-center(itemscope, itemtype='http://schema.org/Product')
+        .col-xs-12.col-sm-10
+          include ../../templates/price-table
+        .col-xs-12.col-sm-2
           img.sub-header__img(src='../img/iphone/iphone6.jpg', alt='Ремонт iPhone 6')
-          div.raiting
-            meta(itemprop='name', content='iPhone 6')
-            meta(itemprop='description', content=description)
-            meta(itemprop='url', content='http://service-iphone/remont-iphone-6')
-          .raiting__value(itemprop='aggregateRating', itemtype='http://schema.org/AggregateRating')
-            span.raiting__stars
-              i.fa.fa-star
-              i.fa.fa-star
-              i.fa.fa-star
-              i.fa.fa-star
-              i.fa.fa-star
-              //i.fa.fa-star-o
-            span.raiting-text
-              span.raiting__score(itemprop="ratingValue") 5
-              | &nbsp;(голосов&nbsp;
-              span.raiting__count(itemprop="reviewCount") 15
-              | )
-        .col-sm-4
-          h1(title='Ремонт iPhone 6') Ремонт iPhone 6
-          p Услуги и цены
-        .col-sm-6
       .sub-header__description
         p
           | Наш сервисный центр выполняет ремонт iPhone 6 и обладает всеми техническими
@@ -59,11 +42,3 @@ block content
           | &nbsp; или
           | возникли проблемы с его эксплуатацией, квалифицированные менеджеры Service iPhone ответят на все интересующие
           | вопросы, а наши мастера помогут решить все проблемы в кратчайшие сроки и на самых выгодных для Вас условиях.
-
-  .container
-    section.repear
-      h2.repear__title Цены на Ремонт iPhone 6
-      h3.pricelist__heading Основное
-      include ../../templates/price-table
-        
-    

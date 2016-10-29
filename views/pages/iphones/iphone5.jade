@@ -1,67 +1,26 @@
 extends ../../layout
 
 block content
-  .sub-header
-    .container
-      .row
-        .col-sm-2.text-center(itemscope, itemtype='http://schema.org/Product')
-          img.sub-header__img(src='../img/iphone/iphone5.jpg', alt='Ремонт iPhone 5 в Киеве')
-          div.raiting
-            meta(itemprop='name', content='iPhone 5')
-            meta(itemprop='description', content=description)
-            meta(itemprop='url', content='http://service-iphone/remont-iphone5')
-          .raiting__value(itemprop='aggregateRating', itemtype='http://schema.org/AggregateRating')
-            span.raiting__stars
-              i.fa.fa-star
-              i.fa.fa-star
-              i.fa.fa-star
-              i.fa.fa-star
-              i.fa.fa-star
-              //i.fa.fa-star-o
-            span.raiting-text
-              span.raiting__score(itemprop="ratingValue") 5
-              | &nbsp;(голосов&nbsp;
-              span.raiting__count(itemprop="reviewCount") 21
-              | )
-        .col-sm-4
-          h1(title='Ремонт iPhone 5') Ремонт iPhone 5
-          p Услуги и цены на ремонт iphone 5 в Киеве.
-        .col-sm-6
-      .row
-        .col-sm-8
-          p
-            | Мы делаем любой сложности &nbsp;
-            strong ремонт iPhone 5
-            | . &nbsp;
-            a(title='Замена дисплея Айфон 5', href='/ne-rabotaet-displey-iphone') Замену дисплея на Айфон 5
-            | , &nbsp;
-            a(title='ремонт после воды', href='voda-iphone') ремонт после воды
-            | &nbsp; или пайка BGA-чипов.
-        .col-sm-4
-          p
-            strong Ремонт айфона 5
-            | &nbsp; занимает 1 час. На работы и запчасти действует гарантия 6 месяцев. Мы чиним телефоны так, чтобы они работали полностью и не берем
-            | деньги за то, что не дало результат.
   .container
     section.repear
-      h2.repear__title Цены на Ремонт iPhone 5
-      h3.pricelist__heading Основное
-      include ../../templates/price-table
-
-  .container
+      h1.text-center(title='Ремонт iPhone 5') Ремонт iPhone 5
+      h2(title="Цены на Ремонт айфона 5 в Киеве") Цены на Ремонт iPhone 5
+      .row
+        .col-xs-12.col-sm-10
+          include ../../templates/price-table
+        .col-xs-12.col-sm-2
+          img.sub-header__img(src='../img/iphone/iphone5.jpg', alt='Ремонт iPhone 5')
     .mb20.content-text
       .row
         .col-sm-12
-          h2(title='Качественный ремонт iPhone 5') Качественный ремонт и замена стелка iPhone 5
+          h2(title='Ремонт, Замена стекла iPhone 5') Качественный ремонт и замена стекла iPhone 5
           p
             | Наш сервисный центр разработал собственную методику контроля качества работы сотрудников . В других компаниях
             | телефон могут собрать небрежно, оставив заметные щели и незакрученные винтики. У нас за подобную
             | неаккуратность мастер получает значительный штраф.
           p
             | И все же в нашей кропотливой работе иногда случаются недочеты, поэтому мы предоставляем 
-            b  6 месяцев гарантии
-            | и
-            | всегда исправляем недочеты. Если дефект был обнаружен только дома, тогда мы отправим курьера, решим имеющуюся
+            | 6 месяцев гарантии и всегда исправляем недочеты. Если дефект был обнаружен только дома, тогда мы отправим курьера, решим имеющуюся
             | проблему и доставим телефон обратно, а самое главное сделаем все это абсолютно бесплатно и максимально
             | быстро.
           h3(title='Немного про ремонт iPhone 5') Немного про ремонт iPhone 5 и зарождение модели
@@ -97,3 +56,19 @@ block content
           p Рекомендуем Вам ознакомиться с ценами на &nbsp;
             a(href='/remont-iphone-5s', title='ремонт iphone 5s в Киеве') ремонт iPhone 5s
             | &nbsp;он имеет схожие технические характеристики с iPhone 5.
+
+          div(itemscope='', itemtype='http://schema.org/Product')
+            span(itemprop='name', style='display:none')
+              | iPhone
+            | Overall rating:&nbsp;
+            span(itemprop='aggregateRating', itemscope='', itemtype='http://schema.org/AggregateRating')
+              strong
+                span.value(itemprop='ratingValue')
+                  | 4.9
+              |  out of&nbsp;
+              strong
+                span(itemprop='bestRating') 5
+              | &nbsp;based on&nbsp;
+              span.votes(itemprop='reviewCount')
+                | 11
+              |  reviews.

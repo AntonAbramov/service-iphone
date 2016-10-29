@@ -1,32 +1,15 @@
 extends ../../layout
 
 block content
-  .sub-header
-    .container
+  .container
+    section.repear
+      h1.text-center(title='Ремонт iPhone 6 plus') Ремонт iPhone 6 Plus
+      h2 Замена стекла iPhone 6 plus
       .row
-        .col-sm-2.text-center(itemscope, itemtype='http://schema.org/Product')
+        .col-xs-12.col-sm-10
+          include ../../templates/price-table
+        .col-xs-12.col-sm-2
           img.sub-header__img(src='../img/iphone/iphone6plus.jpg', alt='Ремонт iPhone 6 Plus')
-          div.raiting
-            meta(itemprop='name', content='iPhone 6 plus')
-            meta(itemprop='description', content=description)
-            meta(itemprop='url', content='http://service-iphone/remont-iphone-6plus')
-          .raiting__value(itemprop='aggregateRating', itemtype='http://schema.org/AggregateRating')
-            span.raiting__stars
-              i.fa.fa-star
-              i.fa.fa-star
-              i.fa.fa-star
-              i.fa.fa-star
-              i.fa.fa-star-half-o
-              //i.fa.fa-star-o
-            span.raiting-text
-              span.raiting__score(itemprop="ratingValue") 5
-              | &nbsp;(голосов&nbsp;
-              span.raiting__count(itemprop="reviewCount") 9
-              | )
-        .col-sm-4
-          h1(title='Ремонт iPhone 6 Plus') Ремонт iPhone 6 Plus.
-          p Услуги и цены
-        .col-sm-6
       .sub-header__description
         p
           | Количество сервисных центров, предлагающих &nbsp;
@@ -56,9 +39,3 @@ block content
           | работает iPhone 6 Plus и Вы обратитесь в наш центр, Вы получите полный спектр профессиональных услуг и
           | обязательно останетесь довольны качеством выполненных работ.
         p Стоимость ремонта iPhone 6 Plus вы можете узнать по телефонам сервис-центра.
- 
-  .container
-    section.repear
-      h2.repear__title Цены на Ремонт iPhone 6+ 
-      h3.pricelist__heading Основное
-      include ../../templates/price-table

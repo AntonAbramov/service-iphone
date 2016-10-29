@@ -1,31 +1,15 @@
 extends ../../layout
 block content
-  .sub-header
-    .container
+  .container
+    section.repear
+      h1.text-center(title='Ремонт iPhone 4') Ремонт iPhone 4
+      h2(title="Цены на Ремонт айфона 4 в Киеве") Цены на Ремонт iPhone 4
       .row
-        .col-sm-2.text-center(itemscope, itemtype='http://schema.org/Product')
+        .col-xs-12.col-sm-10
+          include ../../templates/price-table
+        .col-xs-12.col-sm-2
           img.sub-header__img(src='../img/iphone/remont-iphone4.jpg', alt='Ремонт iPhone 4 Киев')
-          div.raiting
-            meta(itemprop='name', content='iPhone 4')
-            meta(itemprop='description', content=description)
-            meta(itemprop='url', content='http://service-iphone/remont-iphone3g')
 
-          .raiting__value(itemprop='aggregateRating', itemtype='http://schema.org/AggregateRating')
-            span.raiting__stars
-              i.fa.fa-star
-              i.fa.fa-star
-              i.fa.fa-star
-              i.fa.fa-star
-              i.fa.fa-star
-              //i.fa.fa-star-o
-            span.raiting-text
-              span.raiting__score(itemprop="ratingValue") 5
-              | &nbsp;(голосов&nbsp;
-              span.raiting__count(itemprop="reviewCount") 9
-              | )
-        .col-sm-4
-          h1(title='Качественный ремонт iPhone 4 в Киеве') Ремонт iPhone 4
-        .col-sm-6
       .sub-header__description
         | На данный момент iPhone 4 — это самая популярная модель телефона фирмы Apple.
         | Наши мастера с радостью выполнят любой &nbsp;
@@ -51,16 +35,7 @@ block content
           | Все эти проблемы требуют скорейшего обращения в сервис, особенно это касается случаев, когда аппарат подвергся
           | воздействию жидкости: упал в воду или попал под дождь. Чем быстрее будет произведен ремонт в этом случае, тем
           | с большей уверенностью можно гарантировать скорейшее восстановление его функций.
-  .container
-    section.repear
-      h2.repear__title Цены на Ремонт iPhone 4
-      
-      
-      h3.pricelist__heading Основное
-      include ../../templates/price-table
 
-
-  .container
     .mb20.content-text
       .row
         .col-xs-12
