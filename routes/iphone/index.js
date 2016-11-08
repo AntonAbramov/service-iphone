@@ -168,7 +168,7 @@ router.get('/remont-iphone4/zamena-razjoma-dlja-naushnikov', function (req, res,
 router.get('/remont-iphone4/zamena-stekla', function (req, res, next) {
   res.render('pages/iphones/iphone4/zamena-stekla', {
     title: "Замена стекла (тачскрина) iPhone 4 в Киеве | Service-iPhone",
-    description: "Качественная замена стекла (дисплея) на iPhone 4 в Киеве. от 200 грн. Ремонт от 20 минут.",
+    description: "Разбилось стекло на iPhone 4? Наш СЦ произведет быстро и качественно замену стекла на iPhone 4 за 749 грн.",
     keywords: "Замена стекла iphone 4, замена экрана iphone 4, Киев, замена дисплея iPhone 4, экрана",
     menuActive: 'iphone'
   });
@@ -181,7 +181,7 @@ router.get('/remont-iphone4s', function (req, res, next) {
   req.db['iphone4s'].find().sort({'idx': 1}, function (err, docs) {
     if (err) throw err;
     res.render('pages/iphones/iphone4s', {
-      title: "Ремонт iPhone 4s | Service-iPhone",
+      title: "Ремонт iPhone 4s | Замена стекла iPhone 4s - Service-iPhone",
       description: "Замена стекла/экрана, кнопки, батареи в серисном центре Service-iPhone пройдет быстро и недорого. Гаратия, АКЦИИ & СКИДКИ.",
       keywords: "Ремонт iPhone 4s, ремонт айфона 4s, Киев, замена стекла iPhone 4s",
       menuActive: 'iphone',
@@ -211,7 +211,7 @@ router.get('/remont-iphone5', function (req, res, next) {
 router.get('/remont-iphone-5/zamena-stekla', function (req, res, next) {
   res.render('pages/iphones/iphone5/zamena-stekla', {
     title: "Замена стекла iPhone 5 в Киеве | Service-iPhone",
-    description: "Качественная замена стекла (дисплея) на iPhone 5 в Киеве. Цена от 200 грн, ремонт занимает 20 минут.",
+    description: "Service-iPhone делает замену стекла для iPhone 5 от 899грн в Киеве. Ремонт займет от 20 минут вашего времени",
     keywords: "Замена стекла iphone 5, замена экрана iphone 5, Киев, замена дисплея iPhone 5, экрана",
     menuActive: 'iphone'
   });
@@ -220,7 +220,7 @@ router.get('/remont-iphone-5/zamena-stekla', function (req, res, next) {
 router.get('/remont-iphone5/diagnostika', function (req, res, next) {
   res.render('pages/iphones/iphone5/diagnostika', {
     title: "Диагностика iphone 5 в Киеве | Service-iPhone ремонт айфон 5",
-    description: "Бесплатная диагностика iphone 5 в Киеве. В Service-iPhone профессионалы разберутся что случилось с Вашим Айфоном 5.",
+    description: "Необходима диагностика iphone 5? Обращайтесь в Service-iphone за бесплатной консультацией - ул. Богдана Хмельницкого 32 тел: (096) 125-32-46(093) 722-91-56(066) 566-97-52",
     keywords: "Диагностика iphone 5, Киев, Даигностика айфон 5, Киев Диагностика iphone 5",
     menuActive: 'iphone'
   });
@@ -388,7 +388,7 @@ router.get('/remont-iphone-6', function (req, res, next) {
 router.get('/remont-iphone-6/zamena-stekla', function (req, res, next) {
   res.render('pages/iphones/iphone6/zamena-stekla', {
     title: "Замена стекла iPhone 6 в Киеве | Service-iPhone",
-    description: "Качественная замена стекла (дисплея) на iPhone 5 в Киеве. Бесплатная диагностика. Дешевые цены.",
+    description: "Поменяем дисплей или стекло на iPhone 6 быстро и недорого. от 1399грн и 30 минут времени на замену.",
     keywords: "Замена стекла iphone 6, Киев, замена экрана iphone 6, экрана, замена стекла iphone 6 Киев",
     menuActive: 'iphone'
   });
@@ -397,7 +397,7 @@ router.get('/remont-iphone-6/zamena-stekla', function (req, res, next) {
 router.get('/remont-iphone6/diagnostika', function (req, res, next) {
   res.render('pages/iphones/iphone6/diagnostika', {
     title: "Диагностика iphone 6 в Киеве | Service-iPhone ремонт айфон 6",
-    description: "Бесплатная диагностика iphone 6 в Киеве. В Service-iPhone профессионалы разберутся что случилось с Вашим Айфоном 6.",
+    description: "СЦ - делает бесплатную диагностику для iphone 6 в Киеве. ул. Богдана Хмельницкого 32 тел: (096) 125-32-46(093) 722-91-56(066) 566-97-52",
     keywords: "Диагностика iphone 6, Киев, Даигностика айфон 6, Киев Диагностика iphone 6",
     menuActive: 'iphone'
   });
@@ -657,7 +657,7 @@ router.get('/remont-iphone-6s', function (req, res, next) {
 router.get('/remont-iphone-6s/zamena-stekla', function (req, res, next) {
   res.render('pages/iphones/iphone6s/zamena-stekla', {
     title: "Замена стекла iPhone 6s в Киеве | Service-iPhone",
-    description: "Качественная замена стекла (дисплея) на iPhone 6s в Киеве. Цена от 600 грн, ремонт занимает 20 минут.",
+    description: "Производим качественную замену стекла iphone 6s в Киеве, цена от 2499 грн. Любой вид ремонта iPhone 6s в Киеве.",
     keywords: "Замена стекла iphone 6s, замена экрана iphone 6s, Киев, замена дисплея iPhone 6s, экрана",
     menuActive: 'iphone'
   });
@@ -666,7 +666,7 @@ router.get('/remont-iphone-6s/zamena-stekla', function (req, res, next) {
 router.get('/remont-iphone-6s/diagnostika', function (req, res, next) {
   res.render('pages/iphones/iphone6s/diagnostika', {
     title: "Диагностика iphone 6s в Киеве | Service-iPhone ремонт айфон 6s",
-    description: "Бесплатная диагностика iphone 6s в Киеве. В Service-iPhone профессионалы разберутся что случилось с Вашим Айфоном 6s.",
+    description: "Бесплатную диагностику iphone 6s в Киеве в сможете получить в Service-iPhone. Специалисты быстро определят причину поломки айфон 6с",
     keywords: "Диагностика iphone 6s, Киев, Даигностика айфон 6s, Киев Диагностика iphone 6s",
     menuActive: 'iphone'
   });
