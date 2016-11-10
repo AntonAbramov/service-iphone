@@ -21,3 +21,7 @@ pm2 restart 0[number-id]
 //for optimization image use:
 optipng 'name.png' or optipng -[o1-o6] 'name.png'
 jpegoptim --strip-all [name.jpg]
+
+to generate ssl certificate:
+1) go to cd /opt/letsencrypt
+2) run ./letsencrypt-auto certonly --standalone
