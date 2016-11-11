@@ -25,3 +25,4 @@ jpegoptim --strip-all [name.jpg]
 to generate ssl certificate:
 1) go to cd /opt/letsencrypt
 2) run ./letsencrypt-auto certonly --standalone
+3) to increas security sudo openssl dhparam -out /etc/ssl/certs/dhparam.pem 2048
