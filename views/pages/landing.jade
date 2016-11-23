@@ -1,4 +1,7 @@
 extends ../layout_landing
+block head
+  script.
+    dataLayer.push({'pageType': 'landing'})
 
 block header
   header.lp-header

@@ -1,5 +1,7 @@
 extends ../../layout
-
+block head
+  script.
+    dataLayer.push({'pageType': 'product', 'productType': 'ipad mini 2'})
 block content
   .sub-header
     .container

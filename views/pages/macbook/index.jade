@@ -1,5 +1,7 @@
 extends ../../layout
-
+block head
+  script.
+    dataLayer.push({'pageType': 'category'})
 block content
   section.device-section
     h1.device-title

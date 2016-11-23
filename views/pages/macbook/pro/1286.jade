@@ -1,5 +1,7 @@
 extends ../../../layout
-
+block head
+  script.
+    dataLayer.push({'pageType': 'product', 'productType': 'macbook pro 1286'})
 block content
   .sub-header
     .container

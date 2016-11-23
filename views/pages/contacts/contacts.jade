@@ -1,4 +1,7 @@
 extends ../../layout
+block head
+  script.
+    dataLayer.push({'pageType': 'contacts'})
 
 block content
   section#contacts.adress-section.text-center(itemprop='address', itemscope, itemtype='http://data-vocabulary.org/Address')
