@@ -87,7 +87,7 @@ router.get('/remont-iphone4/remont-knopok-gromkosti', function (req, res, next) 
 router.get('/remont-iphone4/zamena-batarei', function (req, res, next) {
   res.render('pages/iphones/iphone4/zamena-batarei', {
     title: "Замена батареи (аккумулятора) iPhone 4 в Киеве | Service-iPhone",
-    description: "iPhone быстро разряжается? Или не работает батарея? В Service-iPhone быстро найдут причину неполадки и сделают качественный ремонт",
+    description: "iPhone 4 быстро разряжается? Или не работает батарея? В Service-iPhone быстро найдут причину неполадки и сделают качественный ремонт",
     keywords: "Замена батареи iPhone 4, Киев, ремонт аккумулятора iphone 4, замена батареи айфон 4",
     menuActive: 'iphone'
   });
@@ -123,7 +123,7 @@ router.get('/remont-iphone4/zamena-front-camera', function (req, res, next) {
 router.get('/remont-iphone4/zamena-kameru', function (req, res, next) {
   res.render('pages/iphones/iphone4/zamena-kameru', {
     title: "Замена основной (задней) камеры iPhone 4 | Service-iPhone",
-    description: "Не работает камера? Необходимо произвести диагностику дивайся, и заменить камеру. В Service-iPhone Работаю професионалы которые могут заменить камеру за считаные минуты.",
+    description: "Не работает камера? Необходимо произвести диагностику дивайса, и заменить камеру. В Service-iPhone Работаю професионалы которые могут заменить камеру за считаные минуты.",
     keywords: "Замена основной камеры iPhone 4, ремонт камеры iPhone 4, замена камеры айфон 4, Киев",
     menuActive: 'iphone'
   });
@@ -150,7 +150,7 @@ router.get('/remont-iphone4/zamena-microfona', function (req, res, next) {
 router.get('/remont-iphone4/zamena-razgavornogo-dinamika', function (req, res, next) {
   res.render('pages/iphones/iphone4/zamena-razgavornogo-dinamika', {
     title: "Замена разговорного динамика iPhone 4 | Service-iPhone",
-    description: "Пропал звук? Попробуйте перезагрузить телефон, если проблема не решиться необходимо делать диагностику устройства",
+    description: "Пропал звук в айфон 4? Попробуйте перезагрузить телефон, если проблема не решиться необходимо делать диагностику устройства",
     keywords: "Замена разговорного динамика iPhone 4, Замена динамика айфон 4 в Киеве, Ремонт динамика iPhone 4",
     menuActive: 'iphone'
   });
@@ -159,7 +159,7 @@ router.get('/remont-iphone4/zamena-razgavornogo-dinamika', function (req, res, n
 router.get('/remont-iphone4/zamena-razjoma-dlja-naushnikov', function (req, res, next) {
   res.render('pages/iphones/iphone4/zamena-razjoma-dlja-naushnikov', {
     title: "Замена разъёма для наушников (аудиоджека) iPhone 4 | Service-iPhone",
-    description: "Сломался разьем для наушников? В Service-iPhone устрнят даную неприятность за считаные минуты.",
+    description: "Замена разьема для наушников в iPhone 4. В Service-iPhone устрнят даную неприятность за считаные минуты.",
     keywords: "Замена разъёма для наушников iPhone 4, Киев, ремонт айфон 4 разьем для наушников",
     menuActive: 'iphone'
   });
@@ -256,7 +256,7 @@ router.get('/remont-iphone5/remont-knopok-gromkosti', function (req, res, next) 
 router.get('/remont-iphone5/zamena-batarei', function (req, res, next) {
   res.render('pages/iphones/iphone5/zamena-batarei', {
     title: "Замена батареи (аккумулятора) iphone 5 в Киеве | Service-iPhone",
-    description: "iPhone быстро разряжается? Или не работает батарея? В Service-iPhone быстро найдут причину неполадки и сделают качественный ремонт",
+    description: "iPhone 5 быстро разряжается? Или не работает батарея в айфоне 5? В Service-iPhone быстро найдут причину неполадки и сделают качественный ремонт",
     keywords: "Замена батареи iphone 5, Киев, ремонт аккумулятора iphone 5, замена батареи айфон 5",
     menuActive: 'iphone'
   });
@@ -292,7 +292,7 @@ router.get('/remont-iphone5/zamena-front-camera', function (req, res, next) {
 router.get('/remont-iphone5/zamena-kameru', function (req, res, next) {
   res.render('pages/iphones/iphone5/zamena-kameru', {
     title: "Замена основной (задней) камеры iphone 5 | Service-iPhone",
-    description: "Не работает камера? Необходимо произвести диагностику дивайся, и заменить камеру. В Service-iPhone Работаю професионалы которые могут заменить камеру за считаные минуты.",
+    description: "Замена основной камеры в iPhone 5. В Service-iPhone Работаю професионалы которые могут заменить камеру в айфоне 5 за считаные минуты.",
     keywords: "Замена основной камеры iphone 5, ремонт камеры iphone 5, замена камеры айфон 5, Киев",
     menuActive: 'iphone'
   });
@@ -319,7 +319,7 @@ router.get('/remont-iphone5/zamena-microfona', function (req, res, next) {
 router.get('/remont-iphone5/zamena-razgavornogo-dinamika', function (req, res, next) {
   res.render('pages/iphones/iphone5/zamena-razgavornogo-dinamika', {
     title: "Замена разговорного динамика iphone 5 | Service-iPhone",
-    description: "Пропал звук? Попробуйте перезагрузить телефон, если проблема не решиться необходимо делать диагностику устройства",
+    description: "Попробуйте перезагрузить телефон, если проблема не решиться необходимо делать диагностику iphone 5 и возможно ремонт",
     keywords: "Замена разговорного динамика iphone 5, Замена динамика айфон 5 в Киеве, Ремонт динамика iphone 5",
     menuActive: 'iphone'
   });
@@ -328,7 +328,7 @@ router.get('/remont-iphone5/zamena-razgavornogo-dinamika', function (req, res, n
 router.get('/remont-iphone5/zamena-razjoma-dlja-naushnikov', function (req, res, next) {
   res.render('pages/iphones/iphone5/zamena-razjoma-dlja-naushnikov', {
     title: "Замена разъёма для наушников (аудиоджека) iphone 5 | Service-iPhone",
-    description: "Сломался разьем для наушников? В Service-iPhone устрнят даную неприятность за считаные минуты.",
+    description: "iPhone 5 замена разьема для наушников. В сервисном центре Apple устрнят даную неприятность за считаные минуты.",
     keywords: "Замена разъёма для наушников iphone 5, Киев, ремонт айфон 5 разьем для наушников",
     menuActive: 'iphone'
   });
@@ -433,7 +433,7 @@ router.get('/remont-iphone6/remont-knopok-gromkosti', function (req, res, next) 
 router.get('/remont-iphone6/zamena-batarei', function (req, res, next) {
   res.render('pages/iphones/iphone6/zamena-batarei', {
     title: "Замена батареи (аккумулятора) iphone 6 в Киеве | Service-iPhone",
-    description: "iPhone быстро разряжается? Или не работает батарея? В Service-iPhone быстро найдут причину неполадки и сделают качественный ремонт",
+    description: "Сервисный центр Apple сделает замену батареи iPhone 5 в Киеве - не дорого и с гарантией ",
     keywords: "Замена батареи iphone 6, Киев, ремонт аккумулятора iphone 6, замена батареи айфон 6",
     menuActive: 'iphone'
   });
@@ -469,7 +469,7 @@ router.get('/remont-iphone6/zamena-front-camera', function (req, res, next) {
 router.get('/remont-iphone6/zamena-kameru', function (req, res, next) {
   res.render('pages/iphones/iphone6/zamena-kameru', {
     title: "Замена основной (задней) камеры iphone 6 | Service-iPhone",
-    description: "Не работает камера? Необходимо произвести диагностику дивайся, и заменить камеру. В Service-iPhone Работаю професионалы которые могут заменить камеру за считаные минуты.",
+    description: "Бесплатная диагностика на iPhone 6 в случаи неработающей камеры. В Service-iPhone Работаю професионалы которые могут заменить камеру в айфон 6 за 20 мин.",
     keywords: "Замена основной камеры iphone 6, ремонт камеры iphone 6, замена камеры айфон 6, Киев",
     menuActive: 'iphone'
   });
@@ -496,7 +496,7 @@ router.get('/remont-iphone6/zamena-microfona', function (req, res, next) {
 router.get('/remont-iphone6/zamena-razgavornogo-dinamika', function (req, res, next) {
   res.render('pages/iphones/iphone6/zamena-razgavornogo-dinamika', {
     title: "Замена разговорного динамика iphone 6 | Service-iPhone",
-    description: "Пропал звук? Попробуйте перезагрузить телефон, если проблема не решиться необходимо делать диагностику устройства",
+    description: "Замена динамика iphone 6 в Киеве. Service-iPhone ремонт айфона 6 в центре столицы.",
     keywords: "Замена разговорного динамика iphone 6, Замена динамика айфон 6 в Киеве, Ремонт динамика iphone 6",
     menuActive: 'iphone'
   });
@@ -505,7 +505,7 @@ router.get('/remont-iphone6/zamena-razgavornogo-dinamika', function (req, res, n
 router.get('/remont-iphone6/zamena-razjoma-dlja-naushnikov', function (req, res, next) {
   res.render('pages/iphones/iphone6/zamena-razjoma-dlja-naushnikov', {
     title: "Замена разъёма для наушников (аудиоджека) iphone 6 | Service-iPhone",
-    description: "Сломался разьем для наушников? В Service-iPhone устрнят даную неприятность за считаные минуты.",
+    description: "iphone 6 замена разьема для наушников. В Сервисном центре Apple устрнят даную неприятность за считаные минуты.",
     keywords: "Замена разъёма для наушников iphone 6, Киев, ремонт айфон 6 разьем для наушников",
     menuActive: 'iphone'
   });
@@ -559,7 +559,7 @@ router.get('/remont-iphone-6plus/remont-knopok-gromkosti', function (req, res, n
 router.get('/remont-iphone-6plus/zamena-batarei', function (req, res, next) {
   res.render('pages/iphones/iphone6plus/zamena-batarei', {
     title: "Замена батареи (аккумулятора) iphone 6 plus в Киеве | Service-iPhone",
-    description: "iPhone быстро разряжается? Или не работает батарея? В Service-iPhone быстро найдут причину неполадки и сделают качественный ремонт",
+    description: "Сервисный центр Apple сделает замену батареи iPhone 6 в Киеве - не дорого и с гарантией для айфона 6",
     keywords: "Замена батареи iphone 6 plus, Киев, ремонт аккумулятора iphone 6 plus, замена батареи айфон 6 plus",
     menuActive: 'iphone'
   });
@@ -595,7 +595,7 @@ router.get('/remont-iphone-6plus/zamena-front-camera', function (req, res, next)
 router.get('/remont-iphone-6plus/zamena-kameru', function (req, res, next) {
   res.render('pages/iphones/iphone6plus/zamena-kameru', {
     title: "Замена основной (задней) камеры iphone 6 plus | Service-iPhone",
-    description: "Не работает камера? Необходимо произвести диагностику дивайся, и заменить камеру. В Service-iPhone Работаю професионалы которые могут заменить камеру за считаные минуты.",
+    description: "Если ваша камера в iphone 6 перестала работать то, необходимо произвести диагностику дивайса, и заменить камеру в случаи поломки.",
     keywords: "Замена основной камеры iphone 6 plus, ремонт камеры iphone 6 plus, замена камеры айфон 6 plus, Киев",
     menuActive: 'iphone'
   });
@@ -622,7 +622,7 @@ router.get('/remont-iphone-6plus/zamena-microfona', function (req, res, next) {
 router.get('/remont-iphone-6plus/zamena-razgavornogo-dinamika', function (req, res, next) {
   res.render('pages/iphones/iphone6plus/zamena-razgavornogo-dinamika', {
     title: "Замена разговорного динамика iphone 6 plus | Service-iPhone",
-    description: "Пропал звук? Попробуйте перезагрузить телефон, если проблема не решиться необходимо делать диагностику устройства",
+    description: "Замена динамика на iphone 6 plus. Сервисный центр делает ремонт айфон 6 плюс быстро и качествено.",
     keywords: "Замена разговорного динамика iphone 6 plus, Замена динамика айфон 6 plus в Киеве, Ремонт динамика iphone 6 plus",
     menuActive: 'iphone'
   });
@@ -631,7 +631,7 @@ router.get('/remont-iphone-6plus/zamena-razgavornogo-dinamika', function (req, r
 router.get('/remont-iphone-6plus/zamena-razjoma-dlja-naushnikov', function (req, res, next) {
   res.render('pages/iphones/iphone6plus/zamena-razjoma-dlja-naushnikov', {
     title: "Замена разъёма для наушников (аудиоджека) iphone 6 plus | Service-iPhone",
-    description: "Сломался разьем для наушников? В Service-iPhone устрнят даную неприятность за считаные минуты.",
+    description: "iPhone 6 plus - замена разьема для наушников в Киеве. Сервис по ремонту техники Apple устрнят даную неприятность за считаные минуты.",
     keywords: "Замена разъёма для наушников iphone 6 plus, Киев, ремонт айфон 6 plus разьем для наушников",
     menuActive: 'iphone'
   });
@@ -702,7 +702,7 @@ router.get('/remont-iphone-6s/remont-knopok-gromkosti', function (req, res, next
 router.get('/remont-iphone-6s/zamena-batarei', function (req, res, next) {
   res.render('pages/iphones/iphone6s/zamena-batarei', {
     title: "Замена батареи (аккумулятора) iphone 6s в Киеве | Service-iPhone",
-    description: "iPhone быстро разряжается? Или не работает батарея? В Service-iPhone быстро найдут причину неполадки и сделают качественный ремонт",
+    description: "Сервисный центр Apple сделает замену батареи iPhone 6s в Киеве - не дорого и с гарантией для айфона 6с",
     keywords: "Замена батареи iphone 6s, Киев, ремонт аккумулятора iphone 6s, замена батареи айфон 6s",
     menuActive: 'iphone'
   });
@@ -738,7 +738,7 @@ router.get('/remont-iphone-6s/zamena-front-camera', function (req, res, next) {
 router.get('/remont-iphone-6s/zamena-kameru', function (req, res, next) {
   res.render('pages/iphones/iphone6s/zamena-kameru', {
     title: "Замена основной (задней) камеры iphone 6s | Service-iPhone",
-    description: "Не работает камера? Необходимо произвести диагностику дивайся, и заменить камеру. В Service-iPhone Работаю професионалы которые могут заменить камеру за считаные минуты.",
+    description: "Service-iPhone делает замену камеры на iphone 6s быстро и недорого. Так же мы проведем бесплатную диагностику",
     keywords: "Замена основной камеры iphone 6s, ремонт камеры iphone 6s, замена камеры айфон 6s, Киев",
     menuActive: 'iphone'
   });
@@ -765,7 +765,7 @@ router.get('/remont-iphone-6s/zamena-microfona', function (req, res, next) {
 router.get('/remont-iphone-6s/zamena-razgavornogo-dinamika', function (req, res, next) {
   res.render('pages/iphones/iphone6s/zamena-razgavornogo-dinamika', {
     title: "Замена разговорного динамика iphone 6s | Service-iPhone",
-    description: "Пропал звук? Попробуйте перезагрузить телефон, если проблема не решиться необходимо делать диагностику устройства",
+    description: "Замена динамика в iphone 6s в Сервисном центре Apple, всегда проходит быстро и качественно! - Service-iPhone.com.ua",
     keywords: "Замена разговорного динамика iphone 6s, Замена динамика айфон 6s в Киеве, Ремонт динамика iphone 6s",
     menuActive: 'iphone'
   });
@@ -774,7 +774,7 @@ router.get('/remont-iphone-6s/zamena-razgavornogo-dinamika', function (req, res,
 router.get('/remont-iphone-6s/zamena-razjoma-dlja-naushnikov', function (req, res, next) {
   res.render('pages/iphones/iphone6s/zamena-razjoma-dlja-naushnikov', {
     title: "Замена разъёма для наушников (аудиоджека) iphone 6s | Service-iPhone",
-    description: "Сломался разьем для наушников? В Service-iPhone устрнят даную неприятность за считаные минуты.",
+    description: "Замена разьема для наушников в iphone 6s Киев, проходит быстро и с гарантией в Сервисном центре Apple",
     keywords: "Замена разъёма для наушников iphone 6s, Киев, ремонт айфон 6s разьем для наушников",
     menuActive: 'iphone'
   });
