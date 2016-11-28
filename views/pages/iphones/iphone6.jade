@@ -31,3 +31,20 @@ block content
           |&nbsp;на новый, предоставленный производителем.
         p
           | Это увеличивает стоимость ремонта, но позволяет получить в результате устройство, работающее ничуть не хуже нового, а также гарантировать его работоспособность в течение срока, предусмотренного производителем.
+      div(itemscope='', itemtype='http://schema.org/Product')
+        span(itemprop='name', style='display:none')
+          | iPhone 6
+        | Overall rating:&nbsp;
+        span(itemprop='aggregateRating', itemscope='', itemtype='http://schema.org/AggregateRating')
+          strong
+            span.value(itemprop='ratingValue')
+              | 4.8
+          |  out of&nbsp;
+          strong
+            span(itemprop='bestRating') 5
+          | &nbsp;based on&nbsp;
+          span.votes(itemprop='reviewCount')
+            | 19
+          |  reviews.
+      br
+      br

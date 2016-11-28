@@ -24,15 +24,17 @@ header.header(itemscope, itemtype="http://schema.org/LocalBusiness")
         span.top-navigation--text(title='Контакты') Контакты
   section.header-section
     .container
-      .col-xs-12.col-sm-6.text-center
+      .col-xs-12.col-sm-6.text-center(itemscope)
         .header-section__contacts__title
           i.fa.fa-map-marker.mr5
-          | ул. Богдана Хмельницкого, 32
+          span(itemprop="streetAddress") ул. Богдана Хмельницкого, 32
+          span.is-hidden(itemprop="addressLocality") Киев
+          span.is-hidden(itemprop="addressRegion") Украина
         a.header-section__contacts__tel(href='tel:0961253246', itemprop='telephone') (096) 125-32-46
         a.header-section__contacts__tel(href='tel:0937229156', itemprop='telephone') (093) 722-91-56
         a.header-section__contacts__tel(href='tel:0665669752', itemprop='telephone') (066) 566-97-52
         br
-        span.header-section__schedule--description(itemprop="openingHoursSpecification", itemscope, itemtype="http://schema.org/OpeningHoursSpecification")
+        span.header-section__schedule--description(itemprop="openingHoursSpecification", itemtype="http://schema.org/OpeningHoursSpecification")
           span(itemprop="dayOfWeek", itemtype="http://schema.org/DayOfWeek")
             span(itemprop="name") пн-пт&nbsp;
           span(itemprop="opens") 10:00-
@@ -47,10 +49,12 @@ header.header(itemscope, itemtype="http://schema.org/LocalBusiness")
 
       //.header-section__courier.left.ml20.show-desktop
       //  a.show-tablet(target="_blank", title="Оставь комментарий в Google+ и получи 5% скидки на ремонт", href="https://plus.google.com/109962936005483548770/about") Получи 5% скидки за отзыв в Google+!
-      .col-xs-12.col-sm-6.text-center
+      .col-xs-12.col-sm-6.text-center(itemscope)
         .header-section__contacts__title
           i.fa.fa-map-marker.mr5
-          | м Минская
+          span.is-hidden(itemprop="streetAddress") м Минская
+          span.is-hidden(itemprop="addressLocality") Киев
+          span.is-hidden(itemprop="addressRegion") Украина
         a.header-section__contacts__tel(href='tel:0631104224', itemprop='telephone') (063) 110-42-24
         a.header-section__contacts__tel(href='tel:0992504224', itemprop='telephone') (099) 250-42-24
         a.header-section__contacts__tel(href='tel:0981024224', itemprop='telephone') (098) 102-42-24

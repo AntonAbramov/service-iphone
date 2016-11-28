@@ -65,4 +65,20 @@ block content
     p Звоните и получите бесплатную консультацию.
     p Приходите и уже завтра мобильник будет работать на 100%!
 
-
+    div(itemscope='', itemtype='http://schema.org/Product')
+      span(itemprop='name', style='display:none')
+        | iPhone 7
+      | Overall rating:&nbsp;
+      span(itemprop='aggregateRating', itemscope='', itemtype='http://schema.org/AggregateRating')
+        strong
+          span.value(itemprop='ratingValue')
+            | 4.9
+        |  out of&nbsp;
+        strong
+          span(itemprop='bestRating') 5
+        | &nbsp;based on&nbsp;
+        span.votes(itemprop='reviewCount')
+          | 15
+        |  reviews.
+    br
+    br
