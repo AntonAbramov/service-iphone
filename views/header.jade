@@ -35,16 +35,9 @@ header.header(itemscope, itemtype="https://schema.org/LocalBusiness")
         a.header-section__contacts__tel(href='tel:0665669752', itemprop="telephone") (066) 566-97-52
         br
         span.header-section__schedule--description(itemprop="openingHoursSpecification", itemtype="http://schema.org/OpeningHoursSpecification")
-          span(itemprop="dayOfWeek", itemtype="http://schema.org/DayOfWeek")
-            span(itemprop="name") пн-пт&nbsp;
-          span(itemprop="opens") 10:00-
-          span(itemprop="closes") 19:00
+          span(itemprop="openingHours", content="Пн,Вт,Ср,Чт,Пт 09:00-19:00") пн-пт 10:00-19:00
           br
-          span(itemprop="dayOfWeek", itemtype="http://schema.org/DayOfWeek")
-            span(itemprop="name") сб&nbsp;
-          span(itemprop="opens") 11:00
-          | -
-          span(itemprop="closes") 17:00
+          span(itemprop="openingHours", content="Сб 11:00-17:00") сб 11:00 - 17:00
           br
 
       //.header-section__courier.left.ml20.show-desktop
