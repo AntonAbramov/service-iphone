@@ -26,3 +26,8 @@ to generate ssl certificate:
 1) go to cd /opt/letsencrypt
 2) run ./letsencrypt-auto certonly --standalone
 3) to increas security sudo openssl dhparam -out /etc/ssl/certs/dhparam.pem 2048
+
+to setup a cronjob
+sudo crontab -e
+00 1 * * 1 /opt/letsencrypt/letsencrypt-auto renew >> /var/log/letsencrypt-renewal.log
+30 1 * * 1 /bin/systemctl reload nginx
