@@ -26,10 +26,12 @@ header.header(itemscope, itemtype="https://schema.org/LocalBusiness")
         span.top-navigation--text(title='Контакты') Контакты
   section.header-section
     .container
-      .col-xs-12.col-sm-6.text-center
+      .col-xs-12.col-sm-4.text-center
         link(itemprop="hasMap", href="https://goo.gl/maps/62zFgY1gqPy")
         .header-section__contacts__title(itemprop="address", itemscope, itemtype="http://schema.org/PostalAddress")
           i.fa.fa-map-marker.mr5
+          span м Золотые Ворота
+          br
           span ул. Богдана Хмельницкого, 32
           span.is-hidden(itemprop="streetAddress") вул. Богдана Хмельницького, 32
           span.is-hidden(itemprop="addressLocality") Kyiv
@@ -48,8 +50,33 @@ header.header(itemscope, itemtype="https://schema.org/LocalBusiness")
           br
           span(itemprop="openingHours", content="Сб 11:00-17:00") сб 11:00 - 17:00
           br
+        strong(style="color:red;") Выходные 31.12/01.01/02.01/07.01/08.01
 
-      .col-xs-12.col-sm-6.text-center
+
+      .col-xs-12.col-sm-4.text-center
+        link(itemprop="hasMap", href="https://goo.gl/maps/oWf5t1em3622")
+        .header-section__contacts__title(itemprop="address", itemscope, itemtype="http://schema.org/PostalAddress")
+          i.fa.fa-map-marker.mr5
+          span(itemprop="streetAddress") м Олимпийская
+          br
+          span ул. Большая Васильковская 74 офис 2
+          span.is-hidden(itemprop="addressLocality") Kyiv
+          span.is-hidden(itemprop="addressRegion") Ukraine
+          span.is-hidden(itemprop="postalCode") 01001
+          span(itemprop="geo", itemscope, itemtype="http://schema.org/GeoCoordinates")
+            meta(itemprop="latitude", content="50.4317077")
+            meta(itemprop="longitude", content="30.5156575")
+        a.header-section__contacts__tel(href='tel:+380954311221', content="+380954311221", itemprop="telephone") (095) 431-12-21
+        a.header-section__contacts__tel(href='tel:+380673011221', content="+380673011221", itemprop="telephone") (067) 301-12-21
+        a.header-section__contacts__tel(href='tel:+380934211221', content="+380934211221", itemprop="telephone") (093) 421-12-21
+        br
+        span.header-section__schedule--description
+          span(itemprop="openingHours", content="Пн,Вт,Ср,Чт,Пт 09:00-19:00") пн-пт 10:00-19:00
+          br
+          span(itemprop="openingHours", content="Сб 11:00-17:00") сб 11:00 - 17:00
+          br
+        strong(style="color:red;") Выходные 31.12/01.01/02.01/07.01/08.01
+      .col-xs-12.col-sm-4.text-center
         link(itemprop="hasMap", href="https://goo.gl/maps/oWf5t1em3622")
         .header-section__contacts__title(itemprop="address", itemscope, itemtype="http://schema.org/PostalAddress")
           i.fa.fa-map-marker.mr5
@@ -62,6 +89,7 @@ header.header(itemscope, itemtype="https://schema.org/LocalBusiness")
             meta(itemprop="longitude", content="30.502023")
         a.header-section__contacts__tel(href='tel:+380631104224', content="+380631104224", itemprop="telephone") (063) 110-42-24
         a.header-section__contacts__tel(href='tel:+380992504224', content="+380992504224", itemprop="telephone") (099) 250-42-24
+        br
         a.header-section__contacts__tel(href='tel:+380981024224', content="+380981024224", itemprop="telephone") (098) 102-42-24
         br
         span.header-section__schedule--description
@@ -69,6 +97,7 @@ header.header(itemscope, itemtype="https://schema.org/LocalBusiness")
           br
           span(itemprop="openingHours", content="Сб 11:00-17:00") сб 11:00 - 17:00
           br
+        strong(style="color:red;") Выходные 31.12/01.01/02.01/07.01/08.01
 
 #overlay-courier.overlay
   #courier.modal--courier
