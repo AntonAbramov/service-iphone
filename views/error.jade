@@ -1,7 +1,9 @@
 extends layout
 
 block content
-  h1 test
-  h1= message
-  h2= error.status
-  pre #{error.stack}
+  div.text-center
+    h1 Ой, что-то пошло не так. Ошибка - 404
+    img(src='/img/404.jpg', alt='Страница не найдена')
+  //h1= message
+  //h2= error.status
+  //pre #{error.stack}

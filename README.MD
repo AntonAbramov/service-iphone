@@ -8,7 +8,7 @@ mongo
 service mongod status/start/stop/restart
 
 // Deployment
-pm2 deploy production
+pm2 deploy production -p [numnerOfPort]
 
 // start
 1. run mongod instance
