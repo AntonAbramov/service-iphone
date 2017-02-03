@@ -1,5 +1,5 @@
 header.header(itemscope, itemtype="https://schema.org/LocalBusiness")
-  link(itemprop="priceRange", content="$")
+  link(itemprop="priceRange", href="$", content="$")
   .header__container.cf
     button#navbar-toggle.pull-right.navbar-toggle.hide-tablet
       span.icon-bar
@@ -24,7 +24,7 @@ header.header(itemscope, itemtype="https://schema.org/LocalBusiness")
         span.top-navigation--text(title='Гарантия') Гарантия
       a.top-navigation__link(href='/contacts', class=(menuActive === 'contacts' ? 'is-active' : '' ))
         span.top-navigation--text(title='Контакты') Контакты
-  section.header-section
+  .header-section
     .container
       .col-xs-12.col-sm-4.text-center
         link(itemprop="hasMap", href="https://goo.gl/maps/62zFgY1gqPy")
@@ -94,7 +94,7 @@ header.header(itemscope, itemtype="https://schema.org/LocalBusiness")
 
 #overlay-courier.overlay
   #courier.modal--courier
-    button.btn-close &#10006
+    button.btn-close &#10006;
     header.modal-heading Вызвать курьера
     form#courier-form(action='contact-form', method='POST')
       .field
