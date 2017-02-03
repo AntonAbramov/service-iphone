@@ -2,7 +2,6 @@
 @import "mixins/mixins";
 @import "base/variables";
 @import "base/typography";
-@import "base/helpers";
 @import "base/main";
 
 @import "layout/header";
@@ -13,5 +12,6 @@
 @import "components/inputs";
 @import "pages/landing";
 
+@import "base/helpers";
 @import "layout/adaptive"; // should be the last
 @import "layout/grid";
