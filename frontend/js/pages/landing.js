@@ -358,27 +358,31 @@ const $ = require('jquery');
                 break;
               }
               case 3: {
-                textEndForm += " 5s: <span class='price'>999 грн.</span>";
-                break;
-              }
-              case 4: {
-                textEndForm += " 5c: <span class='price'>999 грн.</span>";
-                break;
-              }
-              case 5: {
-                textEndForm += " 5: <span class='price'>999 грн.</span>";
+                textEndForm += " 5/5c/5s: <span class='price'>999 грн.</span>";
                 break;
               }
               case 6: {
-                textEndForm += " 4s: <span class='price'>649 грн.</span>";
+                textEndForm += " 4/4s: <span class='price'>649 грн.</span>";
                 break;
               }
-              case 7: {
-                textEndForm += " 4: <span class='price'>649 грн.</span>";
+              case 9: {
+                textEndForm += " 7plus: <span class='price'>4999 грн.</span>";
                 break;
               }
-              case 8: {
-                textEndForm += " 3gs: <span class='price'>299 грн.</span>";
+              case 10: {
+                textEndForm += " 7: <span class='price'>4999 грн.</span>";
+                break;
+              }
+              case 11: {
+                textEndForm += " 6plus: <span class='price'>2999 грн.</span>";
+                break;
+              }
+              case 12: {
+                textEndForm += " 6: <span class='price'>2999 грн.</span>";
+                break;
+              }
+              case 13: {
+                textEndForm += " se: <span class='price'>1999 грн.</span>";
                 break;
               }
             }
@@ -396,27 +400,31 @@ const $ = require('jquery');
                 break;
               }
               case 3: {
-                textEndForm += " 5s: <span class='price'>399 грн.</span>";
-                break;
-              }
-              case 4: {
-                textEndForm += " 5c: <span class='price'>399 грн.</span>";
-                break;
-              }
-              case 5: {
-                textEndForm += " 5: <span class='price'>349 грн.</span>";
+                textEndForm += " 5/5c/5s: <span class='price'>399 грн.</span>";
                 break;
               }
               case 6: {
-                textEndForm += " 4s: <span class='price'>299 грн.</span>";
+                textEndForm += " 4/4s: <span class='price'>299 грн.</span>";
                 break;
               }
-              case 7: {
-                textEndForm += " 4: <span class='price'>299 грн.</span>";
+              case 9: {
+                textEndForm += " 7plus: <span class='price'>4999 грн.</span>";
                 break;
               }
-              case 8: {
-                textEndForm += " 3gs: <span class='price'>199 грн.</span>";
+              case 10: {
+                textEndForm += " 7: <span class='price'>4999 грн.</span>";
+                break;
+              }
+              case 11: {
+                textEndForm += " 6plus: <span class='price'>2999 грн.</span>";
+                break;
+              }
+              case 12: {
+                textEndForm += " 6: <span class='price'>2999 грн.</span>";
+                break;
+              }
+              case 13: {
+                textEndForm += " se: <span class='price'>1999 грн.</span>";
                 break;
               }
             }
@@ -434,27 +442,31 @@ const $ = require('jquery');
                 break;
               }
               case 3: {
-                textEndForm += " 5s: <span class='price'>449 грн.</span>";
-                break;
-              }
-              case 4: {
-                textEndForm += " 5c: <span class='price'>399 грн.</span>";
-                break;
-              }
-              case 5: {
-                textEndForm += " 5: <span class='price'>399 грн.</span>";
+                textEndForm += " 5/5c/5s: <span class='price'>449 грн.</span>";
                 break;
               }
               case 6: {
-                textEndForm += " 4s: <span class='price'>349 грн.</span>";
+                textEndForm += " 4/4s: <span class='price'>349 грн.</span>";
                 break;
               }
-              case 7: {
-                textEndForm += " 4: <span class='price'>349 грн.</span>";
+              case 9: {
+                textEndForm += " 7plus: <span class='price'>4999 грн.</span>";
                 break;
               }
-              case 8: {
-                textEndForm += " 3gs: <span class='price'>249 грн.</span>";
+              case 10: {
+                textEndForm += " 7: <span class='price'>4999 грн.</span>";
+                break;
+              }
+              case 11: {
+                textEndForm += " 6plus: <span class='price'>2999 грн.</span>";
+                break;
+              }
+              case 12: {
+                textEndForm += " 6: <span class='price'>2999 грн.</span>";
+                break;
+              }
+              case 13: {
+                textEndForm += " se: <span class='price'>1999 грн.</span>";
                 break;
               }
             }
@@ -472,27 +484,31 @@ const $ = require('jquery');
                 break;
               }
               case 3: {
-                textEndForm += " 5s: <span class='price'>399 грн.</span>";
-                break;
-              }
-              case 4: {
-                textEndForm += " 5c: <span class='price'>349 грн.</span>";
-                break;
-              }
-              case 5: {
-                textEndForm += " 5: <span class='price'>349 грн.</span>";
+                textEndForm += " 5/5c/5s: <span class='price'>399 грн.</span>";
                 break;
               }
               case 6: {
-                textEndForm += " 4s: <span class='price'>349 грн.</span>";
+                textEndForm += " 4/4s: <span class='price'>349 грн.</span>";
                 break;
               }
-              case 7: {
-                textEndForm += " 4: <span class='price'>349 грн.</span>";
+              case 9: {
+                textEndForm += " 7plus: <span class='price'>4999 грн.</span>";
                 break;
               }
-              case 8: {
-                textEndForm += " 3gs: <span class='price'>249 грн.</span>";
+              case 10: {
+                textEndForm += " 7: <span class='price'>4999 грн.</span>";
+                break;
+              }
+              case 11: {
+                textEndForm += " 6plus: <span class='price'>2999 грн.</span>";
+                break;
+              }
+              case 12: {
+                textEndForm += " 6: <span class='price'>2999 грн.</span>";
+                break;
+              }
+              case 13: {
+                textEndForm += " se: <span class='price'>1999 грн.</span>";
                 break;
               }
             }
@@ -510,27 +526,31 @@ const $ = require('jquery');
                 break;
               }
               case 3: {
-                textEndForm += " 5s: <span class='price'>399 грн.</span>";
-                break;
-              }
-              case 4: {
-                textEndForm += " 5c: <span class='price'>249 грн.</span>";
-                break;
-              }
-              case 5: {
-                textEndForm += " 5: <span class='price'>199 грн.</span>";
+                textEndForm += " 5/5c/5s: <span class='price'>399 грн.</span>";
                 break;
               }
               case 6: {
-                textEndForm += " 4s: <span class='price'>249 грн.</span>";
+                textEndForm += " 4/4s: <span class='price'>249 грн.</span>";
                 break;
               }
-              case 7: {
-                textEndForm += " 4: <span class='price'>249 грн.</span>";
+              case 9: {
+                textEndForm += " 7plus: <span class='price'>4999 грн.</span>";
                 break;
               }
-              case 8: {
-                textEndForm += " 3gs: <span class='price'>149 грн.</span>";
+              case 10: {
+                textEndForm += " 7: <span class='price'>4999 грн.</span>";
+                break;
+              }
+              case 11: {
+                textEndForm += " 6plus: <span class='price'>2999 грн.</span>";
+                break;
+              }
+              case 12: {
+                textEndForm += " 6: <span class='price'>2999 грн.</span>";
+                break;
+              }
+              case 13: {
+                textEndForm += " se: <span class='price'>1999 грн.</span>";
                 break;
               }
             }
@@ -548,27 +568,31 @@ const $ = require('jquery');
                 break;
               }
               case 3: {
-                textEndForm += " 5s: <span class='price'>449 грн.</span>";
-                break;
-              }
-              case 4: {
-                textEndForm += " 5c: <span class='price'>449 грн.</span>";
-                break;
-              }
-              case 5: {
-                textEndForm += " 5: <span class='price'>449 грн.</span>";
+                textEndForm += " 5/5c/5s: <span class='price'>449 грн.</span>";
                 break;
               }
               case 6: {
-                textEndForm += " 4s: <span class='price'>349 грн.</span>";
+                textEndForm += " 4/4s: <span class='price'>349 грн.</span>";
                 break;
               }
-              case 7: {
-                textEndForm += " 4: <span class='price'>349 грн.</span>";
+              case 9: {
+                textEndForm += " 7plus: <span class='price'>4999 грн.</span>";
                 break;
               }
-              case 8: {
-                textEndForm += " 3gs: <span class='price'>199 грн.</span>";
+              case 10: {
+                textEndForm += " 7: <span class='price'>4999 грн.</span>";
+                break;
+              }
+              case 11: {
+                textEndForm += " 6plus: <span class='price'>2999 грн.</span>";
+                break;
+              }
+              case 12: {
+                textEndForm += " 6: <span class='price'>2999 грн.</span>";
+                break;
+              }
+              case 13: {
+                textEndForm += " se: <span class='price'>1999 грн.</span>";
                 break;
               }
             }
@@ -586,27 +610,31 @@ const $ = require('jquery');
                 break;
               }
               case 3: {
-                textEndForm += " 5s: <span class='price'>299 грн.</span>";
-                break;
-              }
-              case 4: {
-                textEndForm += " 5c: <span class='price'>299 грн.</span>";
-                break;
-              }
-              case 5: {
-                textEndForm += " 5: <span class='price'>299 грн.</span>";
+                textEndForm += " 5/5c/5s: <span class='price'>299 грн.</span>";
                 break;
               }
               case 6: {
-                textEndForm += " 4s: <span class='price'>249 грн.</span>";
+                textEndForm += " 4/4s: <span class='price'>249 грн.</span>";
                 break;
               }
-              case 7: {
-                textEndForm += " 4: <span class='price'>249 грн.</span>";
+              case 9: {
+                textEndForm += " 7plus: <span class='price'>4999 грн.</span>";
                 break;
               }
-              case 8: {
-                textEndForm += " 3gs: <span class='price'>199 грн.</span>";
+              case 10: {
+                textEndForm += " 7: <span class='price'>4999 грн.</span>";
+                break;
+              }
+              case 11: {
+                textEndForm += " 6plus: <span class='price'>2999 грн.</span>";
+                break;
+              }
+              case 12: {
+                textEndForm += " 6: <span class='price'>2999 грн.</span>";
+                break;
+              }
+              case 13: {
+                textEndForm += " se: <span class='price'>1999 грн.</span>";
                 break;
               }
             }
