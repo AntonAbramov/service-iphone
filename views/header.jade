@@ -5,25 +5,26 @@ header.header(itemscope, itemtype="https://schema.org/LocalBusiness")
       span.icon-bar
       span.icon-bar
       span.icon-bar
-    .site-logo.text-center.col-md-3.col-sm-3
-      a.site-logo__link(itemprop='url', href='/', title='Service-iPhone - ремонт техники Apple.')
-        img.site-logo__img(itemprop="image", src='/img/logo.png', alt='Service-Iphone ремонт техники Apple iphone ipad macbook')
-        span(itemprop="name") Service-iPhone
+    .site-logo.text-center.col-sm-3
+      -if (path === '/')
+        span.site-logo__link(title='Service-iPhone - ремонт техники Apple.')
+          img.site-logo__img(itemprop="image", src='/img/logo.png', alt='Service-Iphone ремонт техники Apple iphone ipad macbook')
+          span(itemprop="name") Service-iPhone
+      -else
+        a.site-logo__link(itemprop='url', href='/', title='Service-iPhone - ремонт техники Apple.')
+          img.site-logo__img(itemprop="image", src='/img/logo.png', alt='Service-Iphone ремонт техники Apple iphone ipad macbook')
+          span(itemprop="name") Service-iPhone
       link(itemprop="sameAs", href="https://plus.google.com/u/0/109962936005483548770")
 
-    nav#top-nav.top-navigation.col-md-9.col-sm-9
-      a.top-navigation__link(href='/iphone', class=(menuActive === 'iphone' ? 'is-active' : '' ))
-        span.top-navigation--text(title='Ремонт iPhone') iPhone
-      a.top-navigation__link(href='/ipad-remont', class=(menuActive === 'ipad' ? 'is-active' : '' ))
-        span.top-navigation--text(title='Ремонт iPad') iPad
-      a.top-navigation__link(href='/remont-macbook', class=(menuActive === 'imac' ? 'is-active' : '' ))
-        span.top-navigation--text(title='Ремонт MacBook') MacBook
-      a.top-navigation__link(href='/feedback', class=(menuActive === 'feedback' ? 'is-active' : '' ))
-        span.top-navigation--text(title='Отзывы') Отзывы
-      a.top-navigation__link(href='/warranty', class=(menuActive === 'warranty' ? 'is-active' : '' ))
-        span.top-navigation--text(title='Гарантия') Гарантия
-      a.top-navigation__link(href='/contacts', class=(menuActive === 'contacts' ? 'is-active' : '' ))
-        span.top-navigation--text(title='Контакты') Контакты
+    nav#top-nav.top-navigation.col-sm-9
+      each item in [{'name':'iPhone', title: 'Ремонт iPhone', 'url': '/iphone'},{'name':'iPad', title: 'Ремонт iPad', 'url': '/ipad-remont'},{'name':'MacBook', title: 'Ремонт MacBook', 'url': '/remont-macbook'},{'name':'Отзывы', title: 'Отзывы', 'url': '/feedback'},{'name':'Гарантия', title: 'Гарантия', 'url': '/warranty'},{'name':'Контакты', title: 'Контакты', 'url': '/contacts'}]
+        if (path === item.url)
+          span.top-navigation__link.is-active
+            span.top-navigation--text(title='#{item.title}')=item.name
+        else
+          a.top-navigation__link(href='#{item.url}')
+            span.top-navigation--text(title='#{item.title}')=item.name
+
   .header-section
     .container
       .col-xs-12.col-sm-4.text-center
