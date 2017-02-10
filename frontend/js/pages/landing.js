@@ -354,23 +354,23 @@ const $ = require('jquery');
                 break;
               }
               case 2: {
-                textEndForm += " 6: <span class='price'>1999 грн.</span>";
+                textEndForm += " 6: <span class='price'>2399 грн.</span>";
                 break;
               }
               case 3: {
-                textEndForm += " 5/5c/5s: <span class='price'>999 грн.</span>";
+                textEndForm += " 5/5c/5s: <span class='price'>799 грн.</span>";
                 break;
               }
               case 6: {
-                textEndForm += " 4/4s: <span class='price'>649 грн.</span>";
+                textEndForm += " 4/4s: <span class='price'>699 грн.</span>";
                 break;
               }
               case 9: {
-                textEndForm += " 7plus: <span class='price'>4999 грн.</span>";
+                textEndForm += " 7plus: <span class='price'>13999 грн.</span>";
                 break;
               }
               case 10: {
-                textEndForm += " 7: <span class='price'>4999 грн.</span>";
+                textEndForm += " 7: <span class='price'>10099 грн.</span>";
                 break;
               }
               case 11: {
@@ -378,11 +378,11 @@ const $ = require('jquery');
                 break;
               }
               case 12: {
-                textEndForm += " 6: <span class='price'>2999 грн.</span>";
+                textEndForm += " 6: <span class='price'>2399 грн.</span>";
                 break;
               }
               case 13: {
-                textEndForm += " se: <span class='price'>1999 грн.</span>";
+                textEndForm += " se: <span class='price'>1499 грн.</span>";
                 break;
               }
             }
@@ -392,39 +392,39 @@ const $ = require('jquery');
             textEndForm = "Замена микрофона на вашем iPhone";
             switch(id_model){
               case 1: {
-                textEndForm += " 6plus: <span class='price'>599 грн.</span>";
+                textEndForm += " 6plus: <span class='price'>499 грн.</span>";
                 break;
               }
               case 2: {
-                textEndForm += " 6: <span class='price'>599 грн.</span>";
+                textEndForm += " 6: <span class='price'>499 грн.</span>";
                 break;
               }
               case 3: {
-                textEndForm += " 5/5c/5s: <span class='price'>399 грн.</span>";
+                textEndForm += " 5/5c/5s: <span class='price'>349 грн.</span>";
                 break;
               }
               case 6: {
-                textEndForm += " 4/4s: <span class='price'>299 грн.</span>";
+                textEndForm += " 4/4s: <span class='price'>249 грн.</span>";
                 break;
               }
               case 9: {
-                textEndForm += " 7plus: <span class='price'>4999 грн.</span>";
+                textEndForm += " 7plus: <span class='price'>1099 грн.</span>";
                 break;
               }
               case 10: {
-                textEndForm += " 7: <span class='price'>4999 грн.</span>";
+                textEndForm += " 7: <span class='price'>899 грн.</span>";
                 break;
               }
               case 11: {
-                textEndForm += " 6plus: <span class='price'>2999 грн.</span>";
+                textEndForm += " 6plus: <span class='price'>799 грн.</span>";
                 break;
               }
               case 12: {
-                textEndForm += " 6: <span class='price'>2999 грн.</span>";
+                textEndForm += " 6: <span class='price'>699 грн.</span>";
                 break;
               }
               case 13: {
-                textEndForm += " se: <span class='price'>1999 грн.</span>";
+                textEndForm += " se: <span class='price'>399 грн.</span>";
                 break;
               }
             }
@@ -434,15 +434,15 @@ const $ = require('jquery');
             textEndForm = "Замена аккумуляторной батареи на вашем iPhone";
             switch(id_model){
               case 1: {
-                textEndForm += " 6plus: <span class='price'>849 грн.</span>";
+                textEndForm += " 6plus: <span class='price'>599 грн.</span>";
                 break;
               }
               case 2: {
-                textEndForm += " 6: <span class='price'>549 грн.</span>";
+                textEndForm += " 6: <span class='price'>499 грн.</span>";
                 break;
               }
               case 3: {
-                textEndForm += " 5/5c/5s: <span class='price'>449 грн.</span>";
+                textEndForm += " 5/5c/5s: <span class='price'>399 грн.</span>";
                 break;
               }
               case 6: {
@@ -450,23 +450,23 @@ const $ = require('jquery');
                 break;
               }
               case 9: {
-                textEndForm += " 7plus: <span class='price'>4999 грн.</span>";
+                textEndForm += " 7plus: <span class='price'>1599 грн.</span>";
                 break;
               }
               case 10: {
-                textEndForm += " 7: <span class='price'>4999 грн.</span>";
+                textEndForm += " 7: <span class='price'>1499 грн.</span>";
                 break;
               }
               case 11: {
-                textEndForm += " 6plus: <span class='price'>2999 грн.</span>";
+                textEndForm += " 6plus: <span class='price'>1199 грн.</span>";
                 break;
               }
               case 12: {
-                textEndForm += " 6: <span class='price'>2999 грн.</span>";
+                textEndForm += " 6: <span class='price'>999 грн.</span>";
                 break;
               }
               case 13: {
-                textEndForm += " se: <span class='price'>1999 грн.</span>";
+                textEndForm += " se: <span class='price'>399 грн.</span>";
                 break;
               }
             }
@@ -476,39 +476,39 @@ const $ = require('jquery');
             textEndForm = "Замена кнопки вкл/выкл на вашем iPhone";
             switch(id_model){
               case 1: {
-                textEndForm += " 6plus: <span class='price'>599 грн.</span>";
+                textEndForm += " 6plus: <span class='price'>499 грн.</span>";
                 break;
               }
               case 2: {
-                textEndForm += " 6: <span class='price'>599 грн.</span>";
+                textEndForm += " 6: <span class='price'>449 грн.</span>";
                 break;
               }
               case 3: {
-                textEndForm += " 5/5c/5s: <span class='price'>399 грн.</span>";
+                textEndForm += " 5/5c/5s: <span class='price'>349 грн.</span>";
                 break;
               }
               case 6: {
-                textEndForm += " 4/4s: <span class='price'>349 грн.</span>";
+                textEndForm += " 4/4s: <span class='price'>249 грн.</span>";
                 break;
               }
               case 9: {
-                textEndForm += " 7plus: <span class='price'>4999 грн.</span>";
+                textEndForm += " 7plus: <span class='price'>999 грн.</span>";
                 break;
               }
               case 10: {
-                textEndForm += " 7: <span class='price'>4999 грн.</span>";
+                textEndForm += " 7: <span class='price'>799 грн.</span>";
                 break;
               }
               case 11: {
-                textEndForm += " 6plus: <span class='price'>2999 грн.</span>";
+                textEndForm += " 6plus: <span class='price'>599 грн.</span>";
                 break;
               }
               case 12: {
-                textEndForm += " 6: <span class='price'>2999 грн.</span>";
+                textEndForm += " 6: <span class='price'>599 грн.</span>";
                 break;
               }
               case 13: {
-                textEndForm += " se: <span class='price'>1999 грн.</span>";
+                textEndForm += " se: <span class='price'>399 грн.</span>";
                 break;
               }
             }
@@ -518,39 +518,39 @@ const $ = require('jquery');
             textEndForm = "Замена кнопки меню на вашем iPhone";
             switch(id_model){
               case 1: {
-                textEndForm += " 6plus: <span class='price'>799 грн.</span>";
+                textEndForm += " 6plus: <span class='price'>399 грн.</span>";
                 break;
               }
               case 2: {
-                textEndForm += " 6: <span class='price'>799 грн.</span>";
+                textEndForm += " 6: <span class='price'>399 грн.</span>";
                 break;
               }
               case 3: {
-                textEndForm += " 5/5c/5s: <span class='price'>399 грн.</span>";
+                textEndForm += " 5/5c/5s: <span class='price'>199 грн.</span>";
                 break;
               }
               case 6: {
-                textEndForm += " 4/4s: <span class='price'>249 грн.</span>";
+                textEndForm += " 4/4s: <span class='price'>199 грн.</span>";
                 break;
               }
               case 9: {
-                textEndForm += " 7plus: <span class='price'>4999 грн.</span>";
+                textEndForm += " 7plus: <span class='price'>999 грн.</span>";
                 break;
               }
               case 10: {
-                textEndForm += " 7: <span class='price'>4999 грн.</span>";
+                textEndForm += " 7: <span class='price'>999 грн.</span>";
                 break;
               }
               case 11: {
-                textEndForm += " 6plus: <span class='price'>2999 грн.</span>";
+                textEndForm += " 6plus: <span class='price'>599 грн.</span>";
                 break;
               }
               case 12: {
-                textEndForm += " 6: <span class='price'>2999 грн.</span>";
+                textEndForm += " 6: <span class='price'>599 грн.</span>";
                 break;
               }
               case 13: {
-                textEndForm += " se: <span class='price'>1999 грн.</span>";
+                textEndForm += " se: <span class='price'>499 грн.</span>";
                 break;
               }
             }
@@ -560,39 +560,39 @@ const $ = require('jquery');
             textEndForm = "Замена передней камеры на вашем iPhone";
             switch(id_model){
               case 1: {
-                textEndForm += " 6plus: <span class='price'>699 грн.</span>";
+                textEndForm += " 6plus: <span class='price'>599 грн.</span>";
                 break;
               }
               case 2: {
-                textEndForm += " 6: <span class='price'>699 грн.</span>";
+                textEndForm += " 6: <span class='price'>499 грн.</span>";
                 break;
               }
               case 3: {
-                textEndForm += " 5/5c/5s: <span class='price'>449 грн.</span>";
+                textEndForm += " 5/5c/5s: <span class='price'>349 грн.</span>";
                 break;
               }
               case 6: {
-                textEndForm += " 4/4s: <span class='price'>349 грн.</span>";
+                textEndForm += " 4/4s: <span class='price'>249 грн.</span>";
                 break;
               }
               case 9: {
-                textEndForm += " 7plus: <span class='price'>4999 грн.</span>";
+                textEndForm += " 7plus: <span class='price'>1599 грн.</span>";
                 break;
               }
               case 10: {
-                textEndForm += " 7: <span class='price'>4999 грн.</span>";
+                textEndForm += " 7: <span class='price'>1599 грн.</span>";
                 break;
               }
               case 11: {
-                textEndForm += " 6plus: <span class='price'>2999 грн.</span>";
+                textEndForm += " 6plus: <span class='price'>1299 грн.</span>";
                 break;
               }
               case 12: {
-                textEndForm += " 6: <span class='price'>2999 грн.</span>";
+                textEndForm += " 6: <span class='price'>1199 грн.</span>";
                 break;
               }
               case 13: {
-                textEndForm += " se: <span class='price'>1999 грн.</span>";
+                textEndForm += " se: <span class='price'>899 грн.</span>";
                 break;
               }
             }
@@ -602,39 +602,39 @@ const $ = require('jquery');
             textEndForm = "Замена динамика на вашем iPhone";
             switch(id_model){
               case 1: {
-                textEndForm += " 6plus: <span class='price'>799 грн.</span>";
+                textEndForm += " 6plus: <span class='price'>299 грн.</span>";
                 break;
               }
               case 2: {
-                textEndForm += " 6: <span class='price'>549 грн.</span>";
+                textEndForm += " 6: <span class='price'>299 грн.</span>";
                 break;
               }
               case 3: {
-                textEndForm += " 5/5c/5s: <span class='price'>299 грн.</span>";
+                textEndForm += " 5/5c/5s: <span class='price'>249 грн.</span>";
                 break;
               }
               case 6: {
-                textEndForm += " 4/4s: <span class='price'>249 грн.</span>";
+                textEndForm += " 4/4s: <span class='price'>199 грн.</span>";
                 break;
               }
               case 9: {
-                textEndForm += " 7plus: <span class='price'>4999 грн.</span>";
+                textEndForm += " 7plus: <span class='price'>699 грн.</span>";
                 break;
               }
               case 10: {
-                textEndForm += " 7: <span class='price'>4999 грн.</span>";
+                textEndForm += " 7: <span class='price'>699 грн.</span>";
                 break;
               }
               case 11: {
-                textEndForm += " 6plus: <span class='price'>2999 грн.</span>";
+                textEndForm += " 6plus: <span class='price'>399 грн.</span>";
                 break;
               }
               case 12: {
-                textEndForm += " 6: <span class='price'>2999 грн.</span>";
+                textEndForm += " 6: <span class='price'>399 грн.</span>";
                 break;
               }
               case 13: {
-                textEndForm += " se: <span class='price'>1999 грн.</span>";
+                textEndForm += " se: <span class='price'>249 грн.</span>";
                 break;
               }
             }
