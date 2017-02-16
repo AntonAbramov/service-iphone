@@ -350,11 +350,11 @@ const $ = require('jquery');
             textEndForm = "Замена стекла вашего iPhone";
             switch(id_model){
               case 1: {
-                textEndForm += " 6plus: <span class='price'>2999 грн.</span>";
+                textEndForm += " 6plus: <span class='price'>1399 грн.</span>";
                 break;
               }
               case 2: {
-                textEndForm += " 6: <span class='price'>2399 грн.</span>";
+                textEndForm += " 6: <span class='price'>1199 грн.</span>";
                 break;
               }
               case 3: {
@@ -366,23 +366,23 @@ const $ = require('jquery');
                 break;
               }
               case 9: {
-                textEndForm += " 7plus: <span class='price'>13999 грн.</span>";
+                textEndForm += " 7plus: <span class='price'>4499 грн.</span>";
                 break;
               }
               case 10: {
-                textEndForm += " 7: <span class='price'>10099 грн.</span>";
+                textEndForm += " 7: <span class='price'>3999 грн.</span>";
                 break;
               }
               case 11: {
-                textEndForm += " 6plus: <span class='price'>2999 грн.</span>";
+                textEndForm += " 6plus: <span class='price'>2499 грн.</span>";
                 break;
               }
               case 12: {
-                textEndForm += " 6: <span class='price'>2399 грн.</span>";
+                textEndForm += " 6: <span class='price'>1999 грн.</span>";
                 break;
               }
               case 13: {
-                textEndForm += " se: <span class='price'>1499 грн.</span>";
+                textEndForm += " se: <span class='price'>799 грн.</span>";
                 break;
               }
             }
