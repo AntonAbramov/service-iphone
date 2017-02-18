@@ -378,7 +378,7 @@ const $ = require('jquery');
                 break;
               }
               case 12: {
-                textEndForm += " 6: <span class='price'>1999 грн.</span>";
+                textEndForm += " 6s: <span class='price'>1999 грн.</span>";
                 break;
               }
               case 13: {
@@ -420,7 +420,7 @@ const $ = require('jquery');
                 break;
               }
               case 12: {
-                textEndForm += " 6: <span class='price'>699 грн.</span>";
+                textEndForm += " 6s: <span class='price'>699 грн.</span>";
                 break;
               }
               case 13: {
@@ -462,7 +462,7 @@ const $ = require('jquery');
                 break;
               }
               case 12: {
-                textEndForm += " 6: <span class='price'>999 грн.</span>";
+                textEndForm += " 6s: <span class='price'>999 грн.</span>";
                 break;
               }
               case 13: {
@@ -504,7 +504,7 @@ const $ = require('jquery');
                 break;
               }
               case 12: {
-                textEndForm += " 6: <span class='price'>599 грн.</span>";
+                textEndForm += " 6s: <span class='price'>599 грн.</span>";
                 break;
               }
               case 13: {
@@ -546,7 +546,7 @@ const $ = require('jquery');
                 break;
               }
               case 12: {
-                textEndForm += " 6: <span class='price'>599 грн.</span>";
+                textEndForm += " 6s: <span class='price'>599 грн.</span>";
                 break;
               }
               case 13: {
@@ -588,7 +588,7 @@ const $ = require('jquery');
                 break;
               }
               case 12: {
-                textEndForm += " 6: <span class='price'>1199 грн.</span>";
+                textEndForm += " 6s: <span class='price'>1199 грн.</span>";
                 break;
               }
               case 13: {
@@ -630,7 +630,7 @@ const $ = require('jquery');
                 break;
               }
               case 12: {
-                textEndForm += " 6: <span class='price'>399 грн.</span>";
+                textEndForm += " 6s: <span class='price'>399 грн.</span>";
                 break;
               }
               case 13: {
