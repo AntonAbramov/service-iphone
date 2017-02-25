@@ -3,7 +3,7 @@ var router = express.Router();
 
 router.get('/', function (req, res, next) {
   res.render('pages/macbook/index', {
-    title: "Ремонт MacBook Pro, MacBook Air и iMac в Киеве | Service iPhone",
+    title: "Ремонт MacBook Pro, MacBook Air и iMac в Киеве | Замена дидсплея macbook | Service iPhone",
     description: "Профессиональный ремонт MacBook Apple в Киеве. Качественный сервис макбуков. Звоните (066) 566-97-52",
     keywords: "ремонт macbook (макбук), MacBook Pro, Сервис Apple в Киеве",
     menuActive: 'imac'
@@ -17,7 +17,7 @@ router.get('/', function (req, res, next) {
 
 router.get('/air', function (req, res, next) {
   res.render('pages/macbook/air/index', {
-    title: "Ремонт MacBook Air в Киеве | Service iPhone",
+    title: "Ремонт MacBook Air в Киеве | Замена стекла MacBook Air | Service iPhone",
     description: "Ремонт MacBook в Киеве. Профессиональное обслуживание по ремонту техники Apple | Service-iPhone (066) 566-97-52",
     keywords: "ремонт macbook",
     menuActive: 'imac'
@@ -41,7 +41,7 @@ router.get('/air/a1304', function (req, res, next) {
   req.db['macbookaira1304'].find().sort({'idx': 1}, function (err, docs) {
     if (err) throw err;
     res.render('pages/macbook/air/1304', {
-      title: "Ремонт MacBook Air A1304 в Service-iPhone",
+      title: "Ремонт MacBook Air A1304 | Замена идсплея macbook air A1304 | в Service-iPhone",
       description: "Ремонт MacBook air A1304 в Киев. Пополурная модель макбука, которая иногда может ломаться но наши специлаисты помогут отремонтировать ваш макбук.",
       keywords: "ремонт macbook",
       menuActive: 'imac',

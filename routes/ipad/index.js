@@ -74,7 +74,7 @@ router.get('/remont-ipad3', function (req, res, next) {
 router.get('/remont-ipad3/zamena-batarei', function (req, res, next) {
   res.render('pages/ipads/ipad3/zamena-batarei', {
     title: "Замена батареи (аккумулятора) ipad 3 в Киеве | Service-iPhone",
-    description: "ipad быстро разряжается? Или не работает батарея? В Service-ipad быстро найдут причину неполадки и сделают качественный ремонт",
+    description: "Сервисный центр Apple, производит замену батаери для ipad 3 очень быстро, постоянные скидки и акции!",
     keywords: "Замена батареи ipad 3, Киев, ремонт аккумулятора ipad 3, замена батареи айпад 3",
     menuActive: 'ipad'
   });
@@ -118,7 +118,7 @@ router.get('/remont-ipad4', function (req, res, next) {
 router.get('/remont-ipad4/zamena-batarei', function (req, res, next) {
   res.render('pages/ipads/ipad4/zamena-batarei', {
     title: "Замена батареи (аккумулятора) ipad 4 в Киеве | Service-iPhone",
-    description: "ipad быстро разряжается? Или не работает батарея? В Service-ipad быстро найдут причину неполадки и сделают качественный ремонт",
+    description: "Если у вас быстро разряжается айпад 4, в СЦ - Service-iPhone сделают бесплатную диагностику вашей батаерии, и в случаии необходимоти сделают замену аккумулятора.",
     keywords: "Замена батареи ipad 4, Киев, ремонт аккумулятора ipad 4, замена батареи айпад 4",
     menuActive: 'ipad'
   });
@@ -338,7 +338,7 @@ router.get('/remont-ipad-mini3', function (req, res, next) {
 router.get('/remont-ipad-mini3/zamena-batarei', function (req, res, next) {
   res.render('pages/ipads/ipadmini3/zamena-batarei', {
     title: "Замена батареи (аккумулятора) ipad mini3 в Киеве | Service-iPhone",
-    description: "ipad быстро разряжается? Или не работает батарея? В Service-ipad быстро найдут причину неполадки и сделают качественный ремонт",
+    description: "Сломалась батарея на ipad mini 3? СЦ Service-iPhone в Киеве делает поможет заменить аккумулятор в айпад мини 3",
     keywords: "Замена батареи ipad mini 3, Киев, ремонт аккумулятора ipad mini 3, замена батареи айпад mini 3",
     menuActive: 'ipad'
   });
