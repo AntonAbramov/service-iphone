@@ -12,34 +12,34 @@ var transporter = nodemailer.createTransport({
 /* GET home page. */
 router.get('/', function (req, res, next) {
   res.render('index', {
-    title: "Сервисный центр в Киеве - Ремонт техники Apple | Service-iPhone",
+    title: "Сервисный центр Apple - Ремонт Эпл | Киев и вся Укрина | Service-iPhone",
     description: "Срочный ремонт техники Apple в Киеве. Все виды работ включая замену стекла/экрана, реанимируем вашу батарею, почистим после воды",
-    keywords: "сервисный центр apple, Киев, ремонт iphone, сервис apple, ремонт Apple, ремонт apple киев, apple ремонт",
+    keywords: "сервисный центр apple, ремонт Apple",
     vkontakte: true
   });
 });
 
 router.get('/warranty', function (req, res, next) {
   res.render('pages/warranty/warranty', {
-    title: "Гарантия 6 месяцев от Service-iPhone.com.ua ",
-    description: "Наш сервисный центр предоставляет гарантию до 6 месяцев, на все виды ремонтов техники Apple | ремонт iphone ipad macbook ipod",
-    keywords: "ремонт iPhone, iPad, iPod, Macbook, Киев, Сервисный центр Apple ",
+    title: "Гарантия на все виды ремонтов от Service-iPhone",
+    description: "Наш сервисный центр предоставляет гарантию до 6 месяцев, на все виды ремонтов техники Apple",
+    keywords: "",
     menuActive: 'warranty'
   });
 });
 
 router.get('/contacts', function (req, res, next) {
   res.render('pages/contacts/contacts', {
-    title: "Контакты Сервисного центра Service-iPhone по ремонту iPhone, iPad, MacBook",
+    title: "Контакты Сервисного центра Service-iPhone",
     description: "На этой странице вы найдете телефоны и адресса наших сервисных центров в городе Киеве.",
-    keywords: "Киев Сервисный центр Apple, Контакты service-iPhone, ремонт iPhone, Киев, Сервисный центр Apple",
+    keywords: "Киев Сервисный центр Apple, Контакты service-iPhone",
     menuActive: 'contacts'
   });
 });
 
 router.get('/remont-imac', function (req, res, next) {
   res.render('pages/imac/index', {
-    title: "Ремонт iMac в Киеве | Сервисный центр Apple - Service-iPhone",
+    title: "Ремонт iMac в Киеве | Service-iPhone",
     description: "Ремонт MacBook в Киеве. Профессиональный ремонт MacBook с гарантией до 2х лет. Только original запчасти.",
     keywords: "Ремонт MacBook",
     menuActive: 'imac'
@@ -48,7 +48,7 @@ router.get('/remont-imac', function (req, res, next) {
 
 router.get('/remont-macbook-pro', function (req, res, next) {
   res.render('pages/mac/macbook-pro', {
-    title: "Ремонт MacBook Pro в Киеве | Сервисный центр Apple - Service-iPhone",
+    title: "Ремонт MacBook Pro в Киеве | Service-iPhone",
     description: "Ремонт вашего macbook pro в городе киеве с гарантией до 6 месяцев, сделает наш Service-Iphone центр!",
     keywords: "Ремонт MacBook Pro",
     menuActive: 'imac'
@@ -57,7 +57,7 @@ router.get('/remont-macbook-pro', function (req, res, next) {
 
 router.get('/remont-macbook-air', function (req, res, next) {
   res.render('pages/mac/macbook-air', {
-    title: "Ремонт MacBook Air в Киеве | Сервисный центр Apple - Service-iPhone",
+    title: "Ремонт MacBook Air в Киеве | Service-iPhone",
     description: "Качественный ремонт macbook air в городе киеве с гарантией до 6 месяцев, сделает наш Service-Iphone центр!",
     keywords: "Ремонт MacBook Air",
     menuActive: 'imac'
@@ -93,7 +93,6 @@ router.get('/iphone-ne-vklyuchaetsya', function (req, res, next) {
   res.render('pages/problems/iphone-ne-vklyuchaetsya', {
     title: "Не включается iPhone",
     description: "Service-iPhone в городе Киеве, сделает ремонт вашего телефона быстро, с гарантией до 6 месяцев, оригинальные детали.",
-
     keywords: "не ключается iPhone"
   });
 });
