@@ -285,7 +285,7 @@ html(dir="ltr", lang="ru")
               clearInterval(waitForVK);
               VK.Widgets.Group("vk_groups", {
                 mode: 0,
-                width: "420",
+                width: "320",
                 height: "350",
                 color1: 'FFFFFF',
                 color2: '2B587A',
@@ -295,6 +295,16 @@ html(dir="ltr", lang="ru")
             }
           }, 100);
         }
+      #fb-root
+      script.
+        (function (d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s);
+          js.id = id;
+          js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.8&appId=1897867350432511";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
 
     // BEGIN JIVOSITE CODE {literal}
     script(type='text/javascript').
