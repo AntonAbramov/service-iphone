@@ -1,2 +1,5 @@
 User-agent: *
 Sitemap: https://service-iphone.com.ua/sitemap.xml
+Disallow: /politika-konfidenczialnosti
+Disallow: /otkaz-ot-otvetstvennosti
+Disallow: /soglasie-s-rassyilkoj

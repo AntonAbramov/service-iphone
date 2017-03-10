@@ -37,6 +37,37 @@ router.get('/contacts', function (req, res, next) {
   });
 });
 
+router.get('/politika-konfidenczialnosti', function (req, res, next) {
+  res.render('pages/confidential/index', {
+    title: "Политика конфиденциальности - Service-iPhone",
+    description: "",
+    keywords: "",
+    menuActive: ''
+  });
+});
+
+router.get('/otkaz-ot-otvetstvennosti', function (req, res, next) {
+  res.render('pages/confidential/otkaz-ot-otvetstvennosti', {
+    title: "Отказ от ответственности - Service-iPhone",
+    description: "",
+    keywords: "",
+    menuActive: ''
+  });
+});
+
+router.get('/soglasie-s-rassyilkoj', function (req, res, next) {
+  res.render('pages/confidential/soglasie-s-rassyilkoj', {
+    title: "Отказ от ответственности - Service-iPhone",
+    description: "",
+    keywords: "",
+    menuActive: ''
+  });
+});
+
+
+
+
+
 router.get('/remont-imac', function (req, res, next) {
   res.render('pages/imac/index', {
     title: "Ремонт iMac в Киеве | Service-iPhone",
