@@ -21,18 +21,18 @@ router.get('/', function (req, res, next) {
 
 router.get('/warranty', function (req, res, next) {
   res.render('pages/warranty/warranty', {
-    title: "Гарантия на все виды ремонтов от Service-iPhone",
+    title: "Гарантия до 6 месяцев на ремонт техники Apple | Service-iPhone",
     description: "Наш сервисный центр предоставляет гарантию до 6 месяцев, на все виды ремонтов техники Apple",
-    keywords: "",
+    keywords: "гарантия на ремонт apple",
     menuActive: 'warranty'
   });
 });
 
 router.get('/contacts', function (req, res, next) {
   res.render('pages/contacts/contacts', {
-    title: "Контакты Сервисного центра Service-iPhone",
-    description: "На этой странице вы найдете телефоны и адресса наших сервисных центров в городе Киеве.",
-    keywords: "Киев Сервисный центр Apple, Контакты service-iPhone",
+    title: "Наши офисы: м. Золотые Ворота | м. Олимпийская | м. Минская",
+    description: "(096) 125-32-46 - ул. Богдана Хмелльницкого 32 офис 5 Киев, (095) 431-12-21 ул. Большая Васильковская 74 офис 2  ",
+    keywords: "контакты, киев",
     menuActive: 'contacts'
   });
 });
@@ -70,17 +70,17 @@ router.get('/soglasie-s-rassyilkoj', function (req, res, next) {
 
 router.get('/remont-imac', function (req, res, next) {
   res.render('pages/imac/index', {
-    title: "Ремонт iMac в Киеве | Service-iPhone",
-    description: "Ремонт MacBook в Киеве. Профессиональный ремонт MacBook с гарантией до 2х лет. Только original запчасти.",
-    keywords: "Ремонт MacBook",
+    title: "Ремонт iMac Киев и вся Украина | Service-iPhone",
+    description: "В нашем сервисе вы получите бесплатную диагностику, качественный ремонт iMac. Тел. (093) 421-12-21.",
+    keywords: "Ремонт iMac",
     menuActive: 'imac'
   });
 });
 
 router.get('/remont-macbook-pro', function (req, res, next) {
   res.render('pages/mac/macbook-pro', {
-    title: "Ремонт MacBook Pro в Киеве | Service-iPhone",
-    description: "Ремонт вашего macbook pro в городе киеве с гарантией до 6 месяцев, сделает наш Service-Iphone центр!",
+    title: "Ремонт MacBook Pro Киев и вся Украина от Service-iPhone",
+    description: "Ремонт вашего macbook pro в городе киеве с гарантией до 6 месяцев, сделает наш Service-Iphone центр! Телефон для справок - (067) 301-12-21",
     keywords: "Ремонт MacBook Pro",
     menuActive: 'imac'
   });
@@ -89,7 +89,7 @@ router.get('/remont-macbook-pro', function (req, res, next) {
 router.get('/remont-macbook-air', function (req, res, next) {
   res.render('pages/mac/macbook-air', {
     title: "Ремонт MacBook Air в Киеве | Service-iPhone",
-    description: "Качественный ремонт macbook air в городе киеве с гарантией до 6 месяцев, сделает наш Service-Iphone центр!",
+    description: "Недорогой ремонт macbook air с гарантией до 6 месяцев, произведет сервисный центр Service-Iphone! Киев и вся Украина",
     keywords: "Ремонт MacBook Air",
     menuActive: 'imac'
   });
@@ -97,25 +97,24 @@ router.get('/remont-macbook-air', function (req, res, next) {
 
 router.get('/iphone-byistro-razryazhaetsya', function (req, res, next) {
   res.render('pages/problems/iphone-byistro-razryazhaetsya', {
-    title: "Что делать если iPhone быстро разряжается?",
-    description: "Что делать если iphone быстро разряжается? В нашем СЦ подскажут как продлить жизнь вашей батареи!",
+    title: "11 Способов продлить работу вашей Батареии на iPhone | Service-iPhone",
+    description: "Если у вас быстро разряжается iPhone, попробуйте сперва: 1) Отключить Службы геолокации. 2) Проверить Загру...",
     keywords: "iPhone быстро разряжается"
   });
 });
 
 router.get('/iphone-ne-nazhimayutsya-knopki', function (req, res, next) {
   res.render('pages/problems/iphone-ne-nazhimayutsya-knopki', {
-    title: "iPhone не нажимается кнопка iHome",
-    description: "Если у вас не нажимается кнопка reset, что нужно делать? наш сервисный центр Service-Iphone поможет сделать ремонт быстро и дешево!",
-    keywords: "iphone не нажимается кнопка"
+    title: "Что делать если не работает кнопка Home на iPhone",
+    description: "Когда у вас перестала работать кнопка Home, попробуйте сперва перезагрузить устройво. Если же это было механическое воздействие, тогда необходимо обратиться в СЦ.",
+    keywords: "не работает кнопка Home iPhone, iPad"
   });
 });
 
 router.get('/iphone-ne-rabotaet-mikrofon', function (req, res, next) {
   res.render('pages/problems/iphone-ne-rabotaet-mikrofon', {
-    title: "Iphone не работает микрофон",
+    title: "не работает микрофон у iPhone | Советы от Service-iPhone",
     description: "Что делать когда у вашего смартфона не работает микрофон. Service-Iphone поможет вам починить микрофон и динамик!",
-
     keywords: "iphone не работает микрофон"
   });
 });
