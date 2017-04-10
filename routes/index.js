@@ -64,10 +64,6 @@ router.get('/soglasie-s-rassyilkoj', function (req, res, next) {
   });
 });
 
-
-
-
-
 router.get('/remont-imac', function (req, res, next) {
   res.render('pages/imac/index', {
     title: "Ремонт iMac Киев и вся Украина | Service-iPhone",
@@ -187,7 +183,7 @@ router.get('/razbilos-steklo-iphone', function (req, res, next) {
 router.get('/voda-iphone', function (req, res, next) {
   res.render('pages/problems/voda-iphone', {
     title: "Попала вода на iphone | Service-Iphone ремонт техники apple",
-    description: "Если попала вода в ваш телефон, нас сервисный центр по ремонту техники apple поможет сделать ремонт.",
+    description: "Если попала вода в ваш телефон, наш сервисный центр по ремонту техники apple поможет сделать ремонт.",
     keywords: "ремон iphone после воды"
   });
 });
