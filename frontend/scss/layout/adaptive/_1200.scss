@@ -1,3 +1,16 @@
 .step-heading {
   white-space: nowrap;
 }
+
+.top-navigation {
+  white-space: nowrap;
+}
+
+.top-navigation__last {
+  position: relative;
+  top: 5px;
+  left: 15px;
+  display: inline-block;
+  text-align: left;
+  padding: 0;
+}

@@ -24,9 +24,15 @@ header.header(itemscope, itemtype="https://schema.org/LocalBusiness")
         else
           a.top-navigation__link(href='#{item.url}')
             span.top-navigation--text(title='#{item.title}')=item.name
+      .top-navigation__last
+        .g-plusone(data-size="medium" data-annotation="none" data-href="https://plus.google.com/109962936005483548770")
+        .fb-like(data-href='https://www.facebook.com/ServiceiPhoneUA/', data-layout='button_count', data-action='like', data-size='small', data-show-faces='true', data-share='false')
 
   .header-section
     .container
+      .col-xs-12
+
+
       .col-xs-12.col-sm-4.text-center
         link(itemprop="hasMap", href="https://goo.gl/maps/62zFgY1gqPy")
         .header-section__contacts__title(itemprop="address", itemscope, itemtype="http://schema.org/PostalAddress")
