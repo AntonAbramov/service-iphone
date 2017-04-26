@@ -50,7 +50,7 @@ router.get('/remont-iphone4', function (req, res, next) {
 
 router.get('/remont-iphone4/diagnostika', function (req, res, next) {
   res.render('pages/iphones/iphone4/diagnostika', {
-    title: "Диагностика iPhone 4 в Киеве | Service-iPhone ремонт Айфон 4",
+    title: "Диагностика iPhone 4 в Киеве | Service-iPhone",
     description: "Бесплатная диагностика iPhone 4 в Киеве. ☎ (096) 125-32-46 ☎ (093) 722-91-56 ☎ (066) 566-97-52.",
     keywords: "Диагностика iphone 4, Киев, Даигностика айфон 4",
     menuActive: 'iphone'
@@ -59,7 +59,7 @@ router.get('/remont-iphone4/diagnostika', function (req, res, next) {
 
 router.get('/remont-iphone4/remnont-knopki-home', function (req, res, next) {
   res.render('pages/iphones/iphone4/remnont-knopki-home', {
-    title: "Ремонт кнопки Home в iPhone 4 | Service-iPhone ремонт айфон 4",
+    title: "Ремонт кнопки Home в iPhone 4 | Service-iPhone",
     description: "Не работает кнопка Home на iPhone 4, мы проведем беслпатную диагностику и сообщим Вам причину поломки и как ее исправить.",
     keywords: "Ремонт кнопки Home iPhone 4, замена кнопки home iphone 4, Киев",
     menuActive: 'iphone'
@@ -219,7 +219,7 @@ router.get('/remont-iphone-5/zamena-stekla', function (req, res, next) {
 
 router.get('/remont-iphone5/diagnostika', function (req, res, next) {
   res.render('pages/iphones/iphone5/diagnostika', {
-    title: "Диагностика iphone 5 в Киеве | Service-iPhone ремонт айфон 5",
+    title: "Диагностика iphone 5 в Киеве | Service-iPhone",
     description: "Необходима диагностика iphone 5? ✪ Контакты - ул. Богдана Хмельницкого 32 тел: ☎ (096) 125-32-46(093) ☎ 722-91-56(066) ☎ 566-97-52",
     keywords: "Диагностика айфон 5, Киев, Даигностика айфон 5, Киев Диагностика iphone 5",
     menuActive: 'iphone'
@@ -228,7 +228,7 @@ router.get('/remont-iphone5/diagnostika', function (req, res, next) {
 
 router.get('/remont-iphone5/remnont-knopki-home', function (req, res, next) {
   res.render('pages/iphones/iphone5/remnont-knopki-home', {
-    title: "Ремонт кнопки Home в iphone 5 | Service-iPhone ремонт айфон 5",
+    title: "Ремонт кнопки Home в iphone 5 | Service-iPhone",
     description: "Цена замены кнопки home на iphone 5 - 199грн. Контакты: м.Золотые Ворота ☎ (093) 722-91-56 ☎ (096) 125-32-46 ✪ м.Олимпийская ☎ (095) 431-12-21",
     keywords: "Ремонт кнопки Home iphone 5, замена кнопки home iphone 5",
     menuActive: 'iphone'
@@ -377,7 +377,7 @@ router.get('/remont-iphone-6', function (req, res, next) {
     if (err) throw err;
     res.render('pages/iphones/iphone6', {
       title: "Ремонт iPhone 6 | Замена ✓ стекла ✓ дисплея   | Киев | Service-iPhone",
-      description: "Замена стекла на iPhone 6  - 1199 грн. Наш сервисный центр производит экспресс замену стекла/дисплея на айфон 6.",
+      description: "Замена стекла на iPhone 6  - 1199 грн. Наш сервисный центр производит экспресс замену стекла/дисплея на айфон 6 за 20 минут.",
       keywords: "Ремонт iPhone 6, Киев, замена стекла iphone 6",
       menuActive: 'iphone',
       pricesTable: docs
@@ -396,18 +396,18 @@ router.get('/remont-iphone-6/zamena-stekla', function (req, res, next) {
 
 router.get('/remont-iphone6/diagnostika', function (req, res, next) {
   res.render('pages/iphones/iphone6/diagnostika', {
-    title: "Диагностика iphone 6 в Киеве | Service-iPhone ремонт айфон 6",
-    description: "СЦ - делает бесплатную диагностику для iphone 6 в Киеве. ул. Богдана Хмельницкого 32 тел: (096) 125-32-46(093) 722-91-56(066) 566-97-52",
-    keywords: "Диагностика iphone 6, Киев, Даигностика айфон 6, Киев Диагностика iphone 6",
+    title: "Диагностика iphone 6 в Киеве | Service-iPhone",
+    description: "ул. Богдана Хмельницкого 32 тел: ☎ (096) 125-32-46 ☎ (093) 722-91-56 ☎ (066) 566-97-52 Бесплатная диагностика для iphone 6 в Киеве",
+    keywords: "Диагностика iphone 6, Киев, Даигностика айфон 6",
     menuActive: 'iphone'
   });
 });
 
 router.get('/remont-iphone6/remnont-knopki-home', function (req, res, next) {
   res.render('pages/iphones/iphone6/remnont-knopki-home', {
-    title: "Ремонт кнопки Home в iphone 6 | Service-iPhone ремонт айфон 6",
+    title: "Ремонт кнопки Home в iphone 6 | Service-iPhone",
     description: "Не работает кнопка Home на iphone 6, мы проведем беслпатную диагностику в Киеве, и сделаем ремонт iphone 6 за 20 минут.",
-    keywords: "Ремонт кнопки Home iphone 6, замена кнопки home iphone 6, Киев, ремонт iHome iphone 6",
+    keywords: "Ремонт кнопки Home iphone 6, замена кнопки home iphone 6, Киев",
     menuActive: 'iphone'
   });
 });
@@ -415,8 +415,8 @@ router.get('/remont-iphone6/remnont-knopki-home', function (req, res, next) {
 router.get('/remont-iphone6/remont-knopki-vkluchenia', function (req, res, next) {
   res.render('pages/iphones/iphone6/remont-knopki-vkluchenia', {
     title: "Ремонт кнопки включения (блокировки) iphone 6",
-    description: "Когда перестала работать кнопка включения или блокирования в iphone 6, обращайтесь за бесплатной диагностикой в Service-iPhone в Киеве",
-    keywords: "Ремонт кнопки включения iphone 6, Киев, айфон 6, ремонт кнопки блокировки iphone 6 ",
+    description: "449 грн - замена кнопки включения на iphone 6. ✓ Быстро ✓ Качественно ✓ Гарантия ✪ м.Олимпийская ☎ (095) 431-12-21 ☎ (067) 301-12-21 ✪ м.Золотые Ворота ☎ (093) 722-91-56",
+    keywords: "Ремонт кнопки включения iphone 6, Киев, ремонт кнопки блокировки iphone 6 ",
     menuActive: 'iphone'
   });
 });
@@ -424,8 +424,8 @@ router.get('/remont-iphone6/remont-knopki-vkluchenia', function (req, res, next)
 router.get('/remont-iphone6/remont-knopok-gromkosti', function (req, res, next) {
   res.render('pages/iphones/iphone6/remont-knopok-gromkosti', {
     title: "Ремонт кнопок громкости iphone 6 | Service-iPhone в Киеве",
-    description: "не работают кнопки громкости в iphone 6? В Service-iPhone проведут бесплатную диагностику и скажут причину поломки за 20 минут.",
-    keywords: "Ремонт кнопки громкостки iphone 6, не работает кнопка звука айфон 6",
+    description: "Замена кнопок громкости на iphone 6 за 20 минут. Цена ремонта 499грн. ☎ (093) 421-12-21 ул. Богдана Хмельницкого, 32 ☎ (096) 125-32-46",
+    keywords: "Ремонт кнопки громкостки iphone 6, замена кнопки звука айфон 6",
     menuActive: 'iphone'
   });
 });
@@ -433,7 +433,7 @@ router.get('/remont-iphone6/remont-knopok-gromkosti', function (req, res, next) 
 router.get('/remont-iphone6/zamena-batarei', function (req, res, next) {
   res.render('pages/iphones/iphone6/zamena-batarei', {
     title: "Замена батареи (аккумулятора) iphone 6 в Киеве | Service-iPhone",
-    description: "Сервисный центр Apple сделает замену батареи iPhone 5 в Киеве - не дорого и с гарантией ",
+    description: "499 грн стоимость замены аккумулятора на iphone 6. ✓ Опытные мастера ✓ Оргинальные детали ✓ Быстрая замена ☎ (066) 566-97-52 ☎ (093) 421-12-21",
     keywords: "Замена батареи iphone 6, замена батареи айфон 6",
     menuActive: 'iphone'
   });
@@ -442,8 +442,8 @@ router.get('/remont-iphone6/zamena-batarei', function (req, res, next) {
 router.get('/remont-iphone6/zamena-dinamika', function (req, res, next) {
   res.render('pages/iphones/iphone6/zamena-dinamika', {
     title: "Замена полифонического динамика (buzzer) iphone 6 | Service-iPhone",
-    description: "Если перестал работать звук на iphone 6, лучше обратиться за консультацией к специалистам. В нашем сервисном центре сделают бесплатную диагностику.",
-    keywords: "Замена динамика iphone 6 в Киеве, ремонт динамика iphone 6, замена динамика айфон 6",
+    description: "Замена динамика в iphone 6 - 549 грн. ✪ м.Олимпийская ☎ (095) 431-12-21 ✪ м.Золотые Ворота ☎ (096) 125-32-46",
+    keywords: "Замена динамика iphone 6 в Киеве, замена динамика айфон 6",
     menuActive: 'iphone'
   });
 });
@@ -451,8 +451,8 @@ router.get('/remont-iphone6/zamena-dinamika', function (req, res, next) {
 router.get('/remont-iphone6/zamena-ekrana', function (req, res, next) {
   res.render('pages/iphones/iphone6/zamena-ekrana', {
     title: "Замена экрана (дисплея) iphone 6 в Киеве | Service-iPhone",
-    description: "Качественная замена экрана (дисплея) на iphone 6 в Киеве. Цены от 200 грн.",
-    keywords: "Замена дисплея iphone 6, замена экрана iphone 6, Киев, замена дисплея айфон 6, экрана",
+    description: "Качественная замена экрана (дисплея) на iphone 6 в Киеве. Цена 1199 грн. Экспресс замена за 20 минут.",
+    keywords: "Замена дисплея iphone 6, замена экрана iphone 6, Киев, замена дисплея айфон 6",
     menuActive: 'iphone'
   });
 });
@@ -460,8 +460,8 @@ router.get('/remont-iphone6/zamena-ekrana', function (req, res, next) {
 router.get('/remont-iphone6/zamena-front-camera', function (req, res, next) {
   res.render('pages/iphones/iphone6/zamena-front-camera', {
     title: "Замена фронтальной (передней) камеры iphone 6 | Service-iPhone",
-    description: "Ремонт фронтальной камеры в iphone 6 занимает от 30 минут. ",
-    keywords: "Замена фронтальной камены iphone 6, ремонт передней камеры iphone 6, ремонт фронтальной камеры айфон 6, Киев",
+    description: "Замена передней камеры в iphone 6 - 499 грн. ✓ Оригинальные запчасти ✓ Качественно ✪ м.Золотые Ворота ☎ (093) 722-91-56 ✪ м.Олимпийская ☎ (093) 421-12-21",
+    keywords: "Замена фронтальной камены iphone 6, замена передней камеры iphone 6, Киев",
     menuActive: 'iphone'
   });
 });
@@ -469,8 +469,8 @@ router.get('/remont-iphone6/zamena-front-camera', function (req, res, next) {
 router.get('/remont-iphone6/zamena-kameru', function (req, res, next) {
   res.render('pages/iphones/iphone6/zamena-kameru', {
     title: "Замена основной (задней) камеры iphone 6 | Service-iPhone",
-    description: "Бесплатная диагностика на iPhone 6 в случаи неработающей камеры. В Service-iPhone Работаю професионалы которые могут заменить камеру в айфон 6 за 20 мин.",
-    keywords: "Замена основной камеры iphone 6, ремонт камеры iphone 6, замена камеры айфон 6, Киев",
+    description: "Замена основной камеры стоит 699грн и по времени занимает не более 20 минут. ☎ (066) 566-97-52 ☎ (093) 722-91-56 ✪ м.Золотые Ворота",
+    keywords: "Замена основной камеры iphone 6, замена камеры айфон 6, Киев",
     menuActive: 'iphone'
   });
 });
@@ -478,7 +478,7 @@ router.get('/remont-iphone6/zamena-kameru', function (req, res, next) {
 router.get('/remont-iphone6/zamena-korpysa', function (req, res, next) {
   res.render('pages/iphones/iphone6/zamena-korpysa', {
     title: "Замена корпуса iphone 6 в Киеве | Service-iPhone",
-    description: "Разбили или полнули корпус iphone 6? Не беда, наши специлисты быстро вылечат ваш айфон за 30 минут",
+    description: "замена корпуса на iphone 6 - 1399грн. ✪ Оригинальные запчасти ✪ Опытные мастера ✪ Гарантия",
     keywords: "Замена корпуса iphone 6, Замена корпуса айфон 6, Киев",
     menuActive: 'iphone'
   });
@@ -487,8 +487,8 @@ router.get('/remont-iphone6/zamena-korpysa', function (req, res, next) {
 router.get('/remont-iphone6/zamena-microfona', function (req, res, next) {
   res.render('pages/iphones/iphone6/zamena-microfona', {
     title: "Замена микрофона iphone 6 | Service-iPhone",
-    description: "Не слышит собеседник? Что делать если вас не слышно? В Service-Iphone знают как решить эту проблему.",
-    keywords: "Замена микрофона iphone 6 в Киеве, Замена микрофона айфон 6, ремонт микрофона iphone 6",
+    description: "Замена или ремонт микрофона в iphone 6 обойдется вам в 499 грн. ✓ Оригинальные запчатси ✓ Центр города ✓ Гарантия",
+    keywords: "Замена микрофона iphone 6 в Киеве, Замена микрофона айфон 6",
     menuActive: 'iphone'
   });
 });
@@ -496,8 +496,8 @@ router.get('/remont-iphone6/zamena-microfona', function (req, res, next) {
 router.get('/remont-iphone6/zamena-razgavornogo-dinamika', function (req, res, next) {
   res.render('pages/iphones/iphone6/zamena-razgavornogo-dinamika', {
     title: "Замена разговорного динамика iphone 6 | Service-iPhone",
-    description: "Замена динамика iphone 6 в Киеве. Service-iPhone ремонт айфона 6 в центре столицы.",
-    keywords: "Замена разговорного динамика iphone 6, Замена динамика айфон 6 в Киеве, Ремонт динамика iphone 6",
+    description: "☎ (095) 431-12-21 ☎ (096) 125-32-46 Замена динамика в iphone 6 ✓ Центр города ✓ Опытные мастера ✓ Экспресс замена",
+    keywords: "Замена разговорного динамика iphone 6, Замена динамика айфон 6 в Киеве",
     menuActive: 'iphone'
   });
 });
@@ -505,7 +505,7 @@ router.get('/remont-iphone6/zamena-razgavornogo-dinamika', function (req, res, n
 router.get('/remont-iphone6/zamena-razjoma-dlja-naushnikov', function (req, res, next) {
   res.render('pages/iphones/iphone6/zamena-razjoma-dlja-naushnikov', {
     title: "Замена разъёма для наушников (аудиоджека) iphone 6 | Service-iPhone",
-    description: "iphone 6 замена разьема для наушников. ",
+    description: "iphone 6 замена разьема для наушников обойдется вам в 499 грн. Киев - ☎ (093) 722-91-56 ☎ (095) 431-12-21 ",
     keywords: "Замена разъёма для наушников iphone 6, Киев, ремонт айфон 6 разьем для наушников",
     menuActive: 'iphone'
   });
@@ -521,7 +521,7 @@ router.get('/remont-iphone-6plus', function (req, res, next) {
     if (err) throw err;
     res.render('pages/iphones/iphone6plus', {
       title: "Ремонт iPhone 6 Plus | Замена стекла Айфон 6 в Киеве | Service-iPhone",
-      description: "Замена стекла iPhone 6 Plus - 1499грн. Ремонт iPhone 6 Plus, гарантия на все виды работ. СКИДКИ & АКЦИИ - (093) 722-91-56",
+      description: "Ремонт iPhone 6 Plus, Замена стекла iPhone 6 Plus - 1499грн. ✓ Оригинальные детали ✓ Гарантия ✓ Экспресс ремонт! ☎ (093) 722-91-56 ☎ (096) 125-32-46 ☎ (067) 301-12-21",
       keywords: "Замента стекла iPhone 6 Plus, Ремонт iPhone 6 Plus, ремонт айфона 6+",
       menuActive: 'iphone',
       pricesTable: docs
@@ -531,9 +531,9 @@ router.get('/remont-iphone-6plus', function (req, res, next) {
 
 router.get('/remont-iphone-6plus/remnont-knopki-home', function (req, res, next) {
   res.render('pages/iphones/iphone6plus/remnont-knopki-home', {
-    title: "Ремонт кнопки Home в iphone 6 plus | Service-iPhone ремонт айфон 6 plus",
-    description: "Не работает кнопка Home на iphone 6 plus, мы проведем беслпатную диагностику в Киеве, и сделаем ремонт iphone 6 plus за 20 минут.",
-    keywords: "Ремонт кнопки Home iphone 6 plus, замена кнопки home iphone 6 plus, Киев, ремонт iHome iphone 6 plus",
+    title: "Ремонт кнопки Home в iphone 6 plus | Service-iPhone",
+    description: "Замена кнопки home в iPhone 6 plus - 399грн. ☎ (093) 421-12-21 ☎ (096) 125-32-46 ☎ (066) 566-97-52 - звоните мы находимся в центре города",
+    keywords: "Ремонт кнопки Home iphone 6 plus, замена кнопки home iphone 6 plus, Киев",
     menuActive: 'iphone'
   });
 });
@@ -541,8 +541,8 @@ router.get('/remont-iphone-6plus/remnont-knopki-home', function (req, res, next)
 router.get('/remont-iphone-6plus/remont-knopki-vkluchenia', function (req, res, next) {
   res.render('pages/iphones/iphone6plus/remont-knopki-vkluchenia', {
     title: "Ремонт кнопки включения (блокировки) iphone 6 plus",
-    description: "Когда перестала работать кнопка включения или блокирования в iphone 6 plus, обращайтесь за бесплатной диагностикой в Service-iPhone в Киеве",
-    keywords: "Ремонт кнопки включения iphone 6 plus, Киев, айфон 6 plus, ремонт кнопки блокировки iphone 6 plus ",
+    description: "499грн - Замена кнопки включения/блокирования в iphone 6 плюс. ☎ (093) 722-91-56 - Центр Киев.",
+    keywords: "Ремонт кнопки включения iphone 6 plus, Киев, ремонт кнопки блокировки iphone 6 plus ",
     menuActive: 'iphone'
   });
 });
@@ -550,7 +550,7 @@ router.get('/remont-iphone-6plus/remont-knopki-vkluchenia', function (req, res, 
 router.get('/remont-iphone-6plus/remont-knopok-gromkosti', function (req, res, next) {
   res.render('pages/iphones/iphone6plus/remont-knopok-gromkosti', {
     title: "Ремонт кнопок громкости iphone 6 plus | Service-iPhone в Киеве",
-    description: "не работают кнопки громкости в iphone 6 plus? В Service-iPhone проведут бесплатную диагностику и скажут причину поломки за 20 минут.",
+    description: "599 грн - стоимость замены кнопок громкости на iphone 6 +. ✪ Оригинальные детали ✪ Гарантия ✪ Экспресс замена",
     keywords: "Ремонт кнопки громкостки iphone 6 plus, не работает кнопка звука айфон 6 plus",
     menuActive: 'iphone'
   });
@@ -559,7 +559,7 @@ router.get('/remont-iphone-6plus/remont-knopok-gromkosti', function (req, res, n
 router.get('/remont-iphone-6plus/zamena-batarei', function (req, res, next) {
   res.render('pages/iphones/iphone6plus/zamena-batarei', {
     title: "Замена батареи (аккумулятора) iphone 6 plus в Киеве | Service-iPhone",
-    description: "Сервисный центр Apple сделает замену батареи iPhone 6 в Киеве - не дорого и с гарантией для айфона 6",
+    description: "599 грн - стоит поменять аккумулятор/батареию на iphone 6 plus в Киеве. ☎ (066) 566-97-52 ☎ (095) 431-12-21 ☎ (093) 722-91-56",
     keywords: "Замена батареи iphone 6 plus, замена батареи айфон 6 plus",
     menuActive: 'iphone'
   });
@@ -568,7 +568,7 @@ router.get('/remont-iphone-6plus/zamena-batarei', function (req, res, next) {
 router.get('/remont-iphone-6plus/zamena-dinamika', function (req, res, next) {
   res.render('pages/iphones/iphone6plus/zamena-dinamika', {
     title: "Замена полифонического динамика (buzzer) iphone 6 plus | Service-iPhone",
-    description: "Если перестал работать звук на iphone 6 plus, лучше обратиться за консультацией к специалистам. В нашем сервисном центре сделают бесплатную диагностику.",
+    description: "Замена динамика на айфон 6 плюс - 499 грн. ✪ Находимся в центре ✪ Качественный ремонт ✪ Экспресс услуга ☎ (067) 301-12-21",
     keywords: "Замена динамика iphone 6 plus в Киеве, ремонт динамика iphone 6 plus, замена динамика айфон 6 plus",
     menuActive: 'iphone'
   });
@@ -577,8 +577,8 @@ router.get('/remont-iphone-6plus/zamena-dinamika', function (req, res, next) {
 router.get('/remont-iphone-6plus/zamena-ekrana', function (req, res, next) {
   res.render('pages/iphones/iphone6plus/zamena-ekrana', {
     title: "Замена экрана (дисплея) iphone 6 plus в Киеве | Service-iPhone",
-    description: "Качественная замена экрана (дисплея) на iphone 6 plus в Киеве. Цены от 200 грн.",
-    keywords: "Замена дисплея iphone 6 plus, замена экрана iphone 6 plus, Киев, замена дисплея айфон 6 plus, экрана",
+    description: "Качественная замена ✓ экрана - 1399 грн ✓ дисплея - 2199 грн на iphone 6 plus в Киеве.",
+    keywords: "Замена дисплея iphone 6 plus, замена экрана iphone 6 plus, Киев, замена дисплея айфон 6 plus",
     menuActive: 'iphone'
   });
 });
@@ -665,7 +665,7 @@ router.get('/remont-iphone-6s/zamena-stekla', function (req, res, next) {
 
 router.get('/remont-iphone-6s/diagnostika', function (req, res, next) {
   res.render('pages/iphones/iphone6s/diagnostika', {
-    title: "Диагностика iphone 6s в Киеве | Service-iPhone ремонт айфон 6s",
+    title: "Диагностика iphone 6s в Киеве | Service-iPhone",
     description: "Бесплатную диагностику iphone 6s в Киеве в сможете получить в Service-iPhone. Специалисты быстро определят причину поломки айфон 6с",
     keywords: "Диагностика iphone 6s, Киев, Даигностика айфон 6s, Киев Диагностика iphone 6s",
     menuActive: 'iphone'
@@ -674,9 +674,9 @@ router.get('/remont-iphone-6s/diagnostika', function (req, res, next) {
 
 router.get('/remont-iphone-6s/remnont-knopki-home', function (req, res, next) {
   res.render('pages/iphones/iphone6s/remnont-knopki-home', {
-    title: "Ремонт кнопки Home в iphone 6s | Service-iPhone ремонт айфон 6s",
+    title: "Ремонт кнопки Home в iphone 6s | Service-iPhone",
     description: "Не работает кнопка Home на iphone 6s, мы проведем беслпатную диагностику в Киеве, и сделаем ремонт iphone 6s за 20 минут.",
-    keywords: "Ремонт кнопки Home iphone 6s, замена кнопки home iphone 6s, Киев, ремонт iHome iphone 6s",
+    keywords: "Ремонт кнопки Home iphone 6s, замена кнопки home iphone 6s, Киев",
     menuActive: 'iphone'
   });
 });
