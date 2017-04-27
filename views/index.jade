@@ -18,16 +18,11 @@ block head
     "openingHours": ["Пн,Вт,Ср,Чт,Пт 09:00-19:00"],
     "openingHours": ["Сб 11:00-17:00"],
     "address" : {
-    "@type": "Place",
+    "@type": "PostalAddress",
     "addressLocality": "Kyiv",
     "addressRegion": "Ukraine",
     "postalCode": "02000",
     "streetAddress": "вул. Богдана Хмельницького, 32",
-    "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": "50.4460623",
-    "longitude": "30.5073486"
-    }
     },
     "hasMap": "https://goo.gl/maps/oWf5t1em3622",
     "telephone":"+380954311221",
@@ -36,16 +31,11 @@ block head
     "openingHours": ["Пн,Вт,Ср,Чт,Пт 09:00-19:00"],
     "openingHours": ["Сб 11:00-17:00"],
     "address" : {
-    "@type": "Place",
+    "@type": "PostalAddress",
     "addressLocality": "Kyiv",
     "addressRegion": "Ukraine",
     "postalCode": "02000",
     "streetAddress": "вулиця Велика Васильківська, 74",
-    "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": "50.4317077",
-    "longitude": "30.5156575"
-    }
     },
     "hasMap": "https://goo.gl/maps/oWf5t1em3622",
     "telephone":"+380631104224",
@@ -54,15 +44,11 @@ block head
     "openingHours": ["Пн,Вт,Ср,Чт,Пт 09:00-19:00"],
     "openingHours": ["Сб 11:00-17:00"],
     "address" : {
-    "@type": "Place",
+    "@type": "PostalAddress",
     "addressLocality": "Kyiv",
     "addressRegion": "Ukraine",
     "postalCode": "04205",
-    "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": "50.508763",
-    "longitude": "30.502023"
-    }
+
     },
 
     "email":"info@service-iphone.com.ua",
@@ -72,6 +58,40 @@ block head
     "reviewCount":"110"
     }
 
+    }
+
+  script(type="application/ld+json").
+    {
+      "@context": "http://schema.org",
+      "@type": "Place",
+      "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "50.4460623",
+      "longitude": "30.5073486"
+      },
+      "name": "Сервисный центр Apple Service-iPhone"
+    }
+  script(type="application/ld+json").
+    {
+      "@context": "http://schema.org",
+      "@type": "Place",
+      "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "50.4317077",
+      "longitude": "30.5156575"
+      },
+      "name": "Сервисный центр Apple Service-iPhone "
+    }
+  script(type="application/ld+json").
+    {
+      "@context": "http://schema.org",
+      "@type": "Place",
+      "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "50.508763",
+      "longitude": "30.502023"
+      },
+      "name": "Сервисный центр Apple Service-iPhone"
     }
 
 block content
