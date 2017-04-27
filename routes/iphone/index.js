@@ -12,7 +12,7 @@ router.get('/remont-iphone', function (req, res, next) {
 router.get('/iphone', function (req, res, next) {
   res.render('pages/iphones/index', {
     title: "Ремонт iPhone в Киеве Замена стекла, дисплея на айфон - Киев | Service-iPhone",
-    description: "Замена стекла на iPhone от 299 грн. Service-iPhone предоставляет услуги ✪ ремонта iPhone. ✓ Акции ✓ Скидки ✓ Не дорого. ☎(066) 566-97-52",
+    description: "Экспресс ремонт iPhone, популярная услуга замена стекла на iPhone - 299 грн. ✓ Оригинальные запчасти ✓ Скидки ✓ Не дорогой ремонт. ☎ (066) 566-97-52",
     keywords: "ремонт iphone, Киев",
     menuActive: 'iphone'
   });
