@@ -4,6 +4,25 @@ block head
     dataLayer.push({'pageType': 'homepage'})
   script(type="application/ld+json").
     {
+    "@context":"http://schema.org",
+    "@type":"WebSite",
+    "@id":"#website",
+    "url":"http://service-iphone.com.ua/",
+    "name":"Service-iPhone",
+    "alternateName":"Service-iPhone - Сервисный центр Apple"
+    }
+  script(type="application/ld+json").
+    {
+    "@context":"http://schema.org",
+    "@type":"Organization",
+    "url":"http://service-iphone.com.ua/",
+    "sameAs":["https://www.facebook.com/ServiceiPhoneUA/","https://www.youtube.com/channel/UCEZAGPgJKGzaiqRYwHeQgrA","https://vk.com/serviceiphoneua","https://plus.google.com/109962936005483548770","https://www.instagram.com/serviceiphoneua/","https://twitter.com/Serviceiphoneua"],
+    "@id":"#organization",
+    "name":"Service-iPhone",
+    "logo":"https://service-iphone.com.ua/img/logo.png"
+    }
+  script(type="application/ld+json").
+    {
     "@context" : "http://schema.org",
     "@type" : "LocalBusiness",
     "priceRange":"$",
