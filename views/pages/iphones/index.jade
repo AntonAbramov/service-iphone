@@ -2,6 +2,17 @@ extends ../../layout
 block head
   script.
     dataLayer.push({'pageType': 'category'})
+  sript(type="application/ld+json").
+    {
+    "@context": "http://schema.org",
+    "@type": "Product",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5",
+      "reviewCount": "14"
+    },
+    "name": "iPhone"
+    }
 
 block content
   section.device-section
@@ -108,20 +119,17 @@ block content
                 span.content-list--gray прошивка, восстановление системы, сброс пароля.
 
       .col-xs-12
-        div(itemscope='', itemtype='http://schema.org/Product')
-          span(itemprop='name', style='display:none')
-            | iPhone
-          | Overall rating:&nbsp;
-          span(itemprop='aggregateRating', itemscope='', itemtype='http://schema.org/AggregateRating')
+        div
+          span
             strong
-              span.value(itemprop='ratingValue')
-                | 4.9
+              span.value
+                | 5
             |  out of&nbsp;
             strong
-              span(itemprop='bestRating') 5
+              span
             | &nbsp;based on&nbsp;
-            span.votes(itemprop='reviewCount')
-              | 11
+            span.votes
+              | 14
             |  reviews.
     br
     br

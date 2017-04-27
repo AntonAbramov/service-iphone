@@ -2,6 +2,17 @@ extends ../../layout
 block head
   script.
     dataLayer.push({'pageType': 'product', 'productType': 'iphone 5c'})
+  sript(type="application/ld+json").
+    {
+    "@context": "http://schema.org",
+    "@type": "Product",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.7",
+      "reviewCount": "17"
+    },
+    "name": "iPhone 5c"
+    }
 
 block content
   .container
