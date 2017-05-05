@@ -10,16 +10,8 @@
   @import "adaptive/768";
 }
 
-@media (min-width: 992px) {
-  .nav__link {
-    img {
-      max-width: 9999px;
-    }
-  }
-}
-
-@media (min-width: 1025px) {
-  @import "adaptive/1025";
+@media (min-width: 1024px) {
+  @import "adaptive/1024";
 }
 
 @media (min-width: 1200px) {

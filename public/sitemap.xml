@@ -1,454 +1,454 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset
-        xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-  <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
-  <url>
-    <loc>https://service-iphone.com.ua/</loc>
-    <priority>1.00</priority>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/iphone</loc>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/ipad-remont</loc>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-macbook</loc>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/feedback</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/warranty</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/contacts</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/ne-rabotaet-displey-iphone</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/razbilos-steklo-iphone</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/iphone-ne-vklyuchaetsya</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/iphone-byistro-razryazhaetsya</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/voda-iphone</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-iphone</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-iphone3g</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-iphone4</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-iphone4s</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-iphone5</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-iphone-5c</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-iphone-5s</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-iphone-6</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-iphone-6plus</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-iphone-6s</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-iphone-6splus</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-iphone-se</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-iphone-7</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-iphone-7plus</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/wifi-ne-rabotaet</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/ne-rabotaet-zvuk-na-iphone</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/iphone-ne-zaryazhaetsya</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/ne-rabotaet-vibrozvonok</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/iphone-ne-nazhimayutsya-knopki</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/iphone-ne-rabotaet-mikrofon</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-ipad2</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-ipad3</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-ipad4</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-ipad-mini</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-ipad-mini2</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-ipad-mini3</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-ipad-air</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-ipad-air2</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-macbook/pro</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-macbook/proretina</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-macbook/air</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-imac</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-iphone4/diagnostika</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-iphone4/zamena-stekla</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-iphone4/zamena-ekrana</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-iphone4/zamena-korpysa</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-iphone4/zamena-batarei</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-iphone4/remnont-knopki-home</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-iphone4/remont-knopok-gromkosti</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-iphone4/remont-knopki-vkluchenia</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-iphone4/zamena-kameru</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-iphone4/zamena-front-camera</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-iphone4/zamena-razgavornogo-dinamika</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-iphone4/zamena-dinamika</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-iphone4/zamena-microfona</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-iphone4/zamena-razjoma-dlja-naushnikov</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-iphone5/diagnostika</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-iphone-5/zamena-stekla</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-iphone5/zamena-ekrana</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-iphone5/zamena-korpysa</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-iphone5/zamena-batarei</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-iphone5/remnont-knopki-home</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-iphone5/remont-knopok-gromkosti</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-iphone5/remont-knopki-vkluchenia</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-iphone5/zamena-kameru</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-iphone5/zamena-front-camera</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-iphone5/zamena-razgavornogo-dinamika</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-iphone5/zamena-dinamika</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-iphone5/zamena-microfona</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-iphone5/zamena-razjoma-dlja-naushnikov</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-iphone6/diagnostika</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-iphone-6/zamena-stekla</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-iphone6/zamena-ekrana</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-iphone6/zamena-korpysa</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-iphone6/zamena-batarei</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-iphone6/remnont-knopki-home</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-iphone6/remont-knopok-gromkosti</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-iphone6/remont-knopki-vkluchenia</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-iphone6/zamena-kameru</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-iphone6/zamena-front-camera</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-iphone6/zamena-razgavornogo-dinamika</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-iphone6/zamena-dinamika</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-iphone6/zamena-microfona</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-iphone6/zamena-razjoma-dlja-naushnikov</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-iphone-6plus/zamena-ekrana</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-iphone-6plus/zamena-korpysa</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-iphone-6plus/zamena-batarei</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-iphone-6plus/remnont-knopki-home</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-iphone-6plus/remont-knopok-gromkosti</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-iphone-6plus/remont-knopki-vkluchenia</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-iphone-6plus/zamena-kameru</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-iphone-6plus/zamena-front-camera</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-iphone-6plus/zamena-razgavornogo-dinamika</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-iphone-6plus/zamena-dinamika</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-iphone-6plus/zamena-microfona</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-iphone-6plus/zamena-razjoma-dlja-naushnikov</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-iphone-6s/diagnostika</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-iphone-6s/zamena-stekla</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-iphone-6s/zamena-ekrana</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-iphone-6s/zamena-korpysa</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-iphone-6s/zamena-batarei</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-iphone-6s/remnont-knopki-home</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-iphone-6s/remont-knopok-gromkosti</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-iphone-6s/remont-knopki-vkluchenia</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-iphone-6s/zamena-kameru</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-iphone-6s/zamena-front-camera</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-iphone-6s/zamena-razgavornogo-dinamika</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-iphone-6s/zamena-dinamika</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-iphone-6s/zamena-microfona</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-iphone-6s/zamena-razjoma-dlja-naushnikov</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-ipad2/zamena-stekla</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-ipad2/zamena-ekrana</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-ipad2/zamena-batarei</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-ipad3/zamena-stekla</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-ipad3/zamena-ekrana</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-ipad3/zamena-batarei</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-ipad4/zamena-stekla</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-ipad4/zamena-ekrana</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-ipad4/zamena-batarei</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-ipad-mini/zamena-stekla</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-ipad-mini/zamena-ekrana</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-ipad-mini/zamena-batarei</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-ipad-mini2/zamena-stekla</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-ipad-mini2/zamena-ekrana</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-ipad-mini2/zamena-batarei</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-ipad-mini3/zamena-stekla</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-ipad-mini3/zamena-ekrana</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-ipad-mini3/zamena-batarei</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-ipad-air/zamena-stekla</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-ipad-air/zamena-ekrana</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-ipad-air/zamena-batarei</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-ipad-air2/zamena-stekla</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-ipad-air2/zamena-ekrana</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-ipad-air2/zamena-batarei</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-macbook/pro/a1278</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-macbook/pro/a1286</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-macbook/proretina/a1398</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-macbook/proretina/a1425</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-macbook/proretina/a1502</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-macbook/air/a1237</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-macbook/air/a1304</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-macbook/air/a1369</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-macbook/air/a1370</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-macbook/air/a1465</loc>
-  </url>
-  <url>
-    <loc>https://service-iphone.com.ua/remont-macbook/air/a1466</loc>
-  </url>
+<url>
+  <loc>https://service-iphone.com.ua/</loc>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/iphone</loc>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/ipad-remont</loc>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-macbook</loc>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/feedback</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/warranty</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/contacts</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/ne-rabotaet-displey-iphone</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/razbilos-steklo-iphone</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/iphone-ne-vklyuchaetsya</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/iphone-byistro-razryazhaetsya</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/voda-iphone</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-iphone</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-iphone3g</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-iphone4</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-iphone4s</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-iphone5</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-iphone-5c</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-iphone-5s</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-iphone-6</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-iphone-6plus</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-iphone-6s</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-iphone-6splus</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-iphone-se</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-iphone-7</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-iphone-7plus</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/wifi-ne-rabotaet</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/ne-rabotaet-zvuk-na-iphone</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/iphone-ne-zaryazhaetsya</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/ne-rabotaet-vibrozvonok</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/iphone-ne-nazhimayutsya-knopki</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/iphone-ne-rabotaet-mikrofon</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-ipad2</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-ipad3</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-ipad4</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-ipad-mini</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-ipad-mini2</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-ipad-mini3</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-ipad-air</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-ipad-air2</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-macbook/pro</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-macbook/proretina</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-macbook/air</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-imac</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-iphone4/diagnostika</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-iphone4/zamena-stekla</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-iphone4/zamena-ekrana</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-iphone4/zamena-korpysa</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-iphone4/zamena-batarei</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-iphone4/remnont-knopki-home</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-iphone4/remont-knopok-gromkosti</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-iphone4/remont-knopki-vkluchenia</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-iphone4/zamena-kameru</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-iphone4/zamena-front-camera</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-iphone4/zamena-razgavornogo-dinamika</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-iphone4/zamena-dinamika</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-iphone4/zamena-microfona</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-iphone4/zamena-razjoma-dlja-naushnikov</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-iphone5/diagnostika</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-iphone-5/zamena-stekla</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-iphone5/zamena-ekrana</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-iphone5/zamena-korpysa</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-iphone5/zamena-batarei</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-iphone5/remnont-knopki-home</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-iphone5/remont-knopok-gromkosti</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-iphone5/remont-knopki-vkluchenia</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-iphone5/zamena-kameru</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-iphone5/zamena-front-camera</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-iphone5/zamena-razgavornogo-dinamika</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-iphone5/zamena-dinamika</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-iphone5/zamena-microfona</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-iphone5/zamena-razjoma-dlja-naushnikov</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-iphone6/diagnostika</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-iphone-6/zamena-stekla</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-iphone6/zamena-ekrana</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-iphone6/zamena-korpysa</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-iphone6/zamena-batarei</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-iphone6/remnont-knopki-home</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-iphone6/remont-knopok-gromkosti</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-iphone6/remont-knopki-vkluchenia</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-iphone6/zamena-kameru</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-iphone6/zamena-front-camera</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-iphone6/zamena-razgavornogo-dinamika</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-iphone6/zamena-dinamika</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-iphone6/zamena-microfona</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-iphone6/zamena-razjoma-dlja-naushnikov</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-iphone-6plus/zamena-ekrana</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-iphone-6plus/zamena-korpysa</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-iphone-6plus/zamena-batarei</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-iphone-6plus/remnont-knopki-home</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-iphone-6plus/remont-knopok-gromkosti</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-iphone-6plus/remont-knopki-vkluchenia</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-iphone-6plus/zamena-kameru</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-iphone-6plus/zamena-front-camera</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-iphone-6plus/zamena-razgavornogo-dinamika</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-iphone-6plus/zamena-dinamika</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-iphone-6plus/zamena-microfona</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-iphone-6plus/zamena-razjoma-dlja-naushnikov</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-iphone-6s/diagnostika</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-iphone-6s/zamena-stekla</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-iphone-6s/zamena-ekrana</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-iphone-6s/zamena-korpysa</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-iphone-6s/zamena-batarei</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-iphone-6s/remnont-knopki-home</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-iphone-6s/remont-knopok-gromkosti</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-iphone-6s/remont-knopki-vkluchenia</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-iphone-6s/zamena-kameru</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-iphone-6s/zamena-front-camera</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-iphone-6s/zamena-razgavornogo-dinamika</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-iphone-6s/zamena-dinamika</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-iphone-6s/zamena-microfona</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-iphone-6s/zamena-razjoma-dlja-naushnikov</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-ipad2/zamena-stekla</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-ipad2/zamena-ekrana</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-ipad2/zamena-batarei</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-ipad3/zamena-stekla</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-ipad3/zamena-ekrana</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-ipad3/zamena-batarei</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-ipad4/zamena-stekla</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-ipad4/zamena-ekrana</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-ipad4/zamena-batarei</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-ipad-mini/zamena-stekla</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-ipad-mini/zamena-ekrana</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-ipad-mini/zamena-batarei</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-ipad-mini2/zamena-stekla</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-ipad-mini2/zamena-ekrana</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-ipad-mini2/zamena-batarei</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-ipad-mini3/zamena-stekla</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-ipad-mini3/zamena-ekrana</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-ipad-mini3/zamena-batarei</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-ipad-air/zamena-stekla</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-ipad-air/zamena-ekrana</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-ipad-air/zamena-batarei</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-ipad-air2/zamena-stekla</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-ipad-air2/zamena-ekrana</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-ipad-air2/zamena-batarei</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-macbook/pro/a1278</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-macbook/pro/a1286</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-macbook/proretina/a1398</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-macbook/proretina/a1425</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-macbook/proretina/a1502</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-macbook/air/a1237</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-macbook/air/a1304</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-macbook/air/a1369</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-macbook/air/a1370</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-macbook/air/a1465</loc>
+</url>
+<url>
+  <loc>https://service-iphone.com.ua/remont-macbook/air/a1466</loc>
+</url>
 </urlset>

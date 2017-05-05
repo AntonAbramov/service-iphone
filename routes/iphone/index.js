@@ -115,7 +115,7 @@ router.get('/remont-iphone4/zamena-front-camera', function (req, res, next) {
   res.render('pages/iphones/iphone4/zamena-front-camera', {
     title: "Замена фронтальной (передней) камеры iPhone 4. Цена 249 грн. | Service-iPhone",
     description: "Ремонт фронтальной камеры в iPhone 4 стоит 249 грн. Киев телефоны: ☎ (066) 566-97-52 ☎ (093) 421-12-21",
-    keywords: "Замена фронтальной камены iPhone 4, ремонт передней камеры iPhone 4",
+    keywords: "Замена фронтальной камеры iPhone 4, ремонт передней камеры iPhone 4",
     menuActive: 'iphone'
   });
 });
@@ -284,7 +284,7 @@ router.get('/remont-iphone5/zamena-front-camera', function (req, res, next) {
   res.render('pages/iphones/iphone5/zamena-front-camera', {
     title: "Замена фронтальной (передней) камеры iphone 5 | Service-iPhone",
     description: "349 грн Цена на Ремонт фронтальной камеры в iphone 5. ☎ (067) 301-12-21 ☎ (093) 421-12-21",
-    keywords: "Замена фронтальной камены iphone 5, ремонт передней камеры iphone 5, Киев",
+    keywords: "Замена фронтальной камеры iphone 5, ремонт передней камеры iphone 5, Киев",
     menuActive: 'iphone'
   });
 });
@@ -461,7 +461,7 @@ router.get('/remont-iphone6/zamena-front-camera', function (req, res, next) {
   res.render('pages/iphones/iphone6/zamena-front-camera', {
     title: "Замена фронтальной (передней) камеры iphone 6 | Service-iPhone",
     description: "Замена передней камеры в iphone 6 - 499 грн. ✓ Оригинальные запчасти ✓ Качественно ✪ м.Золотые Ворота ☎ (093) 722-91-56 ✪ м.Олимпийская ☎ (093) 421-12-21",
-    keywords: "Замена фронтальной камены iphone 6, замена передней камеры iphone 6, Киев",
+    keywords: "Замена фронтальной камеры iphone 6, замена передней камеры iphone 6, Киев",
     menuActive: 'iphone'
   });
 });
@@ -587,7 +587,7 @@ router.get('/remont-iphone-6plus/zamena-front-camera', function (req, res, next)
   res.render('pages/iphones/iphone6plus/zamena-front-camera', {
     title: "Замена фронтальной (передней) камеры iphone 6 plus | Service-iPhone",
     description: "Ремонт фронтальной камеры в iphone 6 plus занимает от 30 минут. ",
-    keywords: "Замена фронтальной камены iphone 6 plus, ремонт передней камеры iphone 6 plus, ремонт фронтальной камеры айфон 6 plus, Киев",
+    keywords: "Замена фронтальной камеры iphone 6 plus, Киев",
     menuActive: 'iphone'
   });
 });
@@ -730,7 +730,7 @@ router.get('/remont-iphone-6s/zamena-front-camera', function (req, res, next) {
   res.render('pages/iphones/iphone6s/zamena-front-camera', {
     title: "Замена фронтальной (передней) камеры iphone 6s | Service-iPhone",
     description: "Ремонт фронтальной камеры в iphone 6s занимает от 30 минут. ",
-    keywords: "Замена фронтальной камены iphone 6s, ремонт передней камеры iphone 6s, ремонт фронтальной камеры айфон 6s, Киев",
+    keywords: "Замена фронтальной камеры iphone 6s, ремонт передней камеры iphone 6s, ремонт фронтальной камеры айфон 6s, Киев",
     menuActive: 'iphone'
   });
 });

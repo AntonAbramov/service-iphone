@@ -1,0 +1,6 @@
+.problem__item {
+  width: 25%;
+  &:hover {
+    color: $link-hover-color;
+  }
+}

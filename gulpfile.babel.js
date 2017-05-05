@@ -20,7 +20,6 @@
   const notify = require('gulp-notify');
   const webpackStream = require('webpack-stream');
   const webpack = webpackStream.webpack;
-  const named = require('vinyl-named');
   const isDevelopment = !process.env.NODE_ENV || process.evn.NODE_ENV == 'development';
 
 gulp.task('js', function() {
@@ -49,7 +48,7 @@ gulp.task('sass', function () {
       }
     }))
     .pipe(autoprefixer({
-      browsers: ['last 10 versions'],
+      browsers: ['last 5 versions'],
       cascade: false
     }))
     .pipe(remember('sass'))
@@ -69,7 +68,6 @@ gulp.task('watch', function () {
   gulp.watch('./frontend/scss/**/*.scss', gulp.series('sass')).on('unlink', function (filepath) {
     remember.forget('styles', path.resolve(filepath))
   });
-  gulp.watch('./frontend/js/**/*.js', gulp.series('js'));
 });
 
 gulp.task('clean', function () {

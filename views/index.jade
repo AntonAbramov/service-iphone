@@ -112,27 +112,17 @@ block head
     }
 
 block content
-  .container
+  .text-block
     h1.text-center.index-title(title="Сервисный центр по ремонту техники Apple.") Сервисный центр по ремонту техники Apple.
-    nav.nav.row.show-tablet
-      h2.col-sm-3.col-lg-4
-        a.nav__link(href="/iphone")
-          span.nav__box
-            img(src='/img/remont-iphone.jpg', alt='Картинка:Ремонт iPhone в Сервисном центре Apple - Service-iPhone', title="Ремонт iPhone в Киеве")
-          span.show-inline-desktop Цены на&nbsp;
-          | Ремонт iPhone
-      h2.col-sm-3
-        a.nav__link(href="/ipad-remont")
-          span.nav__box
-            img(src='/img/remont-ipad.jpg', alt='Картинка:Ремонт iPad в Сервисном центре Apple - Service-iPhone', title="Ремонт iPad в Киеве")
-          span.show-inline-desktop Цены на&nbsp;
-          | Ремонт iPad
-      h2.col-sm-6.col-md-4
-        a.nav__link(href="/remont-macbook")
-          span.nav__box
-            img(src='/img/remont-macbook.jpg', alt='Картинка:Ремонт MacBook в Сервисном центре Apple - Service-iPhone', title="Ремонт MacBook в Киеве")
-          span.show-inline-desktop Цены на&nbsp;
-          | ремонт MacBook
+    div
+
+  .container
+    #home-slider.home-slider
+      .home-slider__wrp
+        .home-slider__item first slide
+        .home-slider__item second slide
+        .home-slider__item third slide
+  include ./modules/problems.jade
 
   .container
     .row.benefits

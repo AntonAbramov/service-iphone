@@ -1,85 +1,27 @@
-header.header
+header.header.is-nav-open
   .header__container.cf
-    button#navbar-toggle.pull-right.navbar-toggle.hide-tablet
+    button#navbar-toggle.navbar-toggle.hide-tablet
       span.icon-bar
       span.icon-bar
       span.icon-bar
-    .site-logo.text-center.col-sm-3
+    .logo
       -if (path === '/')
-        span.site-logo__link
-          img.site-logo__img(src='/img/logo.png', alt='Картинка:Service-Iphone ремонт техники Apple iphone ipad macbook', title='Service-iPhone - ремонт техники Apple.')
-          span Service-iPhone
+        span.logo__link
+          include ./modules/logo
       -else
-        a.site-logo__link(href='/')
-          img.site-logo__img(src='/img/logo.png', alt='Картинка:Service-Iphone ремонт техники Apple iphone ipad macbook', title='Service-iPhone - ремонт техники Apple.')
-          span Service-iPhone
+        a.logo__link(href='/')
+          include ./modules/logo
 
-    nav#top-nav.top-navigation.col-sm-9
-      each item in [{'name':'Ремонт iPhone', title: 'Ремонт iPhone', 'url': '/iphone'},{'name':'Ремонт iPad', title: 'Ремонт iPad', 'url': '/ipad-remont'},{'name':'Ремонт MacBook', title: 'Ремонт MacBook', 'url': '/remont-macbook'},{'name':'Отзывы', title: 'Отзывы', 'url': '/feedback'},{'name':'Контакты', title: 'Контакты', 'url': '/contacts'}]
+    nav#top-nav.nav
+      each item in [{'name':'Ремонт iPhone', title: 'Ремонт iPhone', 'url': '/iphone', 'imgName': 'remont-iphone'},{'name':'Ремонт iPad', title: 'Ремонт iPad', 'url': '/ipad-remont', 'imgName': 'remont-ipad'},{'name':'Ремонт MacBook', title: 'Ремонт MacBook', 'url': '/remont-macbook', 'imgName': 'remont-macbook'},{'name':'Ремонт Apple Watch', title: 'Ремонт Apple Watch', 'url': '/remont-apple-watch', 'imgName': 'remont-apple-watch'}]
         if (path === item.url)
-          span.top-navigation__link.is-active
-            span.top-navigation--text(title='#{item.title}')=item.name
+          span.nav__link.is-active
+            img.nav__img(src="/img/svg/#{item.imgName}.svg", alt="Иконка: #{item.title}")
+            span.nav__text(title='#{item.title}')=item.name
         else
-          a.top-navigation__link(href='#{item.url}')
-            span.top-navigation--text(title='#{item.title}')=item.name
-      .top-navigation__last
+          a.nav__link(href='#{item.url}')
+            img.nav__img(src="/img/svg/#{item.imgName}.svg", alt="Иконка: #{item.title}")
+            span.nav__text(title='#{item.title}')=item.name
+      .nav__last
         .g-plusone(data-size="medium" data-annotation="none" data-href="https://plus.google.com/109962936005483548770")
         .fb-like(data-href='https://www.facebook.com/ServiceiPhoneUA/', data-layout='button_count', data-action='like', data-size='small', data-show-faces='true', data-share='false')
-
-  .header-section
-    .container
-      .col-xs-12.col-sm-4.text-center
-        .header-section__contacts__title
-          i.fa.fa-map-marker.mr5
-          span м Золотые Ворота
-          br
-          span ул. Богдана Хмельницкого, 32
-
-        a.header-section__contacts__tel(href='tel:+380961253246') (096) 125-32-46
-        a.header-section__contacts__tel(href='tel:+380937229156') (093) 722-91-56
-        a.header-section__contacts__tel(href='tel:+380665669752') (066) 566-97-52
-        br
-        span.header-section__schedule--description
-          span пн-пт 10:00-19:00
-          br
-          span сб 11:00 - 17:00
-
-      .col-xs-12.col-sm-4.text-center
-        .header-section__contacts__title
-          i.fa.fa-map-marker.mr5
-          span м Олимпийская
-          br
-          span ул. Большая Васильковская 74 офис 2
-        a.header-section__contacts__tel(href='tel:+380954311221') (095) 431-12-21
-        a.header-section__contacts__tel(href='tel:+380673011221') (067) 301-12-21
-        a.header-section__contacts__tel(href='tel:+380934211221') (093) 421-12-21
-        br
-        span.header-section__schedule--description
-          span пн-пт 10:00-19:00
-          br
-          span сб 11:00 - 17:00
-      .col-xs-12.col-sm-4.text-center
-        .header-section__contacts__title
-          i.fa.fa-map-marker.mr5
-          span м Минская
-        a.header-section__contacts__tel(href='tel:+380631104224') (063) 110-42-24
-        a.header-section__contacts__tel(href='tel:+380992504224') (099) 250-42-24
-        br
-        a.header-section__contacts__tel(href='tel:+380981024224') (098) 102-42-24
-        br
-        strong(style="color:red;") Скоро открытие
-
-#overlay-courier.overlay
-  #courier.modal--courier
-    button.btn-close &#10006;
-    header.modal-heading Вызвать курьера
-    form#courier-form(action='contact-form', method='POST')
-      .field
-        input.field__controll(type='text', name='name', required, placeholder='Имя')
-      .field
-        input.field__controll(type='tel', name='tel', required, placeholder='Телефон')
-      .field
-        textarea(name='msg') Примечание
-      .field
-        .field__controll
-          input.sbm.btn-primary(type='submit', value='Вызвать')
