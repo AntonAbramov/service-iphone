@@ -2,6 +2,16 @@
   padding: 10px 15px;
 }
 
+.logo__link {
+  text-decoration: none;
+  &:active .logo__text{
+    color: $link-hover-color;
+  }
+  &:active path {
+    fill: $link-hover-color;
+  }
+}
+
 .logo__img {
   height: 30px;
   margin: 0 5px 0 0;

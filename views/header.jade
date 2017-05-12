@@ -1,27 +1,44 @@
-header.header.is-nav-open
+header#header.header
   .header__container.cf
-    button#navbar-toggle.navbar-toggle.hide-tablet
-      span.icon-bar
-      span.icon-bar
-      span.icon-bar
-    .logo
-      -if (path === '/')
-        span.logo__link
-          include ./modules/logo
-      -else
-        a.logo__link(href='/')
-          include ./modules/logo
+    section.header__top-section
+      button#navbar-toggle.navbar-toggle.hide-desktop
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+      .logo
+        -if (path === '/')
+          span.logo__link
+            include ./modules/logo
+        -else
+          a.logo__link(href='/')
+            include ./modules/logo
+      nav.sub-nav.show-desktop
+        a.sub-nav__link(href='#') Блог
+        a.sub-nav__link(href='#') Доставка
+        a.sub-nav__link(href='#') Отзывы
+        a.sub-nav__link(href='#') Контакты
+      a.btn.btn--primary.pull-right.btn--calc-price.show-desktop(href="/remont-iphone") Просчет цены
 
     nav#top-nav.nav
-      each item in [{'name':'Ремонт iPhone', title: 'Ремонт iPhone', 'url': '/iphone', 'imgName': 'remont-iphone'},{'name':'Ремонт iPad', title: 'Ремонт iPad', 'url': '/ipad-remont', 'imgName': 'remont-ipad'},{'name':'Ремонт MacBook', title: 'Ремонт MacBook', 'url': '/remont-macbook', 'imgName': 'remont-macbook'},{'name':'Ремонт Apple Watch', title: 'Ремонт Apple Watch', 'url': '/remont-apple-watch', 'imgName': 'remont-apple-watch'}]
-        if (path === item.url)
-          span.nav__link.is-active
-            img.nav__img(src="/img/svg/#{item.imgName}.svg", alt="Иконка: #{item.title}")
-            span.nav__text(title='#{item.title}')=item.name
-        else
-          a.nav__link(href='#{item.url}')
-            img.nav__img(src="/img/svg/#{item.imgName}.svg", alt="Иконка: #{item.title}")
-            span.nav__text(title='#{item.title}')=item.name
-      .nav__last
-        .g-plusone(data-size="medium" data-annotation="none" data-href="https://plus.google.com/109962936005483548770")
-        .fb-like(data-href='https://www.facebook.com/ServiceiPhoneUA/', data-layout='button_count', data-action='like', data-size='small', data-show-faces='true', data-share='false')
+      .nav__wrp.cf
+        a.nav__link(href='/iphone')
+          include ./modules/remont-iphone
+          span.nav__text(title='Ремонт iPhone') Ремонт iPhone
+        a.nav__link(href='/ipad-remont')
+          include ./modules/remont-ipad
+          span.nav__text(title='Ремонт iPad') Ремонт iPad
+        a.nav__link(href='/remont-macbook')
+          include ./modules/remont-macbook
+          span.nav__text(title='Ремонт MacBook') Ремонт MacBook
+        a.nav__link(href='/remont-apple-watch')
+          include ./modules/remont-apple-watch
+          span.nav__text(title='Ремонт Apple Watch') Ремонт Apple Watch
+        .nav__separator
+          a.nav__link.nav__link--second(href='#') Блог
+          a.nav__link.nav__link--second(href='#') Доставка
+          a.nav__link.nav__link--second(href='#') Отзывы
+          a.nav__link.nav__link--second(href='#') Контакты
+          a.nav__link.btn.btn--primary.btn--calc-mobile(href="/remont-iphone") Просчет цены
+        //.nav__last
+          .g-plusone(data-size="medium" data-annotation="none" data-href="https://plus.google.com/109962936005483548770")
+          .fb-like(data-href='https://www.facebook.com/ServiceiPhoneUA/', data-layout='button_count', data-action='like', data-size='small', data-show-faces='true', data-share='false')

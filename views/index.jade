@@ -116,12 +116,33 @@ block content
     h1.text-center.index-title(title="Сервисный центр по ремонту техники Apple.") Сервисный центр по ремонту техники Apple.
     div
 
-  .container
-    #home-slider.home-slider
-      .home-slider__wrp
-        .home-slider__item first slide
-        .home-slider__item second slide
-        .home-slider__item third slide
+  #slider.slider
+    .slider__wrp
+      .slider__item.slider__item--first
+        .slider__container
+          p.slider__title
+            | Замена стекла с сохранением
+            br
+            | оригинального дисплея
+          p.slider__description
+            | Секономте до 50% стоимости на замене стекла
+            br
+            |  вашего устройства
+          a.slider__link(href="#") Подробнее
+      .slider__item.slider__item--second
+        .slider__container
+          p.slider__title
+            |Принимаем заказы из любой
+            br
+            |части Украины
+          p.slider__description
+            |Мы организуем быструю доставку из любой точки Украины,
+            br
+            |удобным для вас способом
+          a.slider__link(href="#") Подробнее
+
+    button#prev.prev <
+    button#next.next >
   include ./modules/problems.jade
 
   .container
@@ -139,10 +160,6 @@ block content
             span.icon-security-checked.aa
             | <span class="b">Гарантия</span>: На все виды ремонтных работ мы даем гарантию от 3 месяцев.
           li.fa.fa-user-secret <span class="b">Конфиденциальность</span> ваших личных данных, ремонт производим в присутствии клиента.
-          //li.fa.fa-map-marker Удобное расположение офиса.
-          //li.fa.fa-check-circle-o Service-iPhone - официальный сервисный центр
-          //li.fa.fa-calendar Более 3 лет на рынке
-          //li.fa.fa-cogs Собственный склад оригинальных запчастей.
 
     .show-desktop
       p.title(title='Ремонт техники Apple в сервис-центре «Service iPhone»') Ремонт техники Apple в сервис-центре «Service iPhone»
