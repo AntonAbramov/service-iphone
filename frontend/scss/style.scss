@@ -12,10 +12,12 @@
 @import "components/popup";
 @import "components/inputs";
 @import "components/slider";
+@import "components/devices";
 @import "pages/landing";
 
 @import "base/helpers";
-@import "layout/adaptive"; // should be the last
 @import "layout/grid";
+@import "layout/adaptive"; // should be the last
+
 
 

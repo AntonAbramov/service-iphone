@@ -1,0 +1,40 @@
+.devices {
+}
+
+.devices__wrp {
+  padding: 0 15px 20px;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  white-space: nowrap;
+}
+
+.devices__item {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 20px;
+}
+
+.devices__link {
+  text-align: center;
+  display: block;
+}
+
+.devices__preview {
+  display: inline-block;
+  vertical-align: middle;
+  min-height: 184px;
+  margin: 0 0 10px;
+  position: relative;
+}
+
+.devices__img {
+  display: block;
+  margin: 0 auto;
+  //top:50%;
+  //position: absolute;
+  //transform: translateY(-50%);
+}
+
+.devices__name {
+  display: block;
+}

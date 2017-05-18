@@ -16,20 +16,11 @@ block head
 
 block content
   section.device-section
-    h1.device-title(title="Ремонт Apple iPhone/Ipad в Киеве | Iphone 3/4/5/6") Ремонт iPhone
-    p.heading-title Выберите модель:
-    include ../../modules/navigation.jade
-  - var problemCases = [{'href': 'razbilos-steklo-iphone','text': 'Разбилось стекло','title': '','iconName': 'icon-hammer'},{'href': 'iphone-ne-vklyuchaetsya','text': 'Не включается','title': '','iconName': 'icon-no-mobile'},{'href': 'wifi-ne-rabotaet','text': 'Не работает Wi-Fi','title': '','iconName': 'icon-wifi'},{'href': 'ne-rabotaet-zvuk-na-iphone','text': 'Не работает звук','title': '','iconName': 'icon-mute'},{'href': 'ne-rabotaet-displey-iphone','text': 'Не работает дисплей','title': '','iconName': 'icon-tv'},{'href': 'iphone-ne-zaryazhaetsya','text': 'Не заряжается','title': '','iconName': 'icon-charge'},{'href': 'voda-iphone','text': 'Попала вода','title': '','iconName': 'icon-water'},{'href': 'ne-rabotaet-vibrozvonok','text': 'Не работает вибрация','title': '','iconName': 'icon-bell'},{'href': 'ne-rabotaet-displey-iphone','text': 'Не работает тачскрин','title': '','iconName': 'icon-finger'},{'href': 'iphone-byistro-razryazhaetsya','text': 'Быстро разряжается','title': '','iconName': 'icon-low-battery'},{'href': 'iphone-ne-nazhimayutsya-knopki','text': 'Не работают кнопки','title': '','iconName': 'icon-circle'},{'href': 'iphone-ne-rabotaet-mikrofon','text': 'Не работает микрофон','title': '','iconName': 'icon-microphone'}];
-  section.problems-section.bg-lightgray
-    div.container
-      div.heading-title.mt20 Выберите проблему
-      ul.row.problems
-        each item in problemCases
-          li.col-lg-3.col-sm-4.problems__item
-            a.problems__link(title='#{item.text}', href='#{item.href}')
-              i.aa(class='#{item.iconName}')
-              span.problems__text.aus #{item.text}
-            section.information-section
+    .wrp
+      h1.device-title(title="Ремонт Apple iPhone") Ремонт iPhone
+      p.device__description Выберите модель:
+      include ../../modules/iphone_nav.jade
+  include ../../modules/problems
   .container
     div.mt20 &nbsp;
     h2.text-center(title='Где произвести качественный ремонт iPhone в Киеве?') Где произвести качественный ремонт iPhone в Киеве?

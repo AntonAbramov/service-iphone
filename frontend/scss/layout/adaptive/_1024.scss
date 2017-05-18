@@ -1,9 +1,35 @@
+@import "1024/home-iphone";
 .show-desktop {
   display: block;
 }
 
 .hide-desktop {
   display: none;
+}
+
+.col-5 {
+  float: left;
+  width: 20%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.devices__wrp {
+  overflow: initial;
+  white-space: initial;
+  margin: 0 auto;
+  max-width: 1140px;
+  width: 100%;
+  &:after {
+    content: '';
+    clear:both;
+    display: table;
+  };
+}
+
+.devices__item {
+  width: 16%;
+  margin: 0 0 50px;
 }
 
 .is-nav-open .header__container {
@@ -111,5 +137,34 @@
     background: -webkit-linear-gradient(top,  #499cd2 0%,#2d73b4 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to bottom,  #499cd2 0%,#2d73b4 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     //filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499cd2', endColorstr='#2d73b4',GradientType=0 ); /* IE6-9 */
+  }
+}
+.trbl-list__link {
+  @include transition(all, .2s);
+  &:before {
+    @include transition(all, .2s);
+  }
+  &:hover {
+    font-weight: 700;
+    color: $link-hover-color;
+    &:before {
+      background: $link-hover-color;
+      width: 80px;
+    }
+  }
+}
+
+.footer__wrp {
+  text-align: left;
+}
+
+.logo--footer {
+  margin: -9px 0 25px;
+}
+
+.footer__link {
+  &:hover {
+    color: $link-hover-color;
+    text-decoration: underline;
   }
 }

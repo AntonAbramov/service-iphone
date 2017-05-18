@@ -1,33 +1,57 @@
 footer.footer
-  .container
-    .row.text-center
-      .col-xs-12
+  .footer__wrp
+    .row
+      .col-xs-12.col-5
+        .logo--footer
+          -if (path === '/')
+            span.logo__link
+              include ./modules/logo
+          -else
+            a.logo__link(href='/')
+              include ./modules/logo
         nav.sosial
           a.sosial__item(href="https://www.facebook.com/ServiceiPhoneUA/", rel="nofollow", target="_blank")
-            i.fa.fa-facebook
+            include ./modules/svg/fb
           a.sosial__item(href="https://twitter.com/Serviceiphoneua", rel="nofollow", target="_blank")
-            i.fa.fa-twitter
+            include ./modules/svg/tw
           a.sosial__item(href="https://www.instagram.com/serviceiphoneua/", rel="nofollow", target="_blank")
-            i.fa.fa-instagram
+            include ./modules/svg/instagram
           a.sosial__item(href="https://plus.google.com/109962936005483548770", rel="nofollow", target="_blank")
-            i.fa.fa-google-plus
+            include ./modules/svg/g
           a.sosial__item.is-hidden(href="#", rel="nofollow", target="_blank")
-            i.fa.fa-linkedin
+            include ./modules/svg/li
           a.sosial__item(href="https://vk.com/ServiceiPhoneUA", rel="nofollow", target="_blank")
-            i.fa.fa-vk
+            include ./modules/svg/vk
           a.sosial__item(href="https://www.youtube.com/channel/UCEZAGPgJKGzaiqRYwHeQgrA", rel="nofollow", target="_blank")
-            i.fa.fa-youtube
-      .col-xs-12
-        .mb5.show-desktop
-          a(href='/remont-iphone', target="_blank") Рассчитать цену ремонта
-      .cf
-        .col-xs-12.col-sm-3
-          a(href='/politika-konfidenczialnosti', rel="nofollow", target="_blank") Политика конфиденциальности
-        .col-xs-12.col-sm-3
-          a(href='/warranty', target="_blank") Гарантия
-        .col-xs-12.col-sm-3
-          a(href='/otkaz-ot-otvetstvennosti', rel="nofollow", target="_blank") Отказ от ответственности
-        .col-xs-12.col-sm-3
-          a(href='/soglasie-s-rassyilkoj', rel="nofollow", target="_blank") Согласие с рассылкой
-      br
-      br
+            include ./modules/svg/youtube
+          a.sosial__item(href="#", rel="nofollow", target="_blank")
+            include ./modules/svg/pi
+          a.sosial__item(href="#", rel="nofollow", target="_blank")
+            include ./modules/svg/apple
+      .col-5.show-desktop
+        h4 Услуги ремонта
+        ul.footer__ul
+          li.footer__li: a.footer__link(href='/iphone') Ремонт iPhone
+          li.footer__li: a.footer__link(href='/ipad-remont') Ремонт iPad
+          li.footer__li: a.footer__link(href='/remont-macbook') Ремонт MacBook
+          li.footer__li: a.footer__link(href='#') Ремонт Apple Watch
+      .col-5.show-desktop
+        h4 О компании
+        ul.footer__ul
+          li.footer__li: a.footer__link(href='#') Блог
+          li.footer__li: a.footer__link(href='#') Доставка
+          li.footer__li: a.footer__link(href='#') Отзывы
+          li.footer__li: a.footer__link(href='#') Контакты
+      .col-5.show-desktop
+        h4 Информация
+        ul.footer__ul
+          li.footer__li: a.footer__link(href='/politika-konfidenczialnosti', rel="nofollow", target="_blank") Политика конфиденциальности
+          li.footer__li: a.footer__link(href='/warranty', target="_blank") Гарантия
+          li.footer__li: a.footer__link(href='/otkaz-ot-otvetstvennosti', rel="nofollow", target="_blank") Отказ от ответственности
+          li.footer__li: a.footer__link(href='/soglasie-s-rassyilkoj', rel="nofollow", target="_blank") Согласие с рассылкой
+      .col-xs-12.col-5
+        h4.footer__title Контакты
+        ul.footer__ul
+          li.footer__li (095) 456 05 76
+          li.footer__li.footer__li--oneline info@service-ihpone.com.ua
+

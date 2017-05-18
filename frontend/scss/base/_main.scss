@@ -2,6 +2,17 @@
   order: 10;
 }
 
+.container,
+.home__phone,
+.problem-section,
+.footer__wrp,
+.wrp {
+  margin: 0 auto;
+  max-width: 1140px;
+  width: 100%;
+  padding: 0 15px;
+}
+
 .home-slider, .home-slider__wrp {
   overflow: hidden;
   position: relative;
