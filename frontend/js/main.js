@@ -9,7 +9,10 @@ import slider from './slider';
 
 document.addEventListener('DOMContentLoaded', ()=>{
   Nav.init();
-  slider.init();
+  if (document.getElementById('slider')) {
+    slider.init();
+  }
+
 })
 
 if (document.getElementById('stepsforform')) {

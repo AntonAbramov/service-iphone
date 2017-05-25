@@ -4,7 +4,6 @@
 
 .container,
 .home__phone,
-.problem-section,
 .footer__wrp,
 .wrp {
   margin: 0 auto;
@@ -13,7 +12,8 @@
   padding: 0 15px;
 }
 
-.home-slider, .home-slider__wrp {
+.home-slider,
+.home-slider__wrp {
   overflow: hidden;
   position: relative;
 }
@@ -47,4 +47,12 @@
 
 .problem__text {
   white-space: nowrap;
+}
+
+.repear {
+  margin: 30px 0;
+}
+
+.repear__img-container {
+
 }
