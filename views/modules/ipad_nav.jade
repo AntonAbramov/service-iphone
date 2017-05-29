@@ -1,0 +1,9 @@
+- var menuItems = [{'href': '/remont-ipad3','text': 'iPad 3','title': '','imgSrc': 'ipad-3','imgAlt': 'Ремонт iPad 3'},{'href': '/remont-ipad4','text': 'iPad 4','title': '','imgSrc': 'ipad-4','imgAlt': 'Ремонт iPad 4'},{'href': '/remont-ipad-mini2','text': 'iPad Mini2','title': '','imgSrc': 'ipad-mini-2','imgAlt': 'Ремонт iPad mini2 retina'},{'href': '/remont-ipad-mini3','text': 'iPad Mini3','title': '','imgSrc': 'ipad-mini-3','imgAlt': 'Ремонт iPad mini3 retina'},{'href': '/remont-ipad-mini4','text': 'iPad Mini 4','title': '','imgSrc': 'ipad-mini-4','imgAlt': 'Ремонт iPad mini 4 retina'},{'href': '/remont-ipad-pro-9','text': 'iPad Pro 9.7','title': '','imgSrc': 'ipad-mini-pro-9','imgAlt': 'Ремонт iPad Pro 9.7'},{'href': '/remont-ipad-pro-12','text': 'iPad Pro 12.9','title': '','imgSrc': 'ipad-mini-pro-12','imgAlt': 'Ремонт iPad Pro 12.9'},{'href': '/remont-ipad-air','text': 'iPad Air','title': '','imgSrc': 'ipad-air','imgAlt': 'Ремонт iPad Air'},{'href': '/remont-ipad-air2','text': 'iPad Air 2','title': '','imgSrc': 'ipad-air-2','imgAlt': 'Ремонт iPad Air 2'}];
+.device
+  .device__wrp
+    each item in menuItems
+      .device__item
+        a.device__link(href="#{item.href}", title="Ремонт #{item.text} в Киеве")
+          span.device__preview
+            img.device__img(src='/img/new/remont-iphone-#{item.imgSrc}.jpg', alt='Картинка:#{item.imgAlt}')
+          span.device__name #{item.text}
