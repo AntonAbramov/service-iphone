@@ -1,0 +1,19 @@
+extends ../../../layout
+block head
+  script.
+    dataLayer.push({'pageType': 'product', 'productType': 'macbook pro retina 1707'})
+block content
+  .sub-header
+    .container
+      .row
+        .col-xs-12
+          h1.text-center(title='Ремонт MacBook Pro Retina A1707') Ремонт MacBook Pro Retina A1707
+      .sub-header__description
+        | Сервисный центр в Киеве Service Apple осуществляет&nbsp;
+        strong ремонт MacBook Pro Retina A1707
+        |&nbsp;по самым низким ценам при любой сложности ремонта.
+  .container
+    section.repear
+      h2.repear__title Цены на Ремонт MacBook Pro Retina A1707
+      h3.pricelist__heading Основное
+      include ../../../templates/price-table

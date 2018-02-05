@@ -1,0 +1,17 @@
+extends ../../../layout
+block head
+  script.
+    dataLayer.push({'pageType': 'category'})
+block content
+  section.device-section
+    h1.device-title
+      | Ремонт MacBook
+    p.heading-title Выберите модель:
+    .devices
+      .devices__wrp
+        -var menuMacbook = [{'href': '/remont-macbook/macbook/a1534','text': 'MacBook A1534'}];
+        each item in menuMacbook
+          .devices__item
+            a.devices__link(href='#{item.href}', title='Ремонт #{item.text} в Киеве')
+              figure.devices__img.devices__img--svg.devices__img--macbook-pro
+              span.devices__name #{item.text}

@@ -1,0 +1,19 @@
+extends ../../layout
+block head
+  script.
+    dataLayer.push({'pageType': 'product', 'productType': 'iWatch 2 series 38mm'})
+block content
+  .sub-header
+    .container
+      .row
+        .col-xs-12
+          h1.text-center(title='Ремонт iWatch 2 series 38mm') Ремонт iWatch 2 series 38mm
+      .sub-header__description
+        | Сервисный центр в Киеве Service Apple осуществляет&nbsp;
+        strong ремонт iWatch 2 series 38mm
+        |&nbsp;по самым низким ценам при любой сложности ремонта.
+  .container
+    section.repear
+      h2.repear__title Цены на Ремонт iWatch 2 series 38mm
+      h3.pricelist__heading Основное
+      include ../../templates/price-table

@@ -15,7 +15,7 @@ header.header
           span Service-iPhone
 
     nav#top-nav.top-navigation.col-sm-9
-      each item in [{'name':'Ремонт iPhone', title: 'Ремонт iPhone', 'url': '/iphone'},{'name':'Ремонт iPad', title: 'Ремонт iPad', 'url': '/ipad-remont'},{'name':'Ремонт MacBook', title: 'Ремонт MacBook', 'url': '/remont-macbook'},{'name':'Отзывы', title: 'Отзывы', 'url': '/feedback'},{'name':'Контакты', title: 'Контакты', 'url': '/contacts'}]
+      each item in [{'name':'Ремонт iPhone', title: 'Ремонт iPhone', 'url': '/iphone'},{'name':'Ремонт iPad', title: 'Ремонт iPad', 'url': '/ipad-remont'},{'name':'Ремонт MacBook', title: 'Ремонт MacBook', 'url': '/remont-macbook'},{'name':'Ремонт iWatch', title: 'Ремонт iWatch', 'url': '/remont-iwatch'},{'name':'Отзывы', title: 'Отзывы', 'url': '/feedback'},{'name':'Контакты', title: 'Контакты', 'url': '/contacts'}]
         if (path === item.url)
           span.top-navigation__link.is-active
             span.top-navigation--text(title='#{item.title}')=item.name
