@@ -415,6 +415,38 @@ router.get('/remont-ipad-pro-12', function (req, res, next) {
   });
 });
 
+//======================
+//    iPad Pro 10.5
+//======================
 
+router.get('/remont-ipad-pro-105', function (req, res, next) {
+  req.db['ipadipadpro105'].find().sort({'idx': 1}, function (err, docs) {
+    if (err) throw err;
+    res.render('pages/ipads/ipad-pro105', {
+      title: "Ремонт iPad Pro 10.5\" | Замена стекла iPad Pro 10.5\" | Киев | Service-iPhone",
+      description: "Service-iPhone делает Ремонт iPad Pro 10.5: Замену стекла на айпад про 10.5. Замена дисплея от 10999грн ",
+      keywords: "Ремонт iPad Pro 10.5, замена стекла iPad Pro 10.5",
+      menuActive: 'ipad',
+      pricesTable: docs
+    });
+  });
+});
+
+//======================
+//    iPad Pro new 2017
+//======================
+
+router.get('/remont-ipad-new2017', function (req, res, next) {
+  req.db['ipadipadnew2017'].find().sort({'idx': 1}, function (err, docs) {
+    if (err) throw err;
+    res.render('pages/ipads/ipad-new2017', {
+      title: "Ремонт iPad Pro new 2017\" | Замена стекла iPad Pro new 2017\" | Киев | Service-iPhone",
+      description: "Service-iPhone делает Ремонт iPad Pro new 2017: Замену стекла на айпад про new 2017. Замена дисплея от 10999грн ",
+      keywords: "Ремонт iPad Pro new 2017, замена стекла iPad Pro new 2017",
+      menuActive: 'ipad',
+      pricesTable: docs
+    });
+  });
+});
 
 module.exports = router;

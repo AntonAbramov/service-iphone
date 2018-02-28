@@ -1,0 +1,23 @@
+extends ../../layout
+block head
+  script.
+    dataLayer.push({'pageType': 'product', 'productType': 'ipad pro 105'})
+block content
+  .sub-header
+    .container
+      .row
+        .col-sm-2.text-center
+          img.sub-header__img(src='../img/ipad/ipad-mini3.jpg', alt='Картинка:Цены на ремонт iPad Pro 10.5', title="Сервисный центр по ремонту iPad Pro 10.5 в Киеве")
+        .col-sm-4
+          h1(title='Ремонт iPad Pro 10.5') Ремонт iPad Pro 10.5
+          p Услуги и цены
+        .col-sm-6
+      .sub-header__description
+  .container
+    section.repear
+      include ../../templates/price-table
+    p.cf
+      span.pull-left
+        i.fa.fa-arrow-left
+        | &nbsp;&nbsp;
+        a(href="/remont-ipad-pro-12") Цены на ремонт iPad Pro 12.9

@@ -1,0 +1,23 @@
+extends ../../layout
+block head
+  script.
+    dataLayer.push({'pageType': 'product', 'productType': 'ipad new 2017'})
+block content
+  .sub-header
+    .container
+      .row
+        .col-sm-2.text-center
+          img.sub-header__img(src='../img/ipad/ipad-mini3.jpg', alt='Картинка:Цены на ремонт iPad new 2017', title="Сервисный центр по ремонту iPad new 2017 в Киеве")
+        .col-sm-4
+          h1(title='Ремонт iPad new 2017') Ремонт iPad new 2017
+          p Услуги и цены
+        .col-sm-6
+      .sub-header__description
+  .container
+    section.repear
+      include ../../templates/price-table
+    p.cf
+      span.pull-left
+        i.fa.fa-arrow-left
+        | &nbsp;&nbsp;
+        a(href="/remont-ipad-pro-105") Цены на ремонт iPad Pro 10.5

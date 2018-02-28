@@ -9,7 +9,7 @@ block content
     p.heading-title Выберите модель:
     .devices
       .devices__wrp
-        -var menuMacbook = [{'href': '/remont-macbook/proretina/a1398','text': 'MacBook Pro A1398'},{'href': '/remont-macbook/proretina/a1425','text': 'MacBook Pro A1425'},{'href': '/remont-macbook/proretina/a1502','text': 'MacBook Pro A1502'}];
+        -var menuMacbook = [{'href': '/remont-macbook/proretina/a1398','text': 'MacBook Pro Retina A1398'},{'href': '/remont-macbook/proretina/a1425','text': 'MacBook Pro Retina A1425'},{'href': '/remont-macbook/proretina/a1502','text': 'MacBook Pro Retina A1502'}, {'href': '/remont-macbook/proretina/a1706','text': 'MacBook Pro Retina A1706'}, {'href': '/remont-macbook/proretina/a1707','text': 'MacBook Pro Retina A1707'}, {'href': '/remont-macbook/proretina/a1708','text': 'MacBook Pro Retina A1708'}];
         each item in menuMacbook
           .devices__item
             a.devices__link(href='#{item.href}', title='Ремонт #{item.text} в Киеве')

@@ -28,6 +28,8 @@ var db = mongojs('serviceiphone', [
   'macbookpro',
   'macbookproretina',
   'macbookair',
+  'iwatch',
+  'iwatch38',
   'feedback'
 ]);
 
@@ -45,6 +47,7 @@ var routes = require('./routes/index');
 var iphone = require('./routes/iphone/index');
 var ipad = require('./routes/ipad/index');
 var macbook = require('./routes/macbook/index');
+var iwatch = require('./routes/iwatch/index');
 var feedback = require('./routes/feedback/index');
 
 var app = express();
@@ -73,6 +76,7 @@ app.use(function(req,res,next){
 app.use('/', routes);
 app.use('/', iphone);
 app.use('/', ipad);
+app.use('/remont-iwatch', iwatch);
 app.use('/remont-macbook', macbook);
 app.use('/feedback', feedback);
 

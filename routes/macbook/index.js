@@ -193,6 +193,73 @@ router.get('/proretina/a1502', function (req, res, next) {
   });
 });
 
+router.get('/proretina/a1706', function (req, res, next) {
+  req.db['macbookproretinaa1706'].find().sort({'idx': 1}, function (err, docs) {
+    if (err) throw err;
+    res.render('pages/macbook/proretina/1706', {
+      title: "Ремонт MacBook Pro Retina A1706 | Service-iPhone",
+      description: "Ремонт MacBook Pro Retina A1706 в сервисном центре Apple в Киеве. Выгодные цены на ремонт макбук про ретина любой сложности, бесплатная диагностика.",
+      keywords: "ремонт macbook pro retina a1706",
+      menuActive: 'imac',
+      pricesTable: docs
+    });
+  });
+});
+
+router.get('/proretina/a1707', function (req, res, next) {
+  req.db['macbookproretinaa1707'].find().sort({'idx': 1}, function (err, docs) {
+    if (err) throw err;
+    res.render('pages/macbook/proretina/1707', {
+      title: "Ремонт MacBook Pro Retina A1707 | Service-iPhone",
+      description: "Ремонт MacBook Pro Retina A1707 в сервисном центре Apple в Киеве. Выгодные цены на ремонт макбук про ретина любой сложности, бесплатная диагностика.",
+      keywords: "ремонт macbook pro retina a1707",
+      menuActive: 'imac',
+      pricesTable: docs
+    });
+  });
+});
+
+router.get('/proretina/a1708', function (req, res, next) {
+  req.db['macbookproretinaa1708'].find().sort({'idx': 1}, function (err, docs) {
+    if (err) throw err;
+    res.render('pages/macbook/proretina/1708', {
+      title: "Ремонт MacBook Pro Retina A1708 | Service-iPhone",
+      description: "Ремонт MacBook Pro Retina A1708 в сервисном центре Apple в Киеве. Выгодные цены на ремонт макбук про ретина любой сложности, бесплатная диагностика.",
+      keywords: "ремонт macbook pro retina a1708",
+      menuActive: 'imac',
+      pricesTable: docs
+    });
+  });
+});
+
+//======================
+//    MacBook
+//======================
+
+router.get('/macbook', function (req, res, next) {
+  res.render('pages/macbook/macbook/index', {
+    title: "Ремонт MacBook | Service-iPhone",
+    description: "Ремонт MacBook  в сервисном центре Apple в Киеве. Выгодные цены на ремонт макбук любой сложности, бесплатная диагностика.",
+    keywords: "ремонт macbook ",
+    menuActive: 'imac'
+  });
+});
+
+router.get('/macbook/a1534', function (req, res, next) {
+  req.db['macbooka1534'].find().sort({'idx': 1}, function (err, docs) {
+    if (err) throw err;
+    res.render('pages/macbook/macbook/1534', {
+      title: "Ремонт MacBook Pro Retina A1534 | Service-iPhone",
+      description: "Ремонт MacBook Pro Retina A1534 в сервисном центре Apple в Киеве. Выгодные цены на ремонт макбук про ретина любой сложности, бесплатная диагностика.",
+      keywords: "ремонт macbook pro retina a1534",
+      menuActive: 'imac',
+      pricesTable: docs
+    });
+  });
+});
+
+
+
 //======================
 //    MacBook
 //======================

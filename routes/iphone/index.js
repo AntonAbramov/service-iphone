@@ -850,4 +850,55 @@ router.get('/remont-iphone-7plus', function (req, res, next) {
   });
 });
 
+//======================
+//    iPhone 8
+//======================
+
+router.get('/remont-iphone-8', function (req, res, next) {
+  req.db['iphone8'].find().sort({'idx': 1}, function (err, docs) {
+    if (err) throw err;
+    res.render('pages/iphones/iphone8', {
+      title: "Ремонт iPhone 8 | Замена стекла на Айфон 8  | Киев |  Service-iPhone",
+      description: "Ремонт iPhone 8  в городе киеве можно произвести в Service-iPhone. Замену дисплея сделаем за 40 мин.",
+      keywords: "Ремонт iPhone 8, замена стекла iPhone 8, ремонт айфон 8",
+      menuActive: 'iphone',
+      pricesTable: docs
+    });
+  });
+});
+
+//======================
+//    iPhone 8 Plus
+//======================
+
+router.get('/remont-iphone-8plus', function (req, res, next) {
+  req.db['iphone8plus'].find().sort({'idx': 1}, function (err, docs) {
+    if (err) throw err;
+    res.render('pages/iphones/iphone8plus', {
+      title: "Замена стекла на Айфон 8 Plus | Ремонт iPhone 8 Plus | Киев |  Service-iPhone",
+      description: "Ремонт iPhone 8 Plus в городе киеве можно произвести в Service-iPhone. Замену дисплея/стекла сделаем за 55 мин.",
+      keywords: "Ремонт iPhone 8 Plus, замена стекла iPhone 8 Plus, ремонт айфон 8",
+      menuActive: 'iphone',
+      pricesTable: docs
+    });
+  });
+});
+
+//======================
+//    iPhone 10
+//======================
+
+router.get('/remont-iphone-10', function (req, res, next) {
+  req.db['iphone10'].find().sort({'idx': 1}, function (err, docs) {
+    if (err) throw err;
+    res.render('pages/iphones/iphone10', {
+      title: "Ремонт iPhone 10 | Замена стекла на Айфон 10 | Киев |  Service-iPhone",
+      description: "Ремонт iPhone 10  в городе киеве. Замену стекла/дисплея/батерии сделаем за 50 мин.",
+      keywords: "Ремонт iPhone 10, замена стекла iPhone 10, ремонт айфон 10",
+      menuActive: 'iphone',
+      pricesTable: docs
+    });
+  });
+});
+
 module.exports = router;
