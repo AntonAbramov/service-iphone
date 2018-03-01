@@ -3,15 +3,16 @@ block head
   script.
     dataLayer.push({'pageType': 'category'})
 block content
-  section.device-section
-    h1.device-title
-      | Ремонт MacBook Pro
-    p.heading-title Выберите модель:
-    .devices
-      .devices__wrp
-        -var menuMacbook = [{'href': '/remont-macbook/pro/a1278','text': 'MacBook Pro A1278','title': '','imgSrc': 'img/macbook/pro.jpg','imgAlt': 'Ремонт MacBook Pro A1278'},{'href': '/remont-macbook/pro/a1286','text': 'MacBook Pro A1286','title': '','imgSrc': 'img/macbook/air.jpg','imgAlt': 'Ремонт MacBook Pro A1286'}];
-        each item in menuMacbook
-          .devices__item
-            a.devices__link(href='#{item.href}', title='Ремонт #{item.text} в Киеве')
-              figure.devices__img.devices__img--svg.devices__img--macbook-pro
-              span.devices__name #{item.text}
+  section.device-section.device-section--simple
+    .wrp
+      h1.device-title
+        | Ремонт MacBook Pro
+      p.heading-title Выберите модель:
+      .devices
+        .devices__wrp
+          -var menuMacbook = [{'href': '/remont-macbook/pro/a1278','text': 'MacBook Pro A1278','title': ''},{'href': '/remont-macbook/pro/a1286','text': 'MacBook Pro A1286','title': ''}];
+          each item in menuMacbook
+            .devices__item
+              a.devices__link(href='#{item.href}', title='Ремонт #{item.text} в Киеве')
+                figure.devices__img.devices__img--svg.devices__img--macbook-pro
+                span.devices__name #{item.text}

@@ -20,6 +20,10 @@ a:hover {
   font-size: 36px;
 }
 
+.h2 {
+  font-size: 30px;
+}
+
 .col-5 {
   float: left;
   width: 20%;
@@ -34,6 +38,12 @@ a:hover {
 .device-section {
   padding: 50px 0 0;
   margin: -50px 0 50px;
+  height: 100%;
+}
+
+.device-section--simple {
+  margin-bottom: 0;
+  padding-bottom: 50px;
 }
 
 .device__wrp {

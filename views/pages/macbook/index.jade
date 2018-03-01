@@ -3,47 +3,27 @@ block head
   script.
     dataLayer.push({'pageType': 'category'})
 block content
+  .text-block
+    .container
+      .col-xs-12
+        h2.text-center Service-iPhone - ремонт макбуков в Киеве и по всей Украине.
+        p
+          | Наш профиль - ремонт техники Apple. Это вопрос в котором мы являемся экспертами. У нас Вы можете сделать любой ремонт макбука. Вам нужен&nbsp;
+          strong(title='ремонт macbook pro в Киеве ') ремонт macbook pro в Киеве
+          | &nbsp;или других моделей? Тогда обратитесь к нам.
+        div
+          strong Что мы делаем?
+        ol
+          li Чистим устройство после воды.
+          li Меняем клавиатуру, защитное стекло и другие составляющие.
+          li Производим замену матрицы.
+          li
+            | Производим&nbsp;
+            b замену батареи macbook
+          li Замена материнской платы и многое другое.
+        br
+        p Если у Вас сломался Макбук, приходите к нам для бесплатной диагностики и определения проблемы. Мы установим причины, и устраним поломку в самые быстрые сроки. Клиенты, которые воспользовались нашими услугами однажды приходят к нам снова и снова. Мы предоставляем действительно качественный сервис и стремимся сделать обслуживание более комфортным и выгодным. У нас Вы получите гарантию ремонта. Срок гарантии - 3 месяца на любые виды работ. Мы уверены в качестве наших услуг. Убедитесь в этом и Вы, и получите преимущества качественного сервиса. Свяжитесь с нами, если у Вас остались вопросы и мы обязательно ответим на них!
   section.device-section
-    h1.device-title
-      | Ремонт MacBook
-    p.heading-title Выберите модель:
-    .devices
-      .devices__wrp
-        .devices__item
-          a.devices__link(href='/remont-macbook/pro', title='Ремонт MacBook Pro в Киеве')
-            figure.devices__img.devices__img--svg.devices__img--macbook-pro
-            span.devices__name MacBook Pro
-        .devices__item
-          a.devices__link(href='/remont-macbook/proretina', title='Ремонт MacBook Pro Retina в Киеве')
-            figure.devices__img.devices__img--svg.devices__img--macbook-pro
-            span.devices__name MacBook Pro Retina
-        .devices__item
-          a.devices__link(href='/remont-macbook/macbook', title='Ремонт MacBook в Киеве')
-            figure.devices__img.devices__img--svg.devices__img--macbook-pro
-            span.devices__name MacBook
-        .devices__item
-          a.devices__link(href='/remont-macbook/air', title='Ремонт MacBook Air в Киеве')
-            figure.devices__img.devices__img--svg.devices__img--macbook-air
-            span.devices__name MacBook Air
-        //.devices__item
-        //  a.devices__link(href='/remont-imac', title='Ремонт iMac в Киеве')
-        //    figure.devices__img.devices__img--svg.devices__img--imac
-        //    span.devices__name iMac
-    .col-xs-12
-      h2.text-center Service-iPhone - ремонт макбуков в Киеве и по всей Украине.
-      p
-        | Наш профиль - ремонт техники Apple. Это вопрос в котором мы являемся экспертами. У нас Вы можете сделать любой ремонт макбука. Вам нужен&nbsp;
-        strong(title='ремонт macbook pro в Киеве ') ремонт macbook pro в Киеве
-        | &nbsp;или других моделей? Тогда обратитесь к нам.
-      div
-        strong Что мы делаем?
-      ol
-        li Чистим устройство после воды.
-        li Меняем клавиатуру, защитное стекло и другие составляющие.
-        li Производим замену матрицы.
-        li
-          | Производим&nbsp;
-          b замену батареи macbook
-        li Замена материнской платы и многое другое.
-      br
-      p Если у Вас сломался Макбук, приходите к нам для бесплатной диагностики и определения проблемы. Мы установим причины, и устраним поломку в самые быстрые сроки. Клиенты, которые воспользовались нашими услугами однажды приходят к нам снова и снова. Мы предоставляем действительно качественный сервис и стремимся сделать обслуживание более комфортным и выгодным. У нас Вы получите гарантию ремонта. Срок гарантии - 3 месяца на любые виды работ. Мы уверены в качестве наших услуг. Убедитесь в этом и Вы, и получите преимущества качественного сервиса. Свяжитесь с нами, если у Вас остались вопросы и мы обязательно ответим на них!
+    .wrp
+      p.h1 Ремонт MacBook
+      include ../../modules/mac_nav.jade

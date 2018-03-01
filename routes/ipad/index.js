@@ -367,6 +367,19 @@ router.get('/remont-ipad-mini3/zamena-stekla', function (req, res, next) {
 //    iPad mini 4
 //======================
 
+router.get('/remont-ipad-mini5', function (req, res, next) {
+  req.db['ipadmini3'].find().sort({'idx': 1}, function (err, docs) {
+    if (err) throw err;
+    res.render('pages/ipads/ipad-mini3', {
+      title: "Ремонт iPad mini 3 | Замена стекла айпад мини 3 | Service-iPhone",
+      description: "Ремонт iPad mini 3 в Киеве. Профессиональный ремонт iPad mini с гарантией до 2х лет. Цены на ремонт ipad mini 3.",
+      keywords: "Ремонт iPad mini3",
+      menuActive: 'ipad',
+      pricesTable: docs
+    });
+  });
+});
+
 router.get('/remont-ipad-mini4', function (req, res, next) {
   req.db['ipadmini4'].find().sort({'idx': 1}, function (err, docs) {
     if (err) throw err;
