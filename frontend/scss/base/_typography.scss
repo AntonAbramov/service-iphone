@@ -62,9 +62,24 @@ a:active {
 ul {
   margin: 0;
   padding: 0;
-  color: rgb(59, 146, 226);
 }
 
 li {
-  color: #000;
+  list-style: none;
+  position: relative;
+  margin: 0 0 10px;
+  &:before {
+    position: absolute;
+    left: -15px;
+    width: 8px;
+    height: 8px;
+    border-radius: 10px;
+    background-color: $blue;
+    top: 7px;
+    content: "";
+  }
+}
+
+.blue {
+  color: $blue;
 }
