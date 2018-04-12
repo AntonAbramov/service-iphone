@@ -14,6 +14,33 @@ router.get('/', function (req, res, next) {
 //    iWatch
 //======================
 
+router.get('/1-series', function (req, res, next) {
+  res.render('pages/iwatch/1series', {
+    title: "Ремонт iWatch 1 series в Киеве | Service-iPhone",
+    description: "Срочный ремонт iWatch первой серии 38 и 42мм",
+    keywords: "Ремонт iWatch 1 серия",
+    menuActive: 'iWatch'
+  });
+});
+
+router.get('/2-series', function (req, res, next) {
+  res.render('pages/iwatch/2series', {
+    title: "Ремонт iWatch 2 series в Киеве | Service-iPhone",
+    description: "Срочный ремонт iWatch первой серии 38 и 42мм",
+    keywords: "Ремонт iWatch 2 серия",
+    menuActive: 'iWatch'
+  });
+});
+
+router.get('/3-series', function (req, res, next) {
+  res.render('pages/iwatch/3series', {
+    title: "Ремонт iWatch 3 series в Киеве | Service-iPhone",
+    description: "Срочный ремонт iWatch первой серии 38 и 42мм",
+    keywords: "Ремонт iWatch 3 серия",
+    menuActive: 'iWatch'
+  });
+});
+
 router.get('/38', function (req, res, next) {
   req.db['iwatch38'].find().sort({'idx': 1}, function (err, docs) {
     if (err) throw err;

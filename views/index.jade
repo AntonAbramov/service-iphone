@@ -112,9 +112,34 @@ block head
     }
 
 block content
-  .text-block
+  .text-block.pt40
     h1.text-center.index-title(title="Сервисный центр по ремонту техники Apple.") Сервисный центр по ремонту техники Apple.
-    div
+    hr
+    .container
+      .row
+        .col-xs-12
+          p.title.text-center: b Как происходит ремонт
+      .row
+        .col-xs-12.col-md-3
+          h3.step-heading
+            | Приём аппарата&nbsp;
+            i.fa.fa-user-md
+          p Клиенты обслуживаются без записи. Секретари принимают аппараты в ремонт как только клиент приходит в офис. Звонить заранее не обязательно.
+        .col-xs-12.col-md-3
+          h3.step-heading
+            | Диагностика&nbsp;
+            i.fa.fa-stethoscope
+          p В сервисных центрах Service iPhone <strong>диагностика выполняется бесплатно</strong>. Даже если клиент отказывается от ремонта, диагностика не оплачивается.
+        .col-xs-12.col-md-3
+          h3.step-heading
+            | Согласовываем цену &nbsp;
+            i.fa-usd.fa
+          p После диагностики мы связываемся с клиентом для согласования цены.
+        .col-xs-12.col-md-3
+          h3.step-heading
+            | Ремонтируем устройство &nbsp;
+            i.fa-wrench.fa
+          p Выполняем <strong>качественный ремонт</strong>, тщательно тестируем и отдаем владельцу исправный продукт фирмы Apple.
 
   #slider.slider
     .slider__wrp
@@ -128,8 +153,8 @@ block content
             | Секономте до 50% стоимости на замене стекла
             br
             |  вашего устройства
-          a.slider__link(href="#") Подробнее
-      .slider__item.slider__item--second
+          a.slider__link(href="/razbilos-steklo-iphone") Подробнее
+      //.slider__item.slider__item--second
         .slider__container
           p.slider__title
             |Принимаем заказы из любой
@@ -141,67 +166,37 @@ block content
             |удобным для вас способом
           a.slider__link(href="#") Подробнее
 
-    button#prev.prev <
-    button#next.next >
+    button#prev.prev(style='display:none;') <
+    button#next.next(style='display:none;') >
   include ./modules/home-iphone
 
-  .container
-    .row.benefits
-      .col-md-3.show-desktop
-        img(src='img/iphone6s-remont.jpg', alt='Картинка:Ремонт iPhone. #Ремонт Айфона в Киеве', title="Ремонт iPhone. #Ремонт Айфона в Киеве", style="max-width: 200px;")
-      .col-md-9.col-xs-12
-        p.benefits__heading Почему Service-iPhone?
-        ol.benefits__list
-          li.fa.fa-stethoscope <span class="b">Диагностика</span> проводится бесплатно!
-          li.fa.fa-rocket <span class="b">Скорость</span>: Мы ценим время наших клиентов и выполняем большинство ремонтов в первый же час!
-          li.fa.fa-check <span class="b">Качество</span>: Для ремонта используем высококачественные и оригинальные запчасти.
-          li.fa.fa-balance-scale <span class="b">Стоимость</span>: Цены в Service-iPhone ниже, чем у конкурентов!
-          li.fa
-            span.icon-security-checked.aa
-            | <span class="b">Гарантия</span>: На все виды ремонтных работ мы даем гарантию от 3 месяцев.
-          li.fa.fa-user-secret <span class="b">Конфиденциальность</span> ваших личных данных, ремонт производим в присутствии клиента.
-
-    .show-desktop
-      p.title(title='Ремонт техники Apple в сервис-центре «Service iPhone»') Ремонт техники Apple в сервис-центре «Service iPhone»
-      p Мастера сервисов Service iPhone производят <strong>ремонт всех моделей iPhone, iPad, iPod, MacBook и iMac</strong>. <br/>Часто наши клиенты интересуются следующими проблемами:
+  section.section--blue
+    .container
       .row
-        .col-xs-12.col-sm-4
-          // VK Widget
-          #vk_groups
-        .col-xs-12.col-sm-4
-          .fb-page(data-href='https://www.facebook.com/ServiceiPhoneUA/', data-tabs='timeline', data-small-header='false', data-height="350" ,data-adapt-container-width='true', data-hide-cover='false', data-show-facepile='true')
-            blockquote.fb-xfbml-parse-ignore(cite='https://www.facebook.com/ServiceiPhoneUA/')
-              a(href='https://www.facebook.com/ServiceiPhoneUA/') Service-iphone
-
-
-    hr.mt20
-    .row
-      .col-xs-12
-        p.title.text-center: b Как происходит ремонт
-    .row
-      .col-xs-12.col-md-3
-        h3.step-heading
-          span.blue-number 1
-          | Приём аппарата&nbsp;
-          i.fa.fa-user-md
-        p Клиенты обслуживаются без записи. Секретари принимают аппараты в ремонт как только клиент приходит в офис. Звонить заранее не обязательно.
-      .col-xs-12.col-md-3
-        h3.step-heading
-          span.blue-number 2
-          | Диагностика&nbsp;
-          i.fa.fa-stethoscope
-        p В сервисных центрах Service iPhone <strong>диагностика выполняется бесплатно</strong>. Даже если клиент отказывается от ремонта, диагностика не оплачивается.
-      .col-xs-12.col-md-3
-        h3.step-heading
-          span.blue-number 3
-          | Согласовываем цену &nbsp;
-          i.fa-usd.fa
-        p После диагностики мы связываемся с клиентом для согласования цены.
-      .col-xs-12.col-md-3
-        h3.step-heading
-          span.blue-number 4
-          | Ремонтируем устройство &nbsp;
-          i.fa-wrench.fa
-        p Выполняем <strong>качественный ремонт</strong>, тщательно тестируем и отдаем владельцу исправный продукт фирмы Apple.
-
-    hr
+        .col-xs-12.text-center
+          p.h1 Почему мы?
+        .col-xs-6.col-sm-3
+          .benefit.benefit--experiance
+            .benefit__title Опыт
+            .benefit__text Мы на рынке более 4 лет
+        .col-xs-6.col-sm-3
+          .benefit.benefit--quality
+            .benefit__title Качество
+            .benefit__text Работаем с качественными и оригинальными деталями
+        .col-xs-6.col-sm-3
+          .benefit.benefit--reputation
+            .benefit__title Репутация
+            .benefit__text У нас более 200-ста отзывов
+        .col-xs-6.col-sm-3
+          .benefit.benefit--warranty
+            .benefit__title Гарантия
+            .benefit__text На все виды ремонта предоставляем гарантию до 6 мес
+  .container
+    //.row
+      //.col-xs-12.col-sm-4
+        // VK Widget
+        #vk_groups
+      //.col-xs-12.col-sm-4
+        .fb-page(data-href='https://www.facebook.com/ServiceiPhoneUA/', data-tabs='timeline', data-small-header='false', data-height="350" ,data-adapt-container-width='true', data-hide-cover='false', data-show-facepile='true')
+          blockquote.fb-xfbml-parse-ignore(cite='https://www.facebook.com/ServiceiPhoneUA/')
+            a(href='https://www.facebook.com/ServiceiPhoneUA/') Service-iphone
