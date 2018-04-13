@@ -38,7 +38,7 @@ gulp.task('webpack', function (callback) {
 });
 
 gulp.task('sass', function () {
-  return gulp.src('./frontend/scss/style.scss')
+  return gulp.src('./frontend/scss/**/**.scss')
     .pipe(gulpIf(isDevelopment, sourcemaps.init()))
     .pipe(sass())
     .on('error', notify.onError(function (err){
@@ -65,7 +65,7 @@ gulp.task('assets', function () {
 
 //watchers
 gulp.task('watch', function () {
-  gulp.watch('./frontend/scss/**/*.scss', gulp.series('sass')).on('unlink', function (filepath) {
+  gulp.watch('./frontend/scss/**/**.scss', gulp.series('sass')).on('unlink', function (filepath) {
     remember.forget('styles', path.resolve(filepath))
   });
 });

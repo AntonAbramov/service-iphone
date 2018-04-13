@@ -30,3 +30,25 @@
   position: relative;
   top: 4px;
 }
+
+.header__contacts {
+  padding: 32px 45px 0 0;
+  font-size: 14px;
+}
+
+.header__phones {
+  float: right;
+  margin-top: -22px;
+}
+
+.header__tel {
+  display: inline-block;
+  padding: 0 10px;
+  margin: 0 5px;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  &:hover {
+    color: $blue;
+  }
+}
