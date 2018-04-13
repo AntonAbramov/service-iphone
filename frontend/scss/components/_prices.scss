@@ -1,0 +1,22 @@
+.pricelist {
+  width: 100%;
+}
+.pricelist__row {
+  margin-top: -1px;
+}
+
+.pricelist__cell {
+  padding: 15px;
+  border: 1px solid #ececec;
+  text-align: left;
+}
+
+.pricelist__info {
+  display: none;
+}
+
+
+.pricelist__link {
+  color: $link-hover-color;
+  font-size: 12px;
+}

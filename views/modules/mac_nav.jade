@@ -1,0 +1,10 @@
+- var menuItems = [{'href': '/remont-macbook/pro','text': 'MacBook Pro','title': '','imgSrc': 'macbookpro','imgAlt': 'Ремонт MacBook Pro'},{'href': '/remont-macbook/proretina','text': 'MacBook Pro Retina','title': '','imgSrc': 'macbookretina','imgAlt': 'Ремонт MacBook Pro Retina'},{'href': '/remont-macbook/macbook','text': 'MacBook','title': '','imgSrc': 'macbook','imgAlt': 'Ремонт MacBook'},{'href': '/remont-macbook/air','text': 'MacBook Air','title': '','imgSrc': 'macbookair','imgAlt': 'Ремонт MacBook Air'},];
+.device.text-center
+  each item in menuItems
+    .device__item.device__item--mac
+      a.device__link(href="#{item.href}", title="Ремонт #{item.text} в Киеве")
+        span.device__preview
+          img.device__img(src='/img/new/remont-#{item.imgSrc}.jpg', alt='Картинка:#{item.imgAlt}')
+        span.device__name #{item.text}
+
+      

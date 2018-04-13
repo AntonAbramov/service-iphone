@@ -1,93 +1,54 @@
-.site-logo {
-  white-space: nowrap;
-  width: 200px;
-  margin: 0 auto;
-  padding: 5px 0;
-}
-
-.site-logo__link {
-  font-size: 16px;
-  text-transform: uppercase;
-  color: #0e749e;
-  text-decoration: none;
-  line-height: 1;
-  display: block;
-}
-.site-logo__img {
-  display: inline-block;
-  vertical-align: middle;
-  position: relative;
-  top: -4px;
-}
-
-
-.director-button {
-  margin-top: 3px;
-  display: none;
-}
-
 .header {
-  width: 100%;
+  border-bottom: 1px solid #e8e8e8;
+  margin: 0 0 30px;
 }
 
-.header-section {
-  padding: 15px 0;
-  background: #f2f2f2;
+.logo {
+  padding: 10px 15px;
 }
 
-.header-section__schedule--description {
-  font-size: 16px;
-  line-height: 1;
-}
-
-.header-section__warranty {
-  top: 0;
-  position: absolute;
-}
-
-.header-section__warranty--period {
-  display: block;
-}
-
-.header-section__warranty--all {
-  display: block;
-}
-
-.sub-header {
-  margin: 30px 0 0;
-}
-
-.sub-header__description {
-  margin: 15px 0 0;
-}
-
-.header-section__contacts {
-  font-size: 16px;
-  line-height: 20px;
-}
-
-.header-section__contacts__tel {
-  margin: 0 10px;
-  display: inline-block;
-}
-
-.header-section__schedule {
-  text-align: center;
-}
-
-.header-section__contacts__tel,
-.header-section__schedule--description {
+.logo__link {
   text-decoration: none;
-  &:hover, &:focus {
-    color: #222;
+  &:active .logo__text{
+    color: $link-hover-color;
+  }
+  &:active path {
+    fill: $link-hover-color;
   }
 }
 
-.header-section__schedule--description {
-  color: #222;
+.logo__img {
+  height: 30px;
+  margin: 0 5px 0 0;
+
+  vertical-align: middle;
 }
 
-.fb_iframe_widget {
-  vertical-align: top;
-  margin: 0 0 0 5px;
+.logo__text {
+  text-transform: uppercase;
+  color: $link-hover-color;
+  position: relative;
+  top: 4px;
+}
+
+.header__contacts {
+  padding: 32px 45px 0 0;
+  font-size: 14px;
+}
+
+.header__phones {
+  float: right;
+  margin-top: -22px;
+}
+
+.header__tel {
+  display: inline-block;
+  padding: 0 10px;
+  margin: 0 5px;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  &:hover {
+    color: $blue;
+  }
 }

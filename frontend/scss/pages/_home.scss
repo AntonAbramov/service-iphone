@@ -1,0 +1,29 @@
+.section--blue {
+  background: #f9fafd;
+  padding: 40px 0 40px;
+}
+
+.benefit {
+  border-radius: 4px;
+  padding: 20px 5px 220px;
+  text-align: center;
+  max-height: 315px;
+  margin-bottom: 30px;
+}
+.benefit--experiance { background: url('/img/new/benefits/time.jpg') no-repeat 50% 100% #fff;}
+.benefit--quality { background: url('/img/new/benefits/quality.jpg') no-repeat 50% 100% #fff;}
+.benefit--reputation { background: url('/img/new/benefits/success.jpg') no-repeat 50% 100% #fff;}
+.benefit--warranty { background: url('/img/new/benefits/waranty.jpg') no-repeat 50% 100% #fff;}
+
+.benefit__title {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0 0 15px;
+  color: $blue;
+}
+
+.benefit__text {
+  min-height: 40px;
+  font-size: 14px;
+}
+

@@ -1,0 +1,18 @@
+extends ../../layout
+block head
+  script.
+    dataLayer.push({'pageType': 'category'})
+block content
+  section.device-section.device-section--simple
+    .wrp
+      h1.device-title
+        | Ремонт iWatch 3 series
+      p.heading-title Выберите модель:
+      .devices
+        .devices__wrp
+          -var menuiWatch = [{'href': '/remont-iwatch/338','text': '38mm'}, {'href': '/remont-iwatch/342','text': '42mm'}];
+          each item in menuiWatch
+            .devices__item
+              a.devices__link(href='#{item.href}', title='Ремонт iWatch 3 #{item.text} в Киеве')
+                figure.devices__img.devices__img--svg.devices__img--macbook-pro
+                span.devices__name #{item.text}

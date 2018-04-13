@@ -1,5 +1,12 @@
 User-agent: *
-Sitemap: https://service-iphone.com.ua/sitemap.xml
 Disallow: /politika-konfidenczialnosti
 Disallow: /otkaz-ot-otvetstvennosti
 Disallow: /soglasie-s-rassyilkoj
+
+User-agent: Yandex
+Disallow: /politika-konfidenczialnosti
+Disallow: /otkaz-ot-otvetstvennosti
+Disallow: /soglasie-s-rassyilkoj
+Host: service-iphone.com.ua
+Sitemap: https://service-iphone.com.ua/sitemap.xml
+

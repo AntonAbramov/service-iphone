@@ -3,18 +3,19 @@ block head
   script.
     dataLayer.push({'pageType': 'category'})
 block content
-  section.device-section
-    h1.device-title
-      | Ремонт MacBook Air
-    p.heading-title Выберите модель:
-    .devices
-      .devices__wrp
-        -var menuMacbook = [{'href': '/remont-macbook/air/a1237','text': 'A1237','title': '','imgSrc': 'img/macbook/air.jpg','imgAlt': 'Ремонт MacBook air A1237'},{'href': '/remont-macbook/air/a1304','text': 'A1304','title': 'MacBook air A1304 в Киеве','imgSrc': 'img/macbook/air.jpg','imgAlt': 'Ремонт MacBook air A1304'},{'href': '/remont-macbook/air/a1369','text': 'A1369','title': 'MacBook air A1369 в Киеве','imgSrc': 'img/macbook/air.jpg','imgAlt': 'Ремонт MacBook air A1369'},{'href': '/remont-macbook/air/a1370','text': 'A1370','title': 'MacBook air A1370 в Киеве','imgSrc': 'img/macbook/air.jpg','imgAlt': 'Ремонт MacBook air A1370'},{'href': '/remont-macbook/air/a1465','text': 'A1465','title': 'MacBook air A1465 в Киеве','imgSrc': 'img/macbook/air.jpg','imgAlt': 'Ремонт MacBook air A1465'},{'href': '/remont-macbook/air/a1466','text': 'A1466','title': 'MacBook air A1466 в Киеве','imgSrc': 'img/macbook/air.jpg','imgAlt': 'Ремонт MacBook air A1466'}];
+  section.device-section.device-section--simple
+    .wrp
+      h1.device-title
+        | Ремонт MacBook Air
+      p.heading-title Выберите модель:
+      .devices
+        .devices__wrp
+          -var menuMacbook = [{'href': '/remont-macbook/air/a1237','text': 'A1237','title': '','imgSrc': 'img/macbook/air.jpg','imgAlt': 'Ремонт MacBook air A1237'},{'href': '/remont-macbook/air/a1304','text': 'A1304','title': 'MacBook air A1304 в Киеве','imgSrc': 'img/macbook/air.jpg','imgAlt': 'Ремонт MacBook air A1304'},{'href': '/remont-macbook/air/a1369','text': 'A1369','title': 'MacBook air A1369 в Киеве','imgSrc': 'img/macbook/air.jpg','imgAlt': 'Ремонт MacBook air A1369'},{'href': '/remont-macbook/air/a1370','text': 'A1370','title': 'MacBook air A1370 в Киеве','imgSrc': 'img/macbook/air.jpg','imgAlt': 'Ремонт MacBook air A1370'},{'href': '/remont-macbook/air/a1465','text': 'A1465','title': 'MacBook air A1465 в Киеве','imgSrc': 'img/macbook/air.jpg','imgAlt': 'Ремонт MacBook air A1465'},{'href': '/remont-macbook/air/a1466','text': 'A1466','title': 'MacBook air A1466 в Киеве','imgSrc': 'img/macbook/air.jpg','imgAlt': 'Ремонт MacBook air A1466'}];
 
-        each item in menuMacbook
-          .devices__item
-            a.devices__link(href='#{item.href}', title='Ремонт #{item.text} в Киеве')
-              figure.devices__img.devices__img--svg.devices__img--macbook-air
-              //span.devices__img
-                //img.devices__img--preview(src='#{item.imgSrc}', alt='Картинка:#{item.imgAlt}')
-              span.devices__name #{item.text}
+          each item in menuMacbook
+            .devices__item
+              a.devices__link(href='#{item.href}', title='Ремонт #{item.text} в Киеве')
+                figure.devices__img.devices__img--svg.devices__img--macbook-air
+                //span.devices__img
+                  //img.devices__img--preview(src='#{item.imgSrc}', alt='Картинка:#{item.imgAlt}')
+                span.devices__name #{item.text}

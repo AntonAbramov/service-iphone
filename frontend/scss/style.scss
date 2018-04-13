@@ -3,6 +3,7 @@
 @import "base/variables";
 @import "base/typography";
 @import "base/main";
+@import "base/fonts";
 
 @import "layout/header";
 @import "layout/footer";
@@ -10,8 +11,12 @@
 @import "components/buttons";
 @import "components/popup";
 @import "components/inputs";
+@import "components/slider";
+@import "components/devices";
+@import "components/prices";
 @import "pages/landing";
+@import "pages/home";
 
 @import "base/helpers";
-@import "layout/adaptive"; // should be the last
 @import "layout/grid";
+@import "layout/adaptive"; // should be the last

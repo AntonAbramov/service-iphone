@@ -1,0 +1,9 @@
+- var problemCases = [{'href': 'razbilos-steklo-iphone','text': 'Разбилось стекло','imgSource': 'broken-screen'},{'href': 'iphone-ne-vklyuchaetsya','text': 'Не включается','imgSource': 'phone-not-working'},{'href': 'wifi-ne-rabotaet','text': 'Не работает Wi-Fi','imgSource': 'wifi-not-working'},{'href': 'ne-rabotaet-zvuk-na-iphone','text': 'Не работает звук','imgSource': 'volume-not-working'},{'href': 'ne-rabotaet-displey-iphone','text': 'Не работает дисплей','imgSource': 'broken-display'},{'href': 'iphone-ne-zaryazhaetsya','text': 'Не заряжается','imgSource': 'broken-battery'},{'href': 'voda-iphone','text': 'Попала вода','imgSource': 'water-in-iphone'},{'href': 'ne-rabotaet-vibrozvonok','text': 'Не работает вибрация','imgSource': 'broken-vibration'},{'href': 'ne-rabotaet-displey-iphone','text': 'Не работает тачскрин','imgSource': 'touch-not-working'},{'href': 'iphone-byistro-razryazhaetsya','text': 'Быстро разряжается','imgSource': 'dead-battery'},{'href': 'iphone-ne-nazhimayutsya-knopki','text': 'Не работают кнопки','imgSource': 'broken-buttons'},{'href': 'iphone-ne-rabotaet-mikrofon','text': 'Не работает микрофон','imgSource': 'microphone-not-working'}];
+  section.problem-section
+    .container
+      p.h1 Частые поломки
+      .problem
+        each item in problemCases
+          a.problem__item(href="#{item.href}")
+            img.problem__img(src='/img/svg/#{item.imgSource}.svg', alt='Иконка: #{item.text}')
+            span.problem__text #{item.text}

@@ -14,14 +14,11 @@ export default (function() {
 
   function _toggleNav(e) {
     e.preventDefault();
-    var el = e.currentTarget,
-      nav = document.getElementById('top-nav');
-    if (domHelper.hasClass(el, 'is-open')) {
-      domHelper.removeClass(el, 'is-open');
-      domHelper.removeClass(nav, 'is-open');
+    var header = document.getElementById('header');
+    if (domHelper.hasClass(header, 'is-nav-open')) {
+      domHelper.removeClass(header, 'is-nav-open');
     } else {
-      domHelper.addClass(el, 'is-open');
-      domHelper.addClass(nav, 'is-open');
+      domHelper.addClass(header, 'is-nav-open');
     }
   }
 

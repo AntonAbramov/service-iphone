@@ -1,0 +1,266 @@
+@import "1024/home-iphone";
+.show-desktop {
+  display: block;
+}
+
+.hide-desktop {
+  display: none;
+}
+
+.show-desktop-cell {
+  display: table-cell;
+}
+
+.h1 {
+  font-size: 36px;
+}
+
+.h2 {
+  font-size: 30px;
+}
+
+.col-5 {
+  float: left;
+  width: 20%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.slider {
+  margin: -50px 0 15px;
+}
+
+.device-section {
+  padding: 50px 0 0;
+  margin: -50px 0 50px;
+  height: 100%;
+}
+
+.device-section--simple {
+  margin-bottom: 0;
+  padding-bottom: 50px;
+}
+
+.device__wrp {
+  overflow: initial;
+  white-space: initial;
+  margin: 0 auto;
+  max-width: 1140px;
+  width: 100%;
+  padding: 0 0 20px;
+  &:after {
+    content: '';
+    clear:both;
+    display: table;
+  };
+}
+
+.device__item {
+  width: auto;
+  padding: 0;
+  margin: 0 30px 50px 0;
+}
+
+.device__link:hover {
+  text-decoration: none;
+  color: $link-hover-color;
+  .device__img {
+    transform: scale(1.05)
+  }
+}
+
+.device__img {
+  transition: all,.2s;
+}
+
+.header {
+  border: none;
+  margin: 0 0 50px;
+}
+
+.is-nav-open .header__container {
+  background: none;
+}
+
+.problem__item {
+  width: 25%;
+  &:hover {
+    color: $link-hover-color;
+  }
+}
+
+.header__top-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  &:after {
+    content:"";
+    clear: both;
+    display: table;
+  }
+}
+
+.nav {
+  display: block;
+}
+
+.nav__link:hover {
+  background: $link-hover-color;
+  color: #fff;
+}
+
+.nav__link:active {
+  color: #fff;
+  path {
+    fill: #fff;
+  }
+}
+
+.logo {
+  float: left;
+  padding: 25px 15px;
+}
+
+.nav__separator {
+  display: none;
+}
+
+.sub-nav {
+  padding: 22px 0 8px;
+  float: left;
+}
+
+.sub-nav__link {
+  color: #000;
+  margin: 0 20px;
+  padding: 10px;
+  display: inline-block;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+    color: $link-hover-color;
+  }
+}
+
+.nav {
+  background: #0b1f32;
+}
+
+.nav__wrp {
+  max-width:1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.nav__link {
+  color: #fff;
+  float: left;
+  margin:0;
+  padding: 30px;
+  width: 25%;
+}
+
+.nav__img path {
+  fill: #fff;
+}
+
+.btn--calc-price {
+  margin-top: 18px;
+}
+
+.btn--primary {
+  &:hover {
+    color: #fff;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#50a8e1+0,3385d1+100 */
+    background: #50a8e1; /* Old browsers */
+    background: -moz-linear-gradient(top, #50a8e1 0%, #3385d1 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #50a8e1 0%, #3385d1 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #50a8e1 0%, #3385d1 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    //filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#50a8e1', endColorstr='#3385d1',GradientType=0 ); /* IE6-9 */
+  }
+  &:active {
+    color: #fff;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#499cd2+0,2d73b4+100 */
+    background: #499cd2; /* Old browsers */
+    background: -moz-linear-gradient(top,  #499cd2 0%, #2d73b4 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #499cd2 0%,#2d73b4 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #499cd2 0%,#2d73b4 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    //filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499cd2', endColorstr='#2d73b4',GradientType=0 ); /* IE6-9 */
+  }
+}
+.trbl-list__link {
+  @include transition(all, .2s);
+  &:before {
+    @include transition(all, .2s);
+  }
+  &:hover {
+    font-weight: 700;
+    color: $link-hover-color;
+    &:before {
+      background: $link-hover-color;
+      width: 80px;
+    }
+  }
+}
+
+.footer__wrp {
+  text-align: left;
+}
+
+.logo--footer {
+  margin: -9px 0 25px;
+}
+
+.footer__link {
+  &:hover {
+    color: $link-hover-color;
+    text-decoration: underline;
+  }
+}
+
+.repear {
+  margin: 50px 0;
+}
+
+.pricelist__row:hover {
+  background: rgba(232,232,232, .4);
+}
+
+.pricelist__info {
+  position: relative;
+  float: right;
+  display: block;
+  height: 20px;
+  &:hover {
+    .pricelist__description {
+      display: block;
+    }
+  }
+}
+
+.pricelist__description {
+  display: none;
+  position: absolute;
+  top: 30px;
+  width: 300px;
+  margin-left: -150px;
+  left: 50%;
+  text-align: center;
+  background: #fff;
+  padding: 5px;
+  box-shadow: 0 0 3px rgba(0,0,0, .1);
+  z-index: 2;
+  border-radius: 5px;
+  &:before {
+    content: "";
+    position: absolute;
+    top: -16px;
+    border: 8px solid;
+    border-color: transparent  transparent #fff transparent;
+    left: 50%;
+    margin-left: -9px;
+  }
+}
+
+.google-maps {
+  margin-top: -50px;
+}

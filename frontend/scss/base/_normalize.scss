@@ -61,7 +61,7 @@ video {
 
 /**
  * Prevent modern browsers from displaying `audio` without controls.
- * Remove excess height in iOS 5 devices.
+ * Remove excess height in iOS 5 device.
  */
 
 audio:not([controls]) {
@@ -419,4 +419,8 @@ th {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+}
+
+p {
+  margin: 0 0 15px;
 }

@@ -20,7 +20,6 @@
   const notify = require('gulp-notify');
   const webpackStream = require('webpack-stream');
   const webpack = webpackStream.webpack;
-  const named = require('vinyl-named');
   const isDevelopment = !process.env.NODE_ENV || process.evn.NODE_ENV == 'development';
 
 gulp.task('js', function() {
@@ -39,7 +38,7 @@ gulp.task('webpack', function (callback) {
 });
 
 gulp.task('sass', function () {
-  return gulp.src('./frontend/scss/style.scss')
+  return gulp.src('./frontend/scss/**/**.scss')
     .pipe(gulpIf(isDevelopment, sourcemaps.init()))
     .pipe(sass())
     .on('error', notify.onError(function (err){
@@ -49,7 +48,7 @@ gulp.task('sass', function () {
       }
     }))
     .pipe(autoprefixer({
-      browsers: ['last 10 versions'],
+      browsers: ['last 5 versions'],
       cascade: false
     }))
     .pipe(remember('sass'))
@@ -66,10 +65,9 @@ gulp.task('assets', function () {
 
 //watchers
 gulp.task('watch', function () {
-  gulp.watch('./frontend/scss/**/*.scss', gulp.series('sass')).on('unlink', function (filepath) {
+  gulp.watch('./frontend/scss/**/**.scss', gulp.series('sass')).on('unlink', function (filepath) {
     remember.forget('styles', path.resolve(filepath))
   });
-  gulp.watch('./frontend/js/**/*.js', gulp.series('js'));
 });
 
 gulp.task('clean', function () {

@@ -1,16 +1,58 @@
 .footer {
-	padding:10px 0;
-	border-top: 1px solid #ccc;
-	background: #f2f2f2;
+  background: url('/img/new/footer-bg.jpg') no-repeat 50% 50% #122639;
+  color: #fff;
+  padding: 25px 0;
+  order: 11;
 }
 
-.footer-link {
-	display: inline-block;
-	margin:0 10px 10px;
-	color: #222;
-	text-decoration: none;
+.footer__wrp {
+  text-align: center;
 }
 
-.google-maps{
-	height: 200px;
+.logo--footer {
+  margin: 0 0 25px;
+  #XMLID_2_,
+  #XMLID_229_ {
+    fill: #fff;
+  }
+  #Group path {
+    fill: #122639
+  }
+  .logo__text {
+    color: #fff;
+  }
+}
+
+.footer__ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer__li {
+  font-weight: 300;
+  margin: 0 0 10px;
+  line-height: 16px;
+}
+
+.footer__li--oneline {
+  white-space: nowrap;
+}
+
+.footer__link {
+  color: #fff;
+  text-decoration: none;
+  &:active {
+    color: $link-hover-color;
+    text-decoration: underline;
+  }
+}
+
+.sosial__item {
+  margin: 0 4px 4px;
+  display: inline-block;
+}
+
+.footer__tel {
+  color: #fff;
 }

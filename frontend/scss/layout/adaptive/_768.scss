@@ -1,90 +1,16 @@
+/*
+.device__item {
+  width: 18%;
+}*/
+
 .show-tablet {
   display: block;
 }
 
-.show-tablet-inline {
-  display: inline;
-}
-
-.hide-tablet {
-  display: none;
-}
-
-.device-title {
-  font-size: 36px;
-}
-
-.top-navigation {
-  display: block;
-  border-top: none;
-}
-
-.top-navigation__link {
-  display: inline-block;
-  margin-left: 35px;
-  border-radius: 100px;
-  border: 1px solid transparent;
-  margin: 0 0 0 5px;
-  &:hover, &:focus {
-    border: 1px solid #ddd;
-  }
-}
-
-.header__container {
-  max-width: 1025px;
-  padding: 10px 0;
-  margin: 0 auto;
-}
-
-.header-section__warranty {
-  position: static;
-}
-
-.devices__item {
-  padding: 0 40px;
-  width: 18%;
-}
-
-.devices__link {
-  padding: 10px 0px;
-}
-
-.lp-header__telephone {
-  margin: 5px 0 0;
-}
-
-.site-logo {
-  width: 25%;
-  margin: 0;
-  padding:0;
-}
-
-.site-logo__link {
-  text-align: left;
-}
-
-.header-section__contacts {
-  float: left;
-  margin: 0 20px 0 0;
-}
-
-.header-section__contacts__tel {
-  margin: 0 5px 0 0;
-  font-weight: bold;
+.repear__img-container {
+  margin: 0 -15px 15px;
 }
 
 .google-maps {
-  height: 350px;
-}
-
-.benefits__heading {
-  font-size: 2em;
-}
-
-.benefits__heading {
-  text-align: left;
-}
-
-.top-navigation__last {
-  display: none;
+  height: 500px;
 }

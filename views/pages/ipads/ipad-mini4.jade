@@ -3,24 +3,23 @@ block head
   script.
     dataLayer.push({'pageType': 'product', 'productType': 'ipad mini 4'})
 block content
-  .sub-header
+  .text-block
     .container
-      .row
-        .col-sm-2.text-center
-          img.sub-header__img(src='../img/ipad/ipad-mini3.jpg', alt='Картинка:Цены на ремонт iPad Mini 4', title="Сервисный центр по ремонту iPad Mini 4 в Киеве")
-        .col-sm-4
-          h1(title='Ремонт iPad Mini3') Ремонт iPad Mini 4
-        .col-sm-6
-      .sub-header__description
+      h1 Ремонт iPad mini 4
+      p.cf
+        span.pull-left
+          i.fa.fa-arrow-left
+          | &nbsp;&nbsp;
+          a(href="/remont-ipad-mini3") Цены на ремонт iPad Mini 3
+        span.pull-right
+          a(href="/remont-ipad-pro-9") Цены на ремонт iPad Pro 9.7
+          | &nbsp;&nbsp;
+          i.fa.fa-arrow-right
   .container
     section.repear
-      include ../../templates/price-table
-    p.cf
-      span.pull-left
-        i.fa.fa-arrow-left
-        | &nbsp;&nbsp;
-        a(href="/remont-ipad-mini3") Цены на ремонт iPad Mini 3
-      span.pull-right
-        a(href="/remont-ipad-pro-9") Цены на ремонт iPad Pro 9.7
-        | &nbsp;&nbsp;
-        i.fa.fa-arrow-right
+      h2.h1.text-center(title='Ремонт iPad mini 4') Цены на ремонт iPad mini 4
+      .row
+        .col-xs-12.col-sm-4
+          img(src='../img/ipad/ipad-mini3.jpg', alt='Картинка:Цены на ремонт iPad Mini 4', title="Сервисный центр по ремонту iPad Mini 4 в Киеве")
+        .col-xs-12.col-sm-8
+          include ../../templates/price-table

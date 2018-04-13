@@ -4,65 +4,69 @@ block head
     dataLayer.push({'pageType': 'product', 'productType': 'iphone 6s plus'})
 
 block content
+  .text-block
+    .container
+      h2(title='Ремонт 6s+ в «Service iPhone»') Ремонт iPhone 6s+ в «Service iPhone»
+      //p Красивый айфон 6s+ — лучший смартфон среди яблочной линейки, который оснащен функциональной камерой, беспроводной сетью и большой диагональю экрана. Этот девайс радует прочным корпусом и стильным дизайном. Однако вследствие удара по задней крышке или экрану, из-за падения телефона с высоты или в результате неосторожного обращения с устройством отдельные составляющие конструкции могут некорректно работать, получить серьезные повреждения.
+      p
+        | Заказать качественный&nbsp;
+        a(href='/iphone', title='ремонт iPhone в Киеве') ремонт iPhone в Киеве
+        |  вы можете в сервисном центре «Service iPhone». Наши специалисты помогут заменить поврежденную деталь на новую и восстановить работоспособность гаджета.  Бесплатная диагностика дивайса поможет определить все неисправности и «слабые» места. Мастер быстро подскажет правильный и бюджетный вариант ремонта.
+      h3(title='Ремонт айфон 6s+ Киеве: цена вопроса') Цены на ремонт iphone 6s plus
+      p
+        | Специально для наших клиентов мы создали таблицу в которой вы быстро найдете&nbsp;
+        a(href="#price-iphone-6splus", title="Цена на ремонт iPhone 6s Plus") цену
+        | &nbsp;на любой ремонт. В «Service iPhone» наши специалисты помогут отремонтировать девайс быстро и качественно.
+      p
+        | Например, если разбилось стекло, а дисплей не поврежден, достаточно заменить экран.&nbsp;
+        strong(title='Замена стекла iPhone 6s+ в Киеве') Замена стекла iPhone 6s+
+        |  в нашем ремонтном центре выполняется уже в день обращения. Мастер аккуратно снимет экран при помощи потока горячего воздуха и установит новое стекло. Когда поврежден тачскрин нужно заменить весь дисплейный модуль. Только такой ремонт поможет восстановить работу сенсора и вернуть телефону реакцию на нажатия.
+      h3 В «Service iPhone» вы сможете обратиться, если:
+      ul
+        li не работает динамик, периодически пропадает звук, вышел из строя микрофон;
+        li сломался разъем для зарядки или подключения гарнитуры;
+        li сбоит программное обеспечение;
+        li на корпусе есть царапины и сколы;
+        li
+          | необходима&nbsp;
+          strong(title='замена дисплея iPhone 6s+') замена дисплея iPhone 6s+
+          | .
+      br
+      p Обращайтесь в «Service iPhone» и доверьте ремонт своего айфона настоящим профессионалам!
+      div(itemscope='', itemtype='http://schema.org/Product')
+        span(itemprop='name', style='display:none')
+          | iPhone 6s Plus
+        | Overall rating:&nbsp;
+        span(itemprop='aggregateRating', itemscope='', itemtype='http://schema.org/AggregateRating')
+          strong
+            span.value(itemprop='ratingValue')
+              | 4.8
+          |  out of&nbsp;
+          strong
+            span(itemprop='bestRating') 5
+          | &nbsp;based on&nbsp;
+          span.votes(itemprop='reviewCount')
+            | 21
+          |  reviews.
+      br
+      p.cf
+        span.pull-left
+          i.fa.fa-arrow-left
+          | &nbsp;&nbsp;
+          a(href="/remont-iphone-6s") Цены на ремонт iPhone 6s
+        span.pull-right
+          a(href="/remont-iphone-7") Цены на ремонт iPhone 7
+          | &nbsp;&nbsp;
+          i.fa.fa-arrow-right
+
   .container
     section.repear#price-iphone-6splus
       h1.text-center(title='Ремонт iPhone 6s Plus') Ремонт iPhone 6s Plus
       h2(title="Цены на Ремонт айфона 6s Plus в Киеве") Цены на Ремонт Айфон 6s Plus
       .row
-        .col-xs-12.col-sm-9
+        .col-xs-12.col-sm-4
+          img(src='/img/new/remont/iphone-6s-plus.jpg', alt='Картинка:Ремонт iPhone 6S Plus', title="Ремонт iPhone 6s plus в Сервисном центре Apple в Киеве")
+        .col-xs-12.col-sm-8
           include ../../templates/price-table
-        .col-xs-12.col-sm-3
-          img.sub-header__img(src='remont-iphone-6s-plus.jpg', alt='Картинка:Ремонт iPhone 6S Plus', srcset="/img/iphone/remont-iphone-6s-plus.jpg 1x, /img/iphone/retina/remont-iphone-6s-plus.jpg 2x", title="Ремонт iPhone 6s plus в Сервисном центре Apple в Киеве")
 
-    h2(title='Ремонт 6s+ в «Service iPhone»') Ремонт iPhone 6s+ в «Service iPhone»
-    //p Красивый айфон 6s+ — лучший смартфон среди яблочной линейки, который оснащен функциональной камерой, беспроводной сетью и большой диагональю экрана. Этот девайс радует прочным корпусом и стильным дизайном. Однако вследствие удара по задней крышке или экрану, из-за падения телефона с высоты или в результате неосторожного обращения с устройством отдельные составляющие конструкции могут некорректно работать, получить серьезные повреждения.
-    p
-      | Заказать качественный&nbsp;
-      a(href='/iphone', title='ремонт iPhone в Киеве') ремонт iPhone в Киеве
-      |  вы можете в сервисном центре «Service iPhone». Наши специалисты помогут заменить поврежденную деталь на новую и восстановить работоспособность гаджета.  Бесплатная диагностика дивайса поможет определить все неисправности и «слабые» места. Мастер быстро подскажет правильный и бюджетный вариант ремонта.
-    h3(title='Ремонт айфон 6s+ Киеве: цена вопроса') Цены на ремонт iphone 6s plus
-    p
-      |Специально для наших клиентов мы создали таблицу в которой вы быстро найдете&nbsp;
-      a(href="#price-iphone-6splus", title="Цена на ремонт iPhone 6s Plus") цену
-      |&nbsp;на любой ремонт. В «Service iPhone» наши специалисты помогут отремонтировать девайс быстро и качественно.
-    p
-      | Например, если разбилось стекло, а дисплей не поврежден, достаточно заменить экран.&nbsp;
-      strong(title='Замена стекла iPhone 6s+ в Киеве') Замена стекла iPhone 6s+
-      |  в нашем ремонтном центре выполняется уже в день обращения. Мастер аккуратно снимет экран при помощи потока горячего воздуха и установит новое стекло. Когда поврежден тачскрин нужно заменить весь дисплейный модуль. Только такой ремонт поможет восстановить работу сенсора и вернуть телефону реакцию на нажатия.
-    h3 В «Service iPhone» вы сможете обратиться, если:
-    ul
-      li не работает динамик, периодически пропадает звук, вышел из строя микрофон;
-      li сломался разъем для зарядки или подключения гарнитуры;
-      li сбоит программное обеспечение;
-      li на корпусе есть царапины и сколы;
-      li
-        | необходима&nbsp;
-        strong(title='замена дисплея iPhone 6s+') замена дисплея iPhone 6s+
-        | .
-    br
-    p Обращайтесь в «Service iPhone» и доверьте ремонт своего айфона настоящим профессионалам!
-    div(itemscope='', itemtype='http://schema.org/Product')
-      span(itemprop='name', style='display:none')
-        | iPhone 6s Plus
-      | Overall rating:&nbsp;
-      span(itemprop='aggregateRating', itemscope='', itemtype='http://schema.org/AggregateRating')
-        strong
-          span.value(itemprop='ratingValue')
-            | 4.8
-        |  out of&nbsp;
-        strong
-          span(itemprop='bestRating') 5
-        | &nbsp;based on&nbsp;
-        span.votes(itemprop='reviewCount')
-          | 21
-        |  reviews.
-    br
-    p.cf
-      span.pull-left
-        i.fa.fa-arrow-left
-        | &nbsp;&nbsp;
-        a(href="/remont-iphone-6s") Цены на ремонт iPhone 6s
-      span.pull-right
-        a(href="/remont-iphone-7") Цены на ремонт iPhone 7
-        | &nbsp;&nbsp;
-        i.fa.fa-arrow-right
+

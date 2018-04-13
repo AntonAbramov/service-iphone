@@ -3,37 +3,25 @@ block head
   script.
     dataLayer.push({'pageType': 'category'})
 block content
-  section.device-section
-    h1.device-title
-      | Ремонт iWatch
-    p.heading-title Выберите модель:
-    .devices
-      .devices__wrp
-        .devices__item
-          a.devices__link(href='/remont-iwatch/38', title='Ремонт iWatch 1 series 38mm в Киеве')
-            figure.devices__img.devices__img--svg.devices__img--iwatch
-            span.devices__name 1 series 38mm
-        .devices__item
-          a.devices__link(href='/remont-iwatch/42', title='Ремонт iWatch 1 series 42mm в Киеве')
-            figure.devices__img.devices__img--svg.devices__img--iwatch
-            span.devices__name 1 series 42mm
-        .devices__item
-          a.devices__link(href='/remont-iwatch/238', title='Ремонт iWatch 2 series 38mm в Киеве')
-            figure.devices__img.devices__img--svg.devices__img--iwatch
-            span.devices__name 2 series 38mm
-        .devices__item
-          a.devices__link(href='/remont-iwatch/242', title='Ремонт iWatch 2 series 42mm в Киеве')
-            figure.devices__img.devices__img--svg.devices__img--iwatch
-            span.devices__name 2 series 42mm
-        .devices__item
-          a.devices__link(href='/remont-iwatch/338', title='Ремонт iWatch 3 Series 38mm в Киеве')
-            figure.devices__img.devices__img--svg.devices__img--iwatch
-            span.devices__name 3 series 38mm
-        .devices__item
-          a.devices__link(href='/remont-iwatch/342', title='Ремонт iWatch 3 Series 42mm в Киеве')
-            figure.devices__img.devices__img--svg.devices__img--iwatch
-            span.devices__name 3 series 42mm
-
-
-    .col-xs-12
-      h2.text-center Service-iPhone - ремонт iWatch в Киеве и по всей Украине.
+  section.device-section.device-section--simple
+    .wrp
+      h1.device-title
+        | Ремонт iWatch
+      p.heading-title Выберите модель:
+      .device
+        .device__wrp
+          .device__item
+            a.device__link(href='/remont-iwatch/1-series', title='Ремонт iWatch 1 series 38mm в Киеве')
+              span.device__preview
+                img.device__img(src='/img/new/remont-iwatch-1series.jpg', alt='Картинка: Ремонт iWatch Series 1')
+              span.device__name 1 series
+          .device__item
+            a.device__link(href='/remont-iwatch/2-series', title='Ремонт iWatch 2 series 38mm в Киеве')
+              span.device__preview
+                img.device__img(src='/img/new/remont-iwatch-2series.jpg', alt='Картинка: Ремонт iWatch Series 2')
+              span.device__name 2 series
+          .device__item
+            a.device__link(href='/remont-iwatch/3-series', title='Ремонт iWatch 3 Series 38mm в Киеве')
+              span.device__preview
+                img.device__img(src='/img/new/remont-iwatch-3series.jpg', alt='Картинка: Ремонт iWatch Series 3')
+              span.device__name 3 series
