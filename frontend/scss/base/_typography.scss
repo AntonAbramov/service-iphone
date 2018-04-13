@@ -83,3 +83,8 @@ ul {
 .blue {
   color: $blue;
 }
+
+a:hover {
+  text-decoration: none;
+  color: $link-hover-color;
+}

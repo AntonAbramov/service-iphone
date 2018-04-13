@@ -10,23 +10,23 @@ block content
   script.
     function initMap() {
       var uluru = new google.maps.LatLng(50.446805, 30.510911),
-          uluru2 = new google.maps.LatLng(50.508761, 30.502066),
-          uluru3 = new google.maps.LatLng(50.4317077, 30.5156575),
-          center = new google.maps.LatLng(50.464805, 30.510911),
+          // uluru2 = new google.maps.LatLng(50.508761, 30.502066),
+          // uluru3 = new google.maps.LatLng(50.4317077, 30.5156575),
+          center = new google.maps.LatLng(50.446805, 30.510911),
           options = {
             center: center,
             scrollwheel: false,
-            zoom: 11,
+            zoom: 15,
             mapTypeId: google.maps.MapTypeId.ROADMAP
           },
           map = new google.maps.Map(document.getElementById("googleMap"), options),
-          marker = new google.maps.Marker({position: uluru}),
-          marker2 = new google.maps.Marker({position: uluru2}),
-          marker3 = new google.maps.Marker({position: uluru3});
+          marker = new google.maps.Marker({position: uluru});
+          // marker2 = new google.maps.Marker({position: uluru2}),
+          // marker3 = new google.maps.Marker({position: uluru3});
 
       marker.setMap(map);
-      marker2.setMap(map);
-      marker3.setMap(map);
+      // marker2.setMap(map);
+      // marker3.setMap(map);
 
       var markerInfo = new google.maps.InfoWindow({content: "Service-iPhone <br> ул. Богдана Хмельницкого, 32 офис 5 <br>(063) 1104224<br>(099) 2504224<br>(098) 1024224"});
       var markerInfo2 = new google.maps.InfoWindow({content: "Service-iPhone <br> Ремонт любой сложности техники Apple <br>(063) 1104224<br>(099) 2504224<br>(098) 1024224"});
@@ -34,16 +34,17 @@ block content
       google.maps.event.addListener(marker, "click", function () {
         markerInfo.open(map, marker)
       })
-      google.maps.event.addListener(marker2, "click", function () {
-        markerInfo2.open(map, marker2)
-      })
-      google.maps.event.addListener(marker3, "click", function () {
-        markerInfo3.open(map, marker3)
-      })
+      // google.maps.event.addListener(marker2, "click", function () {
+      //   markerInfo2.open(map, marker2)
+      // })
+      // google.maps.event.addListener(marker3, "click", function () {
+      //   markerInfo3.open(map, marker3)
+      // })
 
     }
     function loadScript() {
+      console.log('tes')
       var e = document.createElement("script");
-      e.type = "text/javascript", e.src = "https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true&callback=initMap", document.body.appendChild(e)
+      e.type = "text/javascript", e.src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyDpJ6k2g4JZHsVhMUpkMQNI86m5jj12hGU&callback=initMap", document.body.appendChild(e)
     }
     window.onload = loadScript;
