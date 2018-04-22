@@ -2,7 +2,7 @@ table.pricelist
   tr.pricelist__row
     th.pricelist__cell Название услуги
     th.pricelist__cell Цена
-    th.pricelist__cell.show-desktop-cell Время
+    //th.pricelist__cell.show-desktop-cell Описание
   each item in pricesTable
     tr.pricelist__row
       td.pricelist__cell
@@ -22,6 +22,6 @@ table.pricelist
 
       td.pricelist__cell
         .pricelist__cost #{item.price}
-      td.pricelist__cell.show-desktop-cell
-        .pricelist__cost 20мин #{item.time}
+      //td.pricelist__cell.show-desktop-cell
+        .pricelist__cost #{item.description}
 
