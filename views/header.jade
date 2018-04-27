@@ -18,13 +18,21 @@ header#header.header
         //a.sub-nav__link(href='/feedback') Отзывы
         a.sub-nav__link(href='/contacts') Контакты
       .pull-right.header__contacts.show-desktop
-        span Адрес:&nbsp;&nbsp; ул. Богдана Хмельницкого, 32
         span.header__phones
           a.header__tel(href="tel:+380631104224") (063) 110-42-24
           br
           a.header__tel(href="tel:+380992504224") (099) 250-42-24
           br
           a.header__tel(href="tel:+380981024224") (098) 102-42-24
+        span
+          |Адрес:&nbsp;
+          strong ул. Богдана Хмельницкого, 32
+          br
+          | пн-пт: 9:00-19:00, cб: 10:00-19:00
+          br
+          |  вс: выходной,&nbsp;
+          span(style="color: red") 30.04, 01.05 выходной
+
       //a.btn.btn--primary.pull-right.btn--calc-price.show-desktop(href="/remont-iphone") Просчет цены
 
     nav#top-nav.nav
