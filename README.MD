@@ -11,8 +11,9 @@ service mongod status/start/stop/restart
 pm2 deploy production -p [numnerOfPort]
 
 // start
-1. run mongod instance
+1. run mongod instance: mongod
 2. nodemon bin/www
+3. open http://localhost:4000/
 
 on server:
 sudo service nginx restart
